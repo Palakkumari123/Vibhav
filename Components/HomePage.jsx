@@ -12,22 +12,12 @@ export default function HomePage() {
                 
             </video>
             {/* <video src="Assets/bgVideo.mp4" autoPlay> */}
-
-
-
-
-
-
-
-
-
-
             
             <main className=" h-screen z-100 relative bg-black  bg-opacity-50  ">
 
                 <div className="flex sm:flex-row flex-col h-full justify-between xl:mx-32">
                     <div className="flex flex-col justify-center ">
-                        <h1 className="text-amber-600 text-5xl text-center pl-40 pt-4 pb-4 font-serif md:flex-row flex-col items-center  ">VIBHAV</h1>
+                        <h1 className="text-amber-600 text-5xl text-center pl-40 mt-12 pb-4 font-serif md:flex-row flex-col items-center  ">VIBHAV</h1>
                         <h1 className="text-amber-600 text-4xl text-center pl-40 pb-4 font-serif md:flex-row flex-col items-center ">अनंत से भी आगे ! 
                         <SocialLinks className="sm:flex-row flex-col items-center "/>
                         </h1>

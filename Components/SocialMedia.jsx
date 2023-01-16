@@ -5,7 +5,7 @@ export default function SocialLinks  ()  {
       <div className=" flex xl:mb-24 ">
        
             <a
-              className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-black mt-4 hover:text-white hover:bg-neutral-300 ease-in-out duration-200 hover:scale-125"
+              className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-black mt-4 hover:text-white hover:bg-neutral-400 ease-in-out duration-200 hover:scale-125"
               
               href="https://github.com"
             >
