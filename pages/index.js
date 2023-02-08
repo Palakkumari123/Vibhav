@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
+import OurWork2 from './'
 // import styles from '../styles/Home.module.css';
 import Layout from '../Components/UI/Layout';
 import HomePage from '../Components/HomePage';
@@ -23,6 +23,7 @@ export default function Home() {
         <Layout>
           <HomePage />
           <AboutUs />
+          <OurWork2/>
         </Layout>
       </main>
     </>

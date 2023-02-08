@@ -1,0 +1,41 @@
+{
+  "Last Year Events": [
+    {
+      "name": "Electrovision",
+      "content": "Hey ECE geeks come and test your knowledge in this fun event. Play with everything from basic circuits to computers. Make the computer of your dreams and compete with others. May the best PC win!",
+      "github": "https://github.com/Team-Vibhav/Circuit-Solver",
+      "images": "/Assets/circuitsolver.jpg"
+    },
+    {
+      "name": "Cyber Circuits",
+      "content": "Channelize your inner Sherlock Holmes and find clues hidden all over our social media outlets starting from YouTube to all the way over to Instagram and also enjoy many electronics based competitions and win huge prizes. See you there!",
+      "github": "https://github.com/Team-Vibhav/E-Exhibition",
+      "images": "/Assets/eexhib.webp"
+    },
+    {
+      "name": "QuanrenTeam Titans",
+      "content": "Walkthrough the breath-taking virtual campus of NITH, solve mind-boggling puzzles, and emerge as the champion! Join the mega hunt to win amazing prizes.",
+      "github": "https://github.com/Mukulthakur17/BrailleOcr",
+      "images": "/Assets/braileOcr.webp"
+    }
+  ],
+   "Last Year Departmental":[{
+      "name": "PCB Design",
+      "content": "EAGLE is electronic design automation (EDA) software that lets printed circuit board (PCB) designers seamlessly connect schematic diagrams, component placement, PCB routing, and comprehensive library content. Bringing the design to life with a wide range of PCB layout tools in EAGLE.",
+      "github": "https://github.com/Mukulthakur17/Crowd-Analysis-in-Real-Time",
+      "images": "/Assets/cart.webp"
+    },
+    {
+      "name": "VR Gaming",
+      "content": "The workshop will start by introducing the students with multiverse. Then we will explain the basics of blender which will include 3-D modelling of the basic environment required in the game. Next we will go over the basics of vr. Lastly we will write our code to complete the game.",
+      "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/Anti-Depression%20and%20Companion%20Bot%20(ADCB)",
+      "images": "/Assets/antiDepressionBot.webp"
+    },
+    {
+      "name": "Quantum Computing",
+      "content": "In many applications it is important to find the minimum eigenvalue of a matrix. For example, in chemistry, the minimum eigenvalue of a Hermitian matrix characterizing the molecule is the ground state energy of that system. In the future, the quantum phase estimation algorithm may be used to find the minimum eigenvalue.",
+      "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/TOPCROP",
+      "images": "/Assets/CropFarmBot.webp"
+    }
+  ]
+}
