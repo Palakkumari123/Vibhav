@@ -15,8 +15,7 @@ export default function HomePage() {
 
             {/* <video autoPlay="true" muted loop className="absolute r-0 w-full top-0">
                 <source src="Assets/bgVideo.mp4" type="video/mp4 "/>
-                
-            </video> */}
+
             {/* <video src="Assets/bgVideo.mp4" autoPlay> */}
 
             <main className=" min-h-[100vh] relative">
