@@ -6,3 +6,44 @@
         @apply p-1
     }
 }
+
+body{
+    background-color: #1a1a1d;
+}
+.scene {
+	position: absolute;
+	width: 100%;
+	transform: translateY(var(--translateY));
+	will-change: transform;
+    
+}
+@font-face {
+    font-family: "Elianto-Regular";
+    src: local("Elianto-Regular"),
+     url("/assets/Elianto-Regular.otf");
+    font-weight: normal;
+    }
+
+
+    @font-face {
+        font-family: "Mylodon-Light";
+        src: local("Mylodon-Light"),
+         url("/assets/Mylodon-Light.otf");
+        font-weight: normal;
+        }
+
+        @font-face {
+            font-family: "Modeka";
+            src: local("Modeka"),
+             url("/assets/Modeka.otf");
+            font-weight: bold;
+            }
+            @font-face {
+                font-family: "Azonix";
+                src: local("Azonix"),
+                 url("/assets/Azonix.otf");
+                font-weight: bold;
+                }
+    
+
+
