@@ -1,36 +1,52 @@
-import React from "react";
+import React, { useRef } from "react";
 import HomeLogo from "./HomeLogo.png"
 import Image from "next/image"
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import SocialLinks from "./SocialMedia";
+import { useEffect } from 'react';
+
+import AboutUs from "./AboutUs";
+
+
 // import bgVideo from "Assets/bgVideo.mp4";
 export default function HomePage() {
+    
     return (
         <div>
-            <video autoPlay="true" muted loop className="absolute r-0 w-full top-0  ">
+
+            {/* <video autoPlay="true" muted loop className="absolute r-0 w-full top-0">
                 <source src="Assets/bgVideo.mp4" type="video/mp4 "/>
                 
-            </video>
+            </video> */}
             {/* <video src="Assets/bgVideo.mp4" autoPlay> */}
-            
-            <main className=" h-screen z-100 relative bg-black  bg-opacity-50  ">
 
-                <div className="flex sm:flex-row flex-col h-full justify-between xl:mx-32">
-                    <div className="flex flex-col justify-center ">
-                        <h1 className="text-amber-600 text-5xl text-center pl-40 mt-12 pb-4 font-serif md:flex-row flex-col items-center  ">VIBHAV</h1>
-                        <h1 className="text-amber-600 text-4xl text-center pl-40 pb-4 font-serif md:flex-row flex-col items-center ">अनंत से भी आगे ! 
-                        <SocialLinks className="sm:flex-row flex-col items-center "/>
+            <main className=" min-h-[100vh] relative">
+
+
+
+
+                <div className="  text-white flex  sm:flex-row flex-col sm:px-16 px-6 text-center  justify-center  ">
+                    <div  >
+                        <div className=" font-[Azonix] drop-shadow-[0_15px_10px_rgba(180,83,9,1)] delay-150 duration-150 break-words text-5xl md:text-8xl text-amber-500 mt-48  mx-auto  ">
+                            VIBHAV
+                        </div>
+                        <h1  className=" font-[Mylodon-Light] break-words text-3xl md:text-4xl  items-center pt-4  mx-auto  "  >
+                            अनंत से भी आगे !
+                            
                         </h1>
-                        {/* <h1 class="hidden lg:inline-block"></h1> */}
-                        
-                    </div>
-                    <div className=" lg:max-w-lg pl-32 lg:w-full md:w-1/2 w-5/6  items-center ">
-                        <Image width={300} height={400} src={HomeLogo} alt="logo" />
+                        <div><SocialLinks /></div>
 
                     </div>
+
                 </div>
 
+
+
+
+
+
             </main>
+
+
         </div >
     );
 }
