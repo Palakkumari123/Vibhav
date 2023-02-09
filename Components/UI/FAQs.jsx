@@ -42,7 +42,7 @@ export default function FAQs() {
                                         />
                                     </svg>
                                 </Disclosure.Button >
-                                <Disclosure.Panel className="px-4  pt-4 pb-2  text-md text-white "  >
+                                <Disclosure.Panel className="px-4  pt-4 pb-2  text-lg text-white "  >
                                    <span>
                                     
                                      {item.answer}
