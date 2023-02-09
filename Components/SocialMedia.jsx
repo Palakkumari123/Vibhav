@@ -9,7 +9,7 @@ export default function SocialLinks  ()  {
               
               href="https://github.com"
             >
-              <FaGithub className="  w-10 h-10" />
+              <FaGithub className="  w-7 h-7 md:w-10 md:h-10" />
             </a>
             
 
@@ -19,7 +19,7 @@ export default function SocialLinks  ()  {
               
               href="https://www.instagram.com/team_vibhav/"
             >
-              <FaInstagram className="w-9 h-9"/>
+              <FaInstagram className="w-7 h-7 md:w-10 md:h-10"/>
             </a>
 
 
@@ -29,7 +29,7 @@ export default function SocialLinks  ()  {
               
               href="https://m.facebook.com/262566097142744/"
             >
-              <FaFacebook className="w-10 h-10" />
+              <FaFacebook className="w-7 h-7 md:w-10 md:h-10" />
             </a>
 
           
@@ -39,7 +39,7 @@ export default function SocialLinks  ()  {
               
               href="https://discord.gg/cc3j3GbCrX"
             >
-              <FaDiscord className="w-10 h-10" />
+              <FaDiscord className="w-7 h-7 md:w-10 md:h-10" />
             </a>
 
             <a
@@ -47,7 +47,7 @@ export default function SocialLinks  ()  {
               
               href="https://www.linkedin.com/company/team-vibhav"
             >
-              <FaLinkedin className="w-8 h-8 " />
+              <FaLinkedin className="w-7 h-7 md:w-8        md:h-8" />
             </a>
 
 
