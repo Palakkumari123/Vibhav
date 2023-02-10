@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import * as basicScroll from 'basicscroll'
+// import * as basicScroll from 'basicscroll'
 
 // import styles from '../styles/Home.module.css';
 import Layout from '../Components/UI/Layout';
@@ -8,30 +8,30 @@ import HomePage from '../Components/HomePage';
 import AboutUs from '../Components/AboutUs';
 import FAQs from '../Components/UI/FAQs';
 import Cc from '../Components/UI/CC';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import Footer from '../Components/UI/Footer';
 
 export default function Home() {
-  useEffect(() => {
+  // useEffect(() => {
 
-    document.querySelectorAll(".scene").forEach(elem => {
-      const modifier = elem.getAttribute("data-modifier");
+  //   document.querySelectorAll(".scene").forEach(elem => {
+  //     const modifier = elem.getAttribute("data-modifier");
 
-      basicScroll.
-        create({
-          elem: elem,
-          from: 0,
-          to: 519,
-          direct: true,
-          props: {
-            "--translateY": {
-              from: "0",
-              to: `${50 * modifier}px`
-            }
-          }
-        }).start();
-    });
-  }, [])
+  //     basicScroll.
+  //       create({
+  //         elem: elem,
+  //         from: 0,
+  //         to: 519,
+  //         direct: true,
+  //         props: {
+  //           "--translateY": {
+  //             from: "0",
+  //             to: `${50 * modifier}px`
+  //           }
+  //         }
+  //       }).start();
+  //   });
+  // }, [])
   return (
     <>
       <Head>
