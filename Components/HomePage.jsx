@@ -1,6 +1,4 @@
 import React, { useRef } from "react";
-import HomeLogo from "./HomeLogo.png"
-import Image from "next/image"
 import SocialLinks from "./SocialMedia";
 import { useEffect } from 'react';
 
@@ -13,7 +11,7 @@ export default function HomePage() {
     return (
         <div>
 
-            {/* <video autoPlay="true" muted loop className="absolute r-0 w-full top-0">
+            {/* <video autoPlay="true" muted loop className="absolute top-0 w-full r-0">
                 <source src="Assets/bgVideo.mp4" type="video/mp4 "/>
 
             {/* <video src="Assets/bgVideo.mp4" autoPlay> */}
@@ -23,7 +21,7 @@ export default function HomePage() {
 
 
 
-                <div className="  text-white flex  sm:flex-row flex-col sm:px-16 px-6 text-center  justify-center  ">
+                <div className="flex flex-col justify-center px-6 text-center text-white  sm:flex-row sm:px-16">
                     <div  >
                         <div className=" font-[Azonix] drop-shadow-[0_15px_10px_rgba(180,83,9,1)] delay-150 duration-150 break-words text-5xl md:text-7xl text-amber-500 mt-48  mx-auto  ">
                             VIBHAV

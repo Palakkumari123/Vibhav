@@ -1,16 +1,15 @@
 import React from "react";
 import Image from "next/image"
-import HomeLogo from "./HomeLogo.png"
 export default function AboutUs() {
     return (
-        <section className="  flex justify-center h-full items-center" >
+        <section className="flex items-center justify-center h-full " >
           
-          <div className="flex flex-col center w-4/5 h-full md:pb-24  bg-gray-700 rounded-t-2xl mb-24   " >
-            <div className="bg-black h-10 w-full bg-opacity-40 rounded-t-2xl">
-              <div className="flex h-full items-center w-16 justify-around ml-4">
-                <span className="h-3 w-3 rounded-full bg-red-500"></span>
-                <span className="h-3 w-3 rounded-full bg-yellow-500"></span>
-                <span className="h-3 w-3 rounded-full bg-green-500"></span>
+          <div className="flex flex-col w-4/5 h-full mb-24 bg-gray-700 center md:pb-24 rounded-t-2xl " >
+            <div className="w-full h-10 bg-black bg-opacity-40 rounded-t-2xl">
+              <div className="flex items-center justify-around w-16 h-full ml-4">
+                <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+                <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                <span className="w-3 h-3 bg-green-500 rounded-full"></span>
               </div>
               </div>
               <div className="flex flex-col">
