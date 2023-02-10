@@ -1,15 +1,39 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import OurWork2 from './'
+import * as basicScroll from 'basicscroll'
+
 // import styles from '../styles/Home.module.css';
 import Layout from '../Components/UI/Layout';
 import HomePage from '../Components/HomePage';
 import AboutUs from '../Components/AboutUs';
-
+import FAQs from '../Components/UI/FAQs';
+import Cc from '../Components/UI/CC';
+import { useEffect } from 'react';
+import Footer from '../Components/UI/Footer';
 
 
 
 export default function Home() {
+  useEffect(() => {
+
+    document.querySelectorAll(".scene").forEach(elem => {
+      const modifier = elem.getAttribute("data-modifier");
+
+      basicScroll.
+        create({
+          elem: elem,
+          from: 0,
+          to: 519,
+          direct: true,
+          props: {
+            "--translateY": {
+              from: "0",
+              to: `${50 * modifier}px`
+            }
+          }
+        }).start();
+    });
+  }, [])
   return (
     <>
       <Head>
@@ -21,11 +45,41 @@ export default function Home() {
       <main>
 
         <Layout>
-          <HomePage />
-          <AboutUs />
-          <OurWork2/>
+
+       
+            <div >
+            {/* <Image src="/assets/pahadi1.png" className="scene" data-modifier="0" width={700} height={500}   ></Image>
+            <Image src="/assets/Artboard 3.png" className="scene" data-modifier="0"  width={700} height={500}   ></Image>
+            <Image src="/assets/Asset 2.png"className="scene" data-modifier="0"  width={700} height={500}   ></Image> */}
+
+
+          </div>
+
+
+
+            <div className='z-50 flex flex-col'>
+
+
+              <HomePage />
+              <AboutUs />
+              <Cc />
+              <FAQs />
+              <Footer/>
+          </div>
         </Layout>
       </main>
     </>
   )
 }
+
+
+
+
+
+     {/* <img className="scene" data-modifier="10" src="https://s.electerious.com/parallaxscene/p0.png" />
+            <img className="scene" data-modifier="18" src="https://s.electerious.com/parallaxscene/p1.png" />
+            <img className="scene" data-modifier="12" src="https://s.electerious.com/parallaxscene/p2.png" />
+            <img className="scene" data-modifier="8" src="https://s.electerious.com/parallaxscene/p3.png" />
+            <img className="scene" data-modifier="6" src="https://s.electerious.com/parallaxscene/p4.png" />
+            <img className="scene" data-modifier="0" src="https://s.electerious.com/parallaxscene/p6.png" />
+             */}

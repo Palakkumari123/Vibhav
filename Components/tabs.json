@@ -1,35 +1,132 @@
 {
-  "Last Year Events": [
+  "AI/ML": [
     {
-      "name": "Electrovision",
-      "content": "Hey ECE geeks come and test your knowledge in this fun event. Play with everything from basic circuits to computers. Make the computer of your dreams and compete with others. May the best PC win!",
+      "name": "Circuit Solver",
+      "content": "This project aims to create LTspice schematic from hand-drawn circuits for the students who dont know the interface of simulators.",
+      "github": "https://github.com/Team-Vibhav/Circuit-Solver",
       "images": "/Assets/circuitsolver.jpg"
     },
     {
-      "name": "Cyber Circuits",
-      "content": "Channelize your inner Sherlock Holmes and find clues hidden all over our social media outlets starting from YouTube to all the way over to Instagram and also enjoy many electronics based competitions and win huge prizes. See you there!",
+      "name": "E-Exhibition",
+      "content": "Our objective is to create an interactive virtual environment for the exhibition of various hardware projects by their 3D models and interaction with a question answering bot. We made 3D models of the projects using Blender. After that we created an environment of exhibition hall in Unity.",
+      "github": "https://github.com/Team-Vibhav/E-Exhibition",
       "images": "/Assets/eexhib.webp"
     },
     {
-      "name": "QuanrenTeam Titans",
-      "content": "Walkthrough the breath-taking virtual campus of NITH, solve mind-boggling puzzles, and emerge as the champion! Join the mega hunt to win amazing prizes.",
+      "name": "Braille OCR",
+      "content": "Braille is a tactile writing system used by people who are visually impaired. It is traditionally written with embossed paper. The motive behind building this project is to make a system which could read and convert the written data into braille language.",
+      "github": "https://github.com/Mukulthakur17/BrailleOcr",
       "images": "/Assets/braileOcr.webp"
-    }
-  ],
-   "Last Year Departmental":[{
-      "name": "PCB Design",
-      "content": "EAGLE is electronic design automation (EDA) software that lets printed circuit board (PCB) designers seamlessly connect schematic diagrams, component placement, PCB routing, and comprehensive library content. Bringing the design to life with a wide range of PCB layout tools in EAGLE.",
+    },
+    {
+      "name": "C. A. R. T.",
+      "content": "A crowd analysis system that will detect every face in the crowd and based upon that will give the crowd count. Further those detected faces will be run through different models to detect the Emotion, Age, Gender and Ethinicity of the crowd.",
+      "github": "https://github.com/Mukulthakur17/Crowd-Analysis-in-Real-Time",
       "images": "/Assets/cart.webp"
     },
     {
-      "name": "VR Gaming",
-      "content": "The workshop will start by introducing the students with multiverse. Then we will explain the basics of blender which will include 3-D modelling of the basic environment required in the game. Next we will go over the basics of vr. Lastly we will write our code to complete the game.",
+      "name": "Anti-Depression Bot",
+      "content": "The life of people working in the corporate sector and students who are studying in cities far from home is quite lonely. Depression is a real problem out there and costs thousands of human lives per year. The main motive behind building this bot is to cure that problem and help people to live a peaceful life.",
+      "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/Anti-Depression%20and%20Companion%20Bot%20(ADCB)",
       "images": "/Assets/antiDepressionBot.webp"
     },
     {
-      "name": "Quantum Computing",
-      "content": "In many applications it is important to find the minimum eigenvalue of a matrix. For example, in chemistry, the minimum eigenvalue of a Hermitian matrix characterizing the molecule is the ground state energy of that system. In the future, the quantum phase estimation algorithm may be used to find the minimum eigenvalue.",
+      "name": "Top-Crop Farm Bot",
+      "content": "Traditionally humans have to manually look after their large farms and this consumes a lot of time but this bot solves the problem. The main aim of this project is to monitor large fields, conditions of soil, crops in a more efficient manner.",
+      "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/TOPCROP",
       "images": "/Assets/CropFarmBot.webp"
+    }
+  ],
+  "IOT": [
+    {
+      "name": "Safety Glove",
+      "content": "The idea is to design a safety glove consisting of a Hall Effect Sensor, Arduino Mega and a radio transmitter, which is to be worn by the workers in factories who are in close proximity to heavy machinery which can cause potential injuries.",
+      "github": "https://github.com/Team-Vibhav/Safety-Glove",
+      "images": "/Assets/glove.webp"
+    },
+    {
+      "name": "Li-Fi",
+      "content": "Li-Fi stands for Light-Fidelity, an emerging technology through which we have solved the problem of reduced information exchange rate and bandwidth. Li-fi uses visible light instead of Gigahertz Radio Waves for data transfer which makes it a fast and cheap mode of wireless communication.",
+      "github": "https://github.com/Team-Vibhav/VTB",
+      "images": "/Assets/liFi.webp"
+    },
+    {
+      "name": "Swarm Bot",
+      "content": "Swarm robotics is an approach to the coordination of multiple robots as a system that consists of large numbers of mostly simple physical robots. It is supposed that a desired collective behaviour emerges from the interactions between the robots and interactions of robots with the environment.",
+      "github": "https://github.com/kamatji/SWARM_BOT",
+      "images": "/Assets/swarm bot.jpg"
+    }
+  ],
+  "AR/VR": [
+    {
+      "name": "NITH VR",
+      "content": "The NIT Hamirpur VR project is an one of its kind simulation of NITH campus with a simple user interface. The simulation incorporates the whole NITH campus.",
+      "github": "https://github.com/Team-Vibhav/NithVR",
+      "images": "/Assets/nithvr.webp"
+    },
+    {
+      "name": "Virtual Telepresence Robot",
+      "content": "This robot with a camera is placed in a remote location to capture the environment in visual form using Arduino Uno . The captured visuals are displayed on the user’s virtual reality (VR) headset. An added feature allows the camera to move in the direction of the users head movements. This gives the user a real-time experience as if he is present where the virtual telepresence robot is located.",
+      "github": "https://github.com/Team-Vibhav/VTB",
+      "images": "/Assets/vtr.webp"
+    },
+    {
+      "name": "AR Education",
+      "content": "It provides a common platform for students from different background to learn and explore concepts of their interest. Apart from this, it also promotes home learning which is the need of the hour in this period of turmoil. Students generally face problem in visualizing the concepts, this application develop better understanding of the subject.",
+      "github": "https://github.com/jashwant543/ARedu",
+      "images": "/Assets/aredu.webp"
+    },
+    {
+      "name": "AR Math Visualizer",
+      "content": "In this project, a student can enter conic equations of their choice to see the real-time generated 3D models. This makes it easier to understand 3D curves and conic sections. Augmented Reality is used to project virtual objects on target images.",
+      "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/AR%20Maths%20Visualizer",
+      "images": "/Assets/arMathsVisualizer.webp"
+    },
+    {
+      "name": "AR Newsletter",
+      "content": "AR newsletter is a newsletter that takes readers beyond the printed page. The main aim of AR newsletter is to attract new audiences especially young people to increase their waning number of readers with an interactive environment.",
+      "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/AR%20News%20Letter",
+      "images": "/Assets/arNewsLetter.jpg"
+    }
+  ],
+  "EMBEDDED SYSTEMS": [
+    {
+      "name": "Auto Cart",
+      "content": "The aim of this project is to eliminate the long queues in front of the bill counters in the malls and, thus making shopping in the malls and the supermarkets hassle-free and more automated, which will save a lot of time of the customers.",
+      "github": "https://github.com/Team-Vibhav/Auto_cart",
+      "images": "/Assets/autocart.webp"
+    },
+    {
+      "name": "Automatic Covid Gateway",
+      "content": "Our project is an Automatic Device used to detect mask ,measure the human body temperature and sanitize hands. This project will reduce the contact as well as extra labour needed for the whole process. The main benefit of the project is that it reduces the contact needed for checking the temperature of the person as it will replace the person with a machine. Also,it can perform multiple operations that makes it cost efficient in the present pandemic conditions.",
+      "github": "https://github.com/Team-Vibhav/Automatic-covid-gateway",
+      "images": "/Assets/covidgateway.webp"
+    },
+    {
+      "name": "Smart Entry System",
+      "content": "As there is a major problem of seat occupancy in library due to unnecessary seat reservation of many students for a day without being present in the library. So we developed a system that shows the presently occupied seats in the library and live count of seats available to sit in the library.",
+      "github": "https://github.com/kamatji/Smart_Library_System",
+      "images": "/Assets/SmartEntrySystem.webp"
+    },
+    {
+      "name": "Smart Solar",
+      "content": "This is a mini portable solar power plant that is based on a sunflower model. This is a model which receives maximum sunlight and it saves a lot of space as compared to other solar plants.",
+      "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/Smart%20Solar",
+      "images": "/Assets/smartSolar1.webp"
+    }
+  ],
+  "DSP": [
+    {
+      "name": "DTMF",
+      "content": "This project aims to create a user-friendly environment where one can easily control all the appliances in his home through DTMF tones.Whatever appliances we are dealing with, in our daily life, we want to control them without physically moving to the control unit. We use many different types of communication in control applications to control home appliances, industrial appliances, and other types of automation.",
+      "github": "https://github.com/Team-Vibhav/Circuit-Solver",
+      "images": "/Assets/dtmf.webp"
+    },
+    {
+      "name": "Senso",
+      "content": "Senso is a project based on Digital Signal Processing. Our project aims to acumulate sound from the surrounding and check if it matches with the already availabe dataset of chainsaw or any other electronic equipment with which cutting of tree takes place.",
+      "github": "https://github.com/Team-Vibhav/Senso",
+      "images": "/Assets/senso.webp"
     }
   ]
 }

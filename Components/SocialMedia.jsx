@@ -2,51 +2,52 @@ import React from "react";
 import { FaLinkedin, FaGithub , FaFacebook , FaInstagram , FaDiscord } from "react-icons/fa";
 export default function SocialLinks  ()  {
     return (
-      <div className=" flex xl:mb-24 ">
+      <div className="flex flex-wrap justify-center items-center ">
        
             <a
-              className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-black mt-4 hover:text-white hover:bg-neutral-400 ease-in-out duration-200 hover:scale-125"
+              className=" flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black mt-4 hover:text-white hover:bg-[#1a1a1d] ease-in-out duration-200 hover:scale-125"
               
               href="https://github.com"
             >
-              <FaGithub size={25} />
+              <FaGithub className="  w-7 h-7 md:w-10 md:h-10" />
             </a>
+            
 
 
             <a
-              className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-black ml-9 mt-4 hover:text-white hover:bg-gradient-to-tr hover:from-[#fa7e1e] hover:to-[#962fbf] ease-in-out duration-200 hover:scale-125"
+              className="flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-gradient-to-tr hover:from-[#fa7e1e] hover:to-[#962fbf] ease-in-out duration-200 hover:scale-125"
               
-              href="https://instagram.com"
+              href="https://www.instagram.com/team_vibhav/"
             >
-              <FaInstagram size={25} />
+              <FaInstagram className="w-7 h-7 md:w-10 md:h-10"/>
             </a>
 
 
 
             <a
-              className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-black ml-9 mt-4 hover:text-white hover:bg-blue-600 transition-color duration-200 delay-250 ease-in-out duration-200 hover:scale-125"
+              className=" flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-blue-600 transition-color  delay-250 ease-in-out duration-200 hover:scale-125"
               
-              href="https://facebook.com"
+              href="https://m.facebook.com/262566097142744/"
             >
-              <FaFacebook size={25} />
+              <FaFacebook className="w-7 h-7 md:w-10 md:h-10" />
             </a>
 
           
 
             <a
-              className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-black ml-9 mt-4 hover:text-white hover:bg-[#576fbf] ease-in-out duration-200 hover:scale-125"
+              className="flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#576fbf] ease-in-out duration-200 hover:scale-125"
               
-              href="https://discord.com"
+              href="https://discord.gg/cc3j3GbCrX"
             >
-              <FaDiscord size={25} />
+              <FaDiscord className="w-7 h-7 md:w-10 md:h-10" />
             </a>
 
             <a
-              className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-black ml-9 mt-4 hover:text-white hover:bg-[#0072b1] ease-in-out duration-200 hover:scale-125 "
+              className="flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#0072b1] ease-in-out duration-200 hover:scale-125 "
               
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/team-vibhav"
             >
-              <FaLinkedin size={25} />
+              <FaLinkedin className="w-7 h-7 md:w-8        md:h-8" />
             </a>
 
 
