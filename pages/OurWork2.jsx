@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {FaGithub} from "react-icons/fa";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import ourwork from "../Components/tabs.json";
 
 export default function OurWork2() {
@@ -50,13 +50,13 @@ export default function OurWork2() {
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                       {card.content}
                     </p>
-                    <Link
+                    {/* <Link
                       href={card.github}
                       className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
                       <FaGithub  className="m-1" size={20} />
                       Github
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

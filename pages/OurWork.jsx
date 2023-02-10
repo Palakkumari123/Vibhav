@@ -1,5 +1,5 @@
 import React from 'react'
-
+import HomeLogo from "./HomeLogo.png"
 import Head from 'next/head'
 import Layout from '../Components/UI/Layout';
 // import AboutUs from '../Components/AboutUs';
