@@ -28,7 +28,7 @@ export default function Home() {
           props: {
             "--translateY": {
               from: "0",
-              to: `${50 * modifier}px`
+              to: `${25 * modifier}px`
             }
           }
         }).start();
@@ -48,11 +48,11 @@ export default function Home() {
 
        
             <div >
-            {/* <Image src="/assets/pahadi1.png" className="scene" data-modifier="0" width={700} height={500}   ></Image>
-            <Image src="/assets/Artboard 3.png" className="scene" data-modifier="0"  width={700} height={500}   ></Image>
-            <Image src="/assets/Asset 2.png"className="scene" data-modifier="0"  width={700} height={500}   ></Image> */}
-
-
+            <Image src="/assets/4x/5@4x.png" className="scene" data-modifier="10"  width={7681} height={7921}   ></Image>
+            <Image src="/assets/4x/4@4x.png" className="scene" data-modifier="8"  width={7681} height={7921}   ></Image>
+            <Image src="/assets/4x/3@4x.png"className="scene" data-modifier="6"  width={7681} height={7921}   ></Image>
+            <Image src="/assets/4x/2@4x.png" className="scene" data-modifier="4"  width={7681} height={7921}   ></Image>
+            <Image src="/assets/4x/1@4x.png" className="scene" data-modifier="2"  width={7681} height={7921}   ></Image>
           </div>
 
 
