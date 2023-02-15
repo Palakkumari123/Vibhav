@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import * as basicScroll from 'basicscroll'
-
 // import styles from '../styles/Home.module.css';
 import Layout from '../Components/UI/Layout';
 import HomePage from '../Components/HomePage';
@@ -62,7 +61,7 @@ export default function Home() {
 
               <HomePage />
               <AboutUs />
-              <Cc />
+              <Cc/>
               <FAQs />
               <Footer/>
           </div>
