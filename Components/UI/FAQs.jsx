@@ -11,7 +11,7 @@ export default function FAQs() {
             <div className="w-full max-w-5xl p-6 mx-auto bg-[#1a1a1d]  ">
                 {faqs.map((item, index) => {
                     return <Disclosure as="div" className="mt-2" key={index} onMouseEnter={() => setIsShown(index)}
-                        onMouseLeave={() => setIsShown(index)}>
+                        onMouseLeave={() => setIsShown(-1)}>
                         {({ open }) => (
                             <>
                                 <Disclosure.Button className="flex  justify-between text:md  hover:rounded-xl hover:skew-y-1   font-[nidsans-webfont] hover:drop-shadow-2xl w-full px-6 py-6 text-md hover:text-sky-200     bg-gray-700   focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75  hover:bg-[#27272a] text-sky-100 delay-100 duration-200">
