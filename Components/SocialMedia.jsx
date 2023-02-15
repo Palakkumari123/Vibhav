@@ -5,7 +5,7 @@ export default function SocialLinks  ()  {
       <div className="flex flex-wrap justify-center items-center ">
        
             <a
-              className=" flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black mt-4 hover:text-white hover:bg-[#1a1a1d] ease-in-out duration-200 hover:scale-125"
+              className=" flex items-center justify-center  p-1.5 rounded-full bg-white text-black mt-4 hover:text-white hover:bg-[#303033] ease-in-out duration-200 hover:scale-125"
               
               href="https://github.com"
             >
@@ -15,7 +15,7 @@ export default function SocialLinks  ()  {
 
 
             <a
-              className="flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-gradient-to-tr hover:from-[#fa7e1e] hover:to-[#962fbf] ease-in-out duration-200 hover:scale-125"
+              className="flex items-center justify-center  p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-gradient-to-tr hover:from-[#fa7e1e] hover:to-[#962fbf] ease-in-out duration-200 hover:scale-125"
               
               href="https://www.instagram.com/team_vibhav/"
             >
@@ -25,7 +25,7 @@ export default function SocialLinks  ()  {
 
 
             <a
-              className=" flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-blue-600 transition-color  delay-250 ease-in-out duration-200 hover:scale-125"
+              className=" flex items-center justify-center  p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-blue-600 transition-color  delay-250 ease-in-out duration-200 hover:scale-125"
               
               href="https://m.facebook.com/262566097142744/"
             >
@@ -35,7 +35,7 @@ export default function SocialLinks  ()  {
           
 
             <a
-              className="flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#576fbf] ease-in-out duration-200 hover:scale-125"
+              className="flex items-center justify-center  p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#576fbf] ease-in-out duration-200 hover:scale-125"
               
               href="https://discord.gg/cc3j3GbCrX"
             >
@@ -43,11 +43,11 @@ export default function SocialLinks  ()  {
             </a>
 
             <a
-              className="flex items-center justify-center md:h-10 md:w-10 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#0072b1] ease-in-out duration-200 hover:scale-125 "
+              className="flex items-center justify-center  p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#0072b1] ease-in-out duration-200 hover:scale-125 "
               
               href="https://www.linkedin.com/company/team-vibhav"
             >
-              <FaLinkedin className="w-7 h-7 md:w-8        md:h-8" />
+              <FaLinkedin className="w-7 h-7 md:w-10 md:h-10" />
             </a>
 
 

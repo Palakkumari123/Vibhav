@@ -8,13 +8,14 @@ export default function FAQs() {
 
         <div className="w-full px-4 pt-48 ">
             <h1 className="flex-col text-center pb-8 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-white">Frequently Asked  Questions</h1>
+
             <div className="w-full max-w-5xl p-6 mx-auto bg-[#1a1a1d]  ">
                 {faq.faqs.map((item, index) => {
                     return <Disclosure as="div" className="mt-2" key={index} onMouseEnter={() => setIsShown(index)}
                         onMouseLeave={() => setIsShown(index)}>
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex  justify-between text:md md:text-xl hover:rounded-xl hover:skew-y-1   font-serif hover:drop-shadow-2xl w-full px-6 py-6 text-md hover:text-sky-200     bg-gray-700   focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75  hover:bg-[#27272a] text-sky-100 delay-100 duration-200">
+                                <Disclosure.Button className="flex  justify-between text:md  hover:rounded-xl hover:skew-y-1   font-[nidsans-webfont] hover:drop-shadow-2xl w-full px-6 py-6 text-md hover:text-sky-200     bg-gray-700   focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75  hover:bg-[#27272a] text-sky-100 delay-100 duration-200">
                                     <span className="flex">
 
                                         <Image
@@ -42,7 +43,9 @@ export default function FAQs() {
                                         />
                                     </svg>
                                 </Disclosure.Button >
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-lg text-white "  >
+
+                                <Disclosure.Panel className="px-4  pt-4 pb-2 font-[nidsans-webfont] text-md text-white "  >
+
                                    <span>
                                     
                                      {item.answer}
