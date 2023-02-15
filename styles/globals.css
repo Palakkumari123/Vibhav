@@ -52,12 +52,6 @@ body {
 @font-face {
     font-family: "nidsans-webfont";
     src: local("nidsans-webfont"),
-        url("/assets/nidsans-webfont.woff2");
-    font-weight: semibold ;
-}
-@font-face {
-    font-family: "nidsans-webfont";
-    src: local("nidsans-webfont"),
-        url("/assets/nidsans-webfont.woff");
+        url("/assets/nidsans-webfont.otf");
     font-weight: semibold ;
 }
