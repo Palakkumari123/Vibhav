@@ -2,8 +2,14 @@ import React from "react";
 import { Fragment } from "react";
 import { Menu, Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
-import { FaRobot , RiTeamFill } from "react-icons/fa";
+import {RiTeamFill } from "react-icons/ri"
+import { IoHome } from "react-icons/io5";
+import { FaRobot  } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
+import { IoMdGitNetwork } from "react-icons/io";
 import { FiCpu } from "react-icons/fi";
+import { GrProjects } from "react-icons/gr";
+
 import { IoThunderstormOutline } from "react-icons/io5";
 import { TbWaveSine, TbAugmentedReality } from "react-icons/tb";
 import {
@@ -48,7 +54,7 @@ export default function Example() {
  
   return (
 
-    <Popover className="relative z-50 bg-black bg-opacity-10">
+    <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-20">
 
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
@@ -63,7 +69,7 @@ export default function Example() {
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-800  p-2 text-gray-500  hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-800  p-2 text-gray-500  hover:bg-gray-100 hover:text-gray-500 ">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -71,21 +77,17 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Link
               href="/"
-              className="text-base font-[Mylodon-Light] font-semibold text-gray-400 hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-white
-              before:hover:scale-x-100   before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300"
+              className="text-base flex  font-[Azonix] font-extrabold text-gray-200 hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
-              Home
+             <IoHome className="w-6 h-6" /> Home
             </Link>
             <Link
               href="/team"
               
-              className="text-base  text-gray-400 font-[Mylodon-Light] font-semibold hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-white
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300"
+              className="text-base flex  text-gray-200 font-[Azonix] font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0  "
             >
-              Our Team
+             <RiTeamFill className="  w-6 h-6  " /> Our Team
             </Link>
 
             <Popover>
@@ -93,11 +95,11 @@ export default function Example() {
                 <>
                   <Popover.Button
                     className={classNames(
-                      open ? "text-gray-400" : "text-gray-400",
-                      "inline-flex items-center pt-1 text-base font-medium hover:text-white"
+                      open ? "text-gray-400" : "text-gray-200",
+                      "inline-flex items-center pt-1  text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex font-[Mylodon-Light] font-semibold ">Projects
+                    <span className="flex font-[Azonix] font-extrabold mt-1 "> <MdDesignServices className="h-6  w-6" /> Projects
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -117,7 +119,7 @@ export default function Example() {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                      <div className="overflow-hidden rounded-lg shadow-lg ">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {projects.map((item) => (
                             <Link
@@ -145,12 +147,10 @@ export default function Example() {
             </Popover>
             <Link
               href="/OurWork"
-              className="text-base  text-gray-400  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 font-[Mylodon-Light] font-semibold before:left-0 before:bg-white
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300"
+              className="text-base  text-gray-100 flex  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 font-[Azonix] font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  "
             >
-              Our Work
+            <IoMdGitNetwork className="w-6 h-6" />  Our Work
             </Link>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0"></div>
@@ -170,7 +170,7 @@ export default function Example() {
           focus
           className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
         >
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="divide-y-2 divide-gray-50 rounded-lg bg-gray-700 shadow-lg">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
@@ -181,7 +181,7 @@ export default function Example() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-400 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-400 p-2 text-gray-700 hover:bg-gray-100 hover:text-gray-500  ">
                     <span className="sr-only ">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -199,12 +199,12 @@ export default function Example() {
 
                 <a
                   href="/team"
-                  className="text-base font-medium text-gray-300 hover:text-gray-700 mx-2"
+                  className="text-base font-medium text-gray-300 hover:text-gray-300 mx-2"
                 >
                   Our Team
                 </a>
                 <Menu as="div">
-                  <Menu.Button className="text-base font-medium text-gray-300 hover:text-gray-700 mx-3 w-full flex items-center justify-between">
+                  <Menu.Button className="text-base font-medium text-gray-300  hover:text-gray-300 mx-3 w-full flex items-center justify-between">
                     Projects
                     <ChevronDownIcon
                       className="mr-8 ml-2 h-5 w-5"
@@ -222,7 +222,7 @@ export default function Example() {
                     leaveTo="opacity-0 scale-95"
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                      <div className="overflow-hidden rounded-lg shadow-lg ">
                       
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {projects.map((item) => (
@@ -249,7 +249,7 @@ export default function Example() {
                 </Menu>
                 <a
                   href="#"
-                  className="text-base font-medium text-gray-300 hover:text-gray-700 mx-2"
+                  className="text-base font-medium text-gray-300 hover:text-gray-300 mx-2"
                 >
                   Our Work
                 </a>
