@@ -8,7 +8,7 @@ import HomePage from '../Components/HomePage';
 import AboutUs from '../Components/AboutUs';
 import FAQs from '../Components/UI/FAQs';
 import Cc from '../Components/UI/CC';
-// import { useEffect } from 'react';
+import { useEffect } from 'react';
 import Footer from '../Components/UI/Footer';
 
 export default function Home() {
