@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image"
-import HomeLogo from "./HomeLogo.png"
 export default function AboutUs() {
     return (
         <section className="  flex justify-center md:h-full items-center relative" >
@@ -11,6 +10,7 @@ export default function AboutUs() {
                 <span className="h-3 w-3 rounded-full bg-red-500"></span>
                 <span className="h-3 w-3 rounded-full bg-yellow-500"></span>
                 <span className="h-3 w-3 rounded-full bg-green-500"></span>
+
               </div>
               </div>
               <div className="flex flex-col">

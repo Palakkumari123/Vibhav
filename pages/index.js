@@ -10,9 +10,8 @@ import Cc from '../Components/UI/CC';
 import { useEffect } from 'react';
 import Footer from '../Components/UI/Footer';
 
-
-
 export default function Home() {
+
   useEffect(() => {
 
     document.querySelectorAll(".scene").forEach(elem => {
@@ -33,6 +32,7 @@ export default function Home() {
         }).start();
     });
   }, [])
+
   return (
     <>
       <Head>

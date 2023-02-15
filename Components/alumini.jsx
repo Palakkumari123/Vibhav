@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function OurWork() {
+export default function Projects() {
   return (
     <div className='text-white'>
-      OurWork
+      Projects
     </div>
   )
 }
