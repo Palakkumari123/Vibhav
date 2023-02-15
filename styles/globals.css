@@ -50,8 +50,8 @@ body {
 }
 
 @font-face {
-    font-family: "nidsans-webfont";
-    src: local("nidsans-webfont"),
+    font-family: "Nidsans-webfont";
+    src: local("Nidsans-webfont"),
         url("/assets/nidsans-webfont.otf");
     font-weight: semibold ;
 }
