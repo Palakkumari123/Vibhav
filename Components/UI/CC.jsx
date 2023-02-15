@@ -5,6 +5,7 @@ export default function CC() {
     <div className=''>
 
 
+
 <h1 className="title-font sm:text-5xl text-3xl flex justify-center font-[Elianto-Regular]  bg-[#1A1A1D] font-black  text-white mt-48">Core-cordinators
 </h1>
       <div className="flex pt-8 items-center justify-center bg-[#1A1A1D]">

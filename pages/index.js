@@ -26,7 +26,7 @@ export default function Home() {
           props: {
             "--translateY": {
               from: "0",
-              to: `${25 * modifier}px`
+              to: `${50 * modifier}px`
             }
           }
         }).start();
