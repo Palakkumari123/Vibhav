@@ -1,5 +1,4 @@
 import React from 'react'
-import HomeLogo from "./HomeLogo.png"
 import Head from 'next/head'
 import Layout from '../Components/UI/Layout';
 // import AboutUs from '../Components/AboutUs';
@@ -17,7 +16,7 @@ export default function OurWork() {
 
         <Layout>
           
-            <div className =" text-slate-500 text-6xl ">
+            <div className ="text-6xl  text-slate-500">
               <h1 className='m-0 p-0 font-mono flex  mt-48 min-h-full place-content-center animate-[glitter_4s_ease-in-out_infinite] odd-animationdelay-0.1s'>
                 <span>C</span>
                 <span>o</span>

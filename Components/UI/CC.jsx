@@ -4,7 +4,8 @@ export default function CC() {
   return (
     <div className=''>
 
-<h1 class="title-font sm:text-5xl text-3xl flex justify-center font-[Elianto-Regular]  bg-[#1A1A1D] font-black relative  text-white mt-48">Core-cordinators
+
+<h1 className="title-font sm:text-5xl text-3xl flex justify-center font-[Elianto-Regular]  bg-[#1A1A1D] font-black  text-white mt-48">Core-cordinators
 </h1>
       <div className="flex pt-8 items-center justify-center bg-[#1A1A1D]">
   <div className="flex flex-col md:flex-row justify-center items-center gap-14 ">

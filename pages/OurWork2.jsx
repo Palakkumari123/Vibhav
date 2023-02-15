@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import {FaGithub} from "react-icons/fa";
 import Image from "next/image";
 // import Link from "next/link";
-import ourwork from "../Components/tabs.json";
+import ourwork from "../Components/data/ourwork.json";
 
 export default function OurWork2() {
   const [cardState, setCarState] = useState(0);
   const tabs = ["Last Year Events", "Last Year Departmental"];
   return (
     <div>
-      <div className="flex justify-center flex-col">
-        <div className="grid lg:grid-cols-2 sm:grid-col-1 justify-center">
+      <div className="flex flex-col justify-center">
+        <div className="grid justify-center lg:grid-cols-2 sm:grid-col-1">
           {tabs.map((tab, ind) => {
             return (
               <button
@@ -32,11 +32,11 @@ export default function OurWork2() {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
           {ourwork[tabs[cardState]].map((card, ind) => {
             return (
-              <div key={ind} className="py-5 px-10">
-                <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div key={ind} className="px-10 py-5">
+                <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                   <div>
                     <Image
-                      className="rounded-t-lg w-full"
+                      className="w-full rounded-t-lg"
                       src={"/HomeLogo.png"}
                       alt="images"
                       width={100}

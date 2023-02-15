@@ -1,15 +1,16 @@
 import { Disclosure } from "@headlessui/react";
 import Image from 'next/image';
-import { faqs } from "./faq.json";
+import faq from "./faq.json";
 import { useState } from 'react';
 export default function FAQs() {
     const [isShow, setIsShown] = useState(-1);
     return (
 
-        <div className="w-full px-4 pt-48   ">
-            <h1 className="flex-col text-center pb-8 text-3xl md:text-5xl font-extrabold  font-[Elianto-Regular] text-white">Frequently Asked  Questions</h1>
+        <div className="w-full px-4 pt-48 ">
+            <h1 className="flex-col text-center pb-8 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-white">Frequently Asked  Questions</h1>
+
             <div className="w-full max-w-5xl p-6 mx-auto bg-[#1a1a1d]  ">
-                {faqs.map((item, index) => {
+                {faq.faqs.map((item, index) => {
                     return <Disclosure as="div" className="mt-2" key={index} onMouseEnter={() => setIsShown(index)}
                         onMouseLeave={() => setIsShown(index)}>
                         {({ open }) => (
@@ -42,7 +43,9 @@ export default function FAQs() {
                                         />
                                     </svg>
                                 </Disclosure.Button >
+
                                 <Disclosure.Panel className="px-4  pt-4 pb-2 font-[nidsans-webfont] text-md text-white "  >
+
                                    <span>
                                     
                                      {item.answer}
