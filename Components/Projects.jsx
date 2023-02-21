@@ -25,7 +25,7 @@ export default function Projects({id}) {
             );
           })}
         </div> */}
-        <div className="flex justify-center p-2 text-5xl font-black text-white">{tabs[id]}</div>
+        <div className="flex justify-center p-2 text-5xl font-black text-white font-[Elianto-Regular]">{tabs[id]}</div>
         <div className="grid gap-3 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
           {projects[tabs[id]]?.map((card, ind) => {
             return (
