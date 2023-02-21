@@ -55,3 +55,8 @@ body {
         url("/assets/nidsans-webfont.otf");
     font-weight: semibold ;
 }
+@font-face {
+    font-family: "Hero-Bold";
+    src: local("Hero-Bold"),
+        url("/assets/Hero-Bold.otf");
+}

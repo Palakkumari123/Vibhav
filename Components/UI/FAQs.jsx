@@ -15,7 +15,7 @@ export default function FAQs() {
                         onMouseLeave={() => setIsShown(-1)}>
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex  justify-between text:md  hover:rounded-xl hover:skew-y-1   font-[nidsans-webfont] hover:drop-shadow-2xl w-full px-6 py-6 text-md hover:text-sky-200     bg-gray-700   focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75  hover:bg-[#27272a] text-sky-100 delay-100 duration-200">
+                                <Disclosure.Button className="flex  justify-between text:md  hover:rounded-xl hover:skew-y-1   font-[Hero-Bold] hover:drop-shadow-2xl w-full px-6 py-6 text-md hover:text-sky-200     bg-gray-700   focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75  hover:bg-[#27272a] text-sky-100 delay-100 duration-200">
                                     <span className="flex">
 
                                         <Image
@@ -44,7 +44,7 @@ export default function FAQs() {
                                     </svg>
                                 </Disclosure.Button >
 
-                                <Disclosure.Panel className="px-4  pt-4 pb-2 font-[nidsans-webfont] text-md text-white "  >
+                                <Disclosure.Panel className="px-4  pt-4 pb-2 font-[Nidsans-webfont] text-md text-white "  >
 
                                    <span>
                                     
