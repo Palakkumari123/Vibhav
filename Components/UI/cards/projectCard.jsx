@@ -7,7 +7,7 @@ export default function ProjectCard({ card }) {
   const [readMoreState, setReadMoreState] = useState(100);
   return (
     <div>
-      <div className="bg-white border border-gray-200 rounded-lg shadow bg-opacity-40 dark:bg-gray-800 dark:border-gray-700">
+      <div className="bg-white border border-gray-200 rounded-lg shadow bg-opacity-60 dark:bg-gray-800 dark:border-gray-700">
         <div className="">
           <Image
             className="w-full rounded-t-lg"
