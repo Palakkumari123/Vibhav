@@ -7,7 +7,7 @@ export default function Projects({id}) {
   const tabs = {"ai":"AI/ML", "ar": "AR/VR","iot": "IOT","es": "EMBEDDED SYSTEMS", "dsp":"DSP"};
   // console.log("tabs",tabs[id],id)
   return (
-    <div className="justify-center p-3 mt-20">
+    <div className="justify-center p-3 mt-25">
         {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
           {tabs.map((tab, ind) => {
             return (
