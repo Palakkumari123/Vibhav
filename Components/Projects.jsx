@@ -7,7 +7,7 @@ export default function Projects({id}) {
   const tabs = {"ai":"AI/ML", "ar": "AR/VR","iot": "IOT","es": "EMBEDDED SYSTEMS", "dsp":"DSP"};
   // console.log("tabs",tabs[id],id)
   return (
-    <div className="p-3 justify-center">
+    <div className="justify-center p-3 mt-16">
         {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
           {tabs.map((tab, ind) => {
             return (
@@ -25,8 +25,8 @@ export default function Projects({id}) {
             );
           })}
         </div> */}
-        <div className="text-white justify-center flex p-2 text-5xl font-black">{tabs[id]}</div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-3">
+        <div className="flex justify-center p-2 text-5xl font-black text-white">{tabs[id]}</div>
+        <div className="grid gap-3 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
           {projects[tabs[id]]?.map((card, ind) => {
             return (
               <div key={ind} className="justify-center">
