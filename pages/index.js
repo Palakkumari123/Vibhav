@@ -47,11 +47,11 @@ export default function Home() {
 
        
             <div >
-            <Image src="/assets/4x/5@4x.png" className="scene" data-modifier="10"  width={7681} height={7921}   ></Image>
-            <Image src="/assets/4x/4@4x.png" className="scene" data-modifier="8"  width={7681} height={7921}   ></Image>
-            <Image src="/assets/4x/3@4x.png"className="scene" data-modifier="6"  width={7681} height={7921}   ></Image>
-            <Image src="/assets/4x/2@4x.png" className="scene" data-modifier="4"  width={7681} height={7921}   ></Image>
-            <Image src="/assets/4x/1@4x.png" className="scene" data-modifier="2"  width={7681} height={7921}   ></Image>
+            <Image src="/Assets/4x/5@4x.png" className="scene" data-modifier="10"  width={7681} height={7921}   ></Image>
+            <Image src="/Assets/4x/4@4x.png" className="scene" data-modifier="8"  width={7681} height={7921}   ></Image>
+            <Image src="/Assets/4x/3@4x.png"className="scene" data-modifier="6"  width={7681} height={7921}   ></Image>
+            <Image src="/Assets/4x/2@4x.png" className="scene" data-modifier="4"  width={7681} height={7921}   ></Image>
+            <Image src="/Assets/4x/1@4x.png" className="scene" data-modifier="2"  width={7681} height={7921}   ></Image>
           </div>
 
 
