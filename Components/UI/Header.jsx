@@ -56,11 +56,11 @@ export default function Example() {
 
     <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-20">
 
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+      <div className="mx-auto  max-w-7xl px-6">
+        <div className="flex  items-center justify-between py-6 md:justify-start md:space-x-10">
+          <div className="flex  justify-start lg:w-0 lg:flex-1">
             <a href="#">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only  ">Your Company</span>
               <img
                 className="h-8 w-auto sm:h-10 px-6"
                 src="https://vibhav-nimbus.netlify.app/images/Yellow.png "
@@ -79,7 +79,7 @@ export default function Example() {
               href="/"
               className="text-base flex  font-[Azonix] font-extrabold text-gray-200 hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
-             <IoHome className="w-6 h-6" /> Home
+             <IoHome className="w-6 h-6 mr-1 " /> Home
             </Link>
             <Link
               href="/team"
@@ -87,7 +87,7 @@ export default function Example() {
               className="text-base flex  text-gray-200 font-[Azonix] font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0  "
             >
-             <RiTeamFill className="  w-6 h-6  " /> Our Team
+             <RiTeamFill className="  w-6 h-6 mr-1  " /> Our Team
             </Link>
 
             <Popover>
@@ -96,10 +96,10 @@ export default function Example() {
                   <Popover.Button
                     className={classNames(
                       open ? "text-gray-400" : "text-gray-200",
-                      "inline-flex items-center pt-1  text-base font-medium hover:text-white"
+                      "inline-flex items-center outline-none pt-1  text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex font-[Azonix] font-extrabold mt-1 "> <MdDesignServices className="h-6  w-6" /> Projects
+                    <span className="flex font-[Azonix] font-extrabold mt-1 "> <MdDesignServices className="h-6 mr-1 w-6" /> Projects
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -148,9 +148,9 @@ export default function Example() {
             <Link
               href="/OurWork"
               className="text-base  text-gray-100 flex  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 font-[Azonix] font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  "
+              before:bottom-0 font-[Azonix]  font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  "
             >
-            <IoMdGitNetwork className="w-6 h-6" />  Our Work
+            <IoMdGitNetwork className="w-6 mr-1 h-6" />  Our Work
             </Link>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0"></div>
@@ -192,7 +192,7 @@ export default function Example() {
               <div className="grid gap-y-4 gap-x-8">
                 <Link
                   href="/"
-                  className="text-base font-medium text-gray-300 hover:text-gray-700 mx-2"
+                  className="text-base font-medium text-gray-300 hover:text-gray-300 mx-2"
                 >
                   Home
                 </Link>
