@@ -17,12 +17,12 @@ export default function ProjectCard({ card }) {
             height={100}
           />
         </div>
-        <div className="p-5">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className="p-4">
+          <h5 className="mb-2 text-xl tracking-tight text-gray-900 dark:text-white">
             {card.name}
           </h5>
           {card.content.length > 100 ? (
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 text-gray-700 dark:text-gray-400">
               {card.content.substring(0, readMoreState)}{" "}
               <span
                 className="cursor-pointer text-white"
@@ -34,7 +34,7 @@ export default function ProjectCard({ card }) {
               </span>
             </p>
           ) : (
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 text-gray-700 dark:text-gray-400">
               {card.content}
             </p>
           )}
