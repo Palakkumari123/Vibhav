@@ -11,11 +11,11 @@ import Layout from "../../Components/UI/Layout";
 export default function Home() {
   const router = useRouter();
   const [cardState, setCarState] = useState("Events");
-    
+
   const { id } = router.query;
   const pageState = { Previous: "Previous Years", Current: "Current Years" };
   const tabs = ["Events", "Workshops"];
-    const currentPage = pageState[id];
+  const currentPage = pageState[id];
   return (
     <Layout>
       <div className="flex justify-center flex-col mt-28">
@@ -23,30 +23,36 @@ export default function Home() {
           {currentPage}
         </div>
         <div className="grid grid-cols-2 font-[Azonix] justify-center px-8">
-        {tabs.map((tab, ind) => {
-          return (
-            <button
-              type="button"
-              key={ind}
-              className={`border-8 border-transparent truncate text-2xl bg-gray-800 text-white rounded-md focus:bg-white focus:text-gray-800 font-bold h-12 m-2 ${
-                tab === cardState ? " bg-white text-gray-800" : undefined
-              }
-            `}
-              onClick={() => setCarState(tab)}
-            >
-              {tab}
-            </button>
-          );
-        })}
-      </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 font-[Azonix] gap-10 px-14 py-5">
-          {ourwork ? ourwork[id] ? ourwork[id][cardState] ? ourwork[id][cardState].map((card, ind) => {
+          {tabs.map((tab, ind) => {
             return (
-              <div key={ind} className="justify-center">
-                <OurWorkCard card={card} />
-              </div>
+              <button
+                type="button"
+                key={ind}
+                className={`border-8 border-transparent truncate text-2xl bg-gray-800 text-white rounded-md focus:bg-white focus:text-gray-800 font-bold h-12 m-2 ${
+                  tab === cardState ? " bg-white text-gray-800" : undefined
+                }
+            `}
+                onClick={() => setCarState(tab)}
+              >
+                {tab}
+              </button>
             );
-          }) : undefined : undefined : undefined} 
+          })}
+        </div>
+        <div className="grid mx-10 lg:grid-cols-3 md:grid-cols-2 font-[Azonix] gap-10 px-14 py-5">
+          {ourwork
+            ? ourwork[id]
+              ? ourwork[id][cardState]
+                ? ourwork[id][cardState].map((card, ind) => {
+                    return (
+                      <div key={ind} className="flex justify-center">
+                        <OurWorkCard card={card} />
+                      </div>
+                    );
+                  })
+                : undefined
+              : undefined
+            : undefined}
         </div>
       </div>
     </Layout>

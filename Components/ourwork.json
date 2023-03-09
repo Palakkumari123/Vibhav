@@ -45,34 +45,34 @@
         {
           "name": "Rocket League",
           "content": "Hey ECE geeks come and test your knowledge in this fun event. Play with everything from basic circuits to computers. Make the computer of your dreams and compete with others. May the best PC win!",
-          "images": "/Assets/circuitsolver.jpg"
+          "images": "/Assets/rocket_league.webp"
         },
         {
           "name": "Cyber Circuits",
           "content": "Channelize your inner Sherlock Holmes and find clues hidden all over our social media outlets starting from YouTube to all the way over to Instagram and also enjoy many electronics based competitions and win huge prizes. See you there!",
-          "images": "/Assets/eexhib.webp"
+          "images": "/Assets/cybercircuits.webp"
         },
         {
           "name": "QuanrenTeam Titans",
           "content": "Walkthrough the breath-taking virtual campus of NITH, solve mind-boggling puzzles, and emerge as the champion! Join the mega hunt to win amazing prizes.",
-          "images": "/Assets/braileOcr.webp"
+          "images": "/Assets/event 3.webp"
         }
       ],
     
       "Workshops": [
         {
           "name": "Neural Networks",
-          "content": "Neural networks are able to learn from data and use it to inform their predictions, choices, and solutions. They've been put to use in a variety of tasks, including image identification, natural language processing, autonomous driving, and medical diagnostics. Because of its capacity to generalise from data and learn from it, neural networks are becoming an effective tool for resolving challenging issues.",
-          "images": "/Assets/cart.webp"
+          "content": "Neural networks are able to learn from data and use it to inform their predictions, choices, and solutions. They've been put to use in a variety of tasks, including image identification, natural language processing, and many more. Because of its capacity to learn from data, neural networks are becoming an effective tool for resolving challenging issues.",
+          "images": "/Assets/neural_network.webp"
         },
         {
           "name": "Simulink",
           "content": "Simulink is a graphical programming environment used for dynamic system modelling, simulation, and analysis. Many uses for it exist, including automatic control and signal processing. The fundamental ideas and uses of Simulink will be covered in this workshop.",
-          "images": "/Assets/antiDepressionBot.webp"
+          "images": "/Assets/simulink.webp"
         },
         {
           "name": "Verilog",
-          "content": "The principles of language, synthesis, modelling, simulation, and verification will all be covered in the session. The use of Verilog in FPGA, ASIC, and embedded system design will receive particular focus. With a variety of labs and exercises, participants will get hands-on experience. By the end of the session, participants will be able to create and test Verilog designs and will be more knowledgeable about how to use Verilog in their particular applications.",
+          "content": "The principles of language, synthesis, modelling, simulation, and verification will all be covered in the session. The use of Verilog in FPGA, ASIC, and embedded system design will receive particular focus. By the end of the session, participants will be able to create and test Verilog designs and will be more knowledgeable about how to use Verilog in their particular applications.",
           "images": "/Assets/CropFarmBot.webp"
         }
       ]
