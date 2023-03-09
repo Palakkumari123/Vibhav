@@ -52,11 +52,11 @@ body {
 @font-face {
     font-family: "Nidsans-webfont";
     src: local("Nidsans-webfont"),
-        url("/assets/nidsans-webfont.otf");
+        url("/Assets/nidsans-webfont.otf");
     font-weight: semibold ;
 }
 @font-face {
     font-family: "Hero-Bold";
     src: local("Hero-Bold"),
-        url("/assets/Hero-Bold.otf");
+        url("/Assets/Hero-Bold.otf");
 }

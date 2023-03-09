@@ -14,8 +14,13 @@ export default function Projects({ id }) {
   };
   // console.log("tabs",tabs[id],id)
   return (
+<<<<<<< HEAD
     <div className="p-3 pt-24 justify-center">
       {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
+=======
+    <div className="justify-center p-3 mt-40">
+        {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
+>>>>>>> f8615e53fb264c40652fb4764bc28f37700458c9
           {tabs.map((tab, ind) => {
             return (
               <button

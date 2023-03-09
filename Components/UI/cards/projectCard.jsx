@@ -7,10 +7,10 @@ export default function ProjectCard({ card }) {
   const [readMoreState, setReadMoreState] = useState(100);
   return (
     <div>
-      <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="bg-white border border-gray-200 rounded-lg shadow bg-opacity-60 dark:bg-gray-800 dark:border-gray-700">
         <div className="">
           <Image
-            className="rounded-t-lg w-full"
+            className="w-full rounded-t-lg"
             src={card.images}
             alt=""
             width={100}
@@ -25,7 +25,7 @@ export default function ProjectCard({ card }) {
             <p className="mb-3 text-gray-700 dark:text-gray-400">
               {card.content.substring(0, readMoreState)}{" "}
               <span
-                className="cursor-pointer text-white"
+                className="text-white cursor-pointer"
                 onClick={() =>
                   setReadMoreState((prev) => (prev === 100 ? 1000 : 100))
                 }
