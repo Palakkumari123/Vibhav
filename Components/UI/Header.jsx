@@ -4,7 +4,7 @@ import { Menu, Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import {RiTeamFill } from "react-icons/ri"
 import { IoHome } from "react-icons/io5";
-import { FaRobot  } from "react-icons/fa";
+import { FaRobot , FaTasks  } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
 import { IoMdGitNetwork } from "react-icons/io";
 import { FiCpu } from "react-icons/fi";
@@ -77,14 +77,14 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Link
               href="/"
-              className="text-base flex  font-[Azonix] font-extrabold text-gray-200 hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
+              className="text-base flex  font-[AvenirLTProMedium]  font-extrabold text-gray-200    rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
              <IoHome className="w-6 h-6 mr-1 " /> Home
             </Link>
             <Link
               href="/team"
               
-              className="text-base flex  text-gray-200 font-[Azonix] font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              className="text-base flex  text-gray-200 font-[AvenirLTProMedium] font-extrabold    rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0  "
             >
              <RiTeamFill className="  w-6 h-6 mr-1  " /> Our Team
@@ -99,7 +99,7 @@ export default function Example() {
                       "inline-flex items-center outline-none pt-1  text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex font-[Azonix] font-extrabold mt-1 "> <MdDesignServices className="h-6 mr-1 w-6" /> Projects
+                    <span className="flex font-[AvenirLTProMedium] font-extrabold mt-1 "> <MdDesignServices className="h-6 mr-1 w-6" /> Projects
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -148,9 +148,9 @@ export default function Example() {
             <Link
               href="/OurWork"
               className="text-base  text-gray-100 flex  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 font-[Azonix]  font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  "
+              before:bottom-0 font-[AvenirLTProMedium]  font-extrabold    rounded-lg delay-200 duration-200 p-2  "
             >
-            <IoMdGitNetwork className="w-6 mr-1 h-6" />  Our Work
+            <FaTasks className="w-6 mr-1 h-6" />  Our Work
             </Link>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0"></div>

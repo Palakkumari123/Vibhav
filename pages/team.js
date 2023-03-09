@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import  Layout from '../Components/UI/Layout'
+import Layout from '../Components/UI/Layout'
 import Image from "next/image";
 import TeamPhotos from "../Components/team.json";
 import TeamCard from "../Components/UI/cards/TeamCard";
@@ -29,124 +29,127 @@ export default function Posts() {
   const team = [{}, {}, {}, {}, {}, {}];
   console.log("This is the imported data", TeamPhotos)
   return (
-    <Layout>   <div className="m-8 mt-24 pt-5">
-      <h1 className="text-white text-4xl md:text-5xl flex justify-center font-[Hero-bold]   " > TEAM MEMEBERS </h1>
-      <div>
-        <h1 className=" text-white text-3xl mt-12 ml-5  font-[Hero-Bold] ">SUPER FINAL YEAR MEMBERS</h1>
-        <Carousel
-          swipeable={true}
-          draggable={true}
-          showDots={false}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
-          keyBoardControl={true}
+    <Layout>
+      <div className="m-8  mt-24 pt-5">
+        <h1 className=" text-5xl    rounded-md text-purple-200 p-2 
+          md:text-5xl flex justify-center items-center font-[Elianto-Regular]   " > TEAM MEMEBERS </h1>
+        <div>
+          <h1 className="  text-3xl mt-12 ml-5 text-purple-200  font-[AvenirLTProHeavy] ">SUPER FINAL YEAR MEMBERS</h1>
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={2000}
+            keyBoardControl={true}
 
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-          partialVisbile
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            // dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+            partialVisbile
 
-        >
-          {TeamPhotos["Super Final Year"].map((post, ind) => {
-            return <TeamCard key={ind} data={post} />
-          })}
-        </Carousel>
-        <h1 className="text-white text-3xl mt-12 ml-5 font-[Hero-Bold]" >FINAL YEAR MEMBERS</h1>
-        <Carousel
-          swipeable={true}
-          draggable={true}
-          showDots={false}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
-          keyBoardControl={true}
+          >
+            {TeamPhotos["Super Final Year"].map((post, ind) => {
+              return <TeamCard key={ind} data={post} />
+            })}
+          </Carousel>
+          <h1 className="text-purple-200 text-3xl mt-12 ml-5 font-[AvenirLTProHeavy]" >
+            FINAL YEAR MEMBERS</h1>
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={2000}
+            keyBoardControl={true}
 
-          // containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          {TeamPhotos["Final Year"].map((post, ind) => {
-            return <TeamCard key={ind} data={post} />
-          })}
-        </Carousel>
+            // containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            // dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+            {TeamPhotos["Final Year"].map((post, ind) => {
+              return <TeamCard key={ind} data={post} />
+            })}
+          </Carousel>
 
-        <h1 className="text-white text-3xl mt-12 ml-5 font-[Hero-Bold]" >COORDINATOR</h1>
-        <Carousel
-          swipeable={true}
-          draggable={true}
-          showDots={false}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
-          keyBoardControl={true}
+          <h1 className="text-purple-200 text-3xl mt-12 ml-5 font-[AvenirLTProHeavy]" >COORDINATOR</h1>
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={2000}
+            keyBoardControl={true}
 
-          // containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          {TeamPhotos["Third Year"].map((post, ind) => {
-            return <TeamCard key={ind} data={post} />
-          })}
-        </Carousel>
+            // containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            // dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+            {TeamPhotos["Third Year"].map((post, ind) => {
+              return <TeamCard key={ind} data={post} />
+            })}
+          </Carousel>
 
-        <h1 className="text-white text-3xl mt-12 ml-5 font-[Hero-Bold]" >EXECUTIVE MEMBERS</h1>
-        <Carousel
-          swipeable={true}
-          draggable={true}
-          showDots={false}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
-          keyBoardControl={true}
+          <h1 className="text-purple-200 text-3xl mt-12 ml-5 font-[AvenirLTProHeavy]" >EXECUTIVE MEMBERS</h1>
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={2000}
+            keyBoardControl={true}
 
-          // containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          {TeamPhotos["Second Year"].map((post, ind) => {
-            return <TeamCard key={ind} data={post} />
-          })}
-        </Carousel>
+            // containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            // dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+            {TeamPhotos["Second Year"].map((post, ind) => {
+              return <TeamCard key={ind} data={post} />
+            })}
+          </Carousel>
 
-        <h1 className="text-white text-3xl mt-12 ml-5 font-[Hero-Bold]" >VOLUNTEERS</h1>
-        <Carousel
-          swipeable={true}
-          draggable={true}
-          showDots={false}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
-          keyBoardControl={true}
+          <h1 className="text-purple-200 text-3xl mt-12 ml-5 font-[AvenirLTProHeavy]" >VOLUNTEERS</h1>
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={2000}
+            keyBoardControl={true}
 
-          // containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          {TeamPhotos["First Year"].map((post, ind) => {
-            return <TeamCard key={ind} data={post} />
-          })}
-        </Carousel>
+            // containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            // dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+            {TeamPhotos["First Year"].map((post, ind) => {
+              return <TeamCard key={ind} data={post} />
+            })}
+          </Carousel>
+        </div>
+
       </div>
-
-    </div>
     </Layout>
- 
+
 
 
 

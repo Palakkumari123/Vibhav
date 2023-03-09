@@ -60,3 +60,22 @@ body {
     src: local("Hero-Bold"),
         url("/assets/Hero-Bold.otf");
 }
+@font-face {
+    font-family: "AvenirLTProLight";
+    src: local("AvenirLTProLight"),
+        url("/assets/AvenirLTProLight.otf");
+        font-weight: bold;
+}
+
+@font-face {
+    font-family: "AvenirLTProHeavy";
+    src: local("AvenirLTProHeavy"),
+        url("/assets/AvenirLTProHeavy.otf");
+        font-weight: bold;
+}
+@font-face {
+    font-family: "AvenirLTProMedium";
+    src: local("AvenirLTProMedium"),
+        url("/assets/AvenirLTProMedium.otf");
+        font-weight: bold;
+}

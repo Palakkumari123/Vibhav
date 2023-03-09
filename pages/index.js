@@ -62,7 +62,7 @@ export default function Home() {
               <AboutUs />
               <Cc/>
               <FAQs />
-              <Footer/>
+              
           </div>
         </Layout>
       </main>

@@ -14,7 +14,7 @@ export default function AboutUs() {
               </div>
               </div>
               <div className="flex  flex-col">
-                <h1 className="text-center text-gray-300 text-3xl md:text-5xl underline underline-offset-4   font-bold mt-8 font-[Elianto-Regular]" >
+                <h1 className="text-center text-gray-300 text-3xl md:text-5xl    font-bold mt-8 font-[Elianto-Regular]" >
                   About Us
                 </h1>
                 <p className="text-gray-400 text-sm pb-4 md:text-xl p-4 md:p-12 font-[Hero-Bold]  text-justify" >
