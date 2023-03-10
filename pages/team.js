@@ -30,7 +30,7 @@ export default function Posts() {
   console.log("This is the imported data", TeamPhotos)
   return (
     <Layout>
-      <div className="m-4 sm:m-8 mt-24 pt-5">
+      <div className="pt-5 m-4 mt-24 sm:m-8">
         <h1 className=" text-5xl    rounded-md text-[#dab971] p-2 
           md:text-5xl flex justify-center items-center font-[Elianto-Regular] mt-10 animate-pulse " > TEAM MEMEBERS </h1>
         <div>
@@ -49,7 +49,7 @@ export default function Posts() {
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
             partialVisbile
 
           >
@@ -73,7 +73,7 @@ export default function Posts() {
             // containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
           >
             {TeamPhotos["Final Year"].map((post, ind) => {
               return <TeamCard key={ind} data={post} />
@@ -95,7 +95,7 @@ export default function Posts() {
             // containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
           >
             {TeamPhotos["Third Year"].map((post, ind) => {
               return <TeamCard key={ind} data={post} />
@@ -117,7 +117,7 @@ export default function Posts() {
             // containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
           >
             {TeamPhotos["Second Year"].map((post, ind) => {
               return <TeamCard key={ind} data={post} />
@@ -139,7 +139,7 @@ export default function Posts() {
             // containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
           >
             {TeamPhotos["First Year"].map((post, ind) => {
               return <TeamCard key={ind} data={post} />

@@ -1,14 +1,15 @@
 .mainCard{
 background: rgba(107, 81, 1, 0.000);
 box-shadow: 0 8px 8px 2px rgba(145, 109, 1, 0.571);
-backdrop-filter: blur( 2.5px );
--webkit-backdrop-filter: blur( 1.5px );
+/* backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 1.5px ); */
 }
 
 @media screen and (max-width: 480px) {
   .mainCard {
-    box-shadow: 0 2px 4px 2px rgba(209, 210, 234, 0.0 
-    );
+    box-shadow: 0 8px 8px 2px rgba(145, 109, 1, 0.571);
+
+    
     
   }
 }
