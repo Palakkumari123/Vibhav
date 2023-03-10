@@ -49,7 +49,7 @@ export default function Posts() {
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
             partialVisbile
 
           >
@@ -73,7 +73,7 @@ export default function Posts() {
             // containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
           >
             {TeamPhotos["Final Year"].map((post, ind) => {
               return <TeamCard key={ind} data={post} />
@@ -95,7 +95,7 @@ export default function Posts() {
             // containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
           >
             {TeamPhotos["Third Year"].map((post, ind) => {
               return <TeamCard key={ind} data={post} />
@@ -117,7 +117,7 @@ export default function Posts() {
             // containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
           >
             {TeamPhotos["Second Year"].map((post, ind) => {
               return <TeamCard key={ind} data={post} />
@@ -139,7 +139,7 @@ export default function Posts() {
             // containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            itemClass="carousel-item-padding-40-px my-4"
           >
             {TeamPhotos["First Year"].map((post, ind) => {
               return <TeamCard key={ind} data={post} />
