@@ -6,6 +6,7 @@
           "name": "Electrovision",
           "content": "Hey ECE geeks come and test your knowledge in this fun event. Play with everything from basic circuits to computers. Make the computer of your dreams and compete with others. May the best PC win!",
           "images": "/Assets/electrovision.webp"
+          
         },
         {
           "name": "Cyber Circuits",
@@ -73,7 +74,7 @@
         {
           "name": "Verilog",
           "content": "The principles of language, synthesis, modelling, simulation, and verification will all be covered in the session. The use of Verilog in FPGA, ASIC, and embedded system design will receive particular focus. By the end of the session, participants will be able to create and test Verilog designs and will be more knowledgeable about how to use Verilog in their particular applications.",
-          "images": "/Assets/CropFarmBot.webp"
+          "images": "/Assets/verilog1.webp"
         }
       ]
     

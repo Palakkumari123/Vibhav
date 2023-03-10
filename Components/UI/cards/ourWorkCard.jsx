@@ -7,10 +7,10 @@ export default function ProjectCard({ card }) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <div className="flex max-w-[22.5rem] h-[30rem] justify-center bg-neutral-800">
-      <div className="w-full group rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-        <div className="h-full w-full">
+      <div className="group rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+        <div className="h-full">
           <Image
-            className="rounded-t-lg w-full h-full object-cover cover"
+            className="rounded-t-lg h-full object-cover cover"
             src={card.images}
             alt=""
             width={500}
