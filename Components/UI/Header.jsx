@@ -97,7 +97,7 @@ export default function Example() {
               href="/"
               className=" flex  font-Kanit text-xl    font-bold text-gray-200    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
-              <IoHome className="w-6 h-6" /> Home
+              <IoHome className="w-6 h-6 mr-1" /> Home
             </Link>
             <Link
               href="/team"
@@ -105,7 +105,7 @@ export default function Example() {
               className="font-Kanit text-xl flex  text-gray-200   font-bold    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0  "
             >
-              <RiTeamFill className="  w-6 h-6  " /> Our Team
+              <RiTeamFill className="  w-6 h-6 mr-1 " /> Our Team
 
             </Link>
 
@@ -121,7 +121,7 @@ export default function Example() {
                   >
                     <span className="flex rounded-lg p-2 font-[Azonix] hover:bg-violet-900 font-extrabold">
                       {" "}
-                      <MdDesignServices className="h-6  w-6" /> Projects
+                      <MdDesignServices className="h-6 mr-1 w-6" /> Projects
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -180,7 +180,7 @@ export default function Example() {
                   >
                     <span className="flex rounded-lg p-2 font-[Azonix] hover:bg-violet-900 font-extrabold">
                       {" "}
-                      <FaHammer className="w-6 h-6" /> Our Work
+                      <FaHammer className="w-6 h-6 mr-1" /> Our Work
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
