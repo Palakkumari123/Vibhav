@@ -16,11 +16,11 @@ const responsive = {
     items: 3
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1024, min: 540 },
     items: 2
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 540, min: 0 },
     items: 1
   }
 };
@@ -30,9 +30,9 @@ export default function Posts() {
   console.log("This is the imported data", TeamPhotos)
   return (
     <Layout>
-      <div className="m-8  mt-24 pt-5">
+      <div className="m-4 sm:m-8 mt-24 pt-5">
         <h1 className=" text-5xl    rounded-md text-purple-200 p-2 
-          md:text-5xl flex justify-center items-center font-[Elianto-Regular]   " > TEAM MEMEBERS </h1>
+          md:text-5xl flex justify-center items-center font-[Elianto-Regular] mt-10  " > TEAM MEMEBERS </h1>
         <div>
           <h1 className="  text-3xl mt-12 ml-5 text-purple-200  font-[AvenirLTProHeavy] ">SUPER FINAL YEAR MEMBERS</h1>
           <Carousel
@@ -42,7 +42,7 @@ export default function Posts() {
             responsive={responsive}
             ssr={true} // means to render carousel on server-side.
             infinite={true}
-            autoPlay={true}
+            // autoPlay={true}
             autoPlaySpeed={2000}
             keyBoardControl={true}
 

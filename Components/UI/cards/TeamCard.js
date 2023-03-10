@@ -4,12 +4,12 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import Link from 'next/link';
 export default function TeamCard({ data }) {
     console.log(data)
-    return <div className="flex justify-center items-center p-4" >
+    return <div className="flex justify-center items-center sm:p-4" >
 
         <div
-            className={style.mainCard + " flex flex-col justify-center p-4 rounded-2xl"}
+            className={style.mainCard + " flex flex-col justify-center py-4 sm:py-2 sm:p-4 rounded-2xl"}
         >
-            <div className="flex w-full items-center justify-start px-4 ">
+            <div className="flex w-full items-center justify-start px-2 sm:px-4 ">
                 <img
                     alt="Post current image"
                     src={data.Profile}
@@ -19,11 +19,11 @@ export default function TeamCard({ data }) {
                 />
                 <p className="text-2xl font-semibold ml-4 text-white">{data.NickName} </p>
             </div>
-            <div className="p-4 ">
+            <div className=" p-3 sm:p-4 ">
                 <img
                     alt="Post current image"
                     src={data.Profile}
-                    className={" h-[400px] w-[400px] object-cover rounded-2xl shadow-2xl"}
+                    className={" h-[400px] w-[400px] object-cover rounded-2xl shadow-2xl "}
                     height={550}
                     width={550}
                 />

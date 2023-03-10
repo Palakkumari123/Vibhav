@@ -5,6 +5,13 @@ backdrop-filter: blur( 2.5px );
 -webkit-backdrop-filter: blur( 1.5px );
 }
 
+@media screen and (max-width: 480px) {
+  .mainCard {
+    box-shadow: 0 2px 4px 2px rgba(209, 210, 234, 0.0 );
+    
+  }
+}
+
 .mainPadding {
     margin: 4rem;
     padding-top: 6rem;
