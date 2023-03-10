@@ -1,24 +1,25 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import * as basicScroll from 'basicscroll'
+
+import Head from "next/head";
+import Image from "next/image";
+import * as basicScroll from "basicscroll";
 // import styles from '../styles/Home.module.css';
-import Layout from '../Components/UI/Layout';
-import HomePage from '../Components/HomePage';
-import AboutUs from '../Components/AboutUs';
-import FAQs from '../Components/UI/FAQs';
-import Cc from '../Components/UI/CC';
-import { useEffect } from 'react';
-import Footer from '../Components/UI/Footer';
+import Layout from "../Components/UI/Layout";
+import HomePage from "../Components/HomePage";
+import AboutUs from "../Components/AboutUs";
+import FAQs from "../Components/UI/FAQs";
+import Cc from "../Components/UI/CC";
+import { useEffect } from "react";
+import Footer from "../Components/UI/Footer";
+import Contact from "../Components/Contact";
+
 
 export default function Home() {
-
   useEffect(() => {
-
-    document.querySelectorAll(".scene").forEach(elem => {
+    document.querySelectorAll(".scene").forEach((elem) => {
       const modifier = elem.getAttribute("data-modifier");
 
-      basicScroll.
-        create({
+      basicScroll
+        .create({
           elem: elem,
           from: 0,
           to: 519,
@@ -26,12 +27,13 @@ export default function Home() {
           props: {
             "--translateY": {
               from: "0",
-              to: `${50 * modifier}px`
-            }
-          }
-        }).start();
+              to: `${50 * modifier}px`,
+            },
+          },
+        })
+        .start();
     });
-  }, [])
+  }, []);
 
   return (
     <>
@@ -55,30 +57,26 @@ export default function Home() {
           </div>
 
 
+          <div className="z-50 flex flex-col">
+            <HomePage />
+            <AboutUs />
+            <Cc />
+            <FAQs />
+            <Contact />
 
-            <div className='z-50 flex flex-col'>
-
-
-              <HomePage />
-              <AboutUs />
-              <Cc/>
-              <FAQs />
-              <Footer/>
           </div>
         </Layout>
       </main>
     </>
-  )
+  );
 }
 
-
-
-
-
-     {/* <img className="scene" data-modifier="10" src="https://s.electerious.com/parallaxscene/p0.png" />
+{
+  /* <img className="scene" data-modifier="10" src="https://s.electerious.com/parallaxscene/p0.png" />
             <img className="scene" data-modifier="18" src="https://s.electerious.com/parallaxscene/p1.png" />
             <img className="scene" data-modifier="12" src="https://s.electerious.com/parallaxscene/p2.png" />
             <img className="scene" data-modifier="8" src="https://s.electerious.com/parallaxscene/p3.png" />
             <img className="scene" data-modifier="6" src="https://s.electerious.com/parallaxscene/p4.png" />
             <img className="scene" data-modifier="0" src="https://s.electerious.com/parallaxscene/p6.png" />
-             */}
+             */
+}
