@@ -70,12 +70,8 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-<<<<<<< HEAD
 
     <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-30">
-=======
-    <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-20">
->>>>>>> 103129695fd2ae2e14fd0a88e04dc8b176b9098d
 
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
@@ -99,23 +95,14 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Link
               href="/"
-<<<<<<< HEAD
               className=" flex  font-Kanit text-xl    font-bold text-gray-200    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
-=======
-
-              className="text-base flex font-[Azonix] font-extrabold text-gray-200 hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
->>>>>>> 103129695fd2ae2e14fd0a88e04dc8b176b9098d
             >
               <IoHome className="w-6 h-6" /> Home
             </Link>
             <Link
               href="/team"
-<<<<<<< HEAD
               
               className="font-Kanit text-xl flex  text-gray-200   font-bold    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-=======
-              className="text-base flex  text-gray-200 font-[Azonix] font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
->>>>>>> 103129695fd2ae2e14fd0a88e04dc8b176b9098d
               before:bottom-0 before:left-0  "
             >
               <RiTeamFill className="  w-6 h-6  " /> Our Team
@@ -132,16 +119,6 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-<<<<<<< HEAD
-                    <span className="flex font-Kanit text-xl  font-bold mt-1 "> <MdDesignServices className="h-6 mr-1 w-6" /> Projects
-                    <ChevronDownIcon
-                      className={classNames(
-                        open ? "text-gray-600" : "text-gray-400",
-                        "ml-2 h-5 w-5 group-hover:text-gray-500"
-                      )}
-                      aria-hidden="true"
-                    />
-=======
                     <span className="flex rounded-lg p-2 font-[Azonix] hover:bg-violet-900 font-extrabold">
                       {" "}
                       <MdDesignServices className="h-6  w-6" /> Projects
@@ -153,7 +130,6 @@ export default function Example() {
                         aria-hidden="true"
                       />
 
->>>>>>> 103129695fd2ae2e14fd0a88e04dc8b176b9098d
                     </span>
                   </Menu.Button>
                   <Transition
@@ -191,16 +167,6 @@ export default function Example() {
                   </Transition>
                 </>
               )}
-<<<<<<< HEAD
-            </Popover>
-            <Link
-              href="/OurWork"
-              className="font-Kanit text-xl text-gray-100 flex  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 rounded-lg font-bold  p-2  "
-            >
-            <FaTasks className="w-6 mr-1 h-6 mt-1 " />  Our Work
-            </Link>
-=======
 
             </Menu>
             <Menu>
@@ -261,7 +227,6 @@ export default function Example() {
               )}
             </Menu>
 
->>>>>>> 103129695fd2ae2e14fd0a88e04dc8b176b9098d
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0"></div>
         </div>
