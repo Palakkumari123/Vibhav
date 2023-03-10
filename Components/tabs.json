@@ -35,9 +35,21 @@
       "content": "Traditionally humans have to manually look after their large farms and this consumes a lot of time but this bot solves the problem. The main aim of this project is to monitor large fields, conditions of soil, crops in a more efficient manner.",
       "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/TOPCROP",
       "images": "/Assets/CropFarmBot.webp"
+    },
+    {
+      "name": "PCB Fault Detection",
+      "content": "In this project, we aim to use semantic segmentation to detect inconsistencies in circuit board images by using pre-recorded and labelled circuit imagery of working and non-working PCBs. Semantic segmentation involves assigning a class to every pixel of the image, wherein we treat multiple members of a class as a single entity.",
+      "github": "",
+      "images": "/Assets/pcb_fault.webp"
+    },
+    {
+      "name": "Virtual Tablet",
+      "content": "An OpenCV project to create a virtual tab that allows us to write on the screen while writing in the air, resulting in a digital text document. The project's purpose is to create a virtual tablet that will allow us to write on the screen while also writing on the air. It will use OpenCV to track the position of the pen's tip in order to determine the pen's exact location.",
+      "github": "",
+      "images": "/Assets/tablet-1.webp"
     }
   ],
-  "IOT": [
+  "IoT": [
     {
       "name": "Safety Glove",
       "content": "The idea is to design a safety glove consisting of a Hall Effect Sensor, Arduino Mega and a radio transmitter, which is to be worn by the workers in factories who are in close proximity to heavy machinery which can cause potential injuries.",
@@ -55,6 +67,12 @@
       "content": "Swarm robotics is an approach to the coordination of multiple robots as a system that consists of large numbers of mostly simple physical robots. It is supposed that a desired collective behaviour emerges from the interactions between the robots and interactions of robots with the environment.",
       "github": "https://github.com/kamatji/SWARM_BOT",
       "images": "/Assets/swarm bot.jpg"
+    },
+    {
+      "name": "Smart Blind",
+      "content": "This project aim to create a pair of smart glasses and a smart stick for the blind that enables them to walk without any assistance and get to know things that are happening around them.",
+      "github": "",
+      "images": "/Assets/smart_blind.webp"
     }
   ],
   "AR/VR": [
@@ -65,14 +83,14 @@
       "images": "/Assets/nithvr.webp"
     },
     {
-      "name": "Virtual Telepresence Robot",
-      "content": "This robot with a camera is placed in a remote location to capture the environment in visual form using Arduino Uno . The captured visuals are displayed on the user’s virtual reality (VR) headset. An added feature allows the camera to move in the direction of the users head movements. This gives the user a real-time experience as if he is present where the virtual telepresence robot is located.",
+      "name": "V.T.R.",
+      "content": "V.T.R. is a virtual telepresence robot. This robot with a camera is placed in a remote location to capture the environment in visual form using Arduino Uno . The captured visuals are displayed on the user’s virtual reality (VR) headset. An added feature allows the camera to move in the direction of the users head movements. This gives the user a real-time experience as if he is present where the virtual telepresence robot is located.",
       "github": "https://github.com/Team-Vibhav/VTB",
       "images": "/Assets/vtr.webp"
     },
     {
       "name": "AR Education",
-      "content": "It provides a common platform for students from different background to learn and explore concepts of their interest. Apart from this, it also promotes home learning which is the need of the hour in this period of turmoil. Students generally face problem in visualizing the concepts, this application develop better understanding of the subject.",
+      "content": "It provides a common platform for students from different family background to learn and explore concepts of their interest. Apart from this, it also promotes home learning which is the need of the hour in this period of turmoil. Students generally face problem in visualizing the concepts, this application develop better understanding of the subject.",
       "github": "https://github.com/jashwant543/ARedu",
       "images": "/Assets/aredu.webp"
     },
@@ -87,6 +105,12 @@
       "content": "AR newsletter is a newsletter that takes readers beyond the printed page. The main aim of AR newsletter is to attract new audiences especially young people to increase their waning number of readers with an interactive environment.",
       "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/AR%20News%20Letter",
       "images": "/Assets/arNewsLetter.jpg"
+    },
+    {
+      "name":"VR Classroom",
+      "content": "The Education system under the Covid-19 circumstances has become a little dull and monotonous. A virtual classroom will increase the interest of the students in classes and help them to learn everything that is taught in the class in a more comprehensive way. In this project, we can interact with each other's virtual 3D avatar and this way it sums like we are attending our class together.",
+      "github": "https://github.com/Team-Vibhav/VR_Classroom" ,
+      "images": "/Assets/vr_classroom.webp"
     }
   ],
   "EMBEDDED SYSTEMS": [
@@ -97,22 +121,28 @@
       "images": "/Assets/autocart.webp"
     },
     {
-      "name": "Automatic Covid Gateway",
-      "content": "Our project is an Automatic Device used to detect mask ,measure the human body temperature and sanitize hands. This project will reduce the contact as well as extra labour needed for the whole process. The main benefit of the project is that it reduces the contact needed for checking the temperature of the person as it will replace the person with a machine. Also,it can perform multiple operations that makes it cost efficient in the present pandemic conditions.",
+      "name": "Covid Gateway",
+      "content": "Our project is  Automatic Covid Gateway used to detect mask, measure the human body temperature and sanitize hands. This project will reduce the contact as well as extra labour needed for the whole process. The main benefit of the project is that it reduces the contact needed for checking the temperature of the person as it will replace the person with a machine. Also,it can perform multiple operations that makes it cost efficient in the present pandemic conditions.",
       "github": "https://github.com/Team-Vibhav/Automatic-covid-gateway",
       "images": "/Assets/covidgateway.webp"
     },
     {
       "name": "Smart Entry System",
-      "content": "As there is a major problem of seat occupancy in library due to unnecessary seat reservation of many students for a day without being present in the library. So we developed a system that shows the presently occupied seats in the library and live count of seats available to sit in the library.",
+      "content": "As there is a major problem of seat occupancy in library due to the unnecessary seat reservation of many students for a day without being present in the library. So we developed a system that shows the presently occupied seats in the library and live count of seats available to sit in the library.",
       "github": "https://github.com/kamatji/Smart_Library_System",
       "images": "/Assets/SmartEntrySystem.webp"
     },
     {
-      "name": "Smart Solar",
-      "content": "This is a mini portable solar power plant that is based on a sunflower model. This is a model which receives maximum sunlight and it saves a lot of space as compared to other solar plants.",
-      "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/Smart%20Solar",
-      "images": "/Assets/smartSolar1.webp"
+      "name": "RecoverX",
+      "content": "It works on a user-controlled Bluetooth device where they could train themselves by using our prototype to cure the problem of finger strokes. While using RecoverX, the user can perform exercises in the form of compression and relaxation via controlling the finger's movement using their mobile device.",
+      "github": "",
+      "images": "/Assets/recoverx.webp"
+    },
+    {
+      "name": "Human To Human control",
+      "content": "This project aim to bring back the movement of physically disabled people by using EMG to detect the potential difference in motor neurons. The project also helps the people who can't speak and convey their messages to regular people by converting their hand gestures to audio.",
+      "github": "",
+      "images": "/Assets/human_to_human.webp"
     }
   ],
   "DSP": [
@@ -127,6 +157,14 @@
       "content": "Senso is a project based on Digital Signal Processing. Our project aims to acumulate sound from the surrounding and check if it matches with the already availabe dataset of chainsaw or any other electronic equipment with which cutting of tree takes place.",
       "github": "https://github.com/Team-Vibhav/Senso",
       "images": "/Assets/senso.webp"
+    }
+  ],
+  "Quantum Computing": [
+    {
+      "name": "Quantum Key Distribution",
+      "content": "Quantum Key Distribution (QKD) is a secure communication method that implements a cryptographic protocol involving components of quantum mechanics. It enables two parties to produce a shared random secret key known only to them, which can then be used to encrypt and decrypt messages. It is often incorrectly called Quantum cryptography, as it is the best-known example of such a task.",
+      "github": "https://github.com/Team-Vibhav/Circuit-Solver",
+      "images": "/Assets/quantum.webp"
     }
   ]
 }

@@ -2,13 +2,20 @@ import React, { useState } from "react";
 import projects from "./tabs.json";
 import ProjectCard from "./UI/cards/projectCard";
 
-export default function Projects({id}) {
+export default function Projects({ id }) {
   const [cardState, setCarState] = useState(0);
-  const tabs = {"ai":"AI/ML", "ar": "AR/VR","iot": "IOT","es": "EMBEDDED SYSTEMS", "dsp":"DSP"};
+  const tabs = {
+    ai: "AI/ML",
+    ar: "AR/VR",
+    iot: "IoT",
+    es: "EMBEDDED SYSTEMS",
+    dsp: "DSP",
+    quan: "Quantum Computing"
+  };
   // console.log("tabs",tabs[id],id)
   return (
-    <div className="justify-center p-3 mt-40">
-        {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
+    <div className="p-3 pt-24 justify-center">
+      {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
           {tabs.map((tab, ind) => {
             return (
               <button
@@ -25,16 +32,18 @@ export default function Projects({id}) {
             );
           })}
         </div> */}
-        <div className="flex justify-center p-2 text-5xl font-black text-white font-[Elianto-Regular]">{tabs[id]}</div>
-        <div className="grid gap-3 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
-          {projects[tabs[id]]?.map((card, ind) => {
-            return (
-              <div key={ind} className="justify-center">
-                <ProjectCard card={card} />
-              </div>
-            );
-          })}
-        </div>
+      <div className="text-white justify-center flex p-5 font-[Azonix] text-5xl font-black">
+        {tabs[id]}
+      </div>
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 font-[Azonix] sm:grid-cols-2 gap-6 px-12">
+        {projects[tabs[id]]?.map((card, ind) => {
+          return (
+            <div key={ind} className="justify-center">
+              <ProjectCard card={card} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
