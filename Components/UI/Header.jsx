@@ -4,7 +4,9 @@ import { Menu, Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { RiTeamFill } from "react-icons/ri";
 import { IoHome } from "react-icons/io5";
-import { FaRobot } from "react-icons/fa";
+
+import { FaRobot , FaTasks  } from "react-icons/fa";
+
 import { MdDesignServices } from "react-icons/md";
 import { IoMdGitNetwork } from "react-icons/io";
 import { SiQiskit } from "react-icons/si";
@@ -69,11 +71,13 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-20">
+
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
+
             <a href="#">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only  ">Your Company</span>
               <img
                 className="h-8 w-auto sm:h-10 px-6"
                 src="https://vibhav-nimbus.netlify.app/images/Yellow.png "
@@ -90,6 +94,7 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Link
               href="/"
+
               className="text-base flex font-[Azonix] font-extrabold text-gray-200 hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
               <IoHome className="w-6 h-6" /> Home
@@ -100,6 +105,7 @@ export default function Example() {
               before:bottom-0 before:left-0  "
             >
               <RiTeamFill className="  w-6 h-6  " /> Our Team
+
             </Link>
 
             <Menu>
@@ -108,6 +114,7 @@ export default function Example() {
                   <Menu.Button
                     className={classNames(
                       open ? "text-gray-400" : "text-gray-200",
+
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
@@ -121,6 +128,7 @@ export default function Example() {
                         )}
                         aria-hidden="true"
                       />
+
                     </span>
                   </Menu.Button>
                   <Transition
@@ -158,6 +166,7 @@ export default function Example() {
                   </Transition>
                 </>
               )}
+
             </Menu>
             <Menu>
               {({ open }) => (
@@ -216,6 +225,7 @@ export default function Example() {
                 </>
               )}
             </Menu>
+
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0"></div>
         </div>
@@ -256,7 +266,9 @@ export default function Example() {
               <div className="grid py-1 gap-y-4 gap-x-8">
                 <Link
                   href="/"
+
                   className="text-base px-5 py-2 font-medium text-gray-300 rounded-lg hover:bg-gray-500 mx-2"
+
                 >
                   Home
                 </Link>

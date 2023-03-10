@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import Image from "next/image";
 import * as basicScroll from "basicscroll";
@@ -10,6 +11,7 @@ import Cc from "../Components/UI/CC";
 import { useEffect } from "react";
 import Footer from "../Components/UI/Footer";
 import Contact from "../Components/Contact";
+
 
 export default function Home() {
   useEffect(() => {
@@ -54,12 +56,14 @@ export default function Home() {
             <Image src="/Assets/4x/1@4x.png" className="scene" data-modifier="2"  width={7681} height={7921}   ></Image>
           </div>
 
+
           <div className="z-50 flex flex-col">
             <HomePage />
             <AboutUs />
             <Cc />
             <FAQs />
             <Contact />
+
           </div>
         </Layout>
       </main>
