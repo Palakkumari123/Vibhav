@@ -209,7 +209,7 @@
 
         {"Name" : "Agrim Kaundal",
         "NickName":"White Walker",
-        "Profile":"",
+        "Profile":"/assets/TeamPhotos/Third/Agrim koundal.webp",
         "Github":"https://github.com/WhiteWalker07",
         "LinkedIn":"https://www.linkedin.com/in/agrim-kaundal-3a151a202/",
         "Position":"COORDINATORS"
@@ -322,14 +322,6 @@
         "Github":"https://github.com/vanshul2002",
         "LinkedIn":"https://www.linkedin.com/in/vanshul-dhiman-b99740209/",
         "Position":"COORDINATORS"
-        },
-
-        {"Name" : "Yash Upadhyay",
-        "NickName":"Yash",
-        "Profile":"/assets/TeamPhotos/Third/Yash-Upadhaya.webp",
-        "Github":"https://github.com/Yashu-2106",
-        "LinkedIn":"https://www.linkedin.com/in/yash-upadhyay-942183206/",
-        "Position":"COORDINATORS"
         }
 
     ],
@@ -387,7 +379,7 @@
         {
             "Name" : "Kartikay",
                 "NickName":"Sambher",
-                "Profile":"/assets/TeamPhotos/Second/kartikay .webp",
+                "Profile":"/assets/TeamPhotos/Second/kartikay.jpg",
                 "Github":"https://github.com/Kartikay5849",
                 "LinkedIn":"https://www.linkedin.com/in/kartikay-a3b322232/",
                 "Position":"EXECUTIVE MEMBER"

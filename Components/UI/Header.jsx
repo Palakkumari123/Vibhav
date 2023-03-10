@@ -70,7 +70,8 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-20">
+
+    <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-30">
 
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
@@ -94,14 +95,14 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Link
               href="/"
-
-              className="text-base flex font-[Azonix] font-extrabold text-gray-200 hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
+              className=" flex  font-Kanit text-xl    font-bold text-gray-200    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
               <IoHome className="w-6 h-6" /> Home
             </Link>
             <Link
               href="/team"
-              className="text-base flex  text-gray-200 font-[Azonix] font-extrabold hover:bg-violet-900 rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              
+              className="font-Kanit text-xl flex  text-gray-200   font-bold    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0  "
             >
               <RiTeamFill className="  w-6 h-6  " /> Our Team
