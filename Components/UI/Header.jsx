@@ -54,7 +54,7 @@ export default function Example() {
  
   return (
 
-    <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-20">
+    <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-30">
 
       <div className="mx-auto  max-w-7xl px-6">
         <div className="flex  items-center justify-between py-6 md:justify-start md:space-x-10">
@@ -77,14 +77,14 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Link
               href="/"
-              className="text-base flex  font-[AvenirLTProMedium]  font-extrabold text-gray-200    rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
+              className=" flex  font-Kanit text-xl    font-bold text-gray-200    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
              <IoHome className="w-6 h-6 mr-1 " /> Home
             </Link>
             <Link
               href="/team"
               
-              className="text-base flex  text-gray-200 font-[AvenirLTProMedium] font-extrabold    rounded-lg delay-200 duration-200 p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              className="font-Kanit text-xl flex  text-gray-200   font-bold    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0  "
             >
              <RiTeamFill className="  w-6 h-6 mr-1  " /> Our Team
@@ -99,7 +99,7 @@ export default function Example() {
                       "inline-flex items-center outline-none pt-1  text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex font-[AvenirLTProMedium] font-extrabold mt-1 "> <MdDesignServices className="h-6 mr-1 w-6" /> Projects
+                    <span className="flex font-Kanit text-xl  font-bold mt-1 "> <MdDesignServices className="h-6 mr-1 w-6" /> Projects
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -147,10 +147,10 @@ export default function Example() {
             </Popover>
             <Link
               href="/OurWork"
-              className="text-base  text-gray-100 flex  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 font-[AvenirLTProMedium]  font-extrabold    rounded-lg delay-200 duration-200 p-2  "
+              className="font-Kanit text-xl text-gray-100 flex  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 rounded-lg font-bold  p-2  "
             >
-            <FaTasks className="w-6 mr-1 h-6" />  Our Work
+            <FaTasks className="w-6 mr-1 h-6 mt-1 " />  Our Work
             </Link>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0"></div>
