@@ -31,10 +31,10 @@ export default function Posts() {
   return (
     <Layout>
       <div className="m-4 sm:m-8 mt-24 pt-5">
-        <h1 className=" text-5xl    rounded-md text-purple-200 p-2 
-          md:text-5xl flex justify-center items-center font-[Elianto-Regular] mt-10  " > TEAM MEMEBERS </h1>
+        <h1 className=" text-5xl    rounded-md text-[#dab971] p-2 
+          md:text-5xl flex justify-center items-center font-[Elianto-Regular] mt-10 animate-pulse " > TEAM MEMEBERS </h1>
         <div>
-          <h1 className="  text-3xl mt-12 ml-5 text-purple-200  font-[AvenirLTProHeavy] ">SUPER FINAL YEAR MEMBERS</h1>
+          <h1 className="  text-3xl mt-12 ml-12  text-[#a18240] font-[AvenirLTProHeavy] ">SUPER FINAL YEAR MEMBERS</h1>
           <Carousel
             swipeable={true}
             draggable={true}
@@ -57,7 +57,7 @@ export default function Posts() {
               return <TeamCard key={ind} data={post} />
             })}
           </Carousel>
-          <h1 className="text-purple-200 text-3xl mt-12 ml-5 font-[AvenirLTProHeavy]" >
+          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >
             FINAL YEAR MEMBERS</h1>
           <Carousel
             swipeable={true}
@@ -80,7 +80,7 @@ export default function Posts() {
             })}
           </Carousel>
 
-          <h1 className="text-purple-200 text-3xl mt-12 ml-5 font-[AvenirLTProHeavy]" >COORDINATOR</h1>
+          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >COORDINATOR</h1>
           <Carousel
             swipeable={true}
             draggable={true}
@@ -102,7 +102,7 @@ export default function Posts() {
             })}
           </Carousel>
 
-          <h1 className="text-purple-200 text-3xl mt-12 ml-5 font-[AvenirLTProHeavy]" >EXECUTIVE MEMBERS</h1>
+          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >EXECUTIVE MEMBERS</h1>
           <Carousel
             swipeable={true}
             draggable={true}
@@ -124,7 +124,7 @@ export default function Posts() {
             })}
           </Carousel>
 
-          <h1 className="text-purple-200 text-3xl mt-12 ml-5 font-[AvenirLTProHeavy]" >VOLUNTEERS</h1>
+          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >VOLUNTEERS</h1>
           <Carousel
             swipeable={true}
             draggable={true}
