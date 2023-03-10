@@ -1,6 +1,4 @@
 import React from 'react'
-import AboutUs from '../AboutUs';
-import FAQs from './FAQs';
 import Footer from './Footer';
 import Header from "./Header";
 export default function Layout({children}) {
