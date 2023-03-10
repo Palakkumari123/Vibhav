@@ -41,7 +41,18 @@ body {
         url("/assets/Modeka.otf");
     font-weight: bold;
 }
-
+@font-face {
+    font-family: "ARCADECLASSIC";
+    src: local("ARCADECLASSIC"),
+        url("/assets/ARCADECLASSIC.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SummerPixel22Regular";
+    src: local("SummerPixel22Regular"),
+        url("/assets/SummerPixel22Regular.ttf");
+    font-weight: normal;
+}
 @font-face {
     font-family: "Azonix";
     src: local("Azonix"),
