@@ -30,7 +30,7 @@ export default function Posts() {
   console.log("This is the imported data", TeamPhotos)
   return (
     <Layout>
-      <div className="m-4 sm:m-8 mt-24 pt-5">
+      <div className="m-4 sm:m-8 mt-28 pt-5">
         <h1 className=" text-5xl    rounded-md text-[#dab971] p-2 
           md:text-5xl flex justify-center items-center font-[Elianto-Regular] mt-10 animate-pulse " > TEAM MEMEBERS </h1>
         <div>
