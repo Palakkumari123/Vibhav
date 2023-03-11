@@ -7,7 +7,7 @@ export default function FAQs() {
     return (
 
         <div className="w-full px-4 pt-48 ">
-            <h1 className="flex-col text-center pb-8 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-white">Frequently Asked  Questions</h1>
+            <h1 className="flex-col text-center pb-4 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-white">Frequently Asked  Questions</h1>
 
             <div className="w-full max-w-5xl p-6 mx-auto bg-[#1a1a1d]  ">
                 {faq.faqs.map((item, index) => {
@@ -44,7 +44,7 @@ export default function FAQs() {
                                     </svg>
                                 </Disclosure.Button >
 
-                                <Disclosure.Panel className="px-4  pt-4 pb-2 font-[Nidsans-webfont] text-md text-white "  >
+                                <Disclosure.Panel className="px-4  pt-4 pb-2 font-[Hero-Bold] text-md text-white "  >
 
                                    <span>
                                     

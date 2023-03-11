@@ -7,7 +7,7 @@ export default function SocialLinks  ()  {
             <a
               className=" flex items-center justify-center  p-1.5 rounded-full bg-white text-black mt-4 hover:text-white hover:bg-[#303033] ease-in-out duration-200 hover:scale-125"
               
-              href="https://github.com"
+              href="https://github.com/Team-Vibhav" target={"_blank"} 
             >
               <FaGithub className="  w-7 h-7 md:w-10 md:h-10" />
             </a>
