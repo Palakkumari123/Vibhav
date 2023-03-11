@@ -7,8 +7,8 @@ export default function Contact({ }) {
     if (state.succeeded) {
 
         return (
-        <div data-aos="fade-right" className="flex  mt-12 pt-28 md:mt-0  md:flex-row flex-col justify-around w-4/5 mx-auto   " >
-            <div   className="py-4 lg:py-16 px-4  max-w-screen-md basis-1/2 ">
+        <div  className="overflow-x-hidden flex  mt-12 pt-28 md:mt-0  md:flex-row flex-col justify-around w-4/5 mx-auto   " >
+            <div data-aos="fade-right"  className="py-4 lg:py-16 px-4  max-w-screen-md basis-1/2 ">
 
                     <h2  data-aos-duration="100" className="mb-4  text-4xl tracking-tight font-[Elianto-Regular] font-extrabold text-center text-gray-900 dark:text-white">
                         Contact Us
@@ -22,7 +22,7 @@ export default function Contact({ }) {
                     </div>
                 </div>
 
-            <div className="text-white pl-6 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
+            <div data-aos="fade-left" className="text-white pl-6 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
                 <h2 className="text-4xl pb-4  font-extrabold tracking-wide  items-center font-[Elianto-regular]" >
                     Vibhav
                 </h2>
@@ -44,8 +44,8 @@ export default function Contact({ }) {
     };
     return (
         <div  >
-            <div className="flex mt-12 pt-28 md:mt-0  md:flex-row flex-col justify-around w-4/5 mx-auto   " >
-                <div data-aos="fade-right" className="py-4 lg:py-16 px-4  max-w-screen-md basis-1/2 ">
+            <div className="overflow-x-hidden flex mt-12 pt-28 md:mt-0  md:flex-row flex-col justify-around w-4/5 mx-auto   " >
+                <div data-aos="fade-right" className="py-4 lg:py-16 px-4  max-w-screen-md basis-1/2 md:w-12">
                     <h2 className="mb-4  text-4xl tracking-tight font-[Elianto-Regular] font-extrabold text-center text-gray-900 dark:text-white">
                         Contact Us
                     </h2>
@@ -115,7 +115,7 @@ export default function Contact({ }) {
                     </form >
                 </div>
 
-                <div data-aos="fade-left" className="text-white pl-6 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
+                <div data-aos="fade-left" className= "md:w-1/2 text-white pl-6 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
                     <h2 className="text-4xl pb-4  font-extrabold tracking-wide  items-center font-[Elianto-regular]" >
                         Vibhav
                     </h2>

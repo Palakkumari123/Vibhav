@@ -28,7 +28,7 @@ export default function Home() {
           props: {
             "--translateY": {
               from: "0",
-              to: `${50 * modifier}px`,
+              to: `${65 * modifier}px`,
             },
           },
         })
@@ -50,12 +50,12 @@ export default function Home() {
 
        
             <div >
-            <Image src="/Assets/4x/1.png" className="scene" data-modifier="10"  width={1200} height={7921}   ></Image>
-            <Image src="/Assets/4x/6.png" className="scene" data-modifier="10"  width={1200} height={7921}   ></Image>
-            <Image src="/Assets/4x/2.png" className="scene" data-modifier="8"  width={1200} height={7921}   ></Image>
-            <Image src="/Assets/4x/3.png"className="scene" data-modifier="6"  width={1200} height={7921}   ></Image>
-            <Image src="/Assets/4x/4.png" className="scene" data-modifier="4"  width={1200} height={7921}   ></Image>
-            <Image src="/Assets/4x/5.png" className="scene" data-modifier="2"  width={1200} height={7921}   ></Image>
+            <Image  loading="lazy" src="/Assets/4x/1.png" className="scene" data-modifier="6"  width={1200} height={7921}   ></Image>
+            <Image  loading="lazy" src="/Assets/4x/6.png" className="scene" data-modifier="8"  width={1200} height={7921}   ></Image>
+            <Image  loading="lazy" src="/Assets/4x/2.png" className="scene" data-modifier="5"  width={1200} height={7921}   ></Image>
+            <Image  loading="lazy" src="/Assets/4x/3.png"className="scene" data-modifier="4"  width={1200} height={7921}   ></Image>
+            <Image  loading="lazy" src="/Assets/4x/4.png" className="scene" data-modifier="3"  width={1200} height={7921}   ></Image>
+            <Image  loading="lazy" src="/Assets/4x/5.png" className="scene" data-modifier="2"  width={1200} height={7921}   ></Image>
 
           </div>
 
