@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import { Menu, Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
-import { RiTeamFill } from "react-icons/ri";
+import { RiTeamFill , RiTeamLine } from "react-icons/ri";
 import { IoHome } from "react-icons/io5";
 
 import { FaRobot, FaTasks } from "react-icons/fa";
@@ -67,13 +67,13 @@ const ourwork = [
 const ourteam = [
   {
     name: "Current Team",
-    href: "/team/currteam",
-    icon: HiPresentationChartBar,
+    href: "/OurTeam/currteam",
+    icon: RiTeamFill,
   },
   {
     name: "Alumni",
-    href: "/team/alumni",
-    icon: MdWork,
+    href: "/OurTeam/alumni",
+    icon: RiTeamLine,
   },
 ];
 function classNames(...classes) {
@@ -86,14 +86,14 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <Link href="/">
               <span className="sr-only  ">Your Company</span>
               <img
                 className="h-8 w-auto sm:h-10 px-6"
                 src="https://vibhav-nimbus.netlify.app/images/Yellow.png "
                 alt=""
               />
-            </a>
+            </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-800  p-2 text-gray-500  hover:bg-gray-100 hover:text-gray-500 ">
@@ -104,7 +104,7 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Link
               href="/"
-              className=" flex  font-Kanit text-xl    font-bold text-gray-200    rounded-lg   p-2  hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
+              className=" flex  font-Kanit text-xl px-5 font-bold text-gray-200 rounded-lg p-2 hover:bg-[#a18240] hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
               <IoHome className="w-6 h-6" /> Home
             </Link>
@@ -117,7 +117,7 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex rounded-lg p-2 font-[Azonix] hover:bg-violet-900 font-extrabold">
+                    <span className="flex rounded-lg p-2 tracking-wide font-Kanit text-xl font-bold hover:bg-[#a18240]">
                       {" "}
                       <MdDesignServices className="h-6  w-6" /> Our Team
                       <ChevronDownIcon
@@ -138,14 +138,14 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Menu.Item className="absolute z-10 -ml-8 mt-10 w-screen max-w-xs transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
-                      <div className="overflow-hidden rounded-lg shadow-lg ">
-                        <div className="absolute rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
+                    <Menu.Item className="absolute z-10  mt-10 w-screen max-w-xs transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
+                      <div className="overflow-hidden  rounded-lg shadow-lg ">
+                        <div className="absolute -ml-20 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
                           {ourteam.map((item) => (
                             <Link
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-500"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#a18240]"
                             >
                               <item.icon
                                 className="h-6 w-6 flex-shrink-0 text-white"
@@ -176,7 +176,7 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex rounded-lg p-2 font-[Azonix] hover:bg-violet-900 font-extrabold">
+                    <span className="flex rounded-lg p-2 font-Kanit text-xl font-bold hover:bg-[#a18240]">
                       {" "}
                       <MdDesignServices className="h-6  w-6" /> Projects
                       <ChevronDownIcon
@@ -197,14 +197,14 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Menu.Item className="absolute z-10 -ml-4 mt-10 w-screen max-w-xs transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
+                    <Menu.Item className="absolute z-10 mt-10 w-screen max-w-lg transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
-                        <div className="absolute rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="absolute ml-56 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
                           {projects.map((item) => (
                             <Link
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-500"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#a18240]"
                             >
                               <item.icon
                                 className="h-6 w-6 flex-shrink-0 text-white"
@@ -233,7 +233,7 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex rounded-lg p-2 font-[Azonix] hover:bg-violet-900 font-extrabold">
+                    <span className="flex rounded-lg p-2 font-Kanit text-xl font-bold hover:bg-[#a18240]">
                       {" "}
                       <FaHammer className="w-6 h-6" /> Our Work
                       <ChevronDownIcon
@@ -254,14 +254,14 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Menu.Item className="absolute z-10 -ml-4 mt-10 w-screen max-w-xs transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:translate-x-1/2">
+                    <Menu.Item className="absolute z-10 mt-10 w-screen max-w-xs transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
-                        <div className="absolute rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="absolute -ml-2 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
                           {ourwork.map((item) => (
                             <Link
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-500"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#a18240]"
                             >
                               <item.icon
                                 className="h-6 w-6 flex-shrink-0 text-white"
