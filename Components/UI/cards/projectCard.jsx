@@ -34,7 +34,7 @@ export default function ProjectCard({ card }) {
               </span>
             </p>
           ) : (
-            <p className="mb-3 text-gray-700 dark:text-gray-400">
+            <p className="mb-3 text-gray-700 text-justify dark:text-gray-400">
               {card.content}
             </p>
           )}

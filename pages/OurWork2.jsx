@@ -10,7 +10,7 @@ export default function OurWork2({ id }) {
   const tabs = { prev: "Previous Years", curr: "Current Year" };
   return (
     <div className="flex justify-center flex-col">
-      <div className="text-white justify-center flex p-5 font-[Azonix] text-5xl font-black">
+      <div className="text-white justify-center flex m-5 py-2 font-[Azonix] text-5xl font-black">
         {tabs[id]}
       </div>
       <div className="grid lg:grid-cols-2 sm:grid-col-1 justify-center">

@@ -32,10 +32,10 @@ export default function Projects({ id }) {
             );
           })}
         </div> */}
-      <div className="text-white justify-center flex p-5 font-[Azonix] text-5xl font-black">
+      <div className="text-white justify-center flex m-5 py-2 font-[Azonix] text-5xl font-black">
         {tabs[id]}
       </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 font-[Azonix] sm:grid-cols-2 gap-6 px-12">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 font-[Azonix] sm:grid-cols-2 lg:gap-6 md:gap-3 sm:gap-2 lg:px-6 md:px-4 sm:px-2">
         {projects[tabs[id]]?.map((card, ind) => {
           return (
             <div key={ind} className="justify-center">

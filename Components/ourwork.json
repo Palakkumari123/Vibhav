@@ -1,22 +1,40 @@
 {
   "Previous": {
-    
       "Events": [
         {
           "name": "Electrovision",
           "content": "Hey ECE geeks come and test your knowledge in this fun event. Play with everything from basic circuits to computers. Make the computer of your dreams and compete with others. May the best PC win!",
-          "images": "/Assets/electrovision.webp"
-          
+          "images": "/Assets/electrovision.webp",
+          "round1head": "Round 1: Website Based Game",
+          "round2head": "Round 2: Circuit Designing",
+          "round3head": "Round 3: PC Building",
+          "round4head": "Tie Breaker: Logic Based Puzzle",
+          "round1": "A binary number based game that would be available on Vibhav's official website to play.",
+          "round2": "Participants will have to design circuits with the help of given logic gates to get the required outputs.",
+          "round3": "In this round, participants have to build a PC from scratch with a simulator.",
+          "round4": "A logic based puzzle will be given to solve."
         },
         {
           "name": "Cyber Circuits",
           "content": "Channelize your inner Sherlock Holmes and find clues hidden all over our social media outlets starting from YouTube to all the way over to Instagram and also enjoy many electronics based competitions and win huge prizes. See you there!",
-          "images": "/Assets/cybercircuits.webp"
+          "images": "/Assets/cybercircuits.webp",
+          "round1head": "Round 1: Puzzle Round",
+          "round2head": "Round 2: Circuit Debugging",
+          "round3head": "Round 3: Social Media Hunt",
+          "round1": "This round involves solving a word sleuth related to electronics.",
+          "round2": "A complicated non-functional circuit will be provided to debug.",
+          "round3": "Participants will have to find components on social media using the hints provided and perform the given task in the minimum time."
         },
         {
           "name": "QuanrenTeam Titans",
           "content": "Walkthrough the breath-taking virtual campus of NITH, solve mind-boggling puzzles, and emerge as the champion! Join the mega hunt to win amazing prizes.",
-          "images": "/Assets/event 3.webp"
+          "images": "/Assets/event 3.webp",
+          "round1head": "Round 1: Treasure Hunt",
+          "round2head": "Round 2: Mathematical Puzzle",
+          "round3head": "Round 3: Instant Innovation",
+          "round1": "In the first round, participants have to find the clues hidden in the virtual NITH and the player has to collect the specified number of gems from different checkpoints in the minimum time.",
+          "round2": "Kakuro, a mathematical transliteration crossword will be given to solve but with a twist.",
+          "round3": "Instant Innovation, in a nutshell, means raising start-up from the news. It will provide the contestants an opportunity to think about how to find a problem, ideate its solution, and pitch."
         }
       ],
   
@@ -25,17 +43,22 @@
         {
           "name": "PCB Designing",
           "content": "EAGLE is electronic design automation (EDA) software that lets printed circuit board (PCB) designers seamlessly connect schematic diagrams, component placement, PCB routing, and comprehensive library content. Bringing the design to life with a wide range of PCB layout tools in EAGLE.",
-          "images": "/Assets/pcb.webp"
+          "images": "/Assets/pcb.webp",
+          "round1": "EAGLE is electronic design automation (EDA) software that lets printed circuit board (PCB) designers seamlessly connect schematic diagrams, component placement, PCB routing, and comprehensive library content. Bringing the design to life with a wide range of PCB layout tools in EAGLE. Printed circuit board design brings the electronic circuits to life in the physical form. Using layout software, the PCB design process combines component placement and routeing to define electrical connectivity on a manufactured circuit board.",
+          "round2": "Using ECAD-MCAD integration between EAGLE and Fusion 360 makes it easy to share the PCB design and verify fit in a physical enclosure."
         },
         {
           "name": "VR Gaming",
           "content": "The workshop will start by introducing the students with multiverse. Then we will explain the basics of blender which will include 3-D modelling of the basic environment required in the game. Next we will go over the basics of vr. Lastly we will write our code to complete the game.",
-          "images": "/Assets/vr_gaming.webp"
+          "images": "/Assets/vr_gaming.webp",
+          "round1": "The workshop will start by introducing the students with multiverse. Then we will explain the basics of blender which will include 3-D modelling of the basic environment required in the game. Next we will go over the basics of vr.",
+          "round2": "Lastly we will write our code to complete the game. In this workshop we will teach about how the basic games are build and through this they will be able to relate with the theme metaverse in future."
         },
         {
           "name": "Quantum Computing",
           "content": "In many applications it is important to find the minimum eigenvalue of a matrix. For example, in chemistry, the minimum eigenvalue of a Hermitian matrix characterizing the molecule is the ground state energy of that system. In the future, the quantum phase estimation algorithm may be used to find the minimum eigenvalue.",
-          "images": "/Assets/quantum2.webp"
+          "images": "/Assets/quantum2.webp",
+          "round1": "In many applications it is important to find the minimum eigenvalue of a matrix. For example, in chemistry, the minimum eigenvalue of a Hermitian matrix characterizing the molecule is the ground state energy of that system. In the future, the quantum phase estimation algorithm may be used to find the minimum eigenvalue. However, its implementation on useful problems requires circuit depths exceeding the limits of hardware available in the NISQ era. In this workshop we will use the VQE algorithm to simulate the ground state energy of a diatomic molecule which is nearly impossible to simulate classically."
         }
       ]
     
