@@ -18,7 +18,7 @@ export default function ProjectCard({ card }) {
           />
         </div>
         <div className="p-4">
-          <h5 className="mb-2 text-xl tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-xl tracking-tight text-gray-900 dark:text-[#dab971]">
             {card.name}
           </h5>
           {card.content.length > 100 ? (
@@ -34,7 +34,7 @@ export default function ProjectCard({ card }) {
               </span>
             </p>
           ) : (
-            <p className="mb-3 text-gray-700 dark:text-gray-400">
+            <p className="mb-3 text-gray-700 text-justify dark:text-gray-400">
               {card.content}
             </p>
           )}
