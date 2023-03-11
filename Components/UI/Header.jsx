@@ -106,8 +106,9 @@ export default function Example() {
               href="/"
               className=" flex  font-Kanit text-xl px-5 font-bold text-gray-200 rounded-lg p-2 hover:bg-[#a18240] hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
-              <IoHome className="w-6 h-6" /> Home
+              <IoHome className="w-6 h-6 mr-1" /> Home
             </Link>
+
             <Menu>
               {({ open }) => (
                 <>
@@ -165,7 +166,6 @@ export default function Example() {
                 </>
               )}
             </Menu>
-
             <Menu>
               {({ open }) => (
                 <>
@@ -178,7 +178,7 @@ export default function Example() {
                   >
                     <span className="flex rounded-lg p-2 font-Kanit text-xl font-bold hover:bg-[#a18240]">
                       {" "}
-                      <MdDesignServices className="h-6  w-6" /> Projects
+                      <MdDesignServices className="h-6 mr-1 w-6" /> Projects
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -235,7 +235,7 @@ export default function Example() {
                   >
                     <span className="flex rounded-lg p-2 font-Kanit text-xl font-bold hover:bg-[#a18240]">
                       {" "}
-                      <FaHammer className="w-6 h-6" /> Our Work
+                      <FaHammer className="w-6 h-6 mr-1" /> Our Work
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -326,6 +326,7 @@ export default function Example() {
                   Home
                 </Link>
 
+
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-gray-300 rounded-lg hover:bg-gray-500 mx-2 flex items-center justify-between">
                     Our Team
@@ -369,6 +370,7 @@ export default function Example() {
                     </Popover.Panel>
                   </Transition>
                 </Menu>
+
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-gray-300 rounded-lg hover:bg-gray-500 mx-2 flex items-center justify-between">
                     Projects
