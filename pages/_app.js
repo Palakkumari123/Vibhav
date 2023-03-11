@@ -1,6 +1,5 @@
 import '../styles/globals.css'
-import "../styles/HomePage.css";
-import "../styles/hacked.css";
+import "../styles/pacman.css";
 import Loading from '../Components/Loading';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
