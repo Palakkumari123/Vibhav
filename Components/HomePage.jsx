@@ -16,7 +16,7 @@ export default function HomePage() {
 
             {/* <video src="Assets/bgVideo.mp4" autoPlay> */}
 
-            <main className=" mb-12 min-h-[75vh] md:min-h-[100vh] relative">
+            <main data-aos="fade-up" className=" mb-12 min-h-[75vh] md:min-h-[100vh] relative">
                 <div className="flex flex-col justify-center px-6 text-center text-white  sm:flex-row sm:px-16">
                     <div  >
                         <div className=" font-[Azonix] drop-shadow-[0_15px_10px_rgba(180,83,9,1)] delay-150 duration-150 break-words text-5xl md:text-7xl text-amber-500 mt-60  mx-auto  ">

@@ -7,7 +7,6 @@ import TeamPhotos from "../Components/team.json";
 import TeamCard from "../Components/UI/cards/TeamCard";
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5
   },

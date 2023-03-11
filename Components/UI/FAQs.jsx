@@ -6,10 +6,10 @@ export default function FAQs() {
     const [isShow, setIsShown] = useState(-1);
     return (
 
-        <div className="w-full px-4 pt-48 ">
+        <div className="w-full px-4 pt-48 " data-aos="zoom-in">
             <h1 className="flex-col text-center pb-4 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-white">Frequently Asked  Questions</h1>
 
-            <div className="w-full max-w-5xl p-6 mx-auto bg-[#1a1a1d]  ">
+            <div className=" w-4/5 mx-auto   bg-[#1a1a1d]  ">
                 {faq.faqs.map((item, index) => {
                     return <Disclosure as="div" className="mt-2" key={index} onMouseEnter={() => setIsShown(index)}
                         onMouseLeave={() => setIsShown(-1)}>

@@ -14,6 +14,7 @@ import Contact from "../Components/Contact";
 
 
 export default function Home() {
+
   useEffect(() => {
     document.querySelectorAll(".scene").forEach((elem) => {
       const modifier = elem.getAttribute("data-modifier");
@@ -48,21 +49,23 @@ export default function Home() {
         <Layout>
 
        
-            {/* <div >
-            <Image src="/Assets/4x/5@4x.png" className="scene" data-modifier="10"  width={7681} height={7921}   ></Image>
-            <Image src="/Assets/4x/4@4x.png" className="scene" data-modifier="8"  width={7681} height={7921}   ></Image>
-            <Image src="/Assets/4x/3@4x.png"className="scene" data-modifier="6"  width={7681} height={7921}   ></Image>
-            <Image src="/Assets/4x/2@4x.png" className="scene" data-modifier="4"  width={7681} height={7921}   ></Image>
-            <Image src="/Assets/4x/1@4x.png" className="scene" data-modifier="2"  width={7681} height={7921}   ></Image>
-          </div> */}
+            <div >
+            <Image src="/Assets/4x/1.png" className="scene" data-modifier="10"  width={1200} height={7921}   ></Image>
+            <Image src="/Assets/4x/6.png" className="scene" data-modifier="10"  width={1200} height={7921}   ></Image>
+            <Image src="/Assets/4x/2.png" className="scene" data-modifier="8"  width={1200} height={7921}   ></Image>
+            <Image src="/Assets/4x/3.png"className="scene" data-modifier="6"  width={1200} height={7921}   ></Image>
+            <Image src="/Assets/4x/4.png" className="scene" data-modifier="4"  width={1200} height={7921}   ></Image>
+            <Image src="/Assets/4x/5.png" className="scene" data-modifier="2"  width={1200} height={7921}   ></Image>
+
+          </div>
 
 
-          <div className="z-50 flex flex-col">
-            <HomePage />
-            <AboutUs />
-            <Cc />
+          <div  className="z-50 flex flex-col">
+            <HomePage   />
+            <AboutUs  />
+            <Cc  />
             <FAQs />
-            <Contact />
+            <Contact  />
 
           </div>
         </Layout>

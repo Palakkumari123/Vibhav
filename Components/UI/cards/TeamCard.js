@@ -35,12 +35,13 @@ export default function TeamCard({ data }) {
                     <p>{data.Position}</p>
                 </div>
                 <div className="flex flex-row justify-end ">
-                    <Link href={data.Github} >
+                    <Link href={data.Github} target="_blank" >
+
                         <div className="rounded-full cursor-pointer p-2 mr-2 bg-[#eae4d8] bg-opacity-50 hover:bg-[#ffffff] hover:scale-105">
                             <FiGithub className="w-6 h-6 " />
                         </div>
                     </Link>
-                    <Link href={data.LinkedIn} >
+                    <Link href={data.LinkedIn} target="_blank"   >
                         <div className="rounded-full cursor-pointer p-2 mr-2 bg-[#eae4d8] bg-opacity-50 hover:bg-[#ffffff] hover:scale-105">
 
                             <FiLinkedin className="w-6 h-6 " />

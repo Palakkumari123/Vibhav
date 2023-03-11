@@ -99,6 +99,23 @@ export default function Example() {
             >
               <IoHome className="w-6 h-6 mr-1" /> Home
             </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <Link
               href="/team"
               
@@ -108,6 +125,7 @@ export default function Example() {
               <RiTeamFill className="  w-6 h-6 mr-1 " /> Our Team
 
             </Link>
+            
 
             <Menu>
               {({ open }) => (
@@ -119,7 +137,7 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex rounded-lg p-2 font-[Azonix] hover:bg-violet-900 font-extrabold">
+                    <span className="flex rounded-lg p-2 font-[Azonix]  font-extrabold">
                       {" "}
                       <MdDesignServices className="h-6 mr-1 w-6" /> Projects
                       <ChevronDownIcon
@@ -178,7 +196,7 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex rounded-lg p-2 font-[Azonix] hover:bg-violet-900 font-extrabold">
+                    <span className="flex rounded-lg p-2 font-[Azonix]  font-extrabold">
                       {" "}
                       <FaHammer className="w-6 h-6 mr-1" /> Our Work
                       <ChevronDownIcon

@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image"
 export default function AboutUs() {
     return (
-        <section className="  flex justify-center md:h-full items-center relative" >
+        <section data-aos="fade-up"
+         className="  flex justify-center md:h-full items-center relative" >
           
           <div className="flex flex-col w-4/5 h-full mb-8 bg-gray-700 center md:pb-24 rounded-t-2xl md:mb-24 " >
             <div className="w-full h-10 bg-black bg-opacity-40 rounded-t-2xl">
