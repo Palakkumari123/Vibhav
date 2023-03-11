@@ -1,17 +1,14 @@
 import React, { useRef } from "react";
 import SocialLinks from "./SocialMedia";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 import AboutUs from "./AboutUs";
 
-
 // import bgVideo from "Assets/bgVideo.mp4";
 export default function HomePage() {
-    
-    return (
-        <div>
-
-            {/* <video autoPlay="true" muted loop className="absolute top-0 w-full r-0">
+  return (
+    <div>
+      {/* <video autoPlay="true" muted loop className="absolute top-0 w-full r-0">
                 <source src="Assets/bgVideo.mp4" type="video/mp4 "/>
 
             {/* <video src="Assets/bgVideo.mp4" autoPlay> */}
