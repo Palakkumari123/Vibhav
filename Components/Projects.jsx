@@ -12,7 +12,6 @@ export default function Projects({ id }) {
     dsp: "DSP",
     quan: "Quantum Computing"
   };
-  // console.log("tabs",tabs[id],id)
   return (
     <div className="p-3 pt-24 justify-center">
       <h1 className="text-[#dab971] mt-10 justify-center flex text-6xl font-[Azonix]">Projects</h1>

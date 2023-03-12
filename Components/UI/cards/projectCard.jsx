@@ -12,7 +12,7 @@ export default function ProjectCard({ card }) {
           <Image
             className="w-full rounded-t-lg"
             src={card.images}
-            alt=""
+            alt="project Image"
             width={100}
             height={100}
           />
