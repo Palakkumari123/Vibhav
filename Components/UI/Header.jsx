@@ -4,7 +4,7 @@ import { Menu, Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { RiTeamFill , RiTeamLine } from "react-icons/ri";
 import { IoHome } from "react-icons/io5";
-
+import { AiOutlineTeam } from "react-icons/ai";
 import { FaRobot, FaTasks } from "react-icons/fa";
 
 import { MdDesignServices } from "react-icons/md";
@@ -68,12 +68,12 @@ const ourteam = [
   {
     name: "Current Team",
     href: "/OurTeam/currteam",
-    icon: RiTeamFill,
+    icon: RiTeamLine,
   },
   {
     name: "Alumni",
     href: "/OurTeam/alumni",
-    icon: RiTeamLine,
+    icon: AiOutlineTeam,
   },
 ];
 function classNames(...classes) {
@@ -89,8 +89,8 @@ export default function Example() {
             <Link href="/">
               <span className="sr-only  ">Your Company</span>
               <img
-                className="h-8 w-auto sm:h-10 px-6"
-                src="https://vibhav-nimbus.netlify.app/images/Yellow.png "
+                className="h-8 w-auto sm:h-10 px-6 animate-mover"
+                src="/Assets/Yellow.png"
                 alt=""
               />
             </Link>
@@ -120,11 +120,11 @@ export default function Example() {
                   >
                     <span className="flex rounded-lg p-2 tracking-wide font-Kanit text-xl font-bold hover:bg-[#a18240]">
                       {" "}
-                      <MdDesignServices className="h-6  w-6" /> Our Team
+                      <RiTeamFill className="h-6 w-6 mr-1" /> Our Team
                       <ChevronDownIcon
                         className={classNames(
-                          open ? "text-gray-600" : "text-gray-400",
-                          "ml-2 h-5 w-5 group-hover:text-gray-500"
+                          open ? "text-gray-400" : "text-gray-200",
+                          "ml-1 mt-1.5 text- h-5 w-5 group-hover:text-white"
                         )}
                         aria-hidden="true"
                       />
@@ -182,7 +182,7 @@ export default function Example() {
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
-                          "ml-2 h-5 w-5 group-hover:text-gray-500"
+                          "ml-1 mt-1.5 h-5 w-5 group-hover:text-gray-500"
                         )}
                         aria-hidden="true"
                       />
@@ -235,11 +235,11 @@ export default function Example() {
                   >
                     <span className="flex rounded-lg p-2 font-Kanit text-xl font-bold hover:bg-[#a18240]">
                       {" "}
-                      <FaHammer className="w-6 h-6 mr-1" /> Our Work
+                      <FaHammer className="w-6 mr-1 h-6" /> Our Work
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
-                          "ml-2 h-5 w-5 group-hover:text-gray-500"
+                          "ml-1 mt-1.5 h-5 w-5 group-hover:text-gray-500"
                         )}
                         aria-hidden="true"
                       />
@@ -305,7 +305,7 @@ export default function Example() {
                 <div>
                   <img
                     className="h-8 w-auto "
-                    src="https://vibhav-nimbus.netlify.app/images/Yellow.png "
+                    src="/Assets/Yellow.png"
                     alt="Your Company"
                   />
                 </div>
@@ -321,14 +321,14 @@ export default function Example() {
               <div className="grid py-1 gap-y-4 gap-x-8">
                 <Link
                   href="/"
-                  className="text-base px-5 py-2 font-medium text-gray-300 rounded-lg hover:bg-gray-500 mx-2"
+                  className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2"
                 >
                   Home
                 </Link>
 
 
                 <Menu>
-                  <Menu.Button className="text-base px-5 py-2 font-medium text-gray-300 rounded-lg hover:bg-gray-500 mx-2 flex items-center justify-between">
+                  <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Our Team
                     <ChevronDownIcon
                       className="mr-8 ml-2 h-5 w-5"
@@ -345,21 +345,21 @@ export default function Example() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                   >
-                    <Popover.Panel className="absolute z-[100] -ml-4 mt-40 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-[100] mt-24 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
                         <div className="relative grid gap-6 bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
                           {ourteam.map((item) => (
                             <Link
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-500"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#dab971]"
                             >
                               <item.icon
-                                className="h-6 w-6 flex-shrink-0 text-gray-300"
+                                className="h-6 w-6 flex-shrink-0 text-white"
                                 aria-hidden="true"
                               />
                               <div className="ml-4">
-                                <p className="text-base font-medium text-gray-300">
+                                <p className="text-base font-medium text-white">
                                   {item.name}
                                 </p>
                               </div>
@@ -372,7 +372,7 @@ export default function Example() {
                 </Menu>
 
                 <Menu>
-                  <Menu.Button className="text-base px-5 py-2 font-medium text-gray-300 rounded-lg hover:bg-gray-500 mx-2 flex items-center justify-between">
+                  <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Projects
                     <ChevronDownIcon
                       className="mr-8 ml-2 h-5 w-5"
@@ -396,14 +396,14 @@ export default function Example() {
                             <Link
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-500"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#dab971]"
                             >
                               <item.icon
-                                className="h-6 w-6 flex-shrink-0 text-gray-300"
+                                className="h-6 w-6 flex-shrink-0 text-white"
                                 aria-hidden="true"
                               />
                               <div className="ml-4">
-                                <p className="text-base font-medium text-gray-300">
+                                <p className="text-base font-medium text-white">
                                   {item.name}
                                 </p>
                               </div>
@@ -415,7 +415,7 @@ export default function Example() {
                   </Transition>
                 </Menu>
                 <Menu>
-                  <Menu.Button className="text-base px-5 py-2 font-medium text-gray-300 rounded-lg hover:bg-gray-500 mx-2 flex items-center justify-between">
+                  <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Our Work
                     <ChevronDownIcon
                       className="mr-8 ml-2 h-5 w-5"
@@ -439,14 +439,14 @@ export default function Example() {
                             <Link
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-500"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#dab971]"
                             >
                               <item.icon
-                                className="h-6 w-6 flex-shrink-0 text-gray-300"
+                                className="h-6 w-6 flex-shrink-0 text-white"
                                 aria-hidden="true"
                               />
                               <div className="ml-4">
-                                <p className="text-base font-medium text-gray-300">
+                                <p className="text-base font-medium text-white">
                                   {item.name}
                                 </p>
                               </div>

@@ -39,13 +39,13 @@
     {
       "name": "PCB Fault Detection",
       "content": "In this project, we aim to use semantic segmentation to detect inconsistencies in circuit board images by using pre-recorded and labelled circuit imagery of working and non-working PCBs. Semantic segmentation involves assigning a class to every pixel of the image, wherein we treat multiple members of a class as a single entity.",
-      "github": "",
+      "github": "https://github.com/Team-Vibhav/PCB-FAULT-DETECTION",
       "images": "/Assets/pcb_fault.webp"
     },
     {
       "name": "Virtual Tablet",
       "content": "An OpenCV project to create a virtual tab that allows us to write on the screen while writing in the air, resulting in a digital text document. The project's purpose is to create a virtual tablet that will allow us to write on the screen while also writing on the air. It will use OpenCV to track the position of the pen's tip in order to determine the pen's exact location.",
-      "github": "",
+      "github": "https://github.com/Team-Vibhav/Virtual-tablet",
       "images": "/Assets/tablet-1.webp"
     }
   ],
@@ -59,7 +59,7 @@
     {
       "name": "Li-Fi",
       "content": "Li-Fi stands for Light-Fidelity, an emerging technology through which we have solved the problem of reduced information exchange rate and bandwidth. Li-fi uses visible light instead of Gigahertz Radio Waves for data transfer which makes it a fast and cheap mode of wireless communication.",
-      "github": "https://github.com/Team-Vibhav/VTB",
+      "github": "https://github.com/astral29/ELEC_20_THEGEEKSQUAD",
       "images": "/Assets/liFi.webp"
     },
     {
@@ -149,7 +149,7 @@
     {
       "name": "DTMF",
       "content": "This project aims to create a user-friendly environment where one can easily control all the appliances in his home through DTMF tones.Whatever appliances we are dealing with, in our daily life, we want to control them without physically moving to the control unit. We use many different types of communication in control applications to control home appliances, industrial appliances, and other types of automation.",
-      "github": "https://github.com/Team-Vibhav/Circuit-Solver",
+      "github": "https://github.com/Team-Vibhav/DTMF-Application",
       "images": "/Assets/dtmf.webp"
     },
     {
@@ -163,7 +163,7 @@
     {
       "name": "Quantum Key Distribution",
       "content": "Quantum Key Distribution (QKD) is a secure communication method that implements a cryptographic protocol involving components of quantum mechanics. It enables two parties to produce a shared random secret key known only to them, which can then be used to encrypt and decrypt messages. It is often incorrectly called Quantum cryptography, as it is the best-known example of such a task.",
-      "github": "https://github.com/Team-Vibhav/Circuit-Solver",
+      "github": "",
       "images": "/Assets/quantum.webp"
     }
   ]
