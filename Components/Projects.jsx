@@ -38,7 +38,7 @@ export default function Projects({ id }) {
       <div className="grid lg:grid-cols-4 md:grid-cols-3 font-[Azonix] sm:grid-cols-2 lg:gap-6 md:gap-3 sm:gap-2 lg:px-6 md:px-4 sm:px-2">
         {projects[tabs[id]]?.map((card, ind) => {
           return (
-            <div key={ind} className="justify-center">
+            <div key={ind} className="justify-center mb-3">
               <ProjectCard card={card} />
             </div>
           );
