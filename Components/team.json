@@ -1,14 +1,4 @@
 {
-
-    "Alumini":[
-        {
-            "Name":"", 
-            "NickName":"",
-            "Profile":"",
-            "Github":"",
-            "LinkedIn":"" 
-        }
-    ],
     "Super Final Year":[
         {
             "Name" : "Aakash N Gupta",
@@ -235,7 +225,7 @@
         {"Name" : "Bhavneesh Chaudhary",
         "NickName":"Bhuvi💚",
         "Profile":" /Assets/TeamPhotos/Third/Bhavneesh.webp ",
-        "Github":"",
+        "Github":"https://github.com/BhavneeshOG",
         "LinkedIn":"https://www.linkedin.com/in/bhavneesh-bhavneesh-4b1a10207/",
         "Position":"COORDINATORS"
         },
@@ -425,7 +415,7 @@
         {
             "Name" : "Monika Patel",
                 "NickName":"Monika",
-                "Profile":"/Assets/TeamPhotos/Second/Monika Patel .webp",
+                "Profile":"/Assets/TeamPhotos/Second/Monika Patel.webp",
                 "Github":"https://github.com/monnikaaa",
                 "LinkedIn":"https://www.linkedin.com/in/monikaapatel/",
                 "Position":"EXECUTIVE MEMBER"
@@ -487,8 +477,8 @@
         "Name" : "Aaryan Sharma",
         "NickName":"Aaryan",
         "Profile":"/Assets/TeamPhotos/First/Aaryan Sharma.webp",
-        "Github":"",
-        "LinkedIn":"",
+        "Github":"https://github.com/AaryanSharma03",
+        "LinkedIn":"https://www.linkedin.com/in/aaryan-sharma-9611bb257",
         "Position":"VOLUNTEER"
     },
 
@@ -515,8 +505,8 @@
         "Name" : "Aditya Verma",
         "NickName":"Aditya",
         "Profile":"/Assets/TeamPhotos/First/ADITYA VERMA.webp",
-        "Github":"",
-        "LinkedIn":"",
+        "Github":"https://github.com/Vibrantrescue",
+        "LinkedIn":"https://www.linkedin.com/in/aditya-verma-259762250",
         "Position":"VOLUNTEER"
 
       },
@@ -550,8 +540,8 @@
         "Name" : "Arun Kumar",
         "NickName":"Arun",
         "Profile":"/Assets/TeamPhotos/First/arun.webp",
-        "Github":"",
-        "LinkedIn":"",
+        "Github":"https://github.com/11arun11",
+        "LinkedIn":"https://www.linkedin.com/in/arun-kumar-a14725269",
         "Position":"VOLUNTEER"
 
       },
@@ -662,7 +652,6 @@
         "Position":"VOLUNTEER"
 
       },
-
       {
         "Name" : "Sigma Sonkar",
         "NickName":"Sigma",
@@ -672,6 +661,8 @@
         "Position":"VOLUNTEER"
 
       },
+
+     
 
       {
         "Name" : "Sushmoy Sen",

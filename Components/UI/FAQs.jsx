@@ -7,7 +7,7 @@ export default function FAQs() {
     return (
 
         <div className="w-full px-4 pt-48 " data-aos="zoom-in">
-            <h1 className="flex-col text-center pb-4 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-white">Frequently Asked  Questions</h1>
+            <h1 className="flex-col text-center pb-4 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-[#e9d59ae4]">Frequently Asked  Questions</h1>
 
             <div className=" w-4/5 mx-auto   bg-[#1a1a1d]  ">
                 {faq.faqs.map((item, index) => {
@@ -44,7 +44,7 @@ export default function FAQs() {
                                     </svg>
                                 </Disclosure.Button >
 
-                                <Disclosure.Panel className="px-4  pt-4 pb-2 font-[Hero-Bold] text-md text-white "  >
+                                <Disclosure.Panel className="px-4  pt-4 pb-2 font-[Hero-Bold] text-md text-sky-100"  >
 
                                    <span>
                                     

@@ -50,12 +50,12 @@ export default function Home() {
 
        
             <div >
-            <Image  loading="lazy" src="/Assets/4x/1.png" className="scene" data-modifier="6"  width={1200} height={7921}   ></Image>
-            <Image  loading="lazy" src="/Assets/4x/6.png" className="scene" data-modifier="8"  width={1200} height={7921}   ></Image>
-            <Image  loading="lazy" src="/Assets/4x/2.png" className="scene" data-modifier="5"  width={1200} height={7921}   ></Image>
-            <Image  loading="lazy" src="/Assets/4x/3.png"className="scene" data-modifier="4"  width={1200} height={7921}   ></Image>
-            <Image  loading="lazy" src="/Assets/4x/4.png" className="scene" data-modifier="3"  width={1200} height={7921}   ></Image>
-            <Image  loading="lazy" src="/Assets/4x/5.png" className="scene" data-modifier="2"  width={1200} height={7921}   ></Image>
+            <Image alt="homePage Parallax" loading="lazy" src="/Assets/4x/1.png" className="scene opacity-40" data-modifier="6"  width={1200} height={7921}   ></Image>
+            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/6.png" className="scene opacity-30 " data-modifier="8"   width={1200} height={7921}   ></Image>
+            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/2.png" className="scene opacity-40" data-modifier="5"  width={1200} height={7921}   ></Image>
+            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/3.png"className="scene opacity-40" data-modifier="4"  width={1200} height={7921}   ></Image>
+            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/4.png" className="scene opacity-40" data-modifier="3"  width={1200} height={7921}   ></Image>
+            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/5.png" className="scene" data-modifier="2"  width={1200} height={7921}   ></Image>
 
           </div>
 

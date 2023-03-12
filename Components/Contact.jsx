@@ -22,7 +22,7 @@ export default function Contact({ }) {
                     </div>
                 </div>
 
-            <div data-aos="fade-left" className="text-white pl-6 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
+            <div data-aos="fade-left" className=" pl-5 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
                 <h2 className="text-4xl pb-4  font-extrabold tracking-wide  items-center font-[Elianto-regular]" >
                     Vibhav
                 </h2>
@@ -46,13 +46,13 @@ export default function Contact({ }) {
         <div  >
             <div className="overflow-x-hidden flex mt-12 pt-28 md:mt-0  md:flex-row flex-col justify-around w-4/5 mx-auto   " >
                 <div data-aos="fade-right" className="py-4 lg:py-16 px-4  max-w-screen-md basis-1/2 md:w-12">
-                    <h2 className="mb-4  text-4xl tracking-tight font-[Elianto-Regular] font-extrabold text-center text-gray-900 dark:text-white">
+                    <h2 className="mb-4  text-4xl tracking-tight font-[Elianto-Regular] font-extrabold text-center text-gray-900 dark:text-[#e9d59ae4]">
                         Contact Us
                     </h2>
                     <form onSubmit={handleSubmit} className="space-y-8">
                         <div>
                             <label
-                                for="email"
+                                htmlFor="email"
                                 className=" mb-2 font-[Hero-Bold] text-sm font-medium text-gray-900 dark:text-gray-300"
                             >
                                 Your email
@@ -72,7 +72,7 @@ export default function Contact({ }) {
                         />
                         <div>
                             <label
-                                for="subject"
+                                htmlFor="subject"
                                 className="block mb-2 text-sm font-[Hero-Bold] font-medium text-gray-900 dark:text-gray-300"
                             >
                                 Subject
@@ -87,7 +87,7 @@ export default function Contact({ }) {
                         </div>
                         <div className="sm:col-span-2 ">
                             <label
-                                for="message"
+                                htmlFor="message"
                                 className="block mb-2 text-sm font-[Hero-bold] font-medium text-gray-900 dark:text-white"
                             >
                                 Your message
@@ -115,13 +115,12 @@ export default function Contact({ }) {
                     </form >
                 </div>
 
-                <div data-aos="fade-left" className= "md:w-1/2 text-white pl-6 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
-                    <h2 className="text-4xl pb-4  font-extrabold tracking-wide  items-center font-[Elianto-regular]" >
+                <div data-aos="fade-left" className= "md:w-1/2 text-white pl-5 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
+                    <h2 className="text-4xl pb-4  font-extrabold tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]" >
                         Vibhav
                     </h2>
                     <div className=" mb-4 md:mb-12" >
-                        <p className=" text-left text-sky-100x md:text-justify font-[Hero-Bold] text-md md:text-xl" >The family of innovative and creative minds, VIBHAV is the departmental team of Electronics and Communication Engineering that works for one of the largest technical fest of North India - NIMBUS of NIT-Hamirpur.
-                            Our primary aim is to bring innovation that can make people explore beyond infinity.</p>
+                        <p className=" text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
                     </div>
                     <div className="  " >
                         <SocialMedia />
@@ -129,7 +128,7 @@ export default function Contact({ }) {
                     <div className="text-white mt-12 ">
                         <span className="md:text-2xl text-xl" >Contact address : </span>
                         <a className="break-all md:text-2xl text-xl hover:text-red-400 delay-100 duration-100  hover:scale-12F5 " href="mailto: vibhavnimbus2015@gmail.com?subject = Feedback&body = Message">
-                            vibhavnimbus2015@gmail.com</a>
+                            vibhav.nimbus@nith.ac.in</a>
                     </div>
                 </div>
             </div>
