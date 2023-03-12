@@ -23,11 +23,11 @@ export default function Contact({ }) {
                 </div>
 
             <div data-aos="fade-left" className=" pl-5 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
-                <h2 className="text-4xl pb-4  font-extrabold tracking-wide  items-center font-[Elianto-regular]" >
+                <h2 className="text-4xl pb-4  font-extrabold tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]" >
                     Vibhav
                 </h2>
                 <div className=" mb-4 md:mb-12" >
-                    <p className=" text-left text-sky-100x md:text-justify font-[Hero-Bold] text-md md:text-xl" >The family of innovative and creative minds, VIBHAV is the departmental team of Electronics and Communication Engineering that works for one of the largest technical fest of North India - NIMBUS of NIT-Hamirpur.
+                    <p className="  text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl" >The family of innovative and creative minds, VIBHAV is the departmental team of Electronics and Communication Engineering that works for one of the largest technical fest of North India - NIMBUS of NIT-Hamirpur.
                         Our primary aim is to bring innovation that can make people explore beyond infinity.</p>
                 </div>
                 <div className="  " >
@@ -35,8 +35,8 @@ export default function Contact({ }) {
                 </div>
                 <div className="text-white mt-12 ">
                     <span className="md:text-2xl text-xl" >Contact address : </span>
-                    <a className="break-all md:text-2xl text-xl hover:text-red-400 delay-100 duration-100  hover:scale-12F5 " href="mailto: vibhavnimbus2015@gmail.com?subject = Feedback&body = Message">
-                        vibhavnimbus2015@gmail.com</a>
+                    <a className="break-all md:text-2xl text-xl hover:text-red-400 delay-100 duration-100  hover:scale-12F5 " href="mailto: vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
+                    vibhav.nimbus@nith.ac.in</a>
                 </div>
             </div>
         </div>

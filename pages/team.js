@@ -79,7 +79,7 @@ export default function Posts() {
             })}
           </Carousel>
 
-          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >COORDINATOR</h1>
+          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >COORDINATORS</h1>
           <Carousel
             swipeable={true}
             draggable={true}

@@ -80,7 +80,7 @@ body {
 @font-face {
     font-family: "AvenirLTProHeavy";
     src: local("AvenirLTProHeavy"),
-        url("/assets/AvenirLTProHeavy.otf");
+        url("/Assets/AvenirLTProHeavy.otf");
         font-weight: bold;
 }
 @font-face {
