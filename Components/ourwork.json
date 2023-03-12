@@ -99,17 +99,25 @@
       {
         "name": "Neural Networks",
         "content": "Neural networks are able to learn from data and use it to inform their predictions, choices, and solutions. They've been put to use in a variety of tasks, including image identification, natural language processing, and many more. Because of its capacity to learn from data, neural networks are becoming an effective tool for resolving challenging issues.",
-        "images": "/Assets/Workshop/neural_network.webp"
+        "images": "/Assets/Workshop/neural_network.webp",
+        "round1head": "Team Vibhav invites you to an exciting workshop on the futuristic technology of Neuralink. Join us for an engaging session where we will explore the brain-computer interface technology. In this workshop, you will learn about the basics of Neuralink, including its potential applications and the science behind it. You will also witness practical demonstrations of the technology, discuss the ethical and social implications, and explore the future possibilities of Neuralink.",
+        "round1":"Whether you're an up to date person or just someone curious about the latest technology, this workshop is perfect for you. Don't miss this opportunity to learn about one of the most groundbreaking and revolutionary technologies of our time. Join us to enjoy the joy of learning."
       },
       {
         "name": "Simulink",
         "content": "Simulink is a graphical programming environment used for dynamic system modelling, simulation, and analysis. Many uses for it exist, including automatic control and signal processing. The fundamental ideas and uses of Simulink will be covered in this workshop.",
-        "images": "/Assets/Workshop/simulink.webp"
+        "images": "/Assets/Workshop/simulink.webp",
+        "round1head": "Team Vibhav is delighted to offer a workshop on Simulink, an essential tool for modeling, simulating, and analyzing dynamic systems. The workshop will cover a wide range of topics, including creating models, adding blocks, running simulations, and exploring Simulink's advanced features such as Model Explorer, Signal Editor, and Simulation Data Inspector.",
+        "round1": "Our experienced professionals will conduct the workshop and provide hands-on training, with real-world examples to enhance participants' learning. By the end of this workshop, participants will have a strong foundation in Simulink and be able to apply their knowledge to diverse engineering applications, making it a must-attend event for engineering enthusiasts.",
+        "round2head": "Team Vibhav awaits for your participation. Follow us for more updates …."
       },
       {
         "name": "Verilog",
         "content": "The principles of language, synthesis, modelling, simulation, and verification will all be covered in the session. The use of Verilog in FPGA, ASIC, and embedded system design will receive particular focus. By the end of the session, participants will be able to create and test Verilog designs and will be more knowledgeable about how to use Verilog in their particular applications.",
-        "images": "/Assets/Workshop/verilog1.webp"
+        "images": "/Assets/Workshop/verilog1.webp",
+        "round1head": "Team Vibhav is thrilled to announce an upcoming workshop on Verilog, a hardware description language used to design digital circuits. This workshop is ideal for both beginners and experienced Verilog users who are interested in learning more about digital circuit design and improving their skills.",
+        "round1":"In this workshop, participants will have the opportunity to gain hands-on experience in writing and simulating Verilog code for various digital circuits. The workshop will cover the fundamentals of Verilog syntax, including data types, module instantiation, behavioral modeling, and testbench creation. Participants will also learn about timing and power analysis of digital circuits using Verilog simulation tools.",
+        "round2head": "Join us at this exciting workshop to expand your knowledge of Verilog and become a more confident digital circuit designer. We look forward to seeing you there!"
       }
     ]
   }

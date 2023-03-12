@@ -10,7 +10,7 @@ export default function ProjectCard({ card }) {
       <div className="group rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
         <div className="h-full">
           <Image
-            className="rounded-t-lg h-full object-cover cover"
+            className="rounded-t-lg h-full "
             src={card.images}
             alt=""
             width={500}
