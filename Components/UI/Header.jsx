@@ -54,14 +54,14 @@ const projects = [
 ];
 const ourwork = [
   {
-    name: "Previous Year",
-    href: "/OurWork/Previous",
-    icon: HiPresentationChartBar,
-  },
-  {
     name: "Current Year",
     href: "/OurWork/Current",
     icon: MdWork,
+  },
+  {
+    name: "Previous Year",
+    href: "/OurWork/Previous",
+    icon: HiPresentationChartBar,
   },
 ];
 const ourteam = [
