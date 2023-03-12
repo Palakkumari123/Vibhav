@@ -90,8 +90,8 @@ export default function HomePage() {
         <div>
 
             <main data-aos="fade-up" className=" mb-12 min-h-[75vh] md:min-h-[100vh] relative">
-                <div className="flex  flex-col justify-center px-6 text-center text-white  sm:flex-row sm:px-16">
-                    <div className=" mt-16 md:mt-0 md:h-screen flex justify-center flex-col">
+                <div className="flex flex-col justify-center px-6 text-center text-white sm:flex-row sm:px-16">
+                    <div className="flex flex-col justify-center mt-16  md:mt-0 md:h-screen">
 
 
                         <svg className="vibhav-name-svg text-[8rem] sm:text-[10rem] h-[100px] w-[320px] sm:h-[200px] sm:w-[640px] lg:h-[300px] lg:w-[960px]" viewBox="0 0 960 300">
