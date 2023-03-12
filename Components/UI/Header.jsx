@@ -2,11 +2,11 @@ import React from "react";
 import { Fragment } from "react";
 import { Menu, Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
-import { RiTeamFill , RiTeamLine } from "react-icons/ri";
+import { RiTeamFill, RiTeamLine } from "react-icons/ri";
 import { IoHome } from "react-icons/io5";
 import { AiOutlineTeam } from "react-icons/ai";
 import { FaRobot, FaTasks } from "react-icons/fa";
-
+import Image from "next/image";
 import { MdDesignServices } from "react-icons/md";
 import { IoMdGitNetwork } from "react-icons/io";
 import { SiQiskit } from "react-icons/si";
@@ -88,15 +88,17 @@ export default function Example() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
               <span className="sr-only  ">Your Company</span>
-              <img
-                className="h-8 w-auto sm:h-10 px-6 animate-mover"
+              <Image
+                className="absolute  animate-mover"
                 src="/Assets/Yellow.png"
                 alt=""
+                height={50}
+                width={50}
               />
             </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-800  p-2 text-gray-500  hover:bg-gray-100 hover:text-gray-500 ">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#e9d59ae4]  p-2 text-gray-500  hover:bg-sky-100 hover:text-black ">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -310,7 +312,7 @@ export default function Example() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-400 p-2 text-gray-700 hover:bg-gray-100 hover:text-gray-500  ">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#e9d59ae4] p-2 text-gray-700 hover:bg-sky-100 hover:text-black  ">
                     <span className="sr-only ">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -325,7 +327,6 @@ export default function Example() {
                 >
                   Home
                 </Link>
-
 
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">

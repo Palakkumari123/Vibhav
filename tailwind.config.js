@@ -23,8 +23,8 @@ module.exports = {
       },
       keyframes: {
         mover: {
-          "0%": { transform: "translateY(-20pxpx)" },
-          "100%": { transform: "translateY(-20px)" },
+          "0%": { transform: "translateY(-35px)" },
+          "100%": { transform: "translateY(-5px)" },
         },
       },
       animation: {

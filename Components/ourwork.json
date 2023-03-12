@@ -78,7 +78,7 @@
       {
         "name": "Ohm's Odyssey",
         "content": "Experience the thrill of dart games, riddle solving and traditional snake & ladder games with a twist of electronics integrated into it. Compete against your friends to earn more points and come out on top.",
-        "images": "/Assets/Events/cybercircuits.webp",
+        "images": "/Assets/Events/ohm's_odyssey.webp",
         "round1head": "• Round 1 : Riddle Quest",
         "round1": "Riddle Coding Teams of two participants will be assigned, and they will each receive four distinct puzzles to solve. Each team will receive a unique set of puzzles, with a colour as the solution. They'll get three more riddles to decode the sequence. The teams must figure out all four puzzles to receive a colour code. According to the resistor color coding they have to give the value of the resistor.",
         "round2head": "• Round 2 : Lumidarts",
@@ -87,7 +87,7 @@
       {
         "name": "Boolean Blitz",
         "content": "Enjoy playing mind games with a blend of Electronics. Use simples permutations and basic knowledge of circuits to win against your opponents. Enjoy the game and win exciting prizes.",
-        "images": "/Assets/Events/event 3.webp",
+        "images": "/Assets/Events/boolean_blitz.webp",
         "round1head": "• Round 1 : Asciitary",
         "round1": " There is a given MIMO digital circuit with a blank space for a circuit component which will be a logic gate. The circuit will be of two phases first will convert character to ASCII code and second will consist of a logic gate with one blank gate. Player will feed in his alphabets in the ASCII converter. The objective of the game is to choose the right logic gate which leads to max output in the given digital circuit.",
         "round2head": "• Round 2 : Logiricks",
