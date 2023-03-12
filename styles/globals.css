@@ -30,14 +30,11 @@ html {
     font-weight: normal;
 }
 
-=
 
 @font-face {
     font-family: "ARCADECLASSIC";
     src: local("ARCADECLASSIC"),
-
         url("/Assets/Fonts/ARCADECLASSIC.ttf");
-
     font-weight: normal;
 }
 
@@ -58,15 +55,15 @@ html {
 
 
 @font-face {
-    font-family: "AvenirLTProHeavy";
-    src: local("AvenirLTProHeavy"),
+    font-family: "SummerPixel22Regular";
+    src: local("SummerPixel22Regular"),
 
-        url("/Assets/Fonts/AvenirLTProHeavy.otf");
+        url("/Assets/Fonts/SummerPixel22Regular.ttf");
         font-weight: bold;
 }
 
 
-  .dud {
+.dud {
     color: #e9ec53;
   }
 .vibhav-name-svg {
