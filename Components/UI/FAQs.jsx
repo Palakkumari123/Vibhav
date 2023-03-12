@@ -9,13 +9,13 @@ export default function FAQs() {
         <div className="w-full px-4 pt-48 " data-aos="zoom-in">
             <h1 className="flex-col text-center pb-4 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-[#e9d59ae4]">Frequently Asked  Questions</h1>
 
-            <div className=" w-4/5 mx-auto   bg-[#1a1a1d]  ">
+            <div className=" w-4/5 mx-auto    ">
                 {faq.faqs.map((item, index) => {
                     return <Disclosure as="div" className="mt-2" key={index} onMouseEnter={() => setIsShown(index)}
                         onMouseLeave={() => setIsShown(-1)}>
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex  justify-between text:md  hover:rounded-xl hover:skew-y-1   font-[Hero-Bold] hover:drop-shadow-2xl w-full px-6 py-6 text-md hover:text-sky-200     bg-gray-700   focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75  hover:bg-[#27272a] text-sky-100 delay-100 duration-200">
+                                <Disclosure.Button className="flex   justify-between text:md  hover:rounded-xl hover:skew-y-1   font-[Hero-Bold] hover:drop-shadow-2xl w-full px-6 py-6 text-md hover:text-sky-200     bg-gray-700   focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75  hover:bg-[#27272a] text-sky-100 delay-100 duration-200">
                                     <span className="flex">
 
                                         <Image
@@ -44,7 +44,7 @@ export default function FAQs() {
                                     </svg>
                                 </Disclosure.Button >
 
-                                <Disclosure.Panel className="px-4  pt-4 pb-2 font-[Hero-Bold] text-md text-sky-100"  >
+                                <Disclosure.Panel className="px-4 bg-[#1a1a1d] bg-opacity-30 rounded-xl pt-4 pb-2 font-[Hero-Bold] text-md text-sky-100"  >
 
                                    <span>
                                     
