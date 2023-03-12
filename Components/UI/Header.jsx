@@ -108,6 +108,7 @@ export default function Example() {
             >
               <IoHome className="w-6 h-6 mr-1" /> Home
             </Link>
+
             <Menu>
               {({ open }) => (
                 <>
@@ -165,7 +166,6 @@ export default function Example() {
                 </>
               )}
             </Menu>
-
             <Menu>
               {({ open }) => (
                 <>
@@ -326,6 +326,7 @@ export default function Example() {
                   Home
                 </Link>
 
+
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Our Team
@@ -369,6 +370,7 @@ export default function Example() {
                     </Popover.Panel>
                   </Transition>
                 </Menu>
+
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Projects
