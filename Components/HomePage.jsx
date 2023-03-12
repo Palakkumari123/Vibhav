@@ -96,7 +96,7 @@ export default function HomePage() {
 
                         <svg className="vibhav-name-svg text-[8rem] sm:text-[10rem] h-[100px] w-[320px] sm:h-[200px] sm:w-[640px] lg:h-[300px] lg:w-[960px]" viewBox="0 0 960 300">
                             <symbol id="s-text">
-                                <text className="font-[Azonix]" textAnchor="middle" x="50%" y="80%">Vibhav</text>
+                                <text className="font-[Azonix]  " textAnchor="middle" x="50%"  y="80%">Vibhav</text>
                             </symbol>
 
                             <g className="g-ants">
@@ -107,7 +107,7 @@ export default function HomePage() {
                                 <use xlinkHref="#s-text" className="vibhav-text-copy"></use>
                             </g>
                         </svg>
-                        <div ref={infinity} className=" text-[#d6bd30] break-words text-2xl md:text-4xl pb-4 items-center   mx-auto"></div>
+                        <div ref={infinity} className=" text-[#d6bd30] break-words text-2xl md:text-4xl mb-4 items-center   mx-auto"></div>
 
                         <div><SocialLinks /></div>
                     </div>
