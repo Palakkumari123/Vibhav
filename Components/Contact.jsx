@@ -125,9 +125,9 @@ export default function Contact({ }) {
                     <div className="  " >
                         <SocialMedia />
                     </div>
-                    <div className="text-white mt-12 ">
-                        <span className="md:text-2xl text-xl" >Contact address : </span>
-                        <a className="break-all md:text-2xl text-xl hover:text-red-400 delay-100 duration-100  hover:scale-12F5 " href="mailto: vibhavnimbus2015@gmail.com?subject = Feedback&body = Message">
+                    <div className="text-white mt-12 flex md:flex-row flex-col justify-center">
+                        <span className="md:text-2xl text-xl mt-1 text-center " >Contact address : </span>
+                        <a className="break-all md:text-2xl  text-xl text-center hover:text-red-400 delay-100 duration-100  hover:scale-12F5 " href="mailto: vibhavnimbus2015@gmail.com?subject = Feedback&body = Message">
                             vibhav.nimbus@nith.ac.in</a>
                     </div>
                 </div>
