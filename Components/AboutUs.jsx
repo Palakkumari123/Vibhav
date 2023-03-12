@@ -18,9 +18,12 @@ export default function AboutUs() {
                 <h1 className="text-center text-[#e9d59ae4] text-3xl md:text-5xl    font-bold mt-8 font-[Elianto-Regular]" >
                   About Us
                 </h1>
-                <p className="text-sky-100 text-sm pb-4 md:text-xl p-4 md:p-12 font-[Hero-Bold]  text-justify" >
+                <p className="text-sky-100 text-sm pb-4 md:text-xl p-4 md:p-8 font-[Hero-Bold]  text-justify" >
                 The family of innovative and creative minds, VIBHAV is the departmental team of Electronics and Communication Engineering that works for one of the largest technical fest of North India - NIMBUS of NIT-Hamirpur. 
-Our primary aim is to bring innovation that can make people explore beyond infinity. We at VIBHAV work with great euphoria and enthusiasm as it consists of highly energetic members who put strenuous efforts to make a change. 
+Our primary aim is to bring innovation that can make people explore beyond infinity. We at VIBHAV work with great euphoria and enthusiasm as it consists of highly energetic members who put strenuous efforts to make a change.
+Team Vibhav nurtures intense and genuine commitment. We have a
+                                        diverse pool of students who are constantly trying to innovate and push the
+                                        boundaries. 
                 </p>
               </div>
             

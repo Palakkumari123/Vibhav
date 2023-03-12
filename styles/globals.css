@@ -12,7 +12,9 @@
 body {
     background-color: #1a1a1d;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .scene {
     position: absolute;
     width: 100%;
@@ -23,46 +25,46 @@ body {
 @font-face {
     font-family: "Elianto-Regular";
     src: local("Elianto-Regular"),
-        url("/assets/Elianto-Regular.otf");
+        url("/Assets/Elianto-Regular.otf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Mylodon-Light";
     src: local("Mylodon-Light"),
-        url("/assets/Mylodon-Light.otf");
+        url("/Assets/Mylodon-Light.otf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Modeka";
     src: local("Modeka"),
-        url("/assets/Modeka.otf");
+        url("/Assets/Modeka.otf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "ARCADECLASSIC";
     src: local("ARCADECLASSIC"),
-        url("/assets/ARCADECLASSIC.ttf");
+        url("/Assets/ARCADECLASSIC.ttf");
     font-weight: normal;
 }
 @font-face {
     font-family: "SummerPixel22Regular";
     src: local("SummerPixel22Regular"),
-        url("/assets/SummerPixel22Regular.ttf");
+        url("/Assets/SummerPixel22Regular.ttf");
     font-weight: normal;
 }
 @font-face {
     font-family: "Azonix";
     src: local("Azonix"),
-        url("/assets/Azonix.otf");
+        url("/Assets/Azonix.otf");
     font-weight: bold;
 }
 @font-face {
     font-family: "Nidsans-webfont";
     src: local("Nidsans-webfont"),
-        url("/assets/nidsans-webfont.otf");
+        url("/Assets/nidsans-webfont.otf");
     font-weight: semibold ;
 }
 @font-face {
@@ -73,20 +75,20 @@ body {
 @font-face {
     font-family: "AvenirLTProLight";
     src: local("AvenirLTProLight"),
-        url("/assets/AvenirLTProLight.otf");
+        url("/Assets/AvenirLTProLight.otf");
         font-weight: bold;
 }
 
 @font-face {
     font-family: "AvenirLTProHeavy";
     src: local("AvenirLTProHeavy"),
-        url("/assets/AvenirLTProHeavy.otf");
+        url("/Assets/AvenirLTProHeavy.otf");
         font-weight: bold;
 }
 @font-face {
     font-family: "AvenirLTProMedium";
     src: local("AvenirLTProMedium"),
-        url("/assets/AvenirLTProMedium.otf");
+        url("/Assets/AvenirLTProMedium.otf");
         font-weight: bold;
 }
 
