@@ -23,7 +23,7 @@ export default function FAQs() {
                                             width={500}
                                             height={500}
                                             // objectFit="contain"
-                                            src='/assets/Yellow.png'
+                                            src='/Assets/Yellow.png'
                                             alt="Your Company"
                                         />{' '}
                                         {item.question}</span>
