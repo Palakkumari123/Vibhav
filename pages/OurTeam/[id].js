@@ -104,6 +104,7 @@ export default function Home() {
               FINAL YEAR MEMBERS
             </h1>
 
+
             <Carousel
               swipeable={true}
               draggable={true}

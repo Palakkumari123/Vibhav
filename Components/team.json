@@ -204,15 +204,15 @@
         "Profile":"/Assets/TeamPhotos/Third/Aayush Agarwal.webp",
         "Github":"",
         "LinkedIn":"https://www.linkedin.com/in/aayush-agrawal-a82850204/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {"Name" : "Agrim Kaundal",
-        "NickName":"White Walker",
+        "NickName":"WhiteWalker",
         "Profile":"/Assets/TeamPhotos/Third/agrim koundal.webp",
         "Github":"https://github.com/WhiteWalker07",
         "LinkedIn":"https://www.linkedin.com/in/agrim-kaundal-3a151a202/",
-        "Position":"COORDINATORS"
+        "Position":"CORE COORDINATOR"
         },
 
         {"Name" : "Anmol Sharma ",
@@ -220,14 +220,14 @@
         "Profile":"/Assets/TeamPhotos/Third/Anmol Sharma.webp",
         "Github":"https://github.com/D3N2-A",
         "LinkedIn":"https://www.linkedin.com/in/anmol-sharma-691515208/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
         {"Name" : "Bhavneesh Chaudhary",
         "NickName":"Bhuvi💚",
         "Profile":" /Assets/TeamPhotos/Third/Bhavneesh.webp ",
         "Github":"https://github.com/BhavneeshOG",
         "LinkedIn":"https://www.linkedin.com/in/bhavneesh-bhavneesh-4b1a10207/",
-        "Position":"COORDINATORS"
+        "Position":"CORE COORDINATOR"
         },
 
         {"Name" : "Garvita Vijay",
@@ -235,7 +235,7 @@
         "Profile":"/Assets/TeamPhotos/Third/Garvita-Vijay.webp",
         "Github":"https://github.com/vjgarvita",
         "LinkedIn":"https://www.linkedin.com/in/garvita-vijay-910704203/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {"Name" : "Gautam Kumar",
@@ -243,7 +243,7 @@
         "Profile":"/Assets/TeamPhotos/Third/gautam.webp",
         "Github":"https://github.com/gautam1122",
         "LinkedIn":"https://www.linkedin.com/in/gautam-kumar-9998aa204/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {"Name" : "Harshit Saini",
@@ -251,7 +251,7 @@
         "Profile":"/Assets/TeamPhotos/Third/harshit saini.webp",
         "Github":"https://github.com/harshit7220",
         "LinkedIn":"https://www.linkedin.com/in/harshit-saini-835b2b202/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
        
@@ -261,7 +261,7 @@
         "Profile":"/Assets/TeamPhotos/Third/Kavya-Shukla-.webp",
         "Github":"https://github.com/k-avy",
         "LinkedIn":"https://www.linkedin.com/in/kavya-shukla-086136203/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {"Name" : "Nikita Soni",
@@ -269,7 +269,7 @@
         "Profile":"/Assets/TeamPhotos/Third/nikitaSoni.webp",
         "Github":"https://www.linkedin.com/in/nikita-soni-bab146208/",
         "LinkedIn":"https://www.linkedin.com/in/nikita-soni-bab146208/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {"Name" : "Pankaj",
@@ -277,7 +277,7 @@
         "Profile":"/Assets/TeamPhotos/Third/Pankaj.webp",
         "Github":"https://github.com/spiderxp3",
         "LinkedIn":"",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {"Name" : "Priyanshu Rajput ",
@@ -285,7 +285,7 @@
         "Profile":"",
         "Github":"https://www.linkedin.com/in/priyanshu-rajput-144990201/",
         "LinkedIn":"https://www.linkedin.com/in/priyanshu-rajput-144990201/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {"Name" : "Pukhraj Gupta",
@@ -293,7 +293,7 @@
         "Profile":"/Assets/TeamPhotos/Third/Pukhraj.jpg",
         "Github":"",
         "LinkedIn":"https://www.linkedin.com/in/pukhraj-gupta-1a9421209/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {
@@ -303,7 +303,7 @@
         "Profile":"/Assets/TeamPhotos/Third/Suyash Sachdeva.webp",
         "Github":"https://github.com/suyashsachdeva",
         "LinkedIn":"https://www.linkedin.com/in/suyash-sachdeva-3096b3202/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
             
         },
 
@@ -313,7 +313,7 @@
         "Profile":"/Assets/TeamPhotos/Third/tanish.webp",
         "Github":"https://github.com/Cyberrtron",
         "LinkedIn":"https://www.linkedin.com/in/tanish-thakur-8653a6208/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         },
 
         {"Name" : "Vanshul Dhiman",
@@ -321,7 +321,7 @@
         "Profile":"/Assets/TeamPhotos/Third/Vanshul.webp",
         "Github":"https://github.com/vanshul2002",
         "LinkedIn":"https://www.linkedin.com/in/vanshul-dhiman-b99740209/",
-        "Position":"COORDINATORS"
+        "Position":"COORDINATOR"
         }
 
     ],
@@ -387,7 +387,7 @@
 
         {
             "Name" : "Kahish Thakur",
-                "NickName":"Kashish",
+                "NickName":"Thakur",
                 "Profile":"/Assets/TeamPhotos/Second/kashish THAKUR.webp",
                 "Github":"https://github.com/kashishthakur26",
                 "LinkedIn":"https://www.linkedin.com/in/kashish-thakur-b7b7a8228",
@@ -574,7 +574,7 @@
         "Name" : "Devika Kapoor",
         "NickName":"Devika",
         "Profile":"/Assets/TeamPhotos/First/DEVIKA KAPOOR.webp",
-        "Github":"https://github.com/settings/profile",
+        "Github":"https://github.com/Devika35",
         "LinkedIn":"https://www.linkedin.com/in/devika-kapoor-aa9aa4257",
         "Position":"VOLUNTEER"
 

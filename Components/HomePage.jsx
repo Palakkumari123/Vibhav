@@ -13,7 +13,6 @@ export default function HomePage() {
             setText(newText) {
                 const oldText = this.el.current.innerText ? this.el.current.innerText : "";
                 const length = Math.max(oldText.length, newText.length);
-                console.log(newText, "text", oldText, length);
                 const promise = new Promise((resolve) => this.resolve = resolve)
                 this.queue = []
                 for (let i = 0; i < length; i++) {
@@ -89,12 +88,12 @@ export default function HomePage() {
     return (
         <div>
 
-            <main data-aos="fade-up" className=" mb-12 min-h-[75vh] md:min-h-[100vh] relative">
+            <main data-aos="fade-up" className=" flex justify-center   items-center md:mb-12 h-screen relative">
                 <div className="flex flex-col justify-center px-6 text-center text-white sm:flex-row sm:px-16">
                     <div className="flex flex-col justify-center mt-16  md:mt-0 md:h-screen">
 
 
-                        <svg className="vibhav-name-svg text-[8rem] sm:text-[10rem] h-[100px] w-[320px] sm:h-[200px] sm:w-[640px] lg:h-[300px] lg:w-[960px]" viewBox="0 0 960 300">
+                        <svg className="vibhav-name-svg text-[13rem] sm:text-[10rem] h-[100px] w-[320px] sm:h-[200px] sm:w-[640px] lg:h-[300px] lg:w-[960px]" viewBox="0 0 960 300">
                             <symbol id="s-text">
                                 <text className="font-[Azonix]  " textAnchor="middle" x="50%"  y="80%">Vibhav</text>
                             </symbol>
@@ -109,7 +108,7 @@ export default function HomePage() {
                         </svg>
                         <div ref={infinity} className=" text-[#d6bd30] break-words text-2xl md:text-4xl mb-4 items-center   mx-auto"></div>
 
-                        <div><SocialLinks /></div>
+                        <div ><SocialLinks /></div>
                     </div>
                 </div>
             </main>

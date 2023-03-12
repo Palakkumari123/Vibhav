@@ -12,7 +12,9 @@
 body {
     background-color: #1a1a1d;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .scene {
     position: absolute;
     width: 100%;
@@ -23,21 +25,26 @@ body {
 @font-face {
     font-family: "Elianto-Regular";
     src: local("Elianto-Regular"),
+
         url("/Assets/Fonts/Elianto-Regular.otf");
     font-weight: normal;
 }
 
 
+
 @font-face {
     font-family: "ARCADECLASSIC";
     src: local("ARCADECLASSIC"),
+
         url("/Assets/Fonts/ARCADECLASSIC.ttf");
+
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Azonix";
     src: local("Azonix"),
+
         url("/Assets/Fonts/Azonix.otf");
     font-weight: bold;
 }
@@ -46,15 +53,18 @@ body {
     font-family: "Hero-Bold";
     src: local("Hero-Bold"),
         url("/Assets/Fonts/Hero-Bold.otf");
+
 }
 
 
 @font-face {
     font-family: "AvenirLTProHeavy";
     src: local("AvenirLTProHeavy"),
+
         url("/Assets/Fonts/AvenirLTProHeavy.otf");
         font-weight: bold;
 }
+
 
   .dud {
     color: #e9ec53;
