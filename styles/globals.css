@@ -25,73 +25,45 @@ html {
 @font-face {
     font-family: "Elianto-Regular";
     src: local("Elianto-Regular"),
-        url("/Assets/Elianto-Regular.otf");
+
+        url("/Assets/Fonts/Elianto-Regular.otf");
     font-weight: normal;
 }
 
-@font-face {
-    font-family: "Mylodon-Light";
-    src: local("Mylodon-Light"),
-        url("/Assets/Mylodon-Light.otf");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Modeka";
-    src: local("Modeka"),
-        url("/Assets/Modeka.otf");
-    font-weight: bold;
-}
+=
 
 @font-face {
     font-family: "ARCADECLASSIC";
     src: local("ARCADECLASSIC"),
-        url("/Assets/ARCADECLASSIC.ttf");
+
+        url("/Assets/Fonts/ARCADECLASSIC.ttf");
+
     font-weight: normal;
 }
-@font-face {
-    font-family: "SummerPixel22Regular";
-    src: local("SummerPixel22Regular"),
-        url("/Assets/SummerPixel22Regular.ttf");
-    font-weight: normal;
-}
+
 @font-face {
     font-family: "Azonix";
     src: local("Azonix"),
-        url("/Assets/Azonix.otf");
+
+        url("/Assets/Fonts/Azonix.otf");
     font-weight: bold;
 }
-@font-face {
-    font-family: "Nidsans-webfont";
-    src: local("Nidsans-webfont"),
-        url("/Assets/nidsans-webfont.otf");
-    font-weight: semibold ;
-}
+
 @font-face {
     font-family: "Hero-Bold";
     src: local("Hero-Bold"),
-        url("/Assets/Hero-Bold.otf");
+        url("/Assets/Fonts/Hero-Bold.otf");
+
 }
-@font-face {
-    font-family: "AvenirLTProLight";
-    src: local("AvenirLTProLight"),
-        url("/Assets/AvenirLTProLight.otf");
-        font-weight: bold;
-}
+
 
 @font-face {
     font-family: "AvenirLTProHeavy";
     src: local("AvenirLTProHeavy"),
-        url("/Assets/AvenirLTProHeavy.otf");
-        font-weight: bold;
-}
-@font-face {
-    font-family: "AvenirLTProMedium";
-    src: local("AvenirLTProMedium"),
-        url("/Assets/AvenirLTProMedium.otf");
-        font-weight: bold;
-}
 
+        url("/Assets/Fonts/AvenirLTProHeavy.otf");
+        font-weight: bold;
+}
 
 
   .dud {
