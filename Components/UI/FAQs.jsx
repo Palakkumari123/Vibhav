@@ -1,11 +1,11 @@
 import { Disclosure } from "@headlessui/react";
-import Image from 'next/image';
+import Image from "next/image";
 import faq from "./faq.json";
-import { useState } from 'react';
+import { useState } from "react";
 export default function FAQs() {
-    const [isShow, setIsShown] = useState(-1);
-    return (
-
+  const [isShow, setIsShown] = useState(-1);
+  return (
+ 
         <div className="w-full px-4 pt-48 " data-aos="zoom-in">
             <h1 className="flex-col text-center pb-4 text-3xl md:text-5xl font-extrabold font-[Elianto-Regular] text-[#e9d59ae4]">Frequently Asked  Questions</h1>
 
