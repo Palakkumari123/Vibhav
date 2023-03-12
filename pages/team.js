@@ -7,7 +7,6 @@ import TeamPhotos from "../Components/team.json";
 import TeamCard from "../Components/UI/cards/TeamCard";
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5
   },
@@ -30,7 +29,7 @@ export default function Posts() {
   console.log("This is the imported data", TeamPhotos)
   return (
     <Layout>
-      <div className="pt-5 m-4 mt-24 sm:m-8">
+      <div className="m-4 sm:m-8 mt-28 pt-5">
         <h1 className=" text-5xl    rounded-md text-[#dab971] p-2 
           md:text-5xl flex justify-center items-center font-[Elianto-Regular] mt-10 animate-pulse " > TEAM MEMEBERS </h1>
         <div>

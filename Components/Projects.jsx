@@ -12,9 +12,9 @@ export default function Projects({ id }) {
     dsp: "DSP",
     quan: "Quantum Computing"
   };
-  // console.log("tabs",tabs[id],id)
   return (
     <div className="p-3 pt-24 justify-center">
+      <h1 className="text-[#dab971] mt-10 justify-center flex text-6xl font-[Azonix]">Projects</h1>
       {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
           {tabs.map((tab, ind) => {
             return (
@@ -32,13 +32,13 @@ export default function Projects({ id }) {
             );
           })}
         </div> */}
-      <div className="text-white justify-center flex p-5 font-[Azonix] text-5xl font-black">
+      <div className="text-[#dab971] animate-pulse justify-center flex mt-6 mb-8 font-[Azonix] text-5xl font-black">
         {tabs[id]}
       </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 font-[Azonix] sm:grid-cols-2 gap-6 px-12">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 font-[Azonix] sm:grid-cols-2 lg:gap-6 md:gap-3 sm:gap-2 lg:px-6 md:px-4 sm:px-2">
         {projects[tabs[id]]?.map((card, ind) => {
           return (
-            <div key={ind} className="justify-center">
+            <div key={ind} className="justify-center mb-3">
               <ProjectCard card={card} />
             </div>
           );
