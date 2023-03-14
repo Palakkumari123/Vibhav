@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
   useEffect(()=>{
     setTimeout(function setLader(){
       setLoading(false)
-    }, 5000);
+    }, 2000);
   },[])
   return loading ? <Loading /> : <Component {...pageProps} />
   // return 
