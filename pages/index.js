@@ -49,7 +49,7 @@ export default function Home() {
         <Layout>
 
        
-           {/* <Image alt="homePage Parallax" loading="lazy"   src="/Assets/4x/MobileHeroSection.webp" className=" flex opacity-40 h-screen object-cover fixed top-0 left-0 " width={7921} height={7921}   ></Image> */}
+           <Image alt="homePage Parallax" loading="lazy"   src="/Assets/4x/MobileHeroSection.webp" className=" flex opacity-40 h-screen object-cover fixed top-0 left-0 " width={7921} height={7921}   ></Image>
             <div >
            {/* <Image alt="homePage Parallax" loading="lazy"   src="/Assets/4x/1.png" className="scene hidden md:flex opacity-40" data-modifier="6"  width={1200} height={7921}   ></Image> */}
 
