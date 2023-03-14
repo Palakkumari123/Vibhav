@@ -126,7 +126,7 @@ export default function Home() {
             </Carousel>
 
             <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
-              COORDINATOR
+              COORDINATORS
             </h1>
             <Carousel
               swipeable={true}
