@@ -49,19 +49,17 @@ export default function Home() {
         <Layout>
 
        
-           {/* <Image alt="homePage Parallax" loading="lazy"   src="/Assets/4x/MobileHeroSection.webp" className=" flex opacity-40 h-screen object-cover fixed top-0 left-0 " width={7921} height={7921}   ></Image> */}
+           {/* <Image alt="homePage Parallax" loading="lazy"   src="/Assets/4x/MobileHeroSection.webp" className="fixed top-0 left-0 flex object-cover h-screen  opacity-40" width={7921} height={7921}   ></Image> */}
             <div >
-           {/* <Image alt="homePage Parallax" loading="lazy"   src="/Assets/4x/1.png" className="scene hidden md:flex opacity-40" data-modifier="6"  width={1200} height={7921}   ></Image> */}
+           {/* <Image alt="homePage Parallax" loading="lazy"   src="/Assets/4x/1.png" className="hidden scene md:flex opacity-40" data-modifier="6"  width={1200} height={7921}   ></Image> */}
 
             {/* <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/6.png" className="scene opacity-70 " data-modifier="8"   width={1200} height={7921}   ></Image>  */}
-             {/* <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/2.png" className="scene hidden md:flex opacity-40" data-modifier="5"  width={1200} height={7921}   ></Image>
-            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/3.png"className="scene hidden md:flex opacity-40" data-modifier="4"  width={1200} height={7921}   ></Image>
-            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/4.png" className="scene hidden md:flex opacity-40" data-modifier="3"  width={1200} height={7921}   ></Image>
-            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/5.png" className="scene hidden md:flex " data-modifier="2"  width={1200} height={7921}   ></Image> */}
+             {/* <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/2.png" className="hidden scene md:flex opacity-40" data-modifier="5"  width={1200} height={7921}   ></Image>
+            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/3.png"className="hidden scene md:flex opacity-40" data-modifier="4"  width={1200} height={7921}   ></Image>
+            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/4.png" className="hidden scene md:flex opacity-40" data-modifier="3"  width={1200} height={7921}   ></Image>
+            <Image  alt="homePage Parallax"  loading="lazy" src="/Assets/4x/5.png" className="hidden scene md:flex " data-modifier="2"  width={1200} height={7921}   ></Image> */}
 
           </div>
-
-
           <div  className="z-50 flex flex-col">
             <HomePage   />
             <AboutUs  />
