@@ -23,7 +23,7 @@ export default function Home() {
         <div className="mt-36 mb-8 text-[#dab971] animate-pulse justify-center flex font-[Azonix] text-5xl">
           {currentPage}
         </div>
-        <div className="flex flex-col sm:flex-row justify-center font-[Azonix]">
+        <div className="flex flex-col sm:flex-row items-center justify-center font-[Azonix]">
           {tabs.map((tab, ind) => {
             return (
               <button

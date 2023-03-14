@@ -22,7 +22,7 @@ export default function Contact({ }) {
                     </div>
                 </div>
 
-            <div data-aos="fade-left" className=" pl-5 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
+            <div data-aos="fade-left" className=" sm:pl-5 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
                 <h2 className="text-4xl pb-4  font-extrabold tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]" >
                     Vibhav
                 </h2>
@@ -30,7 +30,7 @@ export default function Contact({ }) {
                     <p className="  text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl" >The family of innovative and creative minds, VIBHAV is the departmental team of Electronics and Communication Engineering that works for one of the largest technical fest of North India - NIMBUS of NIT-Hamirpur.
                         Our primary aim is to bring innovation that can make people explore beyond infinity.</p>
                 </div>
-                <div className="  " >
+                <div className="ml-12" >
                     <SocialMedia />
                 </div>
                 <div className="text-white mt-12 ">
@@ -43,9 +43,9 @@ export default function Contact({ }) {
         );
     };
     return (
-        <div  >
-            <div className="overflow-x-hidden flex mt-12 pt-28 md:mt-0  md:flex-row flex-col justify-around w-4/5 mx-auto   " >
-                <div data-aos="fade-right" className="py-4 lg:py-16 px-4  max-w-screen-md basis-1/2 md:w-12">
+        <div className=" z-10   mt-12" >
+            <div className=" relative overflow-x-hidden  flex pt-28 md:mt-0  md:flex-row flex-col justify-around w-4/5 mx-auto   " >
+                <div data-aos="fade-right" className="py-4 lg:py-16 px-4 mb-4 rounded-xl bg-[#1a1a1d] z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12">
                     <h2 className="mb-4  text-4xl tracking-tight font-[Elianto-Regular] font-extrabold text-center text-gray-900 dark:text-[#e9d59ae4]">
                         Contact Us
                     </h2>
@@ -115,12 +115,12 @@ export default function Contact({ }) {
                     </form >
                 </div>
 
-                <div data-aos="fade-left" className= "md:w-1/2 text-white pl-5 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
+                <div data-aos="fade-left" className= "md:w-1/2 bg-[#1a1a1d] rounded-xl z-10 bg-opacity-50 text-white px-2 sm:pl-3 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
                     <h2 className="text-4xl pb-4  font-extrabold tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]" >
                         Vibhav
                     </h2>
                     <div className=" mb-4 md:mb-12" >
-                        <p className=" text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
+                        <p className=" text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl px-2 sm:px-0" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
                     </div>
                     <div className="  " >
                         <SocialMedia />

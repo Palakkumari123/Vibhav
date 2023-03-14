@@ -8,44 +8,79 @@ import Layout from "../../Components/UI/Layout";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CurrentTeamPhotos from "../../Components/team.json";
-import TeamCard  from "../../Components/UI/cards/TeamCard";
+import TeamCard from "../../Components/UI/cards/TeamCard";
 import AluminiTeamPhotos from "../../Components/alumni.json";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    items: 5,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    items: 3,
   },
   tablet: {
     breakpoint: { max: 1024, min: 540 },
-    items: 2
+    items: 2,
   },
   mobile: {
     breakpoint: { max: 540, min: 0 },
-    items: 1
-  }
+    items: 1,
+  },
 };
-
 
 export default function Home() {
   const router = useRouter();
   const { id } = router.query;
   const pageState = { currteam: "Current Team", alumni: "Alumni" };
   const tabs = ["Current Team", "Alumni"];
-  const alumniYear = ["2019", "2020", "2021", "2022"]
+  const alumniYear = ["2019", "2020", "2021", "2022"];
   const currentPage = pageState[id];
   return (
     <Layout>
       <div className="sm:m-8">
-        <h1 className=" text-5xl rounded-md text-[#dab971] mt-36 md:text-5xl flex justify-center items-center font-[Elianto-Regular] animate-pulse " > {currentPage} </h1>
-        {currentPage==="Alumni" ? alumniYear.map((year,index)=>{
-          return <div key={index}>
-          <h1 className="text-3xl ml-12 mt-8 text-[#a18240] font-[AvenirLTProHeavy] ">{year}</h1>
-          <Carousel
+        <h1 className=" text-5xl rounded-md text-[#dab971] mt-36 md:text-5xl flex justify-center items-center font-[Elianto-Regular] animate-pulse ">
+          {" "}
+          {currentPage}{" "}
+        </h1>
+        {currentPage === "Alumni" ? (
+          alumniYear.map((year, index) => {
+            return (
+              <div key={index}>
+                <h1 className="text-3xl ml-12 mt-8 text-[#a18240] font-[AvenirLTProHeavy] ">
+                  {year}
+                </h1>
+                <Carousel
+                  swipeable={true}
+                  draggable={true}
+                  showDots={false}
+                  responsive={responsive}
+                  ssr={true} // means to render carousel on server-side.
+                  infinite={true}
+                  // autoPlay={true}
+                  autoPlaySpeed={2000}
+                  keyBoardControl={true}
+                  containerClass="carousel-container"
+                  removeArrowOnDeviceType={["tablet", "mobile"]}
+                  // dotListClass="custom-dot-list-style"
+                  itemClass="carousel-item-padding-40-px my-4"
+                  partialVisbile
+                >
+                  {AluminiTeamPhotos[year].map((post, ind) => {
+                    console.log(post);
+                    return <TeamCard cardType="alumni" key={ind} data={post} />;
+                  })}
+                </Carousel>
+              </div>
+            );
+          })
+        ) : (
+          <div>
+            <h1 className="text-[#a18240] mt-8 text-3xl ml-14 font-[AvenirLTProHeavy]">
+              SUPER FINAL YEAR MEMBERS
+            </h1>
+            <Carousel
               swipeable={true}
               draggable={true}
               showDots={false}
@@ -55,137 +90,112 @@ export default function Home() {
               // autoPlay={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
-  
               containerClass="carousel-container"
               removeArrowOnDeviceType={["tablet", "mobile"]}
               // dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px my-4"
               partialVisbile
-  
             >
-              {AluminiTeamPhotos[year].map((post, ind) => {
-                console.log(post)
-                return <TeamCard cardType="alumni" key={ind} data={post} />
+              {CurrentTeamPhotos["Super Final Year"].map((post, ind) => {
+                return <TeamCard cardType="team" key={ind} data={post} />;
+              })}
+            </Carousel>
+            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
+              FINAL YEAR MEMBERS
+            </h1>
+
+
+            <Carousel
+              swipeable={true}
+              draggable={true}
+              showDots={false}
+              responsive={responsive}
+              ssr={true} // means to render carousel on server-side.
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2000}
+              keyBoardControl={true}
+              // containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              // dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px my-4"
+            >
+              {CurrentTeamPhotos["Final Year"].map((post, ind) => {
+                return <TeamCard cardType="team" key={ind} data={post} />;
+              })}
+            </Carousel>
+
+            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
+              COORDINATOR
+            </h1>
+            <Carousel
+              swipeable={true}
+              draggable={true}
+              showDots={false}
+              responsive={responsive}
+              ssr={true} // means to render carousel on server-side.
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2000}
+              keyBoardControl={true}
+              // containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              // dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px my-4"
+            >
+              {CurrentTeamPhotos["Third Year"].map((post, ind) => {
+                return <TeamCard cardType="team" key={ind} data={post} />;
+              })}
+            </Carousel>
+            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
+              EXECUTIVE MEMBERS
+            </h1>
+            <Carousel
+              swipeable={true}
+              draggable={true}
+              showDots={false}
+              responsive={responsive}
+              ssr={true} // means to render carousel on server-side.
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2000}
+              keyBoardControl={true}
+              // containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              // dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px my-4"
+            >
+              {CurrentTeamPhotos["Second Year"].map((post, ind) => {
+                return <TeamCard cardType="team" key={ind} data={post} />;
+              })}
+            </Carousel>
+
+            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
+              VOLUNTEERS
+            </h1>
+            <div class="blob blob-9"></div>
+
+            <Carousel
+              swipeable={true}
+              draggable={true}
+              showDots={false}
+              responsive={responsive}
+              ssr={true} // means to render carousel on server-side.
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2000}
+              keyBoardControl={true}
+              // containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              // dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px my-4"
+            >
+              {CurrentTeamPhotos["First Year"].map((post, ind) => {
+                return <TeamCard cardType="team" key={ind} data={post} />;
               })}
             </Carousel>
           </div>
-        })
-        
-        :<div>
-          <h1 className="text-[#a18240] mt-8 text-3xl ml-14 font-[AvenirLTProHeavy]" >
-            SUPER FINAL YEAR MEMBERS</h1>
-          <Carousel
-            swipeable={true}
-            draggable={true}
-            showDots={false}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            // autoPlay={true}
-            autoPlaySpeed={2000}
-            keyBoardControl={true}
-
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px my-4"
-            partialVisbile
-
-          >
-            {CurrentTeamPhotos["Super Final Year"].map((post, ind) => {
-              return <TeamCard cardType="team" key={ind} data={post} />
-            })}
-          </Carousel>
-          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >
-            FINAL YEAR MEMBERS</h1>
-          <Carousel
-            swipeable={true}
-            draggable={true}
-            showDots={false}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={2000}
-            keyBoardControl={true}
-
-            // containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px my-4"
-          >
-            {CurrentTeamPhotos["Final Year"].map((post, ind) => {
-              return <TeamCard cardType="team" key={ind} data={post} />
-            })}
-          </Carousel>
-
-          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >COORDINATORS</h1>
-          <Carousel
-            swipeable={true}
-            draggable={true}
-            showDots={false}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={2000}
-            keyBoardControl={true}
-
-            // containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px my-4"
-          >
-            {CurrentTeamPhotos["Third Year"].map((post, ind) => {
-              return <TeamCard cardType="team" key={ind} data={post} />
-            })}
-          </Carousel>
-
-          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >EXECUTIVE MEMBERS</h1>
-          <Carousel
-            swipeable={true}
-            draggable={true}
-            showDots={false}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={2000}
-            keyBoardControl={true}
-
-            // containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px my-4"
-          >
-            {CurrentTeamPhotos["Second Year"].map((post, ind) => {
-              return <TeamCard cardType="team" key={ind} data={post} />
-            })}
-          </Carousel>
-
-          <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]" >VOLUNTEERS</h1>
-          <Carousel
-            swipeable={true}
-            draggable={true}
-            showDots={false}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={2000}
-            keyBoardControl={true}
-
-            // containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            // dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px my-4"
-          >
-            {CurrentTeamPhotos["First Year"].map((post, ind) => {
-              return <TeamCard cardType="team" key={ind} data={post} />
-            })}
-          </Carousel>
-        </div>}
-
+        )}
       </div>
     </Layout>
   );
