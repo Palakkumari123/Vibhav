@@ -83,9 +83,10 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-30">
+      
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex justify-start md:w-0 md:flex-1">
             <Link href="/">
               <span className="sr-only  ">Your Company</span>
               <Image
@@ -110,7 +111,7 @@ export default function Example() {
             >
               <IoHome className="w-6 h-6 mr-1" /> Home
             </Link>
-
+            
             <Menu>
               {({ open }) => (
                 <>
@@ -141,9 +142,9 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Menu.Item className="absolute z-10  mt-10 w-screen max-w-xs transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
-                      <div className="overflow-hidden  rounded-lg shadow-lg ">
-                        <div className="absolute -ml-20 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
+                    <Menu.Item className="absolute z-10  mt-10 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
+                      <div className="overflow-hidden  rounded-lg shadow-lg ">  
+                        <div className="absolute -ml-20 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 md:gap-8 md:p-8">
                           {ourteam.map((item) => (
                             <Link
                               key={item.name}
@@ -168,6 +169,7 @@ export default function Example() {
                 </>
               )}
             </Menu>
+            
             <Menu>
               {({ open }) => (
                 <>
@@ -199,9 +201,9 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Menu.Item className="absolute z-10 mt-10 w-screen max-w-lg transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
+                    <Menu.Item className="absolute z-10 mt-10 w-screen max-w-lg transform px-2 md:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
-                        <div className="absolute ml-56 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="absolute ml-56 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 md:gap-8 md:p-8">
                           {projects.map((item) => (
                             <Link
                               key={item.name}
@@ -256,9 +258,9 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Menu.Item className="absolute z-10 mt-10 w-screen max-w-xs transform px-2 sm:px-0 md:left-1/2 md:ml-0 md:translate-x-1/2">
+                    <Menu.Item className="absolute z-10 mt-10 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
-                        <div className="absolute -ml-2 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="absolute -ml-2 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 md:gap-8 md:p-8">
                           {ourwork.map((item) => (
                             <Link
                               key={item.name}
@@ -284,7 +286,7 @@ export default function Example() {
               )}
             </Menu>
           </Popover.Group>
-          <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0"></div>
+          <div className="hidden items-center justify-end md:flex md:flex-1 md:w-0"></div>
         </div>
       </div>
 
@@ -321,12 +323,12 @@ export default function Example() {
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="grid py-1 gap-y-4 gap-x-8">
-                <Link
-                  href="/"
-                  className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2"
-                >
+              <Popover.Button
+              as={Link}
+href="/" className="text-left px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2">
+              
                   Home
-                </Link>
+                </Popover.Button>
 
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
@@ -346,12 +348,13 @@ export default function Example() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                   >
-                    <Popover.Panel className="absolute z-[100] mt-24 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-[100] mt-24 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
-                        <div className="relative grid gap-6 bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid gap-6 bg-gray-700 px-5 py-6 md:gap-8 md:p-8">
                           {ourteam.map((item) => (
-                            <Link
+                            <Popover.Button
                               key={item.name}
+                              as={Link}
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#dab971]"
                             >
@@ -364,7 +367,7 @@ export default function Example() {
                                   {item.name}
                                 </p>
                               </div>
-                            </Link>
+                            </Popover.Button>
                           ))}
                         </div>
                       </div>
@@ -390,12 +393,13 @@ export default function Example() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                   >
-                    <Popover.Panel className="absolute z-[100] -ml-4 mt-40 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-[100] -ml-4 mt-40 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
-                        <div className="relative grid gap-6 bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid gap-6 bg-gray-700 px-5 py-6 md:gap-8 md:p-8">
                           {projects.map((item) => (
-                            <Link
+                            <Popover.Button
                               key={item.name}
+                              as={Link}
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#dab971]"
                             >
@@ -408,7 +412,7 @@ export default function Example() {
                                   {item.name}
                                 </p>
                               </div>
-                            </Link>
+                            </Popover.Button>
                           ))}
                         </div>
                       </div>
@@ -433,12 +437,13 @@ export default function Example() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                   >
-                    <Popover.Panel className="absolute z-[100] -ml-4 mt-52 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-[100] -ml-4 mt-52 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
-                        <div className="relative grid gap-6 bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid gap-6 bg-gray-700 px-5 py-6 md:gap-8 md:p-8">
                           {ourwork.map((item) => (
-                            <Link
+                            <Popover.Button
                               key={item.name}
+                              as={Link}
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#dab971]"
                             >
@@ -451,7 +456,7 @@ export default function Example() {
                                   {item.name}
                                 </p>
                               </div>
-                            </Link>
+                            </Popover.Button>
                           ))}
                         </div>
                       </div>
