@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="flex justify-center flex-col">
-        <div className="mt-36 mb-8 text-[#dab971] animate-pulse justify-center flex font-[Azonix] text-5xl">
+        <div className="mt-36 mb-8 text-[#dab971] animate-pulse justify-center flex font-[Azonix] md:p-0 pl-1 text-4xl md:text-5xl">
           {currentPage}
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center font-[Azonix]">

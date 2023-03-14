@@ -14,7 +14,7 @@ export default function Projects({ id }) {
   };
   return (
     <div className="p-3 pt-24 justify-center">
-      <h1 className="text-[#dab971] mt-10 justify-center flex text-6xl font-[Azonix]">Projects</h1>
+      <h1 className="text-[#dab971] mt-10 justify-center flex text-5xl md:text-6xl md:p-0 p-2 font-[Azonix]">Projects</h1>
       {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
           {tabs.map((tab, ind) => {
             return (
