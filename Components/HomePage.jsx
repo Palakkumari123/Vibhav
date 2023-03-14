@@ -19,7 +19,7 @@ export default function HomePage() {
                     const from = oldText[i] || ''
                     const to = newText[i] || ''
                     const start = Math.floor(Math.random() * 20)
-                    const end = start + Math.floor(Math.random() *20)
+                    const end = start + Math.floor(Math.random() * 20)
                     this.queue.push({ from, to, start, end })
                 }
                 cancelAnimationFrame(this.frameRequest)
@@ -27,12 +27,15 @@ export default function HomePage() {
                 this.update()
                 return promise
             }
-            
+
             update() {
-                let output = ''
-                let complete = 0
-                for (let i = 0, n = this.queue.length; i < n; i++) {
-                
+                if (this.el.current) {
+
+
+                    let output = ''
+                    let complete = 0
+                    for (let i = 0, n = this.queue.length; i < n; i++) {
+
                         let { from, to, start, end, char } = this.queue[i];
                         if (this.frame >= end) {
                             complete++
@@ -46,15 +49,16 @@ export default function HomePage() {
                         } else {
                             output += from
                         }
-                    
-                  
-                }
-                this.el.current.innerHTML = output
-                if (complete === this.queue.length) {
-                    this.resolve()
-                } else {
-                    this.frameRequest = requestAnimationFrame(this.update)
-                    this.frame++
+
+
+                    }
+                    this.el.current.innerHTML = output
+                    if (complete === this.queue.length) {
+                        this.resolve()
+                    } else {
+                        this.frameRequest = requestAnimationFrame(this.update)
+                        this.frame++
+                    }
                 }
             }
             randomChar() {
@@ -63,7 +67,7 @@ export default function HomePage() {
         }
 
 
-        const phrases  = [
+        const phrases = [
             'अनंत से भी आगे !',
             'Beyond Infinity'
         ]
@@ -73,7 +77,7 @@ export default function HomePage() {
 
         let counter = 0;
         const next = () => {
-            if(el.current){
+            if (el.current) {
 
                 fx.setText(phrases[counter]).then(() => {
                     setTimeout(next, 3000);
@@ -95,7 +99,7 @@ export default function HomePage() {
 
                         <svg className="vibhav-name-svg text-[13rem] sm:text-[10rem] h-[100px] w-[320px] sm:h-[200px] sm:w-[640px] lg:h-[300px] lg:w-[960px]" viewBox="0 0 960 300">
                             <symbol id="s-text">
-                                <text className="font-[Azonix]  " textAnchor="middle" x="50%"  y="80%">Vibhav</text>
+                                <text className="font-[Azonix]  " textAnchor="middle" x="50%" y="80%">Vibhav</text>
                             </symbol>
 
                             <g className="g-ants">
