@@ -14,28 +14,6 @@ import Contact from "../Components/Contact";
 
 
 export default function Home() {
-
-  useEffect(() => {
-    document.querySelectorAll(".scene").forEach((elem) => {
-      const modifier = elem.getAttribute("data-modifier");
-
-      basicScroll
-        .create({
-          elem: elem,
-          from: 0,
-          to: 519,
-          direct: true,
-          props: {
-            "--translateY": {
-              from: "0",
-              to: `${65 * modifier}px`,
-            },
-          },
-        })
-        .start();
-    });
-  }, []);
-
   return (
     <>
       <Head>
