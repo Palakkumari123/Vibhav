@@ -12,12 +12,12 @@ export default function Contact({ }) {
             data-aos="fade-right"
               className="py-4 mb-12 lg:py-16   rounded-xl md:bg-transparent bg-[#1a1a1d] z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12 ">
 
-                    <h2   className=" text-4xl mb-12 tracking-tight font-[Elianto-Regular] font-extrabold text-center text-gray-900 dark:text-white">
+                    <h2   className="text-[#e9d59ae4]  text-4xl mb-12 tracking-tight font-[Elianto-Regular] font-extrabold text-center dark:text-white">
                         Contact Us
                     </h2>
-                    <div className="text-sky-100  w-full  flex text-xl justify-center items-center ">
-                        <div className="bg-gray-700 flex m-3 p-2 pl-8 pr-8 rounded-xl " >
-                            <MdOutlineDownloadDone className="w-8    text-blue-400 h-8 mr-1 " />
+                    <div className="flex items-center justify-center w-full text-xl text-sky-100 ">
+                        <div className="flex p-2 pl-8 pr-8 m-3 bg-gray-700 rounded-xl " >
+                            <MdOutlineDownloadDone className="w-8 h-8 mr-1 text-blue-400 " />
                             Thanks for Messaging
                         </div>
 
@@ -30,15 +30,15 @@ export default function Contact({ }) {
                 <h2 className="text-4xl pb-4 pl-4 font-extrabold  tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]" >
                     Vibhav
                 </h2>
-                <div className=" mb-4 pl-2 md:mb-12" >
+                <div className="pl-2 mb-4 md:mb-12" >
                     <p className="  text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
                 </div>
                 <div className="" >
                     <SocialMedia />
                 </div>
-                <div className="text-white mt-12 flex md:flex-row flex-col justify-center ">
-                    <span className="md:text-2xl text-xl text-center" >Contact address : </span>
-                    <a className="break-all md:text-2xl  text-xl text-center hover:text-red-400 delay-100 duration-100    " href="mailto: vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
+                <div className="flex flex-col justify-center mt-12 text-white md:flex-row ">
+                    <span className="text-xl text-center md:text-2xl" >Contact address : </span>
+                    <a className="text-xl text-center break-all duration-100 delay-100 md:text-2xl hover:text-red-400 " href="mailto: vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
                     vibhav.nimbus@nith.ac.in</a>
                 </div>
             </div>
@@ -46,12 +46,12 @@ export default function Contact({ }) {
         );
     };
     return (
-        <div className=" z-10  flex  mt-12" >
+        <div className="z-10 flex mt-12 " >
             <div className=" relative overflow-x-hidden rounded-2xl flex pt-8 md:mt-20  md:bg-[#1a1a1d] md:bg-opacity-50 md:flex-row flex-col justify-around w-4/5 mx-auto   " >
                 <div 
                 data-aos="fade-right" 
                 className="py-4 lg:py-16 px-4 mb-12  rounded-xl md:bg-transparent bg-[#1a1a1d] z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12">
-                    <h2 className="mb-4  text-4xl tracking-tight font-[Elianto-Regular] font-extrabold text-center text-gray-900 dark:text-[#e9d59ae4]">
+                    <h2 className="mb-4 text-[#e9d59ae4]  text-4xl tracking-tight font-[Elianto-Regular] font-extrabold text-center dark:text-[#e9d59ae4]">
                         Contact Us
                     </h2>
                     <form onSubmit={handleSubmit} className="space-y-8">
@@ -85,7 +85,7 @@ export default function Contact({ }) {
                             <input
                                 type="text"
                                 id="subject"
-                                className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
 
                                 required
                             />
@@ -112,7 +112,7 @@ export default function Contact({ }) {
                         />
                         <button
                             type="submit"
-                            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            className="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                             disabled={state.submitting}
                         >
                             Send message
@@ -126,15 +126,15 @@ export default function Contact({ }) {
                     <h2 className="text-4xl pb-4 pl-4 font-extrabold tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]" >
                         Vibhav
                     </h2>
-                    <div className=" mb-4 pl-2 md:mb-12" >
+                    <div className="pl-2 mb-4 md:mb-12" >
                         <p className=" text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl px-2 sm:px-0" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
                     </div>
-                    <div className="  " >
+                    <div className="" >
                         <SocialMedia />
                     </div>
-                    <div className="text-white mt-12 flex md:flex-row flex-col justify-center">
-                        <span className="md:text-2xl text-xl mt-1 text-center " >Contact address : </span>
-                        <a className="break-all md:text-2xl  text-xl text-center hover:text-red-400 delay-100 duration-100   " href="mailto:vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
+                    <div className="flex flex-col justify-center mt-12 text-white md:flex-row">
+                        <span className="mt-1 text-xl text-center md:text-2xl " >Contact address : </span>
+                        <a className="text-xl text-center break-all duration-100 delay-100 md:text-2xl hover:text-red-400 " href="mailto:vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
                             vibhav.nimbus@nith.ac.in</a>
                     </div>
                 </div>
