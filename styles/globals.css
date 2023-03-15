@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Kanit:wght@500&display=swap');
-
 @layer base {
     a {
         @apply p-1
@@ -26,55 +25,40 @@ html {
     font-family: "Elianto-Regular";
     src: local("Elianto-Regular"),
 
-        url("/Assets/Fonts/Elianto-Regular.otf");
+        url("/Assets/Fonts/Elianto-Regular.woff2");
     font-weight: normal;
+    font-display: swap;
 }
-
 
 
 @font-face {
     font-family: "ARCADECLASSIC";
     src: local("ARCADECLASSIC"),
-
-        url("/Assets/Fonts/ARCADECLASSIC.ttf");
-
+        url("/Assets/Fonts/ARCADECLASSIC.woff2");
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Azonix";
     src: local("Azonix"),
 
-        url("/Assets/Fonts/Azonix.otf");
+        url("/Assets/Fonts/Azonix.woff2");
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Hero-Bold";
     src: local("Hero-Bold"),
-        url("/Assets/Fonts/Hero-Bold.otf");
-
+        url("/Assets/Fonts/Hero-Bold.woff2");
+        font-display: swap;
 }
 
-
-@font-face {
-    font-family: "AvenirLTProHeavy";
-    src: local("AvenirLTProHeavy"),
-
-        url("/Assets/Fonts/AvenirLTProHeavy.otf");
-        font-weight: bold;
-}
-
-
-  .dud {
+.dud {
     color: #e9ec53;
   }
 .vibhav-name-svg {
-    /* display: block; */
-    
-    /* font: 10rem 'Vibhav'; */
-    /* width: 960px; */
-    /* height: 300px; */
     margin: 0 auto;
 }
 

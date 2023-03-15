@@ -48,7 +48,7 @@ export default function Home() {
           alumniYear.map((year, index) => {
             return (
               <div key={index}>
-                <h1 className="text-3xl ml-12 mt-8 text-[#a18240] font-[AvenirLTProHeavy] ">
+                <h1 className="text-3xl ml-12 mt-8 text-[#a18240] font-[Hero-] ">
                   {year}
                 </h1>
                 <Carousel
@@ -77,7 +77,7 @@ export default function Home() {
           })
         ) : (
           <div>
-            <h1 className="text-[#a18240] mt-8 text-3xl ml-14 font-[AvenirLTProHeavy]">
+            <h1 className="text-[#a18240] mt-8 text-3xl ml-14 font-[Hero-Bold]">
               SUPER FINAL YEAR MEMBERS
             </h1>
             <Carousel
@@ -100,7 +100,7 @@ export default function Home() {
                 return <TeamCard cardType="team" key={ind} data={post} />;
               })}
             </Carousel>
-            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
+            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
               FINAL YEAR MEMBERS
             </h1>
 
@@ -125,7 +125,7 @@ export default function Home() {
               })}
             </Carousel>
 
-            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
+            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
               COORDINATORS
             </h1>
             <Carousel
@@ -147,7 +147,7 @@ export default function Home() {
                 return <TeamCard cardType="team" key={ind} data={post} />;
               })}
             </Carousel>
-            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
+            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
               EXECUTIVE MEMBERS
             </h1>
             <Carousel
@@ -170,7 +170,7 @@ export default function Home() {
               })}
             </Carousel>
 
-            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[AvenirLTProHeavy]">
+            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
               VOLUNTEERS
             </h1>
             <div class="blob blob-9"></div>
