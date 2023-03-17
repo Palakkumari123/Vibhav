@@ -28,6 +28,7 @@ export default function Home() {
             return (
               <button
                 type="button"
+                name=" change card state "
                 key={ind}
                 className={`border-8 border-transparent w-[20rem] truncate text-2xl bg-gray-800 text-white rounded-md focus:bg-[#dab971] focus:text-gray-800 font-bold h-12 m-2 ${
                   tab === cardState ? " bg-[#dab971] text-gray-800" : undefined

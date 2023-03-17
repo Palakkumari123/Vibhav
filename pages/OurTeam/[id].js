@@ -68,7 +68,6 @@ export default function Home() {
                   partialVisbile
                 >
                   {AluminiTeamPhotos[year].map((post, ind) => {
-                    console.log(post);
                     return <TeamCard cardType="alumni" key={ind} data={post} />;
                   })}
                 </Carousel>
