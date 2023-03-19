@@ -26,6 +26,7 @@ export default function ProjectCard({ card }) {
             <button
               className="bg-[#dab971] hover:bg-[#b1965d] text-black  font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
               type="button"
+              name="Modal pop up"
               onClick={() => setShowModal(true)}
             >
               Read More
@@ -44,6 +45,7 @@ export default function ProjectCard({ card }) {
                   <h3 className="text-3xl text-[#dab971] font-semibold">{card.name}</h3>
                   <button
                     className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none opacity-5 focus:outline-none"
+                    name="modal close"
                     onClick={() => setShowModal(false)}
                   >
                     <span className="block w-6 h-6 text-2xl text-black bg-transparent outline-none opacity-5 focus:outline-none"></span>
@@ -81,6 +83,7 @@ export default function ProjectCard({ card }) {
                   <button
                     className="bg-[#dab971] hover:bg-[#d5a02e] text-black font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
+                    name="modal close"
                     onClick={() => setShowModal(false)}
                   >
                     Done

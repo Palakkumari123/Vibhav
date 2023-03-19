@@ -3,7 +3,6 @@ import style from "../../../styles/team.module.css";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
 export default function TeamCard({ data, cardType }) {
-  console.log(data);
   return (
     <div className="flex items-center justify-center sm:p-4">
       <div
@@ -14,9 +13,9 @@ export default function TeamCard({ data, cardType }) {
               " flex flex-col justify-center py-4 sm:py-2 sm:p-4 rounded-2xl"
         }
       >
-        <div className="flex items-center justify-start w-full px-2 sm:px-4 ">
+        <div className="flex items-center text-[#ffffffd6] justify-start w-full px-2 sm:px-4 ">
           <img
-            alt="Post current image"
+            alt={data.Name}
             src={data.Profile}
             className={"rounded-full object-cover h-[50px] w-[50px]"}
             height={50}
@@ -26,9 +25,9 @@ export default function TeamCard({ data, cardType }) {
             {data.NickName}{" "}
           </p>
         </div>
-        <div className="p-3 sm:p-4">
+        <div className="p-3 text-[#ffffffd6] sm:p-4">
           <img
-            alt="Post current image"
+            alt={data.Name}
             src={data.Profile}
             className={
               " h-[300px] w-[280px] sm:h-[300px] sm:w-[330px] object-cover rounded-2xl shadow-2xl "

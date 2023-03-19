@@ -38,7 +38,7 @@ export default function Contact({ }) {
                 </div>
                 <div className="flex flex-col justify-center mt-12 text-white md:flex-row ">
                     <span className="text-xl text-center md:text-2xl" >Contact address : </span>
-                    <a className="text-xl text-center break-all duration-100 delay-100 md:text-2xl hover:text-red-400 " href="mailto: vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
+                    <a aria-label="Mail" className="text-xl text-center break-all duration-100 delay-100 md:text-2xl hover:text-red-400 " href="mailto: vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
                     vibhav.nimbus@nith.ac.in</a>
                 </div>
             </div>
@@ -112,6 +112,7 @@ export default function Contact({ }) {
                         />
                         <button
                             type="submit"
+                            name="Submit Contact us Form"
                             className="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                             disabled={state.submitting}
                         >
@@ -134,7 +135,7 @@ export default function Contact({ }) {
                     </div>
                     <div className="flex flex-col justify-center mt-12 text-white md:flex-row">
                         <span className="mt-1 text-xl text-center md:text-2xl " >Contact address : </span>
-                        <a className="text-xl text-center break-all duration-100 delay-100 md:text-2xl hover:text-red-400 " href="mailto:vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
+                        <a aria-label="Mail" className="text-xl text-center break-all duration-100 delay-100 md:text-2xl hover:text-red-400 " href="mailto:vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
                             vibhav.nimbus@nith.ac.in</a>
                     </div>
                 </div>

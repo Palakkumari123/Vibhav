@@ -35,6 +35,7 @@ export default function ScrollToTop ()  {
     <div className="fixed z-10 bottom-10 right-10">
       <button
         type="button"
+        name='scroll to top'
         onClick={scrollToTop}
         className={classNames(
           isVisible ? 'opacity-100' : 'opacity-0',
