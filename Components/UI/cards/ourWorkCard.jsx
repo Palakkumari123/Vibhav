@@ -50,7 +50,7 @@ export default function ProjectCard({ card }) {
                   </button>
                 </div>
                 {/*body*/}
-                <div className="relative p-6 font-[Hero-Bold] text-xl flex-auto">
+                <div className="relative h-[24rem] overflow-scroll p-6 font-[Hero-Bold] text-xl flex-auto">
                   <h1 className="my-4 leading-relaxed text-gray-300">
                     {card.round1head}
                   </h1>

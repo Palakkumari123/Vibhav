@@ -4,7 +4,7 @@
       "name": "Circuit Solver",
       "content": "This project aims to create LTspice schematic from hand-drawn circuits for the students who dont know the interface of simulators.",
       "github": "https://github.com/Team-Vibhav/Circuit-Solver",
-      "images": "/Assets/Projects/AI/circuitsolver.jpg"
+      "images": "/Assets/Projects/AI/circuitsolver.webp"
     },
     {
       "name": "E-Exhibition",
@@ -66,7 +66,7 @@
       "name": "Swarm Bot",
       "content": "Swarm robotics is an approach to the coordination of multiple robots as a system that consists of large numbers of mostly simple physical robots. It is supposed that a desired collective behaviour emerges from the interactions between the robots and interactions of robots with the environment.",
       "github": "https://github.com/kamatji/SWARM_BOT",
-      "images": "/Assets/Projects/IOT/swarm bot.jpg"
+      "images": "/Assets/Projects/IOT/swarm bot.webp"
     },
     {
       "name": "Smart Blind",
@@ -104,7 +104,7 @@
       "name": "AR Newsletter",
       "content": "AR newsletter is a newsletter that takes readers beyond the printed page. The main aim of AR newsletter is to attract new audiences especially young people to increase their waning number of readers with an interactive environment.",
       "github": "https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/AR%20News%20Letter",
-      "images": "/Assets/Projects/AR/arNewsLetter.jpg"
+      "images": "/Assets/Projects/AR/arNewsLetter.webp"
     },
     {
       "name":"VR Classroom",

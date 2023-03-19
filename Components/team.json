@@ -19,7 +19,7 @@
         {
             "Name" : "Mukul Thakur",
             "NickName":"Mukul",
-            "Profile":"/Assets/TeamPhotos/SuperFinal/Mukul.jpg",
+            "Profile":"/Assets/TeamPhotos/SuperFinal/Mukul.webp",
             "Github":"https://github.com/Mukulthakur17/",
             "LinkedIn":"https://www.linkedin.com/in/mukulthakur17/",
             "Position":"MEMBER"
@@ -290,7 +290,7 @@
 
         {"Name" : "Pukhraj Gupta",
         "NickName":"Pukhraj",
-        "Profile":"/Assets/TeamPhotos/Third/Pukhraj.jpg",
+        "Profile":"/Assets/TeamPhotos/Third/Pukhraj.webp",
         "Github":"",
         "LinkedIn":"https://www.linkedin.com/in/pukhraj-gupta-1a9421209/",
         "Position":"COORDINATOR"
@@ -343,7 +343,7 @@
         "Position":"EXECUTIVE MEMBER"
         },
         {
-            "Name" : "Abhishek ",
+            "Name" : "Abhishek",
                 "NickName":"Abhishek",
                 "Profile":"/Assets/TeamPhotos/Second/Abhishek Goyal.webp",
                 "Github":"https://github.com/Abhishek08Goyal",
@@ -379,7 +379,7 @@
         {
             "Name" : "Kartikay",
                 "NickName":"Sambher",
-                "Profile":"/Assets/TeamPhotos/Second/kartikay.jpg",
+                "Profile":"/Assets/TeamPhotos/Second/kartikay.webp",
                 "Github":"https://github.com/Kartikay5849",
                 "LinkedIn":"https://www.linkedin.com/in/kartikay-a3b322232/",
                 "Position":"EXECUTIVE MEMBER"

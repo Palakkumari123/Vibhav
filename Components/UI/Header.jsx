@@ -88,9 +88,9 @@ export default function Example() {
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start md:w-0 md:flex-1">
             <Link href="/">
-              <span className="sr-only  ">Your Company</span>
+              <span className="sr-only">Your Company</span>
               <Image
-                className="absolute  animate-mover"
+                className="absolute md:animate-mover animate-mover2"
                 src="/Assets/Yellow.png"
                 alt=""
                 height={50}
@@ -99,7 +99,7 @@ export default function Example() {
             </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#e9d59ae4]  p-2 text-gray-500  hover:bg-sky-100 hover:text-black ">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#bca665e4]  p-2 text-black  hover:bg-sky-100 hover:text-black ">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -307,14 +307,14 @@ export default function Example() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto "
+                <img
+                    className="h-10 w-auto "
                     src="/Assets/Yellow.png"
                     alt="Your Company"
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#e9d59ae4] p-2 text-gray-700 hover:bg-sky-100 hover:text-black  ">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#bca665e4] p-2 text-black hover:bg-sky-100 hover:text-black  ">
                     <span className="sr-only ">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -393,7 +393,7 @@ href="/" className="text-left px-5 py-2 font-medium text-white rounded-lg hover:
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                   >
-                    <Popover.Panel className="absolute z-[100] -ml-4 mt-40 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-[100] mt-40 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
                         <div className="relative grid gap-6 bg-gray-700 px-5 py-6 md:gap-8 md:p-8">
                           {projects.map((item) => (
@@ -437,7 +437,7 @@ href="/" className="text-left px-5 py-2 font-medium text-white rounded-lg hover:
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                   >
-                    <Popover.Panel className="absolute z-[100] -ml-4 mt-52 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-[100] mt-52 w-screen max-w-xs transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
                         <div className="relative grid gap-6 bg-gray-700 px-5 py-6 md:gap-8 md:p-8">
                           {ourwork.map((item) => (

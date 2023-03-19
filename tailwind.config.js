@@ -30,6 +30,15 @@ module.exports = {
       animation: {
         mover : 'mover 3s infinite alternate',
       },
+      keyframes: {
+        mover2: {
+          "0%": { transform: "translateY(-30px)" },
+          "100%": { transform: "translateY(-15px)" },
+        },
+      },
+      animation: {
+        mover2 : 'mover2 3s infinite alternate',
+      },
     },
   },
   plugins: [],
