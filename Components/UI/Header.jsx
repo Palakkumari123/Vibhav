@@ -83,7 +83,6 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-30">
-      
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start md:w-0 md:flex-1">
@@ -107,11 +106,11 @@ export default function Example() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Link
               href="/"
-              className=" flex  font-Kanit text-xl px-5 font-bold text-gray-200 rounded-lg p-2 hover:bg-[#a18240] hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
+              className=" flex  font-[Hero-Bold] text-xl px-5 font-bold text-gray-200 rounded-lg p-2 hover:bg-[#a18240] hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
             >
               <IoHome className="w-6 h-6 mr-1" /> Home
             </Link>
-            
+
             <Menu>
               {({ open }) => (
                 <>
@@ -121,7 +120,7 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex rounded-lg p-2 tracking-wide font-Kanit text-xl font-bold hover:bg-[#a18240]">
+                    <span className="flex rounded-lg p-2 tracking-wide font-[Hero-Bold] text-xl font-bold hover:bg-[#a18240]">
                       {" "}
                       <RiTeamFill className="h-6 w-6 mr-1" /> Our Team
                       <ChevronDownIcon
@@ -143,7 +142,7 @@ export default function Example() {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Menu.Item className="absolute z-10  mt-10 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:-translate-x-1/2">
-                      <div className="overflow-hidden  rounded-lg shadow-lg ">  
+                      <div className="overflow-hidden  rounded-lg shadow-lg ">
                         <div className="absolute -ml-20 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 md:gap-8 md:p-8">
                           {ourteam.map((item) => (
                             <Link
@@ -169,7 +168,7 @@ export default function Example() {
                 </>
               )}
             </Menu>
-            
+
             <Menu>
               {({ open }) => (
                 <>
@@ -180,7 +179,7 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex rounded-lg p-2 font-Kanit text-xl font-bold hover:bg-[#a18240]">
+                    <span className="flex rounded-lg p-2 font-Kanit text-xl font-[Hero-Bold] hover:bg-[#a18240]">
                       {" "}
                       <MdDesignServices className="h-6 mr-1 w-6" /> Projects
                       <ChevronDownIcon
@@ -237,7 +236,7 @@ export default function Example() {
                       "inline-flex items-center text-base font-medium hover:text-white"
                     )}
                   >
-                    <span className="flex rounded-lg p-2 font-Kanit text-xl font-bold hover:bg-[#a18240]">
+                    <span className="flex rounded-lg p-2 font-[Hero-Bold] text-xl font-bold hover:bg-[#a18240]">
                       {" "}
                       <FaHammer className="w-6 mr-1 h-6" /> Our Work
                       <ChevronDownIcon
@@ -307,7 +306,9 @@ export default function Example() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
+
                 <img
+
                     className="h-10 w-auto "
                     src="/Assets/Yellow.png"
                     alt="Your Company"
@@ -323,10 +324,11 @@ export default function Example() {
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="grid py-1 gap-y-4 gap-x-8">
-              <Popover.Button
-              as={Link}
-href="/" className="text-left px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2">
-              
+                <Popover.Button
+                  as={Link}
+                  href="/"
+                  className="text-left px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2"
+                >
                   Home
                 </Popover.Button>
 
@@ -334,7 +336,7 @@ href="/" className="text-left px-5 py-2 font-medium text-white rounded-lg hover:
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Our Team
                     <ChevronDownIcon
-                      className="mr-8 ml-2 h-5 w-5"
+                      className="h-5 w-5"
                       aria-hidden="true"
                     />
                   </Menu.Button>
@@ -379,7 +381,7 @@ href="/" className="text-left px-5 py-2 font-medium text-white rounded-lg hover:
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Projects
                     <ChevronDownIcon
-                      className="mr-8 ml-2 h-5 w-5"
+                      className="h-5 w-5"
                       aria-hidden="true"
                     />
                   </Menu.Button>
@@ -423,7 +425,7 @@ href="/" className="text-left px-5 py-2 font-medium text-white rounded-lg hover:
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Our Work
                     <ChevronDownIcon
-                      className="mr-8 ml-2 h-5 w-5"
+                      className="h-5 w-5"
                       aria-hidden="true"
                     />
                   </Menu.Button>
