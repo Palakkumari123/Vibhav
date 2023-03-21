@@ -39,7 +39,7 @@ export default function Home() {
   const currentPage = pageState[id];
   return (
     <Layout>
-      <div className="sm:m-8">
+      <div className="sm:m-8  ">
         <h1 className=" text-5xl rounded-md text-[#dab971] mt-36 md:text-5xl flex justify-center items-center font-[Elianto-Regular] animate-pulse ">
           {" "}
           {currentPage}{" "}

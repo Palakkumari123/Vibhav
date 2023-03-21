@@ -2,6 +2,7 @@ import React from "react";
 import style from "../../../styles/team.module.css";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
+
 export default function TeamCard({ data, cardType }) {
   return (
     <div className="flex items-center justify-center sm:p-4">
