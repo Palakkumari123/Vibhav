@@ -93,7 +93,7 @@ export default function HomePage() {
         <div>
 
             <main data-aos="fade-up" className=" flex justify-center   items-center md:mb-12 h-screen relative">
-                <div className="flex flex-col justify-center px-6 text-center text-white sm:flex-row sm:px-16">
+                <div className="flex flex-col justify-center  text-center text-white sm:flex-row ">
                     <div className="flex flex-col justify-center mt-16  md:mt-0 md:h-screen">
 
 

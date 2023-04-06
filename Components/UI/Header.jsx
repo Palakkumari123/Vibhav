@@ -82,12 +82,12 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover className="absolute top-0 left-0 right-0 z-50 bg-black  bg-opacity-30">
-      <div className="mx-auto max-w-7xl px-6">
+    <Popover className="absolute  top-0 left-0 right-0 z-50 bg-black w-screen  bg-opacity-30">
+      <div className="mx-auto max-w-7xl ">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start md:w-0 md:flex-1">
             <Link href="/">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Team Vibhav</span>
               <Image
                 className="absolute md:animate-mover animate-mover2"
                 src="/Assets/Yellow.png"
@@ -97,13 +97,13 @@ export default function Example() {
               />
             </Link>
           </div>
-          <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#bca665e4]  p-2 text-black  hover:bg-sky-100 hover:text-black ">
+          <div className="-my-2  md:hidden">
+            <Popover.Button className="inline-flex items-center mr-1 justify-end  md:justify-center rounded-md bg-[#bca665e4]  p-2 text-black  hover:bg-sky-100 hover:text-black ">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
-          <Popover.Group as="nav" className="hidden space-x-10 md:flex">
+          <Popover.Group as="nav" className="hidden  md:gap-12 md:flex">
             <Link
               href="/"
               className=" flex  font-[Hero-Bold] text-xl px-5 font-bold text-gray-200 rounded-lg p-2 hover:bg-[#a18240] hover:text-white relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 "
@@ -122,7 +122,7 @@ export default function Example() {
                   >
                     <span className="flex rounded-lg p-2 tracking-wide font-[Hero-Bold] text-xl font-bold hover:bg-[#a18240]">
                       {" "}
-                      <RiTeamFill className="h-6 w-6 mr-1" /> Our Team
+                      <RiTeamFill className="h-6 w-6 mr-1" />  Team
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-400" : "text-gray-200",
@@ -238,7 +238,7 @@ export default function Example() {
                   >
                     <span className="flex rounded-lg p-2 font-[Hero-Bold] text-xl font-bold hover:bg-[#a18240]">
                       {" "}
-                      <FaHammer className="w-6 mr-1 h-6" /> Our Work
+                      <FaHammer className="w-6 mr-1 h-6" />  Work
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -311,7 +311,7 @@ export default function Example() {
 
                     className="h-10 w-auto "
                     src="/Assets/Yellow.png"
-                    alt="Your Company"
+                    alt="Team Vibhav"
                   />
                 </div>
                 <div className="-mr-2">
@@ -334,7 +334,7 @@ export default function Example() {
 
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
-                    Our Team
+                     Team
                     <ChevronDownIcon
                       className="h-5 w-5"
                       aria-hidden="true"
@@ -423,7 +423,7 @@ export default function Example() {
                 </Menu>
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
-                    Our Work
+                     Work
                     <ChevronDownIcon
                       className="h-5 w-5"
                       aria-hidden="true"
