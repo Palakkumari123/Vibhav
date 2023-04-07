@@ -7,7 +7,7 @@ export default function Contact({ }) {
     if (state.succeeded) {
 
         return (
-        <div  className="relative  overflow-x-hidden rounded-2xl flex pt-8 md:mt-12 md:bg-[#1a1a1d] md:bg-opacity-50 md:flex-row flex-col justify-around w-4/5 mx-auto  " >
+        <div  className="relative mt-24 overflow-x-hidden rounded-2xl flex pt-8 md:mt-12 md:bg-[#1a1a1d] md:bg-opacity-50 md:flex-row flex-col justify-around w-4/5 mx-auto  " >
             <div 
             data-aos="fade-right"
               className="py-4 mb-12 lg:py-16   rounded-xl md:bg-transparent bg-[#1a1a1d] z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12 ">
@@ -26,18 +26,18 @@ export default function Contact({ }) {
 
             <div 
             data-aos="fade-left"
-             className="md:w-1/2 md:bg-transparent mr-6  bg-[#1a1a1d] rounded-xl z-10 bg-opacity-50 text-white px-2 sm:pl-3 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
+             className="md:w-1/2 md:bg-transparent mr-6  bg-[#1a1a1d] rounded-xl z-10 bg-opacity-50 text-white px-2 sm:pl-3 pb-12 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
                 <h2 className="text-4xl pb-4 pl-4 font-extrabold  tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]" >
                     Vibhav
                 </h2>
                 <div className="pl-2 mb-4 md:mb-12" >
-                    <p className="  text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
+                    <p className="  text-left  text-sky-100  font-[Hero-Bold] text-md md:text-xl" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
                 </div>
-                <div className="" >
-                    <SocialMedia />
+                <div className="sm:mr-24" >
+                    <SocialMedia  />
                 </div>
                 <div className="flex flex-col justify-center mt-12 text-white md:flex-row ">
-                    <span className="text-xl text-center md:text-2xl" >Contact address : </span>
+                    <span className="text-xl text-center md:text-2xl" >Email : </span>
                     <a aria-label="Mail" className="text-xl text-center break-all duration-100 delay-100 md:text-2xl hover:text-red-400 " href="mailto: vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
                     vibhav.nimbus@nith.ac.in</a>
                 </div>
@@ -46,8 +46,8 @@ export default function Contact({ }) {
         );
     };
     return (
-        <div className="z-10 flex mt-12 " >
-            <div className=" relative overflow-x-hidden rounded-2xl flex pt-8 md:mt-20  md:bg-[#1a1a1d] md:bg-opacity-50 md:flex-row flex-col justify-around w-4/5 mx-auto   " >
+        <div className="z-10 flex mt-12    " >
+            <div className=" relative overflow-x-hidden rounded-2xl flex pt-8 mt-20  md:bg-[#1a1a1d] md:bg-opacity-50 md:flex-row flex-col justify-around w-4/5 mx-auto   " >
                 <div 
                 data-aos="fade-right" 
                 className="py-4 lg:py-16 px-4 mb-12  rounded-xl md:bg-transparent bg-[#1a1a1d] z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12">
@@ -123,18 +123,18 @@ export default function Contact({ }) {
 
                 <div 
                 data-aos="fade-left"
-                 className= "md:w-1/2 md:bg-transparent md:mr-8 bg-[#1a1a1d] rounded-xl z-10 bg-opacity-50 text-white  sm:pl-3 pb-12 pt-28 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
+                 className= "md:w-1/2 md:bg-transparent md:mr-8 bg-[#1a1a1d] rounded-xl z-10 bg-opacity-50 text-white  sm:pl-3 pb-12  md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16" >
                     <h2 className="text-4xl pb-4 pl-4 font-extrabold tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]" >
                         Vibhav
                     </h2>
                     <div className="pl-2 mb-4 md:mb-12" >
-                        <p className=" text-left  text-sky-100 md:text-justify font-[Hero-Bold] text-md md:text-xl px-2 sm:px-0" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
+                        <p className=" text-left  text-sky-100 font-[Hero-Bold] text-md md:text-xl px-2 sm:px-0" >Team Vibhav is a dynamic team of the electronics and communication department at the National Institute of Technology, Hamirpur. Our main objective is to organize and execute the annual technical festival of the institute.</p>
                     </div>
-                    <div className="" >
+                    <div className="  sm:mr-24" >
                         <SocialMedia />
                     </div>
                     <div className="flex flex-col justify-center mt-12 text-white md:flex-row">
-                        <span className="mt-1 text-xl text-center md:text-2xl " >Contact address : </span>
+                        <span className="mt-1 text-xl text-center md:text-2xl " >Email : </span>
                         <a aria-label="Mail" className="text-xl text-center break-all duration-100 delay-100 md:text-2xl hover:text-red-400 " href="mailto:vibhav.nimbus@nith.ac.in?subject = Feedback&body = Message">
                             vibhav.nimbus@nith.ac.in</a>
                     </div>
