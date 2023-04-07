@@ -47,7 +47,7 @@ const projects = [
     icon: TbWaveSine,
   },
   {
-    name: "Quantum Computing",
+    name: "QUANTUM COMPUTING",
     href: "/Projects/quan",
     icon: SiQiskit,
   },
@@ -155,7 +155,7 @@ export default function Example() {
                                 aria-hidden="true"
                               />
                               <div className="ml-4">
-                                <p className="text-base font-medium text-white ">
+                                <p className="text-base  font-medium text-white ">
                                   {item.name}
                                 </p>
                               </div>
@@ -241,8 +241,8 @@ export default function Example() {
                       <FaHammer className="w-6 mr-1 h-6" />  Work
                       <ChevronDownIcon
                         className={classNames(
-                          open ? "text-gray-600" : "text-gray-400",
-                          "ml-1 mt-1.5 h-5 w-5 group-hover:text-gray-500"
+                          open ? "text-gray-600 " : "text-gray-400",
+                          "ml-1 mt-1.5 h-5 w-5  group-hover:text-gray-500"
                         )}
                         aria-hidden="true"
                       />
@@ -257,7 +257,7 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Menu.Item className="absolute z-10 mt-10 w-screen max-w-xs transform px-2 md:px-0 md:left-1/2 md:ml-0 md:translate-x-1/2">
+                    <Menu.Item className="absolute z-10 mt-10 w-screen max-w-xs transform px-2 md:px-32 md:ml-0 md:translate-x-[20rem]">
                       <div className="overflow-hidden rounded-lg shadow-lg ">
                         <div className="absolute -ml-2 rounded-lg grid gap-6 bg-gray-900 px-5 py-6 md:gap-8 md:p-8">
                           {ourwork.map((item) => (

@@ -54,7 +54,7 @@
         "round2": "Lastly we will write our code to complete the game. In this workshop we will teach about how the basic games are build and through this they will be able to relate with the theme metaverse in future."
       },
       {
-        "name": "Quantum Computing",
+        "name": "QUANTUM COMPUTING",
         "content": "In many applications it is important to find the minimum eigenvalue of a matrix. For example, in chemistry, the minimum eigenvalue of a Hermitian matrix characterizing the molecule is the ground state energy of that system. In the future, the quantum phase estimation algorithm may be used to find the minimum eigenvalue.",
         "images": "/Assets/Workshop/quantum2.webp",
         "round1": "In many applications it is important to find the minimum eigenvalue of a matrix. For example, in chemistry, the minimum eigenvalue of a Hermitian matrix characterizing the molecule is the ground state energy of that system. In the future, the quantum phase estimation algorithm may be used to find the minimum eigenvalue. However, its implementation on useful problems requires circuit depths exceeding the limits of hardware available in the NISQ era. In this workshop we will use the VQE algorithm to simulate the ground state energy of a diatomic molecule which is nearly impossible to simulate classically."

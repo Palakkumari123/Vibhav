@@ -10,7 +10,7 @@ export default function Projects({ id }) {
     iot: "IoT",
     es: "EMBEDDED SYSTEMS",
     dsp: "DSP",
-    quan: "Quantum Computing"
+    quan: "QUANTUM COMPUTING"
   };
   return (
     <div className="p-3 pt-24 justify-center">
