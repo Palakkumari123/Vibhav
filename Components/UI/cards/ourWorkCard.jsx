@@ -36,8 +36,8 @@ export default function ProjectCard({ card }) {
       </div>
       {showModal ? (
         <>
-          <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
-            <div className="relative w-auto max-w-3xl mx-auto my-6">
+          <div className="fixed inset-0 z-50 w-auto flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
+            <div className="relative max-w-3xl mx-auto my-6">
               {/*content*/}
               <div className="relative flex flex-col w-full bg-gray-600 border-0 rounded-lg shadow-lg outline-none bg-opacity-80 focus:outline-none">
                 {/*header*/}
@@ -52,7 +52,7 @@ export default function ProjectCard({ card }) {
                   </button>
                 </div>
                 {/*body*/}
-                <div className="relative h-[24rem] overflow-scroll p-6 font-[Hero-Bold] text-xl flex-auto">
+                <div className="relative h-[24rem] w-auto overflow-y-scroll p-6 font-[Hero-Bold] text-xl flex-auto">
                   <h1 className="my-4 leading-relaxed text-gray-300">
                     {card.round1head}
                   </h1>
