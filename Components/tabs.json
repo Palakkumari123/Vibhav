@@ -121,16 +121,16 @@
       "images": "/Assets/Projects/Embd/autocart.webp"
     },
     {
-      "name": "Covid Gateway",
-      "content": "Our project is  Automatic Covid Gateway used to detect mask, measure the human body temperature and sanitize hands. This project will reduce the contact as well as extra labour needed for the whole process. The main benefit of the project is that it reduces the contact needed for checking the temperature of the person as it will replace the person with a machine. Also,it can perform multiple operations that makes it cost efficient in the present pandemic conditions.",
-      "github": "https://github.com/Team-Vibhav/Automatic-covid-gateway",
-      "images": "/Assets/Projects/Embd/covidgateway.webp"
-    },
-    {
       "name": "Smart Entry System",
       "content": "As there is a major problem of seat occupancy in library due to the unnecessary seat reservation of many students for a day without being present in the library. So we developed a system that shows the presently occupied seats in the library and live count of seats available to sit in the library.",
       "github": "https://github.com/kamatji/Smart_Library_System",
       "images": "/Assets/Projects/Embd/SmartEntrySystem.webp"
+    },
+    {
+      "name": "Covid Gateway",
+      "content": "Our project is  Automatic Covid Gateway used to detect mask, measure the human body temperature and sanitize hands. This project will reduce the contact as well as extra labour needed for the whole process. The main benefit of the project is that it reduces the contact needed for checking the temperature of the person as it will replace the person with a machine. Also,it can perform multiple operations that makes it cost efficient in the present pandemic conditions.",
+      "github": "",
+      "images": "/Assets/Projects/Embd/covidgateway.webp"
     },
     {
       "name": "RecoverX",
