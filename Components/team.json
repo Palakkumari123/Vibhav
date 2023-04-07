@@ -1,5 +1,4 @@
 {
-
   "Super Final Year": [
     {
       "Name": "Aakash N Gupta",
@@ -20,7 +19,7 @@
     {
       "Name": "Mukul Thakur",
       "NickName": "Mukul",
-      "Profile": "/Assets/TeamPhotos/SuperFinal/Mukul.jpg",
+      "Profile": "/Assets/TeamPhotos/SuperFinal/Mukul.webp",
       "Github": "https://github.com/Mukulthakur17/",
       "LinkedIn": "https://www.linkedin.com/in/mukulthakur17/",
       "Position": "MEMBER"
@@ -65,7 +64,7 @@
       "NickName": "Rana",
       "Profile": "/Assets/TeamPhotos/Final/Aditya Rana.webp",
       "Github": "https://github.com/Kingslayer4515",
-      "LinkedIn": "https://www.linkedin.com/in/abhinav-dwivedi-810464190/",
+      "LinkedIn": "https://www.linkedin.com/in/aditya-rana-b68180171",
       "Position": "MEMBER"
     },
     {
@@ -79,7 +78,7 @@
     {
       "Name": "Ankita",
       "NickName": "Ankita",
-      "Profile": "/Assets/TeamPhotos/Final/Ankita.webp",
+      "Profile": "/Assets/TeamPhotos/Final/ankita.webp",
       "Github": "https://github.com/ankita-41",
       "LinkedIn": "https://www.linkedin.com/in/ankita-kaushal-9243a8202/",
       "Position": "MEMBER"
@@ -230,7 +229,7 @@
       "NickName": "Bhuvi💚",
       "Profile": " /Assets/TeamPhotos/Third/Bhavneesh.webp ",
       "Github": "https://github.com/BhavneeshOG",
-      "LinkedIn": "https://www.linkedin.com/in/bhavneesh-bhavneesh-4b1a10207/",
+      "LinkedIn": "https://www.linkedin.com/in/bhavneeshog/",
       "Position": "CORE COORDINATOR"
     },
 
@@ -284,7 +283,7 @@
       "NickName": "PJ",
       "Profile": "/Assets/TeamPhotos/Third/Pankaj.webp",
       "Github": "https://github.com/spiderxp3",
-      "LinkedIn": "",
+      "LinkedIn": "https://www.linkedin.com/in/pankaj-nith/",
       "Position": "COORDINATOR"
     },
 
@@ -300,8 +299,8 @@
     {
       "Name": "Pukhraj Gupta",
       "NickName": "Pukhu",
-      "Profile": "/Assets/TeamPhotos/Third/Pukhraj.jpg",
-      "Github": "",
+      "Profile": "/Assets/TeamPhotos/Third/pukhraj.webp",
+      "Github": "https://github.com/pukhrajgupta",
       "LinkedIn": "https://www.linkedin.com/in/pukhraj-gupta-1a9421209/",
       "Position": "COORDINATOR"
     },
@@ -340,13 +339,13 @@
       "NickName": "Aakarsh",
       "Profile": "/Assets/TeamPhotos/Second/Aakarsh sharma.webp",
       "Github": "https://github.com/aakarsh6636",
-      "LinkedIn": "https://www.linkedin.com/mynetwork?trk=p_mwlite_feed_updates-primary_nav",
+      "LinkedIn": "https://www.linkedin.com/in/aakarsh-sharma-a68812223/",
       "Position": "EXECUTIVE MEMBER"
     },
     {
       "Name": "Abhilasha Birajdar",
       "NickName": "Abhilasha",
-      "Profile": "/Assets/TeamPhotos/Second/ABHILASHA BIRAJDAR - Edited (1).webp",
+      "Profile": "/Assets/TeamPhotos/Second/abhilash.webp",
       "Github": "https://github.com/AbhilashaBirajdar",
       "LinkedIn": "https://www.linkedin.com/in/abhilasha-birajdar-90328021b",
       "Position": "EXECUTIVE MEMBER"
@@ -388,14 +387,14 @@
     {
       "Name": "Kartikay",
       "NickName": "Sambher",
-      "Profile": "/Assets/TeamPhotos/Second/kartikay.jpg",
+      "Profile": "/Assets/TeamPhotos/Second/kartikay.webp",
       "Github": "https://github.com/Kartikay5849",
       "LinkedIn": "https://www.linkedin.com/in/kartikay-a3b322232/",
       "Position": "EXECUTIVE MEMBER"
     },
 
     {
-      "Name": "Kahish Thakur",
+      "Name": "Kashish Thakur",
       "NickName": "Thakur",
       "Profile": "/Assets/TeamPhotos/Second/kashish THAKUR.webp",
       "Github": "https://github.com/kashishthakur26",
@@ -423,7 +422,7 @@
 
     {
       "Name": "Monika Patel",
-      "NickName": "henhhenhen",
+      "NickName": "Monika",
       "Profile": "/Assets/TeamPhotos/Second/Monika Patel.webp",
       "Github": "https://github.com/monnikaaa",
       "LinkedIn": "https://www.linkedin.com/in/monikaapatel/",
@@ -448,9 +447,9 @@
     },
     {
       "Name": "Riant Dadra",
-      "NickName": "Riant",
-      "Profile": "/Assets/TeamPhotos/Second/Riant Dadra.webp",
-      "Github": "https://drive.google.com/open?id=11-pJsOeMCEC2OcKdABbuWcUrq62hQtP-",
+      "NickName": "Dadra",
+      "Profile": "/Assets/TeamPhotos/Second/riant.webp",
+      "Github": "https://github.com/riantdadra",
       "LinkedIn": "https://www.linkedin.com/in/riant-dadra-1746a5223",
       "Position": "EXECUTIVE MEMBER"
     },
@@ -504,7 +503,7 @@
       "NickName": "Abhishek",
       "Profile": "/Assets/TeamPhotos/First/ABHISHEK RAJ.webp",
       "Github": "https://github.com/abhishekrj02",
-      "LinkedIn": "https://www.linkedin.com/in/abhayp830",
+      "LinkedIn": "https://www.linkedin.com/in/abhishek-raj-a09181215",
       "Position": "VOLUNTEER"
     },
 
@@ -530,7 +529,7 @@
       "Name": "Anshuman Kandpal",
       "NickName": "Actor",
       "Profile": "/Assets/TeamPhotos/First/ANSHUMAN KANDPAL.webp",
-      "Github": "https://github.com/settings/profile",
+      "Github": "https://github.com/anshuman777K",
       "LinkedIn": "https://www.linkedin.com/in/anshuman-kandpal-753523257",
       "Position": "VOLUNTEER"
     },
@@ -548,7 +547,7 @@
       "Name": "Ashish Sandal",
       "NickName": "Sandal",
       "Profile": "/Assets/TeamPhotos/First/Ashish Sandal.webp ",
-      "Github": "https://github.com/Ashish sandal",
+      "Github": "https://github.com/Ashishsandal",
       "LinkedIn": "https://www.linkedin.com/in/ashish-sandal-82920424a",
       "Position": "VOLUNTEER"
     },
@@ -609,7 +608,7 @@
 
     {
       "Name": "Putul Singh",
-      "NickName": "Vishesh",
+      "NickName": "Putul",
       "Profile": "/Assets/TeamPhotos/First/Putul Singh.webp",
       "Github": "https://github.com/putul03",
       "LinkedIn": "https://www.linkedin.com/in/putul-singh-80036b25a",
@@ -646,7 +645,7 @@
       "Name": "Vaishnav A. Baravkar",
       "NickName": "Aashu",
       "Profile": "/Assets/TeamPhotos/First/Vaishnav Baravkar.webp",
-      "Github": "https://github.com/users/Vaishnav2004",
+      "Github": "https://github.com/Vaishnav2004",
       "LinkedIn": "https://www.linkedin.com/in/vaishnav-baravkar-aa9337259",
       "Position": "VOLUNTEER"
     },
