@@ -26,18 +26,7 @@
       "Profile": "/Assets/TeamPhotos/Alumni/Adityanath-suman.webp",
       "LinkedIn": "https://www.linkedin.com/in/aditya-nath-suman-990794148/"
     },
-    {
-      "Name": "Akshat Gupta",
-      "NickName": "Akshat",
-      "Profile": "/Assets/TeamPhotos/Alumni/Akshat Gupta-min (1).webp",
-      "LinkedIn": "https://www.linkedin.com/in/akshat-gupta-6a683412b/"
-    },
-    {
-      "Name": "Ashish Joshi",
-      "NickName": "Ashish",
-      "Profile": "/Assets/TeamPhotos/Alumni/AshishJoshi (1).webp",
-      "LinkedIn": "https://www.linkedin.com/in/joshiashish883/"
-    },
+   
     {
       "Name": "Deepak Kamath",
       "NickName": "Deepak",
@@ -83,6 +72,18 @@
     }
   ],
   "2021": [
+    {
+      "Name": "Akshat Gupta",
+      "NickName": "Akshat",
+      "Profile": "/Assets/TeamPhotos/Alumni/Akshat Gupta-min (1).webp",
+      "LinkedIn": "https://www.linkedin.com/in/akshat-gupta-6a683412b/"
+    },
+    {
+      "Name": "Ashish Joshi",
+      "NickName": "Ashish",
+      "Profile": "/Assets/TeamPhotos/Alumni/AshishJoshi (1).webp",
+      "LinkedIn": "https://www.linkedin.com/in/joshiashish883/"
+    },
     {
       "Name": "Hitesh Chander Monga",
       "NickName": "Hitesh",
