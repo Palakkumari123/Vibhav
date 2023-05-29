@@ -8,7 +8,7 @@ export default function AboutUs() {
     >
       <div className="flex flex-col w-4/5 h-full mb-8 bg-gray-700 center md:pb-24 rounded-t-2xl md:mb-24 ">
         <div className="w-full h-10 bg-black bg-opacity-40 rounded-t-2xl">
-          <div className="flex items-center justify-around w-16 h-full ml-4">
+          <div className="flex items-center justify-around w-16 h-full ml-4"> 
             <span className="w-3 h-3 bg-red-500 rounded-full"></span>
             <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
             <span className="w-3 h-3 bg-green-500 rounded-full"></span>
