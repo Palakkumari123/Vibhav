@@ -9,7 +9,7 @@
   width: 0;
   height: 0;
   border: 37.5px solid #fdff00;
-  border-right-color: transparent;
+  border-right-color: transparent; 
   border-radius: 50%;
   left: -60px;
   -webkit-animation: rotate_pacman_half_up 0.5s infinite;
