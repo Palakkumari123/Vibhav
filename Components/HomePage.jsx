@@ -5,7 +5,7 @@ export default function HomePage() {
     const infinity = useRef(null);
     useEffect(() => {
         class TextScramble {
-            constructor(el) {
+            constructor(el) { 
                 this.el = el
                 this.chars = '!<>-_\\/[]{}—=+*^?#________ '
                 this.update = this.update.bind(this)
