@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function AboutUs() {
   return (
-    <section
+    <section 
       data-aos="fade-up"
       className="  flex justify-center md:h-full items-center relative"
     >
