@@ -8,7 +8,7 @@ export default function Projects({ id }) {
     ai: "AI/ML",
     ar: "AR/VR",
     iot: "IoT",
-    es: "EMBEDDED SYSTEMS",
+    es: "EMBEDDED SYSTEMS", 
     dsp: "DSP",
     quan: "QUANTUM COMPUTING"
   };
