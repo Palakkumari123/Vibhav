@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import projects from "./tabs.json";
+import projects from "../data/tabs.json";
 import ProjectCard from "./UI/cards/projectCard";
 
 export default function Projects({ id }) {

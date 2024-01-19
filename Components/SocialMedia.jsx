@@ -46,11 +46,7 @@ export default function SocialLinks() {
         </a>
       </div>
 
-      <Link href="/weaklyUpdates">
-      <button className="bg-[#6a5936] hover:bg-[#dab971] delay-125 hover:scale-110 transition-all duration-150 text-white font-bold py-2 px-4 rounded mt-4">
-        Weekly Updates
-      </button>
-      </Link>
+     
     </div>
   );
 };

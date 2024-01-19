@@ -5,9 +5,9 @@ import { useRouter } from "next/router";
 import Layout from "../../Components/UI/Layout";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import CurrentTeamPhotos from "../../Components/team.json";
+import CurrentTeamPhotos from "../../data/team.json";
 import TeamCard from "../../Components/UI/cards/TeamCard";
-import AluminiTeamPhotos from "../../Components/alumni.json";
+import AluminiTeamPhotos from "../../data/alumni.json";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },

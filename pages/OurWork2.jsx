@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import OurWorkCard from "../Components/UI/cards/ourWorkCard.jsx";
-import ourwork from "../Components/ourwork.json";
+import ourwork from "../data/ourwork.json";
 
 export default function OurWork2({ id }) {
   const [cardState, setCarState] = useState(0);

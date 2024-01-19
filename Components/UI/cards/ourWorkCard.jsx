@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import ourWork from "../../ourwork.json";
+import ourWork from "../../../data/ourwork.json";
 
 export default function ProjectCard({ card }) {
   const [showModal, setShowModal] = React.useState(false);

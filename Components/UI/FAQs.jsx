@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
-import faq from "./faq.json";
+import faq from "../../data/faq.json";
 import { useState } from "react";
 export default function FAQs() {
   const [isShow, setIsShown] = useState(-1);

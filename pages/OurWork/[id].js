@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { useRouter } from "next/router";
 import OurWorkCard from "../../Components/UI/cards/ourWorkCard.jsx";
-import ourwork from "../../Components/ourwork.json";
+import ourwork from "../../data/ourwork.json";
 import Layout from "../../Components/UI/Layout";
 
 export default function Home() {
