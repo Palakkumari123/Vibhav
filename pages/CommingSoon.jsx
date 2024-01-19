@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import Layout from '../Components/UI/Layout';
+import React from "react";
+import Head from "next/head";
+import Layout from "../Components/UI/Layout";
 
 export default function OurWork() {
   return (
@@ -12,30 +12,26 @@ export default function OurWork() {
         <link rel="icon" href="/favicon.ico?" />
       </Head>
       <main>
-
         <Layout>
-          
-            <div className ="text-6xl  text-slate-500">
-              <h1 className='m-0 p-0 font-mono flex  mt-48 min-h-full place-content-center animate-[glitter_4s_ease-in-out_infinite] odd-animationdelay-0.1s'>
-                <span>C</span>
-                <span>o</span>
-                <span>m</span>
-                <span>i</span>
-                <span>n</span>
-                <span>g</span>
-                <span className='px-1'></span>
-                <span>s</span>
-                <span>o</span>
-                <span>o</span>
-                <span>n</span>
-                <span>!</span>
-                <span>!</span>
-              </h1>
-            </div>
-            
+          <div className="text-6xl  text-slate-500">
+            <h1 className="m-0 p-0 font-mono flex  mt-48 min-h-full place-content-center animate-[glitter_4s_ease-in-out_infinite] odd-animationdelay-0.1s">
+              <span>C</span>
+              <span>o</span>
+              <span>m</span>
+              <span>i</span>
+              <span>n</span>
+              <span>g</span>
+              <span className="px-1"></span>
+              <span>s</span>
+              <span>o</span>
+              <span>o</span>
+              <span>n</span>
+              <span>!</span>
+              <span>!</span>
+            </h1>
+          </div>
         </Layout>
       </main>
     </>
   );
 }
-

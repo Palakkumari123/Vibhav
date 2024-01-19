@@ -53,7 +53,7 @@ export default function Home() {
                   draggable={true}
                   showDots={false}
                   responsive={responsive}
-                  ssr={true} 
+                  ssr={true}
                   infinite={true}
                   autoPlaySpeed={2000}
                   keyBoardControl={true}
@@ -79,7 +79,7 @@ export default function Home() {
               draggable={true}
               showDots={false}
               responsive={responsive}
-              ssr={true} 
+              ssr={true}
               infinite={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
@@ -95,7 +95,6 @@ export default function Home() {
             <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
               FINAL YEAR MEMBERS
             </h1>
-
 
             <Carousel
               swipeable={true}
@@ -123,7 +122,7 @@ export default function Home() {
               draggable={true}
               showDots={false}
               responsive={responsive}
-              ssr={true} 
+              ssr={true}
               infinite={true}
               autoPlay={true}
               autoPlaySpeed={2000}
@@ -148,9 +147,7 @@ export default function Home() {
               autoPlay={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
-             
               removeArrowOnDeviceType={["tablet", "mobile"]}
-              
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["Second Year"].map((post, ind) => {

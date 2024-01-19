@@ -28,7 +28,7 @@ module.exports = {
         },
       },
       animation: {
-        mover : 'mover 3s infinite alternate',
+        mover: "mover 3s infinite alternate",
       },
       keyframes: {
         mover2: {
@@ -37,7 +37,7 @@ module.exports = {
         },
       },
       animation: {
-        mover2 : 'mover2 3s infinite alternate',
+        mover2: "mover2 3s infinite alternate",
       },
     },
   },

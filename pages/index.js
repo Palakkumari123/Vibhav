@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import * as basicScroll from "basicscroll";
@@ -11,29 +10,37 @@ import { useEffect } from "react";
 import Footer from "../Components/UI/Footer";
 import Contact from "../Components/Contact";
 
-
 export default function Home() {
   return (
     <>
       <Head>
         <title> Team Vibhav</title>
-        <meta name="description" content="Team Vibhav is the Departmental team of Electronics & Communication Engineering Department which works for Nimbus-Annual Technical Festival of National Institute of Technology, Hamirpur" />
-        <meta name="keywords" content="Projects , Events , Workshops , Our Team , Our Work , Alumni " />
+        <meta
+          name="description"
+          content="Team Vibhav is the Departmental team of Electronics & Communication Engineering Department which works for Nimbus-Annual Technical Festival of National Institute of Technology, Hamirpur"
+        />
+        <meta
+          name="keywords"
+          content="Projects , Events , Workshops , Our Team , Our Work , Alumni "
+        />
         <link rel="icon" href="/favicon.ico?" />
       </Head>
       <main>
-
         <Layout>
-
-       
-           <Image alt="homePage Parallax" loading="lazy"   src="/Assets/4x/MobileHeroSection.webp" className="fixed top-0 left-0 flex object-cover h-screen opacity-40" width={7921} height={7921}   ></Image>
-          <div  className="z-50 flex flex-col">
-            <HomePage   />
-            <AboutUs  />
-            <Cc  />
+          <Image
+            alt="homePage Parallax"
+            loading="lazy"
+            src="/Assets/4x/MobileHeroSection.webp"
+            className="fixed top-0 left-0 flex object-cover h-screen opacity-40"
+            width={7921}
+            height={7921}
+          ></Image>
+          <div className="z-50 flex flex-col">
+            <HomePage />
+            <AboutUs />
+            <Cc />
             <FAQs />
-            <Contact  />
-
+            <Contact />
           </div>
         </Layout>
       </main>

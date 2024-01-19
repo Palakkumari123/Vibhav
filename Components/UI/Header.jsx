@@ -63,7 +63,6 @@ const ourwork = [
     href: "/OurWork/Previous",
     icon: HiPresentationChartBar,
   },
-  
 ];
 const ourteam = [
   {
@@ -118,16 +117,16 @@ export default function Example() {
                   <Menu.Button
                     className={classNames(
                       open ? "text-gray-400" : "text-gray-200",
-                      "inline-flex items-center text-base font-medium hover:text-white"
+                      "inline-flex items-center text-base font-medium hover:text-white",
                     )}
                   >
                     <span className="flex rounded-lg p-2 tracking-wide font-[Hero-Bold] text-xl font-bold hover:bg-[#a18240]">
                       {" "}
-                      <RiTeamFill className="h-6 w-6 mr-1" />  Team
+                      <RiTeamFill className="h-6 w-6 mr-1" /> Team
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-400" : "text-gray-200",
-                          "ml-1 mt-1.5 text- h-5 w-5 group-hover:text-white"
+                          "ml-1 mt-1.5 text- h-5 w-5 group-hover:text-white",
                         )}
                         aria-hidden="true"
                       />
@@ -177,7 +176,7 @@ export default function Example() {
                     className={classNames(
                       open ? "text-gray-400" : "text-gray-200",
 
-                      "inline-flex items-center text-base font-medium hover:text-white"
+                      "inline-flex items-center text-base font-medium hover:text-white",
                     )}
                   >
                     <span className="flex rounded-lg p-2 font-Kanit text-xl font-[Hero-Bold] hover:bg-[#a18240]">
@@ -186,7 +185,7 @@ export default function Example() {
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
-                          "ml-1 mt-1.5 h-5 w-5 group-hover:text-gray-500"
+                          "ml-1 mt-1.5 h-5 w-5 group-hover:text-gray-500",
                         )}
                         aria-hidden="true"
                       />
@@ -234,16 +233,16 @@ export default function Example() {
                   <Menu.Button
                     className={classNames(
                       open ? "text-gray-400" : "text-gray-200",
-                      "inline-flex items-center text-base font-medium hover:text-white"
+                      "inline-flex items-center text-base font-medium hover:text-white",
                     )}
                   >
                     <span className="flex rounded-lg p-2 font-[Hero-Bold] text-xl font-bold hover:bg-[#a18240]">
                       {" "}
-                      <FaHammer className="w-6 mr-1 h-6" />  Work
+                      <FaHammer className="w-6 mr-1 h-6" /> Work
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600 " : "text-gray-400",
-                          "ml-1 mt-1.5 h-5 w-5  group-hover:text-gray-500"
+                          "ml-1 mt-1.5 h-5 w-5  group-hover:text-gray-500",
                         )}
                         aria-hidden="true"
                       />
@@ -307,9 +306,7 @@ export default function Example() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-
-                <img
-
+                  <img
                     className="h-10 w-auto "
                     src="/Assets/Yellow.png"
                     alt="Team Vibhav"
@@ -335,11 +332,8 @@ export default function Example() {
 
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
-                     Team
-                    <ChevronDownIcon
-                      className="h-5 w-5"
-                      aria-hidden="true"
-                    />
+                    Team
+                    <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
                   </Menu.Button>
 
                   <Transition
@@ -381,10 +375,7 @@ export default function Example() {
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
                     Projects
-                    <ChevronDownIcon
-                      className="h-5 w-5"
-                      aria-hidden="true"
-                    />
+                    <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
                   </Menu.Button>
 
                   <Transition
@@ -424,11 +415,8 @@ export default function Example() {
                 </Menu>
                 <Menu>
                   <Menu.Button className="text-base px-5 py-2 font-medium text-white rounded-lg hover:bg-[#dab971] mx-2 flex items-center justify-between">
-                     Work
-                    <ChevronDownIcon
-                      className="h-5 w-5"
-                      aria-hidden="true"
-                    />
+                    Work
+                    <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
                   </Menu.Button>
 
                   <Transition

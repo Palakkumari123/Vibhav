@@ -3,10 +3,10 @@ import Image from "next/image";
 
 import Projects from "../../Components/Projects";
 import Layout from "../../Components/UI/Layout";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 export default function Home() {
-  const router = useRouter()
-  const { id } = router.query
+  const router = useRouter();
+  const { id } = router.query;
   return (
     <>
       <Head>

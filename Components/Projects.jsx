@@ -8,14 +8,16 @@ export default function Projects({ id }) {
     ai: "AI/ML",
     ar: "AR/VR",
     iot: "IoT",
-    es: "EMBEDDED SYSTEMS", 
+    es: "EMBEDDED SYSTEMS",
     dsp: "DSP",
-    quan: "QUANTUM COMPUTING"
+    quan: "QUANTUM COMPUTING",
   };
   return (
     <div className="p-3 pt-24 justify-center">
-      <h1 className="text-[#dab971] mt-10 justify-center flex text-5xl md:text-6xl md:p-0 p-2 font-[Azonix]">Projects</h1>
-     
+      <h1 className="text-[#dab971] mt-10 justify-center flex text-5xl md:text-6xl md:p-0 p-2 font-[Azonix]">
+        Projects
+      </h1>
+
       <div className="text-[#dab971] animate-pulse justify-center flex mt-6 mb-8 font-[Azonix] text-5xl font-black">
         {tabs[id]}
       </div>

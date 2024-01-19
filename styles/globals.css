@@ -1,104 +1,98 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Kanit:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Kanit:wght@500&display=swap");
 @layer base {
-    a {
-        @apply p-1
-    }
+  a {
+    @apply p-1;
+  }
 }
- 
+
 body {
-    background-color: #1a1a1d;
-    overflow-x: hidden;
+  background-color: #1a1a1d;
+  overflow-x: hidden;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .scene {
-    position: absolute;
-    width: 100%;
-    transform: translateY(var(--translateY));
-    will-change: transform;
+  position: absolute;
+  width: 100%;
+  transform: translateY(var(--translateY));
+  will-change: transform;
 }
 
 @font-face {
-    font-family: "Elianto-Regular";
-    src: local("Elianto-Regular"),
-
-        url("/Assets/Fonts/Elianto-Regular.woff2");
-    font-weight: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: "ARCADECLASSIC";
-    src: local("ARCADECLASSIC"),
-        url("/Assets/Fonts/ARCADECLASSIC.woff2");
-    font-weight: normal;
-    font-display: swap;
+  font-family: "Elianto-Regular";
+  src: local("Elianto-Regular"), url("/Assets/Fonts/Elianto-Regular.woff2");
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Azonix";
-    src: local("Azonix"),
-
-        url("/Assets/Fonts/Azonix.woff2");
-    font-weight: bold;
-    font-display: swap;
+  font-family: "ARCADECLASSIC";
+  src: local("ARCADECLASSIC"), url("/Assets/Fonts/ARCADECLASSIC.woff2");
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Hero-Bold";
-    src: local("Hero-Bold"),
-        url("/Assets/Fonts/Hero-Bold.woff2");
-        font-display: swap;
+  font-family: "Azonix";
+  src: local("Azonix"), url("/Assets/Fonts/Azonix.woff2");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hero-Bold";
+  src: local("Hero-Bold"), url("/Assets/Fonts/Hero-Bold.woff2");
+  font-display: swap;
 }
 
 .dud {
-    color: #e9ec53;
-  }
+  color: #e9ec53;
+}
 .vibhav-name-svg {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .vibhav-text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 10s infinite linear;
-    filter: drop-shadow(1px 3px 20px rgb(180, 156, 24)) ;
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 10s infinite linear;
+  filter: drop-shadow(1px 3px 20px rgb(180, 156, 24));
 }
 
-.vibhav-text-copy:nth-child(1){
-	stroke: #ffce2b
-    ;
-	animation-delay: -2s;
+.vibhav-text-copy:nth-child(1) {
+  stroke: #ffce2b;
+  animation-delay: -2s;
 }
 
-.vibhav-text-copy:nth-child(2){
-	stroke: #948551;
-	animation-delay: -4s;
+.vibhav-text-copy:nth-child(2) {
+  stroke: #948551;
+  animation-delay: -4s;
 }
 
-.vibhav-text-copy:nth-child(3){
-	stroke: #debe04;
-	animation-delay: -6s;
+.vibhav-text-copy:nth-child(3) {
+  stroke: #debe04;
+  animation-delay: -6s;
 }
 
-.vibhav-text-copy:nth-child(4){
-	stroke: #fffadb;
-	animation-delay: -8s;
+.vibhav-text-copy:nth-child(4) {
+  stroke: #fffadb;
+  animation-delay: -8s;
 }
 
-.vibhav-text-copy:nth-child(5){
-	stroke: #ead4ab;
-	animation-delay: -10s;
+.vibhav-text-copy:nth-child(5) {
+  stroke: #ead4ab;
+  animation-delay: -10s;
 }
 
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
 }

@@ -8,10 +8,8 @@ export default function TeamCard({ data, cardType }) {
     <div className="flex items-center justify-center sm:p-4">
       <div
         className={
-          (cardType === "alumni"
-            ? style.alumniCard
-            : style.mainCard) +
-              " flex flex-col justify-center py-4 sm:py-2 sm:p-4 rounded-2xl"
+          (cardType === "alumni" ? style.alumniCard : style.mainCard) +
+          " flex flex-col justify-center py-4 sm:py-2 sm:p-4 rounded-2xl"
         }
       >
         <div className="flex items-center text-[#ffffffd6] justify-start w-full px-2 sm:px-4 ">
@@ -44,13 +42,13 @@ export default function TeamCard({ data, cardType }) {
           </div>
           <div className="flex flex-row justify-end ">
             {cardType === "team" ? (
-              <Link href={data.Github} target={"_blank"}  >
+              <Link href={data.Github} target={"_blank"}>
                 <div className="rounded-full cursor-pointer p-2 mr-2 bg-[#eae4d8] bg-opacity-50 hover:bg-[#ffffff] hover:scale-105">
                   <FiGithub className="w-6 h-6 " />
                 </div>
               </Link>
             ) : undefined}
-            <Link href={data.LinkedIn} target={"_blank"}  >
+            <Link href={data.LinkedIn} target={"_blank"}>
               <div className="rounded-full cursor-pointer p-2 mr-2 bg-[#eae4d8] bg-opacity-50 hover:bg-[#ffffff] hover:scale-105">
                 <FiLinkedin className="w-6 h-6 " />
               </div>

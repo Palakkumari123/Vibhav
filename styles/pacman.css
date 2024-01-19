@@ -9,23 +9,23 @@
   width: 0;
   height: 0;
   border: 37.5px solid #fdff00;
-  border-right-color: transparent; 
+  border-right-color: transparent;
   border-radius: 50%;
   left: -60px;
   -webkit-animation: rotate_pacman_half_up 0.5s infinite;
-          animation: rotate_pacman_half_up 0.5s infinite;
+  animation: rotate_pacman_half_up 0.5s infinite;
   position: relative;
 }
 .pacman > div:nth-child(2) {
   -webkit-animation-name: rotate_pacman_half_down;
-          animation-name: rotate_pacman_half_down;
+  animation-name: rotate_pacman_half_down;
   margin-top: -75px;
 }
 .pacman > div:nth-child(3),
 .pacman > div:nth-child(4),
 .pacman > div:nth-child(5) {
   -webkit-animation: pacman-balls 1s infinite linear;
-          animation: pacman-balls 1s infinite linear;
+  animation: pacman-balls 1s infinite linear;
   background-color: #fdff00;
   border-radius: 50%;
   width: 15px;
@@ -36,11 +36,11 @@
 }
 .pacman > div:nth-child(3) {
   -webkit-animation-delay: -0.66s;
-          animation-delay: -0.66s;
+  animation-delay: -0.66s;
 }
 .pacman > div:nth-child(4) {
   -webkit-animation-delay: -0.33s;
-          animation-delay: -0.33s;
+  animation-delay: -0.33s;
 }
 /*Pacman Animation Keyframes*/
 @-webkit-keyframes rotate_pacman_half_up {
@@ -104,19 +104,27 @@
   }
 }
 
-
-
 .loading h1 {
   animation: typing 2s steps(1, end) infinite;
   overflow: hidden;
   /* display: inline-block; */
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 @keyframes typing {
-  0% { width: 0ch }
-  25% { width: 0.8ch }
-  50% { width: 2ch }
-  75% { width: 3ch }
-  100% { width: 3ch }
+  0% {
+    width: 0ch;
+  }
+  25% {
+    width: 0.8ch;
+  }
+  50% {
+    width: 2ch;
+  }
+  75% {
+    width: 3ch;
+  }
+  100% {
+    width: 3ch;
+  }
 }

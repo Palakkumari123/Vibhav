@@ -40,7 +40,9 @@ export default function ProjectCard({ card }) {
             <div className="relative max-w-3xl mx-auto my-6">
               <div className="relative flex flex-col w-full bg-gray-600 border-0 rounded-lg shadow-lg outline-none bg-opacity-80 focus:outline-none">
                 <div className="flex items-start justify-between p-5 border-b border-solid rounded-t border-slate-200">
-                  <h3 className="text-3xl text-[#dab971] font-semibold">{card.name}</h3>
+                  <h3 className="text-3xl text-[#dab971] font-semibold">
+                    {card.name}
+                  </h3>
                   <button
                     className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none opacity-5 focus:outline-none"
                     name="modal close"
