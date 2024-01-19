@@ -15,5 +15,4 @@ export default function App({ Component, pageProps }) {
     }, 2000);
   },[])
   return loading ? <Loading /> : <Component {...pageProps} />
-  // return 
 }

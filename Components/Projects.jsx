@@ -15,23 +15,7 @@ export default function Projects({ id }) {
   return (
     <div className="p-3 pt-24 justify-center">
       <h1 className="text-[#dab971] mt-10 justify-center flex text-5xl md:text-6xl md:p-0 p-2 font-[Azonix]">Projects</h1>
-      {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1">
-          {tabs.map((tab, ind) => {
-            return (
-              <button
-                type="button"
-                key={ind}
-                className={`border-8 border-transparent truncate text-2xl bg-gray-800 text-white rounded-md focus:bg-white focus:text-gray-800 font-bold h-12 m-2 ${
-                  ind === cardState ? " bg-white text-gray-800" : undefined
-                }
-            `}
-                onClick={() => setCarState(ind)}
-              >
-                {tab}
-              </button>
-            );
-          })}
-        </div> */}
+     
       <div className="text-[#dab971] animate-pulse justify-center flex mt-6 mb-8 font-[Azonix] text-5xl font-black">
         {tabs[id]}
       </div>

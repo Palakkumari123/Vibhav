@@ -1,11 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-// import styles from '../styles/Home.module.css';
 
 import { useRouter } from "next/router";
 import OurWorkCard from "../../Components/UI/cards/ourWorkCard.jsx";
-// import Link from "next/link";
 import ourwork from "../../Components/ourwork.json";
 import Layout from "../../Components/UI/Layout";
 

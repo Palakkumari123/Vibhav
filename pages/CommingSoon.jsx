@@ -1,8 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Layout from '../Components/UI/Layout';
-// import AboutUs from '../Components/AboutUs';
-// import fontAnimation from '../pages/fontAnimation.js';
+
 export default function OurWork() {
   return (
     <>

@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function SocialLinks() {
   return (
     <div className="flex flex-col items-center justify-center">
-      {/* Social Links */}
       <div className="flex flex-wrap justify-center">
         <a
           aria-label="Github"
@@ -14,7 +13,6 @@ export default function SocialLinks() {
           <FaGithub className="w-7 h-7 md:w-10 md:h-10" />
         </a>
 
-        {/* Instagram */}
         <a
           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-gradient-to-tr hover:from-[#fa7e1e] hover:to-[#962fbf] ease-in-out duration-200 hover:scale-125"
           aria-label="Instagram"
@@ -23,7 +21,6 @@ export default function SocialLinks() {
           <FaInstagram className="w-7 h-7 md:w-10 md:h-10" />
         </a>
 
-        {/* Facebook */}
         <a
           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-blue-600 transition-color delay-250 ease-in-out duration-200 hover:scale-125"
           aria-label="Facebook"
@@ -32,7 +29,6 @@ export default function SocialLinks() {
           <FaFacebook className="w-7 h-7 md:w-10 md:h-10" />
         </a>
 
-        {/* Discord */}
         <a
           aria-label="Discord"
           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#576fbf] ease-in-out duration-200 hover:scale-125"
@@ -41,7 +37,6 @@ export default function SocialLinks() {
           <FaDiscord className="w-7 h-7 md:w-10 md:h-10" />
         </a>
 
-        {/* LinkedIn */}
         <a
           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#0072b1] ease-in-out duration-200 hover:scale-125"
           aria-label="LinkedIn"
@@ -51,7 +46,6 @@ export default function SocialLinks() {
         </a>
       </div>
 
-      {/* Weekly Updates Button */}
       <Link href="/weaklyUpdates">
       <button className="bg-[#6a5936] hover:bg-[#dab971] delay-125 hover:scale-110 transition-all duration-150 text-white font-bold py-2 px-4 rounded mt-4">
         Weekly Updates

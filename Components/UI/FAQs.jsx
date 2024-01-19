@@ -22,7 +22,6 @@ export default function FAQs() {
                                             className={`  h-8 w-auto mr-4 align-middle ${isShow === index ? 'flex' : 'hidden'} `}
                                             width={500}
                                             height={500}
-                                            // objectFit="contain"
                                             src='/Assets/Yellow.png'
                                             alt="Your Company"
                                         />{' '}

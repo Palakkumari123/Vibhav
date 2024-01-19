@@ -38,9 +38,7 @@ export default function ProjectCard({ card }) {
         <>
           <div className="fixed inset-0 z-50 w-auto flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
             <div className="relative max-w-3xl mx-auto my-6">
-              {/*content*/}
               <div className="relative flex flex-col w-full bg-gray-600 border-0 rounded-lg shadow-lg outline-none bg-opacity-80 focus:outline-none">
-                {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid rounded-t border-slate-200">
                   <h3 className="text-3xl text-[#dab971] font-semibold">{card.name}</h3>
                   <button
@@ -51,7 +49,6 @@ export default function ProjectCard({ card }) {
                     <span className="block w-6 h-6 text-2xl text-black bg-transparent outline-none opacity-5 focus:outline-none"></span>
                   </button>
                 </div>
-                {/*body*/}
                 <div className="relative h-[24rem] w-auto overflow-y-scroll p-6 font-[Hero-Bold] text-xl flex-auto">
                   <h1 className="my-4 leading-relaxed text-gray-300">
                     {card.round1head}
@@ -78,7 +75,6 @@ export default function ProjectCard({ card }) {
                     {card.round4}
                   </h1>
                 </div>
-                {/*footer*/}
                 <div className="flex items-center justify-end p-6 rounded-b">
                   <button
                     className="bg-[#dab971] hover:bg-[#d5a02e] text-black font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"

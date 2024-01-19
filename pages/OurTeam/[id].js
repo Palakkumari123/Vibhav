@@ -1,9 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-// import styles from '../styles/Home.module.css';
 import { useRouter } from "next/router";
-// import Link from "next/link";
 import Layout from "../../Components/UI/Layout";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -12,7 +10,6 @@ import TeamCard from "../../Components/UI/cards/TeamCard";
 import AluminiTeamPhotos from "../../Components/alumni.json";
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -56,14 +53,12 @@ export default function Home() {
                   draggable={true}
                   showDots={false}
                   responsive={responsive}
-                  ssr={true} // means to render carousel on server-side.
+                  ssr={true} 
                   infinite={true}
-                  // autoPlay={true}
                   autoPlaySpeed={2000}
                   keyBoardControl={true}
                   containerClass="carousel-container"
                   removeArrowOnDeviceType={["tablet", "mobile"]}
-                  // dotListClass="custom-dot-list-style"
                   itemClass="carousel-item-padding-40-px my-4"
                   partialVisbile
                 >
@@ -84,14 +79,12 @@ export default function Home() {
               draggable={true}
               showDots={false}
               responsive={responsive}
-              ssr={true} // means to render carousel on server-side.
+              ssr={true} 
               infinite={true}
-              // autoPlay={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
               containerClass="carousel-container"
               removeArrowOnDeviceType={["tablet", "mobile"]}
-              // dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px my-4"
               partialVisbile
             >
@@ -109,14 +102,12 @@ export default function Home() {
               draggable={true}
               showDots={false}
               responsive={responsive}
-              ssr={true} // means to render carousel on server-side.
+              ssr={true}
               infinite={true}
               autoPlay={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
-              // containerClass="carousel-container"
               removeArrowOnDeviceType={["tablet", "mobile"]}
-              // dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["Final Year"].map((post, ind) => {
@@ -132,14 +123,12 @@ export default function Home() {
               draggable={true}
               showDots={false}
               responsive={responsive}
-              ssr={true} // means to render carousel on server-side.
+              ssr={true} 
               infinite={true}
               autoPlay={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
-              // containerClass="carousel-container"
               removeArrowOnDeviceType={["tablet", "mobile"]}
-              // dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["Third Year"].map((post, ind) => {
@@ -154,14 +143,14 @@ export default function Home() {
               draggable={true}
               showDots={false}
               responsive={responsive}
-              ssr={true} // means to render carousel on server-side.
+              ssr={true}
               infinite={true}
               autoPlay={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
-              // containerClass="carousel-container"
+             
               removeArrowOnDeviceType={["tablet", "mobile"]}
-              // dotListClass="custom-dot-list-style"
+              
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["Second Year"].map((post, ind) => {
@@ -179,14 +168,12 @@ export default function Home() {
               draggable={true}
               showDots={false}
               responsive={responsive}
-              ssr={true} // means to render carousel on server-side.
+              ssr={true}
               infinite={true}
               autoPlay={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
-              // containerClass="carousel-container"
               removeArrowOnDeviceType={["tablet", "mobile"]}
-              // dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["First Year"].map((post, ind) => {
