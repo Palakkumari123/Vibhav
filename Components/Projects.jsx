@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import projects from "../data/tabs.json";
+
 import Card from "./UI/cards/projectCardnew";
+
+
 
 export default function Projects({ id }) {
   const [cardState, setCarState] = useState(0);
@@ -13,6 +16,7 @@ export default function Projects({ id }) {
     quan: "QUANTUM COMPUTING",
   };
   return (
+
     <>
       <div className="p-3 pt-24 justify-center">
         <h1 className="text-[#dab971] mt-10 justify-center flex text-5xl md:text-6xl md:p-0 p-2 font-mono">
@@ -28,10 +32,13 @@ export default function Projects({ id }) {
           return (
             <div key={ind} className="justify-center mb-3 w-fit">
               <Card card={card} />
+
             </div>
           );
         })}
       </div>
+
     </>
+
   );
 }

@@ -58,9 +58,9 @@ function FAQComponent() {
             )}
           </div>
         ))}
+
       </div>
     </div>
   );
 }
 
-export default FAQComponent;

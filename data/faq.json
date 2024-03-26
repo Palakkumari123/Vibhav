@@ -1,6 +1,7 @@
 {
     "faqs":[
         {
+
             "question":"What is Team Vibhav?",
             "answer":"Team Vibhav is the departmental club of Electronics and Communications in Technical Fest Nimbus at NIT Hamirpur."
         },
@@ -27,6 +28,7 @@
         {
             "question":"What are Team Vibhav Ambitions Ahead? ",
             "answer":"Our aspirations include maintaining our status as the premier departmental team of the Technical fest Nimbus, while also expanding further within our domain."
+
         }
     ]
 }
