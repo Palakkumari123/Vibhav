@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 import { useState } from "react";
-=======
-import Head from "next/head";
-import Image from "next/image";
-import { useState } from "react";
-
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
 import { useRouter } from "next/router";
 import OurWorkCard from "../../Components/UI/cards/ourWorkCard.jsx";
 import ourwork from "../../data/ourwork.json";

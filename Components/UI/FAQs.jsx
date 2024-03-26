@@ -1,7 +1,7 @@
 import faq from "../../data/faq.json";
 import { useState } from "react";
 
-function FAQComponent() {
+export default function FAQs() {
   const [faqs, setFaqs] = useState([...faq.faqs]);
 
   const toggleFAQ = (index) => {

@@ -1,22 +1,11 @@
-<<<<<<< HEAD
-=======
-import Head from "next/head";
-import Image from "next/image";
-import { useState } from "react";
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
 import { useRouter } from "next/router";
 import Layout from "../../Components/UI/Layout";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CurrentTeamPhotos from "../../data/team.json";
-<<<<<<< HEAD
 import AluminiTeamPhotos from "../../data/alumni.json";
 import TeamCardnew from "../../Components/UI/cards/TeamCardnew";
 
-=======
-import TeamCard from "../../Components/UI/cards/TeamCard";
-import AluminiTeamPhotos from "../../data/alumni.json";
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -46,11 +35,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="sm:m-8  ">
-<<<<<<< HEAD
         <h1 className=" text-5xl rounded-md text-[#dab971] mt-36 md:text-5xl flex justify-center items-center font-mono  ">
-=======
-        <h1 className=" text-5xl rounded-md text-[#dab971] mt-36 md:text-5xl flex justify-center items-center font-[Elianto-Regular] animate-pulse ">
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
           {" "}
           {currentPage}{" "}
         </h1>
@@ -76,13 +61,9 @@ export default function Home() {
                   partialVisbile
                 >
                   {AluminiTeamPhotos[year].map((post, ind) => {
-<<<<<<< HEAD
                     return (
                       <TeamCardnew cardType="alumni" key={ind} data={post} />
                     );
-=======
-                    return <TeamCard cardType="alumni" key={ind} data={post} />;
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
                   })}
                 </Carousel>
               </div>
@@ -90,11 +71,7 @@ export default function Home() {
           })
         ) : (
           <div>
-<<<<<<< HEAD
             <h1 className="text-[#a18240] mt-8 text-3xl ml-24 font-[Hero-Bold]">
-=======
-            <h1 className="text-[#a18240] mt-8 text-3xl ml-14 font-[Hero-Bold]">
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
               SUPER FINAL YEAR MEMBERS
             </h1>
             <Carousel
@@ -106,27 +83,16 @@ export default function Home() {
               infinite={true}
               autoPlaySpeed={2000}
               keyBoardControl={true}
-<<<<<<< HEAD
               containerClass="carousel-container "
-=======
-              containerClass="carousel-container"
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
               removeArrowOnDeviceType={["tablet", "mobile"]}
               itemClass="carousel-item-padding-40-px my-4"
               partialVisbile
             >
               {CurrentTeamPhotos["Super Final Year"].map((post, ind) => {
-<<<<<<< HEAD
                 return <TeamCardnew cardType="team" key={ind} data={post} />;
               })}
             </Carousel>
             <h1 className="text-[#a18240] text-3xl mt-12 ml-24 font-[Hero-Bold]">
-=======
-                return <TeamCard cardType="team" key={ind} data={post} />;
-              })}
-            </Carousel>
-            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
               FINAL YEAR MEMBERS
             </h1>
 
@@ -144,7 +110,6 @@ export default function Home() {
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["Final Year"].map((post, ind) => {
-<<<<<<< HEAD
                 return (
                   // <TeamCard cardType="team" key={ind} data={post} />;
                   <TeamCardnew cardType="team" key={ind} data={post} />
@@ -153,13 +118,6 @@ export default function Home() {
             </Carousel>
 
             <h1 className="text-[#a18240] text-3xl mt-12 ml-24 font-[Hero-Bold]">
-=======
-                return <TeamCard cardType="team" key={ind} data={post} />;
-              })}
-            </Carousel>
-
-            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
               COORDINATORS
             </h1>
             <Carousel
@@ -176,7 +134,6 @@ export default function Home() {
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["Third Year"].map((post, ind) => {
-<<<<<<< HEAD
                 return (
                   // <TeamCard cardType="team" key={ind} data={post} />;
                   <TeamCardnew cardType="team" key={ind} data={post} />
@@ -184,12 +141,6 @@ export default function Home() {
               })}
             </Carousel>
             <h1 className="text-[#a18240] text-3xl mt-12 ml-24 font-[Hero-Bold]">
-=======
-                return <TeamCard cardType="team" key={ind} data={post} />;
-              })}
-            </Carousel>
-            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
               EXECUTIVE MEMBERS
             </h1>
             <Carousel
@@ -206,7 +157,6 @@ export default function Home() {
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["Second Year"].map((post, ind) => {
-<<<<<<< HEAD
                 return (
                   // <TeamCard cardType="team" key={ind} data={post} />
                   <TeamCardnew cardType="team" key={ind} data={post} />
@@ -215,13 +165,6 @@ export default function Home() {
             </Carousel>
 
             <h1 className="text-[#a18240] text-3xl mt-12 ml-24 font-[Hero-Bold]">
-=======
-                return <TeamCard cardType="team" key={ind} data={post} />;
-              })}
-            </Carousel>
-
-            <h1 className="text-[#a18240] text-3xl mt-12 ml-14 font-[Hero-Bold]">
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
               VOLUNTEERS
             </h1>
             <div class="blob blob-9"></div>
@@ -240,15 +183,11 @@ export default function Home() {
               itemClass="carousel-item-padding-40-px my-4"
             >
               {CurrentTeamPhotos["First Year"].map((post, ind) => {
-<<<<<<< HEAD
                 return (
                   <>
                     <TeamCardnew cardType="team" key={ind} data={post} />
                   </>
                 );
-=======
-                return <TeamCard cardType="team" key={ind} data={post} />;
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
               })}
             </Carousel>
           </div>

@@ -5,7 +5,7 @@ export const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
 
-export default function ScrollToTop() {
+export default function STT() {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {

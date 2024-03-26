@@ -1,9 +1,4 @@
 import Head from "next/head";
-<<<<<<< HEAD
-=======
-import Image from "next/image";
-
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
 import Projects from "../../Components/Projects";
 import Layout from "../../Components/UI/Layout";
 import { useRouter } from "next/router";
