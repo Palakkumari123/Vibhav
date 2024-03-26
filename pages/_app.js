@@ -16,7 +16,6 @@ export default function App({ Component, pageProps }) {
   }, []);
   return loading ? <Loading /> : <Component {...pageProps} />;
 }
-<<<<<<< HEAD
 
 // import { useState, useEffect } from "react";
 // import { ParallaxProvider } from "react-scroll-parallax";
@@ -50,5 +49,3 @@ export default function App({ Component, pageProps }) {
 //     </div>
 //   );
 // }
-=======
->>>>>>> d0904fc9c58ed2865530298188777360725fd6ba
