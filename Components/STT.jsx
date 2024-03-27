@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { BiArrowFromBottom } from "react-icons/bi";
+import { ChevronDoubleUpIcon } from "@heroicons/react/24/outline";
 
 export const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
 
-export default function ScrollToTop() {
+export default function STT() {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -32,17 +32,21 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="fixed z-10 bottom-10 right-10">
+
+    <div className="fixed z-10 top-10 grid place-items-center w-full">
+
       <button
         type="button"
         name="scroll to top"
         onClick={scrollToTop}
         className={classNames(
           isVisible ? "opacity-100" : "opacity-0",
-          "bg-[#96969692] hover:bg-[#d8b44f] hover:text-[#f2eaeac9] inline-flex items-center rounded-full p-3 text-[#dab961] shadow-sm  focus:outline-none ",
+
+          "bg-[#96969692] hover:bg-[#0e69c4] hover:text-[#f2eaeac9] animate-bounce inline-flex items-center rounded-full p-3 text-[#00000] shadow-sm  focus:outline-none "
         )}
       >
-        <BiArrowFromBottom className="h-6 w-6" aria-hidden="true" />
+        <ChevronDoubleUpIcon className="h-6 w-6" aria-hidden="true" />
+
       </button>
     </div>
   );

@@ -1,7 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
-
 import { useRouter } from "next/router";
 import OurWorkCard from "../../Components/UI/cards/ourWorkCard.jsx";
 import ourwork from "../../data/ourwork.json";
