@@ -5,7 +5,7 @@ import { poppinsBold } from "../../fonts";
 import { cn } from "../../lib/utils";
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { useParallax } from "react-scroll-parallax";
 
