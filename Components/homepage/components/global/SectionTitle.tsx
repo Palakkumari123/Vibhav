@@ -1,6 +1,6 @@
 import { poppinsBold } from "../../fonts";
 import { cn } from "../../lib/utils";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Container } from "../layout/Container";
 
 type SectionTitleProps = {

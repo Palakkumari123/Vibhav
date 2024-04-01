@@ -5,7 +5,7 @@ import ReceivePayment from "../../assets/p1.png";
 import MobileWireFrame from "../../assets/f1.png";
 import Image, { type StaticImageData } from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { useParallax } from "react-scroll-parallax";
 import SectionTitle from "../global/SectionTitle";
 import SectionWrapper from "../global/SectionWrapper";
