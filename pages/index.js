@@ -36,6 +36,7 @@ export default function Home() {
               alt="Background"
               layout="fill"
               objectFit="cover"
+              
             />
           </div>
           <div className="z-50 flex flex-col">

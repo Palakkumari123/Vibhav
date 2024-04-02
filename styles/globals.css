@@ -9,18 +9,7 @@
 }
 
 body {
-  /* Add background image */
-  background-image: url("../public/Assets/background.png");
-  /* Other background properties */
-  background-size: cover;
-  background-position: center;
-  /* Ensure content covers entire viewport */
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-attachment: fixed;
-
-  overflow-x: hidden;
+  background-color: #100f12;
 }
 html {
   scroll-behavior: smooth;

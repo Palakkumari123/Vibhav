@@ -95,20 +95,8 @@ export default function Navigation() {
         top: document.body.scrollHeight,
         behavior: "smooth",
       });
-    }, 800); 
-  }; //scrolltobottom
-
-  // useEffect(() => {
-  //   const handleClick = () => {
-  //     scrollToBottom();
-  //   };
-  //   document.querySelector(".menuLink").addEventListener("click", handleClick);
-  //   return () => {
-  //     document
-  //       .querySelector(".menuLink")
-  //       .removeEventListener("click", handleClick);
-  //   };
-  // }, []); //for contact navigation
+    }, 800);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -152,8 +140,6 @@ export default function Navigation() {
     toggleProjectVisibility();
     setWorkVisible(false);
     setTeamVisible(false);
-
-    
   };
 
   const toggleWorkVisibility = () => {
@@ -438,7 +424,6 @@ export default function Navigation() {
         <p
           onClick={(e) => {
             handleTeamClick(e);
-            
           }}
           className={`menuLink ${activeRoute === "/OurTeam/[id]" ? "active" : ""}`}
         >
@@ -454,5 +439,3 @@ export default function Navigation() {
     </nav> //navigation for desktop view
   );
 }
-
-

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import OurWorkCard from "../../Components/UI/cards/ourWorkCard.jsx";
 import ourwork from "../../data/ourwork.json";
 import Layout from "../../Components/UI/Layout";
+import WorkCardNew from "../../Components/UI/cards/WordCard/WorkCardNew.js";
 
 export default function Home() {
   const router = useRouter();
@@ -43,7 +43,7 @@ export default function Home() {
                 ? ourwork[id][cardState].map((card, ind) => {
                     return (
                       <div key={ind} className="flex justify-center py-2">
-                        <OurWorkCard card={card} />
+                        <WorkCardNew data={card} />
                       </div>
                     );
                   })
