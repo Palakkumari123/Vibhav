@@ -1,6 +1,6 @@
-import AppContentPrivate from "../../assets/p1.png";
+import AppContentPrivate from "../../../../public/Assets/TeamPhotos/CC/Krishna Gambhir.webp";
 
-import ReceivePayment from "../../assets/p1.png";
+import ReceivePayment from "../../../../public/Assets/TeamPhotos/CC/Parth Tailor.webp"
 
 import MobileWireFrame from "../../assets/frame.png";
 import Image, { type StaticImageData } from "next/image";

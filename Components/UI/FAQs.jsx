@@ -53,14 +53,14 @@ export default function FAQs() {
                 </svg>
               )}
             </button>
-            {faq.isOpen && (
-              <div className="text-gray-300 text-sm mt-2">{faq.answer}</div>
-            )}
+            <div
+              className={`text-gray-300 text-sm mt-2 transition-all duration-500 ${faq.isOpen ? "h-auto opacity-100" : "h-0 opacity-0"}`}
+            >
+              {faq.answer}
+            </div>
           </div>
         ))}
-
       </div>
     </div>
   );
 }
-

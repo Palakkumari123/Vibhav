@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import loader from "../public/Assets/anne-roos-leeuwis-character-run-animation.gif";
+import loader from "../public/Assets/amongus.gif";
 // export default function Loading() {
 //   return (
 //     <div className="flex justify-center items-center h-screen">
@@ -25,7 +25,7 @@ export default function Loading() {
   return (
     <div className="flex justify-center items-center h-screen">
       {loading && (
-        <div className="w-20 overflow-hidden animate-slideRight">
+        <div className="w-40 overflow-hidden animate-slideRight">
           <Image
             src={loader}
             alt="Loading Animation"
