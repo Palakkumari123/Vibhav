@@ -14,11 +14,11 @@ function TeamCardnew({ data, cardType }) {
                 className="w-full h-full object-cover object-center"
               />
             </div>
-            <div className=" absolute bottom-0 left-1/2 top-40 transform -translate-x-1/2 -translate-y-1/2">
+            <div className=" absolute bottom-0 left-1/2 top-40 transform -translate-x-1/2 -translate-y-2/3">
               <img
                 alt={data.Name}
                 src={data.Profile}
-                className="w-24 h-24 rounded-full border-2 border-white shadow-lg"
+                className="w-32 h-32 rounded-full border-2 border-white shadow-lg"
               />
             </div>
 

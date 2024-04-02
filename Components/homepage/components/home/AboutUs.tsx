@@ -27,7 +27,7 @@ function BackgroundText() {
   }, []);
 
   return (
-    <div className="sticky top-[75px] -z-10 hidden md:block">
+    <div className="sticky top-[75px]-mb-24  hidden md:block">
       <div
         className="absolute top-[128px] flex w-full items-center justify-center overflow-hidden"
         style={{ gap }}
@@ -88,7 +88,7 @@ function MobileView() {
 
 export default function AboutUs() {
   return (
-    <div className="relative h-[200vh]">
+    <div className="relative mb-32 h-screen">
       <ParallaxProvider>
       <BackgroundText />
       <MobileView />

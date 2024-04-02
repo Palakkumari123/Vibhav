@@ -1,6 +1,4 @@
-
 import User1 from "../../assets/t1.jpg";
-
 import User2 from "../../assets/t2.jpg";
 import User3 from "../../assets/t3.jpg";
 
@@ -14,7 +12,7 @@ import React from "react";
 import { useParallax } from "react-scroll-parallax";
 import SectionTitle from "../global/SectionTitle";
 import SectionWrapper from "../global/SectionWrapper";
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 type UserData = {
   name: string;
@@ -55,9 +53,7 @@ function UserCard(props: { user: UserData }) {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-    >
-      
-    </div>
+    ></div>
   );
 }
 
@@ -96,18 +92,19 @@ function Row2() {
 
 export default function Gallery() {
   return (
-    <SectionWrapper className="bg-black bg-opacity-25" noContainer>
+    <SectionWrapper className="bg-black  bg-opacity-25" noContainer>
       <div className="flex flex-col gap-28 overflow-hidden text-gray-200">
-        <SectionTitle
-          title="REFLECTING ON THE JOURNEY"
-          description="A glimpse into our team's past adventures, memories that shape our present."
-          
-        />
+        <div className="mx-auto">
+          <SectionTitle
+            title="REFLECTING ON THE JOURNEY"
+            description="A glimpse into our team's past adventures, memories that shape our present."
+          />
+        </div>
         <div className="flex rotate-6 transform flex-col gap-4 py-24">
-        <ParallaxProvider>
+          <ParallaxProvider>
             <Row1 />
             <Row2 />
-        </ParallaxProvider>
+          </ParallaxProvider>
         </div>
       </div>
     </SectionWrapper>

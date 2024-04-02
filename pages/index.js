@@ -6,6 +6,8 @@ import Gallery from "../Components/homepage/components/home/Gallery";
 import LandingPage from "../Components/homepage/components/home/LandingPage";
 import AboutUs from "../Components/homepage/components/home/AboutUs";
 import CC from "../Components/homepage/components/home/CC";
+import backgroundImage from "../public/Assets/background.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -24,6 +26,18 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
+          {/* <video autoPlay loop muted>
+            <source src={vido}  type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video> */}
+          <div className="bg-cover bg-center fixed z-0 h-screen w-full  ">
+            <Image
+              src={backgroundImage}
+              alt="Background"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <div className="z-50 flex flex-col">
             <LandingPage />
             <AboutUs />
@@ -31,9 +45,6 @@ export default function Home() {
             <CC />
             <FAQs />
             <Contact />
-            {/* <Logof /> */}
-            {/* <AboutUs /> */}
-            {/* <CC /> */}
           </div>
         </Layout>
       </main>
