@@ -30,7 +30,7 @@ export default function Home() {
   const { id } = router.query;
   const pageState = { currteam: "Current Team", alumni: "Alumni" };
   const tabs = ["Current Team", "Alumni"];
-  const alumniYear = ["2019", "2020", "2021", "2022"];
+  const alumniYear = ["2019", "2020", "2021", "2022", "2023"];
   const currentPage = pageState[id];
   return (
     <Layout>

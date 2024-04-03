@@ -1,7 +1,6 @@
 import Image from "next/image";
 import loader from "../public/Assets/amongus.gif";
 import { useState, useEffect } from "react";
-
 export default function Loading() {
   const [loading, setLoading] = useState(true);
 
@@ -17,11 +16,14 @@ export default function Loading() {
     <div className="flex justify-center items-center h-screen">
       {loading && (
         <div className="w-60 overflow-hidden animate-slideRight">
-          <Image
-            src={loader}
-            alt="Loading Animation"
-            layout="responsive"
-          />
+          
+            <Image
+              src={loader}
+              alt="Loading Animation"
+              layout="responsive"
+              loading="lazy" 
+            />
+          
         </div>
       )}
     </div>

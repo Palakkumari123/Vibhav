@@ -7,7 +7,7 @@ function Card({ card }) {
   const [readMoreState, setReadMoreState] = useState(100);
   return (
     <>
-      <div className="m-10 hover:border-4 hover:border-[#FF004D]  font-lexend w-80 bg-white shadow-md rounded-lg overflow-hidden p-5 transition duration-150 ease-in transform hover:-translate-y-2 hover:shadow-lg">
+      <div className="m-10 hover:border-4 hover:border-[#FF004D]  font-lexend w-80 bg-gray-400 shadow-md rounded-lg overflow-hidden p-5 transition duration-150 ease-in transform hover:-translate-y-2 hover:shadow-lg">
         <div className="overflow-hidden rounded-lg">
           <img
             src={card.images}
@@ -34,7 +34,7 @@ function Card({ card }) {
                   </span>
                 </p>
               ) : (
-                <p className="text-lg font-semibold text-justify text-gray-600">
+                <p className="text-lg font-semibold text-justify text-gray-300">
                   {card.content}
                 </p>
               )}
@@ -43,7 +43,7 @@ function Card({ card }) {
           ) : (
             <div>
               {card.content.length > 140 ? (
-                <p className="text-lg font-semibold text-justify text-gray-600">
+                <p className="text-lg font-semibold text-justify text-gray-700">
                   {readMoreState === 140
                     ? card.content
                     : `${card.content.substring(0, 140)}...`}
@@ -57,7 +57,7 @@ function Card({ card }) {
                   </span>
                 </p>
               ) : (
-                <p className="text-lg font-semibold text-justify text-gray-600">
+                <p className="text-lg font-semibold text-justify text-gray 700">
                   {card.content}
                 </p>
               )}

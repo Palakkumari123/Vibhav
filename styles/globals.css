@@ -29,6 +29,13 @@ html {
 }
 
 @font-face {
+  font-family: "poppins";
+  src: local("poppins"), url("/Assets/Fonts/poppins.woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Arkhip";
   src: local("Arkhip"), url("/Assets/Fonts/Arkhip.woff2");
   font-weight: normal;
