@@ -15,10 +15,10 @@ const Listing = ({ data , open }) => {
         <div className="listing__details">
           
           <div className="listing__row">
-            <span className="listing__price">{data.name}</span>
+            <span className="listing__price font-[Quicksand]">{data.name}</span>
           </div>
           <div className="listing__row">
-            <span className="listing__address">{data.content}</span>
+            <span className="listing__address font-sans">{data.content}</span>
           </div>
           
         </div>

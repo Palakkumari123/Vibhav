@@ -17,7 +17,7 @@ export default function FAQs() {
   };
 
   return (
-    <div className="container text-gray-200 z-10 max-w-screen-lg mx-auto px-2 py-2 my-20">
+    <div className="container text-gray-200 z-10 max-w-screen-lg mx-auto  my-20 rounded-[20px] p-8 bg-gray-900 bg-opacity-30 shadow-[0_20px_40px_rgba(0,0,0,.4)]">
       <h2 className="text-2xl font-bold">FAQs</h2>
       <div className="leading-loose text-lg mt-6">
         {faqs.map((faq, index) => (

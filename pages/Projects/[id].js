@@ -1,7 +1,46 @@
 import Head from "next/head";
-import Projects from "../../Components/Projects";
+import Card from "../../Components/UI/cards/projectCardnew"
 import Layout from "../../Components/UI/Layout";
 import { useRouter } from "next/router";
+import projects from "../../data/tabs.json";
+
+function Projects({ id }) {
+  const tabs = {
+    ai: "AI/ML",
+    ar: "AR/VR",
+    iot: "IoT",
+    es: "EMBEDDED SYSTEMS",
+    dsp: "DSP",
+    quan: "QUANTUM COMPUTING",
+  };
+  return (
+
+    <>
+      <div className=" justify-center">
+        <h1 className="mt-12 text-[#edc161] justify-center flex text-5xl md:text-6xl md:p-0 p-2 font-[Quicksand]">
+          Projects
+        </h1>
+
+        <div className="text-4xl  mt-12 text-center text-[#edc161] font-[Hero-bold] ">
+          {tabs[id]}
+        </div>
+      </div>
+      <div className="flex flex-wrap justify-around justify-start">
+        {projects[tabs[id]]?.map((card, ind) => {
+          return (
+            <div key={ind} className="justify-center mb-3 w-fit">
+              <Card card={card} />
+
+            </div>
+          );
+        })}
+      </div>
+
+    </>
+
+  );
+}
+
 export default function Home() {
   const router = useRouter();
   const { id } = router.query;

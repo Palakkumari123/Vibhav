@@ -9,6 +9,7 @@ export default function Layout({ children }) {
       {children}
       <Footer />
       <STT />
+      <br/><br/><br/><br/><br/>
     </div>
   );
 }
