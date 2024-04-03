@@ -2,12 +2,13 @@ import Head from "next/head";
 import Layout from "../Components/UI/Layout";
 import FAQs from "../Components/UI/FAQs";
 import Contact from "../Components/Contact";
-import Gallery from "../Components/homepage/components/home/Gallery";
-import LandingPage from "../Components/homepage/components/home/LandingPage";
-import AboutUs from "../Components/homepage/components/home/AboutUs";
-import CC from "../Components/homepage/components/home/CC";
 import backgroundImage from "../public/Assets/background.png";
 import Image from "next/image";
+import LandingPage from "../Components/LandingPage"
+import CC from "../Components/CC"
+import Gallery from "../Components/Gallery"
+import AboutUs from "../Components/AboutUs"
+
 
 export default function Home() {
   return (
@@ -26,10 +27,6 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          {/* <video autoPlay loop muted>
-            <source src={vido}  type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video> */}
           <div className="bg-cover bg-center fixed z-0 h-screen w-full  ">
             <Image
               src={backgroundImage}
