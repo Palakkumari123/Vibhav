@@ -1,20 +1,20 @@
-import User1 from "../public/Assets/Homepage/t1.jpg";
-import User2 from "../public/Assets/Homepage/t2.jpg";
-import User3 from "../public/Assets/Homepage/t3.jpg";
-import User4 from "../public/Assets/Homepage/t4.jpg";
-import User5 from "../public/Assets/Homepage/t5.jpg";
+import Bg1 from "../public/Assets/Homepage/t1.jpg";
+import Bg2 from "../public/Assets/Homepage/t2.jpg";
+import Bg3 from "../public/Assets/Homepage/t3.jpg";
+import Bg4 from "../public/Assets/Homepage/t4.jpg";
+import Bg5 from "../public/Assets/Homepage/t5.jpg";
 import { Fade } from "react-awesome-reveal";
 import React from "react";
 import { useParallax } from "react-scroll-parallax";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 const usersData = [
-  { name: "@MileyTabita", background: User1 },
-  { name: "Mark Moss", background: User2 },
-  { name: "Tony Robbins", background: User3 },
-  { name: "Bitcoin Magazine", background: User4 },
-  { name: "Aubrey Marcus", background: User5 },
-  { name: "Tony Robbins", background: User3 },
+  { name: "@MileyTabita", background: Bg1 },
+  { name: "Mark Moss", background: Bg2 },
+  { name: "Tony Robbins", background: Bg3 },
+  { name: "Bitcoin Magazine", background: Bg4 },
+  { name: "Aubrey Marcus", background: Bg5 },
+  { name: "Tony Robbins", background: Bg2 },
 ];
 
 function reverseArray(array) {
@@ -29,7 +29,7 @@ function UserCard(props) {
   const { user } = props;
   return (
     <div
-      className="flex h-[250px] w-[250px] flex-col items-center rounded-[31px] p-10 sm:h-[350px] sm:w-[350px] lg:h-[400px] lg:w-[500px]"
+      className="flex h-[250px] w-[250px] flex-col items-center rounded-[31px] p-10 sm:h-[300px] sm:w-[400px] "
       style={{
         background: `linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(${user.background.src}),linear-gradient(138deg,rgba(116,202,255,.8),#f46692 58%,#ffe16a)`,
         backgroundPosition: "center",
@@ -42,14 +42,15 @@ function UserCard(props) {
 
 function Row1() {
   const { ref } = useParallax({
-    translateX: ["-50%", "0"],
+    translateX: ["-30%", "0%"],
   });
+  const reversedArray = reverseArray(usersData);
   return (
     <div
       ref={ref}
       className="grid transform grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] grid-rows-[auto] gap-x-4"
     >
-      {usersData.map((user, index) => (
+      {reversedArray.map((user, index) => (
         <UserCard user={user} key={index} />
       ))}
     </div>
