@@ -91,16 +91,23 @@ export default function Navigation() {
 
   const scrollToBottom = () => {
     setTimeout(() => {
-      window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: "smooth",
-      });
+      if (window.innerWidth <= 640) {
+        window.scrollTo({
+          top: document.body.scrollHeight - 300,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top: document.body.scrollHeight - 100,
+          behavior: "smooth",
+        });
+      }
     }, 800);
   };
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1000); // Adjust the breakpoint as needed
+      setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
     };
     setActiveRoute(router.pathname);
 

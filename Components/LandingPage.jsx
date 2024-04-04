@@ -1,6 +1,7 @@
 import SocialLinks from "./SocialMedia";
 import Typewriter from "typewriter-effect";
 import React from "react";
+import { FaStar } from "react-icons/fa";
 
 export default function LandingPage() {
   return (
@@ -25,6 +26,14 @@ export default function LandingPage() {
                   .start();
               }}
             />
+          </div>
+
+          <div className="flex text-2xl justify-center items-center">
+            <FaStar className="mx-2 mt-4"/>
+            <FaStar className="mx-2 mt-4"/>
+            <FaStar className="mx-2 mt-4"/>
+            <FaStar className="mx-2 mt-4"/>
+            <FaStar className="animate-pulse text-white mx-2 mt-4" />
           </div>
 
           <SocialLinks />

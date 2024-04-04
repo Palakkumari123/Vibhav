@@ -51,7 +51,7 @@ export default function Contact({}) {
   return (
     <div className="z-10 flex mt-12">
       <div className="relative overflow-x-hidden rounded-2xl flex pt-8 mt-20   my-20 rounded-[20px] p-8 bg-gray-900 bg-opacity-30 shadow-[0_20px_40px_rgba(0,0,0,.4)] md:flex-row flex-col justify-around w-4/5 mx-auto   ">
-        <div className="py-4 lg:py-16 px-4 mb-12  rounded-xl md:bg-transparent bg-gray-800 z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12">
+        <div className=" lg:py-16  mb-12  rounded-xl mt-4 lg:px-6 lg:bg-gray-800 z-10 bg-opacity-50  max-w-screen-md basis-1/2 lg:w-12">
           <h2 className="mb-4 text-[#e9d59ae4]  text-4xl tracking-tight font-[Quicksand] font-extrabold text-center dark:text-[#e9d59ae4]">
             Contact Us
           </h2>

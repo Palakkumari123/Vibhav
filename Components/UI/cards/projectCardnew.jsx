@@ -7,7 +7,7 @@ function Card({ card }) {
   const [readMoreState, setReadMoreState] = useState(100);
   return (
     <>
-      <div className="m-10 hover:border-4 hover:border-[#FF004D]  font-lexend w-80 bg-gray-400 shadow-md rounded-lg overflow-hidden p-5 transition duration-150 ease-in transform hover:-translate-y-2 hover:shadow-lg">
+      <div className="m-10 hover:border-4 hover:border-[#FF004D]  font-lexend w-80 bg-[#ede7dd] shadow-md rounded-lg overflow-hidden p-5 transition duration-150 ease-in transform hover:-translate-y-2 hover:shadow-lg">
         <div className="overflow-hidden rounded-lg">
           <img
             src={card.images}

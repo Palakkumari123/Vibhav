@@ -4,11 +4,10 @@ import FAQs from "../Components/UI/FAQs";
 import Contact from "../Components/Contact";
 import backgroundImage from "../public/Assets/background.webp";
 import Image from "next/image";
-import LandingPage from "../Components/LandingPage"
-import CC from "../Components/CC"
-import Gallery from "../Components/Gallery"
-import AboutUs from "../Components/AboutUs"
-
+import LandingPage from "../Components/LandingPage";
+import CC from "../Components/CC";
+import Gallery from "../Components/Gallery";
+import AboutUs from "../Components/AboutUs";
 
 
 export default function Home() {
@@ -29,16 +28,14 @@ export default function Home() {
       <main>
         <Layout>
           <div className="bg-cover bg-center fixed z-0 h-screen w-full  ">
-          
             <Image
               src={backgroundImage}
               alt="Background"
               layout="fill"
               objectFit="cover"
-              loading="lazy" 
+              loading="lazy"
               
             />
-          
           </div>
           <div className="z-50 flex flex-col">
             <LandingPage />
@@ -47,6 +44,8 @@ export default function Home() {
             <CC />
             <FAQs />
             <Contact />
+
+            
           </div>
         </Layout>
       </main>

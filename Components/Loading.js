@@ -22,6 +22,7 @@ export default function Loading() {
               alt="Loading Animation"
               layout="responsive"
               loading="lazy" 
+              
             />
           
         </div>
