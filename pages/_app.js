@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import "../styles/pacman.css";
 import "../styles/Listing.css";
 import "../styles/Modal.css";
 import "../styles/Overlay.css";

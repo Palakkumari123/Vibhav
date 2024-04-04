@@ -7,10 +7,7 @@ export default function Contact({}) {
   if (state.succeeded) {
     return (
       <div className="relative mt-24 overflow-x-hidden rounded-2xl flex pt-8 md:mt-12 md:bg-[#1a1a1d] md:bg-opacity-50 md:flex-row flex-col justify-around w-4/5 mx-auto  ">
-        <div
-
-          className="py-4 mb-12 lg:py-16   rounded-xl md:bg-transparent bg-[#1a1a1d] z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12 "
-        >
+        <div className="py-4 mb-12 lg:py-16   rounded-xl md:bg-transparent bg-[#1a1a1d] z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12 ">
           <h2 className="text-[#e9d59ae4]  text-4xl mb-12 tracking-tight font-[Elianto-Regular] font-extrabold text-center dark:text-white">
             Contact Us
           </h2>
@@ -22,10 +19,7 @@ export default function Contact({}) {
           </div>
         </div>
 
-        <div
-
-          className="md:w-1/2 md:bg-transparent mr-6  bg-[#1a1a1d] rounded-xl z-10 bg-opacity-50 text-white px-2 sm:pl-3 pb-12 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16"
-        >
+        <div className="md:w-1/2 md:bg-transparent mr-6  bg-[#1a1a1d] rounded-xl z-10 bg-opacity-50 text-white px-2 sm:pl-3 pb-12 md:pl-24 justify-center items-center max-w-screen-md py-4 lg:py-16">
           <h2 className="text-4xl pb-4 pl-4 font-extrabold  tracking-wide text-[#e9d59ae4] items-center font-[Elianto-regular]">
             Vibhav
           </h2>
@@ -55,13 +49,10 @@ export default function Contact({}) {
     );
   }
   return (
-    <div className="z-10 flex mt-12    ">
-      <div className=" relative overflow-x-hidden rounded-2xl flex pt-8 mt-20  md:bg-[#1a1a1d] md:bg-opacity-50 md:flex-row flex-col justify-around w-4/5 mx-auto   ">
-        <div
-
-          className="py-4 lg:py-16 px-4 mb-12  rounded-xl md:bg-transparent bg-[#1a1a1d] z-10 bg-opacity-50  max-w-screen-md basis-1/2 md:w-12"
-        >
-          <h2 className="mb-4 text-[#e9d59ae4]  text-4xl tracking-tight font-[Elianto-Regular] font-extrabold text-center dark:text-[#e9d59ae4]">
+    <div className="z-10 flex mt-12">
+      <div className="relative overflow-x-hidden rounded-2xl flex pt-8 mt-20   my-20 rounded-[20px] p-8 bg-gray-900 bg-opacity-30 shadow-[0_20px_40px_rgba(0,0,0,.4)] md:flex-row flex-col justify-around w-4/5 mx-auto   ">
+        <div className=" lg:py-16  mb-12  rounded-xl mt-4 lg:px-6 lg:bg-gray-800 z-10 bg-opacity-50  max-w-screen-md basis-1/2 lg:w-12">
+          <h2 className="mb-4 text-[#e9d59ae4]  text-4xl tracking-tight font-[Quicksand] font-extrabold text-center dark:text-[#e9d59ae4]">
             Contact Us
           </h2>
           <form onSubmit={handleSubmit} className="space-y-8">
@@ -75,7 +66,7 @@ export default function Contact({}) {
               <input
                 type="email"
                 id="email"
-                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm  focus:ring-primary-500 focus:border-primary-500 bg-gray-600 dark:border-gray-600  text-white "
                 name="email"
                 required
               />
@@ -95,7 +86,7 @@ export default function Contact({}) {
               <input
                 type="text"
                 id="subject"
-                className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm  focus:ring-primary-500 focus:border-primary-500 bg-gray-600 dark:border-gray-600  text-white "
                 required
               />
             </div>
@@ -110,7 +101,7 @@ export default function Contact({}) {
                 id="message"
                 name="message"
                 rows="6"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm  focus:ring-primary-500 focus:border-primary-500 bg-gray-600 dark:border-gray-600  text-white "
               ></textarea>
             </div>
             <ValidationError
@@ -118,6 +109,7 @@ export default function Contact({}) {
               field="message"
               errors={state.errors}
             />
+
             <button
               type="submit"
               name="Submit Contact us Form"
@@ -128,8 +120,6 @@ export default function Contact({}) {
             </button>
           </form>
         </div>
-
-
       </div>
     </div>
   );

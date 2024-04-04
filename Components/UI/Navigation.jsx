@@ -91,16 +91,23 @@ export default function Navigation() {
 
   const scrollToBottom = () => {
     setTimeout(() => {
-      window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: "smooth",
-      });
+      if (window.innerWidth <= 640) {
+        window.scrollTo({
+          top: document.body.scrollHeight - 300,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top: document.body.scrollHeight - 100,
+          behavior: "smooth",
+        });
+      }
     }, 800);
   };
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1000); // Adjust the breakpoint as needed
+      setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
     };
     setActiveRoute(router.pathname);
 
@@ -235,7 +242,7 @@ export default function Navigation() {
   return isMobile ? (
     <nav
       ref={navRef}
-      className="fixed bottom-0 left-0 right-0 z-50 mx-auto max-w-screen-xl gap-x-2 gap-y-2  rounded-[var(--border-radius--menu-wrapper)] bg-[rgba(26,27,30,0.4)] border flex-col flex  p-[9px] max-sm:p-[5px] border-solid border-[#222325]  transition-custom "
+      className="fixed bottom-0 left-0 right-0 z-50 mx-auto max-w-screen-xl gap-x-2 gap-y-2  bg-[rgba(26,27,30,0.4)] border flex-col flex  p-[9px] max-sm:p-[5px] border-solid border-[#222325]  transition-custom "
     >
       {ProjectVisible && (
         <div className="max-w-full gap-x-6 gap-y-6 bg-[#1a1b1e] flex-col flex overflow-hidden p-0 rounded-[23px] animateNav transition-custom">
@@ -244,7 +251,7 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
+                className="text-white text-center text-md font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
               >
                 <item.icon className="inline mx-4 w-7 h-7" />
                 {item.name}
@@ -260,7 +267,7 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
+                className="text-white text-center text-md font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
               >
                 <item.icon className="inline mx-4 w-7 h-7" />
                 {item.name}
@@ -276,7 +283,7 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
+                className="text-white text-center text-md font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
               >
                 <item.icon className="inline mx-4 w-7 h-7" />
                 {item.name}
@@ -285,12 +292,12 @@ export default function Navigation() {
           </div>
         </div>
       )}
-      <div className="w-full gap-x-2 max-md:gap-1 gap-y-2 rounded-[var(--border-radius--menu-link)] bg-[#1a1b1e] justify-between flex overflow-auto p-3 max-sm:p-2 transition-custom">
+      <div className="w-full gap-x-2 max-md:gap-1 gap-y-2 bg-[#1a1b1e] justify-between flex overflow-auto p-3 max-sm:p-2 transition-custom">
         <p
           onClick={(e) => {
             handleProjectClick(e);
           }}
-          className={`menuLink ${activeRoute === "/Projects/[id]" ? "active" : ""}`}
+          className={`menuLinkm ${activeRoute === "/Projects/[id]" ? "active" : ""}`}
         >
           <div>
             <BookMarked className="w-7 h-7 text-gray-200 mx-auto" />
@@ -302,7 +309,7 @@ export default function Navigation() {
           onClick={(e) => {
             handleWorkClick(e);
           }}
-          className={`menuLink ${activeRoute === "/OurWork/[id]" ? "active" : ""}`}
+          className={`menuLinkm ${activeRoute === "/OurWork/[id]" ? "active" : ""}`}
         >
           <div>
             <History className="w-7 h-7 text-gray-200 mx-auto" />
@@ -312,7 +319,7 @@ export default function Navigation() {
 
         <Link
           href="/"
-          className={`menuLink ${location.pathname === "/" ? "active" : ""}`}
+          className={`menuLinkm ${location.pathname === "/" ? "active" : ""}`}
         >
           <div>
             <Home className="w-7 h-7 text-gray-300 mx-auto" />
@@ -324,7 +331,7 @@ export default function Navigation() {
           onClick={(e) => {
             handleTeamClick(e);
           }}
-          className={`menuLink ${activeRoute === "/OurTeam/[id]" ? "active" : ""}`}
+          className={`menuLinkm ${activeRoute === "/OurTeam/[id]" ? "active" : ""}`}
         >
           <div>
             <User className="w-7 h-7 text-gray-200 mx-auto" />
@@ -333,7 +340,7 @@ export default function Navigation() {
         </p>
 
         <Link href="/" scroll={false}>
-          <div onClick={scrollToBottom} className="menuLink">
+          <div onClick={scrollToBottom} className="menuLinkm">
             <div>
               <Mail className="w-7 h-7 text-gray-200 mx-auto " />
               <p>Contact</p>
