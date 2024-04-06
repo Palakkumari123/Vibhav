@@ -253,6 +253,14 @@
       "LinkedIn": "https://www.linkedin.com/in/kartikay-a3b322232/",
       "Position": "COORDINATOR"
     },
+    {
+      "Name": "Monika Patel",
+      "NickName": "Monika",
+      "Profile": "/Assets/TeamPhotos/Third/Monika Patel.webp",
+      "Github": "https://github.com/monnikaaa",
+      "LinkedIn": "https://www.linkedin.com/in/monikaapatel/",
+      "Position": "COORDINATOR"
+    },
 
     {
       "Name": "Kashish Thakur",
@@ -270,14 +278,7 @@
       "LinkedIn": "https://www.linkedin.com/in/lav-naruka-a82170229/",
       "Position": "COORDINATOR"
     },
-    {
-      "Name": "Monika Patel",
-      "NickName": "Monika",
-      "Profile": "/Assets/TeamPhotos/Third/Monika Patel.webp",
-      "Github": "https://github.com/monnikaaa",
-      "LinkedIn": "https://www.linkedin.com/in/monikaapatel/",
-      "Position": "COORDINATOR"
-    },
+    
     {
       "Name": "Raushan Saxena",
       "NickName": "Raushan",
@@ -338,6 +339,14 @@
       "LinkedIn": "https://www.linkedin.com/in/aditya-verma-259762250",
       "Position": "EXECUTIVE MEMBER"
     },
+    {
+      "Name": "Arun Kumar",
+      "NickName": "Arun",
+      "Profile": "/Assets/TeamPhotos/Second/arun.webp",
+      "Github": "https://github.com/11arun11",
+      "LinkedIn": "https://www.linkedin.com/in/arun-kumar-a14725269",
+      "Position": "VOLUNTEER"
+    },
 
     {
       "Name": "Anshuman Kandpal",
@@ -371,15 +380,6 @@
       "Profile": "/Assets/TeamPhotos/Second/devika.webp",
       "Github": "https://github.com/Devika35",
       "LinkedIn": "https://www.linkedin.com/in/devika-kapoor-aa9aa4257",
-      "Position": "EXECUTIVE MEMBER"
-    },
-
-    {
-      "Name": "Divya Soni",
-      "NickName": "Divya",
-      "Profile": "/Assets/TeamPhotos/Second/Divya Soni.webp",
-      "Github": "https://github.com/Divyasoni2906",
-      "LinkedIn": "https://www.linkedin.com/in/divya-soni-07507b257",
       "Position": "EXECUTIVE MEMBER"
     },
 
@@ -488,14 +488,7 @@
       "LinkedIn": "",
       "Position": "VOLUNTEER"
     },
-    {
-      "Name": "Amulya",
-      "NickName": "Amulya",
-      "Profile": "",
-      "Github": "https://github.com/amulyaa-18",
-      "LinkedIn": "https://www.linkedin.com/in/amulya-singla-26201628b/",
-      "Position": "VOLUNTEER"
-    },
+    
     {
       "Name": "Bhavneet Singh",
       "NickName": "Bhavneet",
@@ -584,14 +577,7 @@
       "LinkedIn": "https://www.linkedin.com/in/sachin-thakur-2a01122b0/",
       "Position": "VOLUNTEER"
     },
-    {
-      "Name": "Snehil Parmar",
-      "NickName": "Shkla Toh Chor",
-      "Profile": "",
-      "Github": "https://github.com/SnehilParmar",
-      "LinkedIn": "https://www.linkedin.com/in/snehil-parmar-655106291/",
-      "Position": "VOLUNTEER"
-    },
+    
     {
       "Name": "Shivi Singh",
       "NickName": "Shivi",

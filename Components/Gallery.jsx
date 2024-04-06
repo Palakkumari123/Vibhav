@@ -1,29 +1,31 @@
-import Bg1 from "../public/Assets/Homepage/t1.jpg";
-import Bg2 from "../public/Assets/Homepage/t2.jpg";
-import Bg3 from "../public/Assets/Homepage/t3.jpg";
-import Bg4 from "../public/Assets/Homepage/t4.jpg";
-import Bg5 from "../public/Assets/Homepage/t5.jpg";
+import Bg1 from "../public/Assets/Homepage/t1.webp";
+import Bg2 from "../public/Assets/Homepage/t2.webp";
+import Bg3 from "../public/Assets/Homepage/t3.webp";
+import Bg4 from "../public/Assets/Homepage/t4.webp";
+import Bg5 from "../public/Assets/Homepage/t5.webp";
+import Bg6 from "../public/Assets/Homepage/t6.webp";
+import Bg7 from "../public/Assets/Homepage/t7.webp";
 import { Fade } from "react-awesome-reveal";
 import React from "react";
 import { useParallax } from "react-scroll-parallax";
 import { ParallaxProvider } from "react-scroll-parallax";
 
-const usersData = [
+const usersData1 = [
   { name: "@MileyTabita", background: Bg1 },
   { name: "Mark Moss", background: Bg2 },
   { name: "Tony Robbins", background: Bg3 },
   { name: "Bitcoin Magazine", background: Bg4 },
   { name: "Aubrey Marcus", background: Bg5 },
-  { name: "Tony Robbins", background: Bg2 },
 ];
+const usersData2 = [
+  { name: "Tony Robbins", background: Bg3 },
+  { name: "Tony Robbins", background: Bg7 },
+  { name: "Tony Robbins", background: Bg6 },
+  { name: "Aubrey Marcus", background: Bg5 },
+  { name: "Bitcoin Magazine", background: Bg4 },
 
-function reverseArray(array) {
-  const result = [];
-  for (let i = 0; i < array.length; i++) {
-    result[i] = array[array.length - 1 - i];
-  }
-  return result;
-}
+  { name: "Tony Robbins", background: Bg3 },
+];
 
 function UserCard(props) {
   const { user } = props;
@@ -42,15 +44,15 @@ function UserCard(props) {
 
 function Row1() {
   const { ref } = useParallax({
-    translateX: ["-30%", "0%"],
+    translateX: ["-50%", "0%"],
   });
-  const reversedArray = reverseArray(usersData);
+
   return (
     <div
       ref={ref}
       className="grid transform grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] grid-rows-[auto] gap-x-4"
     >
-      {reversedArray.map((user, index) => (
+      {usersData1.map((user, index) => (
         <UserCard user={user} key={index} />
       ))}
     </div>
@@ -61,13 +63,13 @@ function Row2() {
   const { ref } = useParallax({
     translateX: ["0", "-50%"],
   });
-  const reversedArray = reverseArray(usersData);
+
   return (
     <div
       ref={ref}
       className="grid transform grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] grid-rows-[auto] gap-x-4"
     >
-      {reversedArray.map((user, index) => (
+      {usersData2.map((user, index) => (
         <UserCard user={user} key={index} />
       ))}
     </div>
@@ -81,7 +83,7 @@ export default function Gallery() {
         <div className="mx-auto">
           <Fade>
             <div className="flex flex-col place-items-center gap-4 text-center">
-              <h2 className="w-full max-w-6xl font-[Hero-bold] text-3xl sm:text-4xl md:text-5xl lg:text-7xl bg-clip-text  text-gray-200">
+              <h2 className="w-full max-w-6xl font-[poppins] text-3xl sm:text-4xl md:text-5xl lg:text-7xl bg-clip-text  text-gray-200">
                 REFLECTING ON THE JOURNEY
               </h2>
 

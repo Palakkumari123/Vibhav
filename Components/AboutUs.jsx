@@ -1,6 +1,7 @@
-import HeroWireFrameInitialImage from "../public/Assets/Homepage/a1.png";
-import HeroWireFrameSecondImage from "../public/Assets/Homepage/a2.png";
-import MobileWireFrame from "../public/Assets/Homepage/a3.png";
+import { refresh } from "aos";
+import HeroWireFrameInitialImage from "../public/Assets/Homepage/a1.webp";
+import HeroWireFrameSecondImage from "../public/Assets/Homepage/a2.webp";
+import MobileWireFrame from "../public/Assets/Homepage/a3.webp";
 import Image from "next/image";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
@@ -43,29 +44,34 @@ function BackgroundText() {
 
 function AboutUsParallax() {
   const { ref } = useParallax({
-    translateY: ["0", "-100%"],
+    translateY: ["0", "-70%"],
     shouldAlwaysCompleteAnimation: true,
   });
   return (
     <Fade>
+      <div className="sticky top-[110px] mx-auto w-full  z-20 max-w-sm">
       <div className="sticky top-[110px] mx-auto w-full max-w-sm">
         <Image
-          src={MobileWireFrame}
+          src={HeroWireFrameInitialImage}
           className="w-full"
           alt="Mobile wire frame"
+          loading="lazy"
         />
         <div className="absolute bottom-[35px] left-[36px] right-[36px] top-[35px] -z-[1] overflow-hidden">
           <Image
-            src={HeroWireFrameInitialImage}
+            src={HeroWireFrameSecondImage}
             ref={ref}
             alt="App image 1"
-            className="absolute -z-10 h-full w-full transform overflow-hidden rounded-[40px] object-cover"
+            className="absolute -z-10 h-full w-full transform overflow-hidden max-w-sm rounded-[40px] object-cover"
+            loading="lazy"
           />
           <Image
-            src={HeroWireFrameSecondImage}
+            src={MobileWireFrame}
             alt="App image 2"
-            className="absolute -z-20 h-full w-full overflow-hidden rounded-[40px] object-cover"
+            className="absolute -z-20 h-full w-full overflow-hidden max-w-sm rounded-[40px] object-cover"
+            loading="lazy"
           />
+        </div>
         </div>
       </div>
     </Fade>

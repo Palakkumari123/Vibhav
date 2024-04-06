@@ -41,16 +41,16 @@ const modalVariants = {
           className="modal__description-wrapper p-4"
           variants={modalRowVariants}
         >
-          <h3 className="text-2xl font-[Quicksand]">{data.round1head}</h3>
+          <h3 className="text-2xl font-[font-mono]">{data.round1head}</h3>
           <p className="font-sans algin-justify">{data.round1}</p>
           <br />
-          <h3 className="text-2xl font-[Quicksand]">{data.round2head}</h3>
+          <h3 className="text-2xl font-[font-mono]">{data.round2head}</h3>
           <p className="font-sans algin-justify">{data.round2}</p>
           <br />
-          <h3 className="text-2xl font-[Quicksand]">{data.round3head}</h3>
+          <h3 className="text-2xl font-[font-mono]">{data.round3head}</h3>
           <p className="font-sans algin-justify">{data.round3}</p>
           <br />
-          <h3 className="text-2xl font-[Quicksand]">{data.round4head}</h3>
+          <h3 className="text-2xl font-[font-mono]">{data.round4head}</h3>
           <p className="font-sans algin-justify">{data.round4}</p>
           
         </motion.div>

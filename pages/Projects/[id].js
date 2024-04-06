@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Card from "../../Components/UI/cards/projectCardnew"
+import Card from "../../Components/UI/cards/projectCardnew";
 import Layout from "../../Components/UI/Layout";
 import { useRouter } from "next/router";
 import projects from "../../data/tabs.json";
@@ -14,14 +14,12 @@ function Projects({ id }) {
     quan: "QUANTUM COMPUTING",
   };
   return (
-
     <>
       <div className=" justify-center">
-        <h1 className="mt-12 text-[#edc161] justify-center flex text-5xl md:text-6xl md:p-0 p-2 font-[Quicksand]">
+        <h1 className="mt-14 text-[#edc161] justify-center flex text-5xl md:text-6xl md:p-0 p-2 font-[GoodTiming]">
           Projects
         </h1>
-
-        <div className="text-4xl  mt-12 text-center text-[#edc161] font-[Hero-bold] ">
+        <div className="text-4xl  mt-12 text-center text-[#edc161] font-[arial]  ">
           {tabs[id]}
         </div>
       </div>
@@ -30,14 +28,11 @@ function Projects({ id }) {
           return (
             <div key={ind} className="justify-center mb-3 w-fit">
               <Card card={card} />
-
             </div>
           );
         })}
       </div>
-
     </>
-
   );
 }
 

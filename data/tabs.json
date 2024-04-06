@@ -1,6 +1,18 @@
 {
   "AI/ML": [
     {
+      "name": "Steganomage",
+      "content": "Our objective is to hide secret image data within an ordinary, non-secret, file or message in order to avoid detection, the secret image data is then extracted at its destination. Our objective is to hide secret image data within an ordinary, non-secret, file or message in order to avoid detection, the secret image data is then extracted at its destination.",
+      "github": "",
+      "images": "/Assets/Projects/AI/steganography.webp"
+    },
+    {
+      "name": "Diabetic Retinopathy",
+      "content": "This research project is aimed at determining the risk a patient has of losing his/her vision due to diabetic retinopathy. This project will give the desired medication to low-risk patients and will help to identify high-risk patients so that they can get immediate medication. This will be achieved with the help of convolutional neural networks which will classify the retinopathy image of the patient into 5 categories and according to the output of the model medication will be given.",
+      "github": "",
+      "images": "/Assets/Projects/AI/diabetic.webp"
+    },
+    {
       "name": "Circuit Solver",
       "content": "This project aims to create LTspice schematic from hand-drawn circuits for the students who dont know the interface of simulators.",
       "github": "https://github.com/Team-Vibhav/Circuit-Solver",
@@ -51,17 +63,30 @@
   ],
   "IoT": [
     {
+      "name": "Li-Fi Based Communication System",
+      "content": "The project aims to design a system capable of transmitting data from one node to another by the use of Li-Fi technology. Anything in this universe that needs to change or we can say that developing is called technology. People are accepting the change created by the people. As the number of devices that access the internet is increasing, the limited bandwidth leads to a decrease in the speed of data transfer.",
+      "github": "",
+      "images": "/Assets/Projects/IOT/liFi.webp"
+    },
+    {
+      "name": "Mount Connect",
+      "content": "This is a advanced trekking pole with an ability to connect other trekking pole with the help of LoRa. When people go on trekking, there is no way to communicate with the other people. So, we propose a LoRa based local mesh network system through which people on different location on the trek can communicate through text messages and share GPRS location in text message.",
+      "github": "",
+      "images": "/Assets/Projects/IOT/mountconnect.webp"
+    },
+    {
+      "name": "Joint Rehabilitation",
+      "content": "This aims to identify and track a person's muscle movement in order to provide him and his doctor with a better progress report. There is currently no (efficient-cost effective-available at home) option for persons who use orthotic legs despite the fact that healthcare facilities are quite advanced. As the person is unable to provide precise information about his daily schedule, there is also a lack of information exchange. Here, we develop a method or tool to assist the patient and the doctor in monitoring the situation and taking appropriate action.",
+      "github": "",
+      "images": "/Assets/Projects/IOT/jointrehab.webp"
+    },
+    {
       "name": "Safety Glove",
       "content": "The idea is to design a safety glove consisting of a Hall Effect Sensor, Arduino Mega and a radio transmitter, which is to be worn by the workers in factories who are in close proximity to heavy machinery which can cause potential injuries.",
       "github": "https://github.com/Team-Vibhav/Safety-Glove",
       "images": "/Assets/Projects/IOT/glove.webp"
     },
-    {
-      "name": "Li-Fi",
-      "content": "Li-Fi stands for Light-Fidelity, an emerging technology through which we have solved the problem of reduced information exchange rate and bandwidth. Li-fi uses visible light instead of Gigahertz Radio Waves for data transfer which makes it a fast and cheap mode of wireless communication.",
-      "github": "https://github.com/astral29/ELEC_20_THEGEEKSQUAD",
-      "images": "/Assets/Projects/IOT/liFi.webp"
-    },
+    
     {
       "name": "Swarm Bot",
       "content": "Swarm robotics is an approach to the coordination of multiple robots as a system that consists of large numbers of mostly simple physical robots. It is supposed that a desired collective behaviour emerges from the interactions between the robots and interactions of robots with the environment.",
@@ -115,6 +140,12 @@
   ],
   "EMBEDDED SYSTEMS": [
     {
+      "name": "Bionic Arm",
+      "content": "This project seeks to create a model that will allow people without arms to function normally by sensing the presence of their end muscles. The human hand is capable of a broad range of complex manoeuvres that allow us to interact with our surroundings and communicate with one anothr. One of the cutting-edge technologies that are assisting the next generation in living a more comfortable daily life is prosthetics. A powered bionic limb controlled by muscles, a prosthetic arm is powered by high-performance motors, sophisticated software, long-lasting batteries, and 3D printing technology.",
+      "github": "",
+      "images": "/Assets/Projects/Embd/bionicarm.webp"
+    },
+    {
       "name": "Auto Cart",
       "content": "The aim of this project is to eliminate the long queues in front of the bill counters in the malls and, thus making shopping in the malls and the supermarkets hassle-free and more automated, which will save a lot of time of the customers.",
       "github": "https://github.com/Team-Vibhav/Auto_cart",
@@ -147,6 +178,12 @@
   ],
   "DSP": [
     {
+      "name": "Audio WaterMark",
+      "content": "Designing a digital audio watermarking procedure to insert some data bits known as watermark into an audio signal. It is a procedure of inserting some ownership data bits into the audio which would be extracted for the purpose of the authentication. A watermark is dispersed consistently in low frequencies, which builds the robustness and inaudibility of the watermark data.",
+      "github": "",
+      "images": "/Assets/Projects/DSP/audiowatermark.webp"
+    },
+    {
       "name": "DTMF",
       "content": "This project aims to create a user-friendly environment where one can easily control all the appliances in his home through DTMF tones.Whatever appliances we are dealing with, in our daily life, we want to control them without physically moving to the control unit. We use many different types of communication in control applications to control home appliances, industrial appliances, and other types of automation.",
       "github": "https://github.com/Team-Vibhav/DTMF-Application",
@@ -160,6 +197,12 @@
     }
   ],
   "QUANTUM COMPUTING": [
+    {
+      "name": "Quantum Teleportation",
+      "content": "The project aims to research the method of data transfer without any medium using Quantum Entanglement. Quantum entanglement allows instant communication between particles, even across vast distances. By manipulating the spin of one particle, information can be encoded and transferred to its entangled partner, enabling secure and instantaneous communication without physical mediums.",
+      "github": "",
+      "images": "/Assets/Projects/Quantum/quantum2.webp"
+    },
     {
       "name": "Quantum Key Distribution",
       "content": "Quantum Key Distribution (QKD) is a secure communication method that implements a cryptographic protocol involving components of quantum mechanics. It enables two parties to produce a shared random secret key known only to them, which can then be used to encrypt and decrypt messages. It is often incorrectly called Quantum cryptography, as it is the best-known example of such a task.",
