@@ -17,6 +17,7 @@ function Card({ name, image }) {
               alt="Mobile wire frame"
               loading="lazy"
             />
+            <div className="absolute inset-0 bg-black opacity-10"></div>
           </div>
         </div>
         <div className="text-center">

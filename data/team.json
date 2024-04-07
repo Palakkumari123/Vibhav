@@ -322,14 +322,7 @@
   ],
 
   "Second Year": [
-    {
-      "Name": "Abhishek Raj",
-      "NickName": "Abhishek",
-      "Profile": "/Assets/TeamPhotos/Second/abhishek.webp",
-      "Github": "https://github.com/abhishekrj02",
-      "LinkedIn": "https://www.linkedin.com/in/abhishek-raj-a09181215",
-      "Position": "EXECUTIVE MEMBER"
-    },
+    
 
     {
       "Name": "Aditya Verma",
@@ -409,7 +402,14 @@
       "LinkedIn": "https://www.linkedin.com/in/putul-singh-80036b25a",
       "Position": "EXECUTIVE MEMBER"
     },
-
+    {
+      "Name": "Abhishek Raj",
+      "NickName": "Abhishek",
+      "Profile": "/Assets/TeamPhotos/Second/abhishek.webp",
+      "Github": "https://github.com/abhishekrj02",
+      "LinkedIn": "https://www.linkedin.com/in/abhishek-raj-a09181215",
+      "Position": "EXECUTIVE MEMBER"
+    },
     {
       "Name": "Riya Singhal",
       "NickName": "Singhal",
@@ -462,9 +462,9 @@
     {
       "Name": "Kunal Singh",
       "NickName": "",
-      "Profile": "",
-      "Github": "",
-      "LinkedIn": "",
+      "Profile": "/Assets/TeamPhotos/Second/kunal.webp",
+      "Github": "https://github.com/Kunalsingh-wk09",
+      "LinkedIn": "https://www.linkedin.com/in/kunal-singh-b73695257",
       "Position": "EXECUTIVE MEMBER"
     }
     
@@ -486,6 +486,14 @@
       "Profile": "/Assets/TeamPhotos/First/ayush.webp",
       "Github": "https://github.com/httpsAKayush",
       "LinkedIn": "",
+      "Position": "VOLUNTEER"
+    },
+    {
+      "Name": "Amulya",
+      "NickName": "Amulya",
+      "Profile": "",
+      "Github": "https://github.com/amulyaa-18",
+      "LinkedIn": "https://www.linkedin.com/in/amulya-singla-26201628b/",
       "Position": "VOLUNTEER"
     },
     
