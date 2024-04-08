@@ -11,20 +11,19 @@ import { useParallax } from "react-scroll-parallax";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 const usersData1 = [
-  { name: "@MileyTabita", background: Bg1 },
-  { name: "Mark Moss", background: Bg2 },
-  { name: "Tony Robbins", background: Bg3 },
-  { name: "Bitcoin Magazine", background: Bg4 },
-  { name: "Aubrey Marcus", background: Bg5 },
+  { name: ".", background: Bg1 },
+  { name: ".", background: Bg2 },
+  { name: ".", background: Bg3 },
+  { name: ".", background: Bg4 },
+  { name: ".", background: Bg5 },
 ];
 const usersData2 = [
-  { name: "Tony Robbins", background: Bg3 },
-  { name: "Tony Robbins", background: Bg7 },
-  { name: "Tony Robbins", background: Bg6 },
-  { name: "Aubrey Marcus", background: Bg5 },
-  { name: "Bitcoin Magazine", background: Bg4 },
-
-  { name: "Tony Robbins", background: Bg3 },
+  { name: ".", background: Bg3 },
+  { name: ".", background: Bg7 },
+  { name: ".", background: Bg6 },
+  { name: ".", background: Bg5 },
+  { name: ".", background: Bg4 },
+  { name: ".", background: Bg3 },
 ];
 
 function UserCard(props) {
@@ -94,7 +93,7 @@ export default function Gallery() {
             </div>
           </Fade>
         </div>
-        <div className="flex rotate-6 transform flex-col gap-4 py-24">
+        <div className="flex rotate-6 transform flex-col gap-4 py-24 -mt-24 md:mt-0">
           <ParallaxProvider>
             <Row1 />
             <Row2 />

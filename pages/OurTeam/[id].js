@@ -70,7 +70,7 @@ export default function Home() {
             );
           })
         ) : (
-          <div>
+          <div >
             <h1 className="text-[#edc161] text-2xl mt-12 mb-4 text-center font-[arial]">
               SUPER FINAL YEAR MEMBERS
             </h1>
@@ -158,7 +158,7 @@ export default function Home() {
             <h1 className="text-[#edc161] text-2xl mt-12 mb-4 text-center font-[arial]">
               VOLUNTEERS
             </h1>
-            <div class="blob blob-9"></div>
+            <div className="blob blob-9"></div>
 
             <Carousel
               swipeable={true}

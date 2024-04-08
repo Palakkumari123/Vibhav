@@ -426,6 +426,14 @@
       "LinkedIn": "https://www.linkedin.com/in/sahil-atri-279940263",
       "Position": "EXECUTIVE MEMBER"
     },
+    {
+      "Name": "Divya Soni",
+      "NickName": "Divya",
+      "Profile": "/Assets/TeamPhotos/Second/Divya Soni.webp",
+      "Github": "https://github.com/Divyasoni2906",
+      "LinkedIn": "https://www.linkedin.com/in/divya-soni-07507b257",
+      "Position": "VOLUNTEER"
+    },
 
     {
       "Name": "Vaishnav A. Baravkar",
@@ -451,7 +459,7 @@
       "LinkedIn": "https://www.linkedin.com/in/akshat-mittal-b25b0726a",
       "Position": "EXECUTIVE MEMBER"
     },
-        {
+    {
       "Name": "Anika",
       "NickName": "",
       "Profile": "/Assets/TeamPhotos/Second/anika.webp",
@@ -540,7 +548,7 @@
     {
       "Name": "Mohit Sharma",
       "NickName": "Mohit",
-      "Profile": "/Assets/TeamPhotos/First/.webp",
+      "Profile": "",
       "Github": "https://github.com/pazs10ve",
       "LinkedIn": "https://www.linkedin.com/in/mohit-sharma-39a789227",
       "Position": "VOLUNTEER"

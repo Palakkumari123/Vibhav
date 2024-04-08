@@ -20,7 +20,7 @@ export default function Loading() {
             src={loader}
             alt="Loading Animation"
             layout="responsive"
-            loading="lazy"
+            priority
           />
           <div className="w-full h-2 bg-gray-200 mt-2">
             <div className="h-full bg-blue-500 animate-loadingLine" ></div>

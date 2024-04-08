@@ -31,15 +31,15 @@ function BackgroundText() {
         className="absolute top-[128px] font-[poppins] flex w-full items-center justify-center overflow-hidden"
         style={{ gap }}
       >
-        <h2 className="w-[50vw] text-right text-[120px] bg-gradient-to-t from-white to-blue-light bg-clip-text text-transparent">
+        <h2 className="w-[50vw] text-right md:text-[80px] lg:text-[120px] bg-gradient-to-t from-white to-blue-light bg-clip-text text-transparent">
           About&nbsp;&nbsp;
         </h2>
-        <h2 className="w-[50vw] text-left text-[120px] bg-gradient-to-t from-white to-blue-light bg-clip-text text-transparent">
+        <h2 className="w-[50vw] text-left md:text-[80px] lg:text-[120px] bg-gradient-to-t from-white to-blue-light bg-clip-text text-transparent">
           &nbsp;&nbsp;&nbsp;&nbsp;Us!!!
         </h2>
       </div>
     </div>
-  );
+  );s
 }
 
 function AboutUsParallax() {
@@ -80,7 +80,7 @@ function AboutUsParallax() {
 
 export default function AboutUs() {
   return (
-    <div className="relative mb-32 h-screen">
+    <div className="relative -mb-32 md:mb-32  h-screen">
       <BackgroundText />
       <ParallaxProvider>
         <AboutUsParallax />
