@@ -16,15 +16,15 @@ export default function Loading() {
     <div className="flex justify-center items-center h-screen">
       {loading && (
         <div className="w-60 overflow-hidden animate-slideRight">
-          
-            <Image
-              src={loader}
-              alt="Loading Animation"
-              layout="responsive"
-              loading="lazy" 
-              
-            />
-          
+          <Image
+            src={loader}
+            alt="Loading Animation"
+            layout="responsive"
+            loading="lazy"
+          />
+          <div className="w-full h-2 bg-gray-200 mt-2">
+            <div className="h-full bg-blue-500 animate-loadingLine" ></div>
+          </div>
         </div>
       )}
     </div>

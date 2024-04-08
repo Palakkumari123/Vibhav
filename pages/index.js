@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "../Components/UI/Layout";
 import FAQs from "../Components/UI/FAQs";
 import Contact from "../Components/Contact";
-import backgroundImage from "../public/Assets/background.webp";
+import backgroundImage from "../public/Assets/bg3.webp";
 import Image from "next/image";
 import LandingPage from "../Components/LandingPage";
 import CC from "../Components/CC";
@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          <div className="bg-cover bg-center fixed z-0 h-screen w-full  ">
+          <div className="bg-cover bg-center fixed z-0 h-screen w-full blur-sm">
             <Image
               src={backgroundImage}
               alt="Background"
@@ -36,6 +36,7 @@ export default function Home() {
               loading="lazy"
               
             />
+            <div className="absolute top-0 left-0 bg-gray-900 opacity-20 h-screen w-full z-10"></div>
           </div>
           <div className="z-50 flex flex-col">
             <LandingPage />

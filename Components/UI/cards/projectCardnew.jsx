@@ -11,8 +11,9 @@ function Card({ card }) {
         <div className="overflow-hidden rounded-lg">
           <img
             src={card.images}
-            alt="An orange painted blue, cut in half laying on a blue background"
+            alt="image"
             className="w-full"
+            loading="lazy"
           />
         </div>
         <div className="text-2xl font-mono mt-4 text-right">{card.name}</div>
@@ -57,7 +58,7 @@ function Card({ card }) {
                   </span>
                 </p>
               ) : (
-                <p className="text-lg font-semibold text-justify text-gray 700">
+                <p className="text-lg font-semibold text-justify text-gray-700">
                   {card.content}
                 </p>
               )}

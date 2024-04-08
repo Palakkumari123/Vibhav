@@ -1,9 +1,9 @@
 .listing {
   height: fit-content;
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 500px;
-  max-height: 500px;
+  min-width: 340px;
+  max-width: 340px;
+  min-height: 425px;
+  max-height: 425px;
   position: relative;
   margin: 20px;
   cursor: pointer;

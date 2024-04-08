@@ -93,12 +93,12 @@ export default function Navigation() {
     setTimeout(() => {
       if (window.innerWidth <= 640) {
         window.scrollTo({
-          top: document.body.scrollHeight - 300,
+          top: document.body.scrollHeight - window.innerHeight - 200,
           behavior: "smooth",
         });
       } else {
         window.scrollTo({
-          top: document.body.scrollHeight - 100,
+          top: document.body.scrollHeight - window.innerHeight - 400,
           behavior: "smooth",
         });
       }

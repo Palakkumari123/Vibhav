@@ -29,6 +29,38 @@ html {
 }
 
 @font-face {
+  font-family: "Geometos";
+  src: local("Geometos"), url("/Assets/Fonts/Geometos.woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Melody";
+  src: local("Melody"), url("/Assets/Fonts/Melody.otf");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GoodTiming";
+  src: local("GoodTiming"), url("/Assets/Fonts/goodtiming.otf");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Robotech";
+  src: local("Robotech"), url("/Assets/Fonts/Robotech.ttf");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "arial";
+  src: local("arial"), url("/Assets/Fonts/arial.ttf");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "poppins";
   src: local("poppins"), url("/Assets/Fonts/poppins.woff2");
   font-weight: normal;
@@ -98,6 +130,19 @@ html {
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+}
+
+@keyframes loadingLine {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-loadingLine {
+  animation: loadingLine 2.4s ease-in-out infinite;
 }
 
 @keyframes slide-in {

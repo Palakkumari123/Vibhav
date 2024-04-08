@@ -11,7 +11,13 @@ function Card({ name, image }) {
         <div className="relative mx-auto  w-full max-w-md overflow-hidden">
           <div className="absolute bottom-0 left-0 right-0 top-auto z-[2] h-[30%] " />
           <div className="relative w-full">
-            <Image src={image} className="w-full" alt="Mobile wire frame" />
+            <Image
+              src={image}
+              className="w-full"
+              alt="Mobile wire frame"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-black opacity-10"></div>
           </div>
         </div>
         <div className="text-center">
@@ -29,7 +35,7 @@ export default function CC() {
         <div className="flex flex-col gap-14 text-white">
           <Fade>
             <div className="flex flex-col place-items-center gap-4 text-center">
-              <h2 className="w-full max-w-6xl font-[Hero-bold] text-4xl sm:text-4xl md:text-5xl lg:text-7xl bg-clip-text  text-gray-200">
+              <h2 className="w-full max-w-6xl font-[poppins] text-4xl sm:text-4xl md:text-5xl lg:text-7xl bg-clip-text  text-gray-200">
                 CORE COORDINATOR
               </h2>
 

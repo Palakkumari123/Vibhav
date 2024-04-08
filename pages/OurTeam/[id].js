@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="sm:m-8  ">
-        <h1 className=" text-5xl rounded-md text-[#edc161] mt-12 md:text-5xl flex justify-center items-center font-[Quicksand]  ">
+        <h1 className=" text-4xl rounded-md text-[#edc161] mt-12 md:text-5xl flex justify-center items-center font-[GoodTiming]  ">
           {" "}
           {currentPage}{" "}
         </h1>
@@ -43,7 +43,7 @@ export default function Home() {
           alumniYear.map((year, index) => {
             return (
               <div key={index}>
-                <h1 className="text-3xl mb-4 mt-12 text-center text-[#edc161] font-[Hero-bold] ">
+                <h1 className="text-2xl mb-4 mt-12 text-center text-[#edc161] font-[arial] ">
                   {year}
                 </h1>
                 <Carousel
@@ -71,7 +71,7 @@ export default function Home() {
           })
         ) : (
           <div>
-            <h1 className="text-[#edc161] text-3xl mt-12 mb-4 text-center font-[Hero-Bold]">
+            <h1 className="text-[#edc161] text-2xl mt-12 mb-4 text-center font-[arial]">
               SUPER FINAL YEAR MEMBERS
             </h1>
             <Carousel
@@ -92,7 +92,7 @@ export default function Home() {
               })}
             </Carousel>
 
-            <h1 className="text-[#edc161] text-3xl mt-12 mb-4 text-center font-[Hero-Bold]">
+            <h1 className="text-[#edc161] text-2xl mt-12 mb-4 text-center font-[arial]">
               FINAL YEAR MEMBERS
             </h1>
 
@@ -114,7 +114,7 @@ export default function Home() {
               })}
             </Carousel>
 
-            <h1 className="text-[#edc161] text-3xl mt-12 mb-4 text-center font-[Hero-Bold]">
+            <h1 className="text-[#edc161] text-2xl mt-12 mb-4 text-center font-[arial]">
               COORDINATORS
             </h1>
             <Carousel
@@ -134,7 +134,7 @@ export default function Home() {
                 return <TeamCardnew cardType="team" key={ind} data={post} />;
               })}
             </Carousel>
-            <h1 className="text-[#edc161] text-3xl mt-12 mb-4 text-center font-[Hero-Bold]">
+            <h1 className="text-[#edc161] text-2xl mt-12 mb-4 text-center font-[arial]">
               EXECUTIVE MEMBERS
             </h1>
             <Carousel
@@ -155,7 +155,7 @@ export default function Home() {
               })}
             </Carousel>
 
-            <h1 className="text-[#edc161] text-3xl mt-12 mb-4 text-center font-[Hero-Bold]">
+            <h1 className="text-[#edc161] text-2xl mt-12 mb-4 text-center font-[arial]">
               VOLUNTEERS
             </h1>
             <div class="blob blob-9"></div>
