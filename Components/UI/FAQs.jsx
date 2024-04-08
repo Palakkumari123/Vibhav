@@ -1,6 +1,8 @@
 import faq from "../../data/faq.json";
 import { useState } from "react";
 
+import { HiPlusCircle } from "react-icons/hi";
+import { HiMinusCircle } from "react-icons/hi";
 export default function FAQs() {
   const [faqs, setFaqs] = useState([...faq.faqs]);
 
@@ -26,35 +28,17 @@ export default function FAQs() {
               className={`w-full font-bold py-3 flex justify-between items-center mt-4 ${index !== faqs.length - 1 && "text-gray-200 border-b border-gray-400"}`}
               onClick={() => toggleFAQ(index)}
             >
+              <div className="text-left">
               {faq.question}
+              </div>
               {faq.isOpen ? (
-                <svg
-                  className="fill-current"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path
-                    className="heroicon-ui"
-                    d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm4-8a1 1 0 01-1 1H9a1 1 0 010-2h6a1 1 0 011 1z"
-                  />
-                </svg>
+                <HiMinusCircle className="w-7 h-7" />
               ) : (
-                <svg
-                  className="fill-current"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path
-                    className="heroicon-ui"
-                    d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"
-                  />
-                </svg>
+                <HiPlusCircle className="w-7 h-7" />
               )}
             </button>
             <div
-              className={`text-gray-300 text-sm mt-2 transition-all duration-500 ${faq.isOpen ? "h-auto opacity-100" : "h-0 opacity-0"}`}
+              className={`text-gray-300  text-sm mt-2 transition-all duration-500 ${faq.isOpen ? "h-auto opacity-100" : "h-0 opacity-0"}`}
             >
               {faq.answer}
             </div>

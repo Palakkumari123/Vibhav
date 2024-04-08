@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { Bot } from "lucide-react";
 import { useRef } from "react";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
@@ -239,6 +240,12 @@ export default function Navigation() {
     };
   }, [ProjectVisible, WorkVisible, TeamVisible]); //navigation of submenus
 
+  const handleSubmenuClick = () => {
+    setProjectVisible(false);
+    setWorkVisible(false);
+    setTeamVisible(false);
+  };
+
   return isMobile ? (
     <nav
       ref={navRef}
@@ -249,6 +256,7 @@ export default function Navigation() {
           <div className="gap-x-4 gap-y-4 grid-rows-[auto] grid-cols-[1fr] auto-cols-[1fr] justify-items-center grid my-6 mx-6 ">
             {projects.map((item) => (
               <Link
+                onClick={handleSubmenuClick}
                 key={item.name}
                 href={item.href}
                 className="text-white text-center text-md font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
@@ -265,6 +273,7 @@ export default function Navigation() {
           <div className="gap-x-4 gap-y-4 grid-rows-[auto] grid-cols-[1fr] auto-cols-[1fr] justify-items-center grid my-6 mx-6">
             {ourwork.map((item) => (
               <Link
+                onClick={handleSubmenuClick}
                 key={item.name}
                 href={item.href}
                 className="text-white text-center text-md font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
@@ -281,6 +290,7 @@ export default function Navigation() {
           <div className="gap-x-4 gap-y-4 grid-rows-[auto] grid-cols-[1fr] auto-cols-[1fr] justify-items-center grid my-6 mx-6">
             {ourteam.map((item) => (
               <Link
+                onClick={handleSubmenuClick}
                 key={item.name}
                 href={item.href}
                 className="text-white text-center text-md font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
@@ -293,7 +303,7 @@ export default function Navigation() {
         </div>
       )}
       <div className="w-full gap-x-2 max-md:gap-1 gap-y-2 bg-[#1a1b1e] justify-between flex overflow-auto p-3 max-sm:p-2 transition-custom">
-        <p
+        <div
           onClick={(e) => {
             handleProjectClick(e);
           }}
@@ -303,9 +313,9 @@ export default function Navigation() {
             <BookMarked className="w-7 h-7 text-gray-200 mx-auto" />
             <p>Projects</p>
           </div>
-        </p>
+        </div>
 
-        <p
+        <div
           onClick={(e) => {
             handleWorkClick(e);
           }}
@@ -315,7 +325,7 @@ export default function Navigation() {
             <History className="w-7 h-7 text-gray-200 mx-auto" />
             <p> Work</p>
           </div>
-        </p>
+        </div>
 
         <Link
           href="/"
@@ -327,7 +337,7 @@ export default function Navigation() {
           </div>
         </Link>
 
-        <p
+        <div
           onClick={(e) => {
             handleTeamClick(e);
           }}
@@ -337,7 +347,7 @@ export default function Navigation() {
             <User className="w-7 h-7 text-gray-200 mx-auto" />
             <p>Team</p>
           </div>
-        </p>
+        </div>
 
         <Link href="/" scroll={false}>
           <div onClick={scrollToBottom} className="menuLinkm">
@@ -362,6 +372,7 @@ export default function Navigation() {
                 key={item.name}
                 href={item.href}
                 className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
+                onClick={handleSubmenuClick}
               >
                 <item.icon className="inline mx-4 w-6 h-6" />
                 {item.name}
@@ -377,6 +388,7 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
+                onClick={handleSubmenuClick}
                 className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
               >
                 <item.icon className="inline mx-4 w-6 h-6" />
@@ -391,6 +403,7 @@ export default function Navigation() {
           <div className="gap-x-4 gap-y-4 grid-rows-[auto] grid-cols-[1fr_1fr] auto-cols-[1fr] justify-items-center grid my-6 mx-6">
             {ourteam.map((item) => (
               <Link
+                onClick={handleSubmenuClick}
                 key={item.name}
                 href={item.href}
                 className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
