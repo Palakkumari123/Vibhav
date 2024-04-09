@@ -362,7 +362,7 @@ export default function Navigation() {
   ) : (
     <nav
       ref={navRef}
-      className=" fixed bottom-8 left-0 right-0 z-50 mx-auto max-w-screen-xl gap-x-2 gap-y-2  rounded-[var(--border-radius--menu-wrapper)] bg-[rgba(26,27,30,0.4)] border flex-col flex  p-[9px] max-sm:p-[5px] border-solid border-[#333333]  transition-custom "
+      className=" fixed bottom-8 left-0 right-0 z-50 mx-auto max-w-screen-lg gap-x-2 gap-y-2  rounded-[var(--border-radius--menu-wrapper)] bg-[rgba(26,27,30,0.4)] border flex-col flex  p-[9px] max-sm:p-[5px] border-solid border-[#333333]  transition-custom "
     >
       {ProjectVisible && (
         <div className="max-w-full gap-x-6 gap-y-6 bg-[#1a1b1e] flex-col flex overflow-hidden p-0 rounded-[23px] animateNav transition-custom">
