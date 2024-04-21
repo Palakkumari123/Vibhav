@@ -3,24 +3,25 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
 function TeamCardnew({ data, cardType }) {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center ">
       <div className="flex flex-wrap w-80 ">
         <div className="w-full px-4">
-          <div className="relative bg-gray-900 rounded-lg overflow-hidden  ">
-            <div className="background-block h-40 overflow-hidden blur-sm">
+          <div className="relative bg-gray-900  shadow-lg rounded-lg overflow-hidden  ">
+            <div className=" h-70 overflow-hidden ">
               <img
                 alt={data.Name}
                 src={data.Profile}
                 className="w-full h-full object-cover object-center"
               />
+              
             </div>
-            <div className=" absolute bottom-0 left-1/2 top-40 transform -translate-x-1/2 -translate-y-2/3">
+            {/* <div className=" absolute bottom-0 left-1/2 top-40 transform -translate-x-1/2 -translate-y-2/3">
               <img
                 alt={data.Name}
                 src={data.Profile}
                 className="w-32 h-32 rounded-full border-2 border-white shadow-lg"
               />
-            </div>
+            </div> */}
 
             <div className="py-4 px-6 relative z-10 ">
               <br />
