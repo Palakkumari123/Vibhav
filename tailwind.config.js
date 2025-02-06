@@ -7,6 +7,11 @@ module.exports = {
   theme: {
     
     extend: {
+      fontFamily:{
+        batman: ["batman", "sans-serif"],
+        orbitron: ["orbitron","sans-serif"],
+        grace: ["grace","sans-serif"],
+      },
       keyframes: {
         glitter: {
           "0%, 100%": {
@@ -21,24 +26,39 @@ module.exports = {
             textShadow: "none",
           },
         },
-      },
-      keyframes: {
+        gradient: {
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' },
+				},
         mover: {
           "0%": { transform: "translateY(-35px)" },
           "100%": { transform: "translateY(-5px)" },
         },
-      },
-      animation: {
-        mover: "mover 3s infinite alternate",
-      },
-      keyframes: {
         mover2: {
           "0%": { transform: "translateY(-30px)" },
           "100%": { transform: "translateY(-15px)" },
         },
+        scrollX: {
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(-100%)" }
+				},
+				scrollY: {
+					"0%": { transform: "translateY(0)" },
+					"100%": { transform: "translateY(-100%)" }
+				},
+        brightnessPulse: {
+          "0%, 100%": { filter: "brightness(50%)" },
+          "50%": { filter: "brightness(120%)" },
+        },
       },
       animation: {
+        mover: "mover 3s infinite alternate",
         mover2: "mover2 3s infinite alternate",
+        gradient: 'gradient 8s linear infinite',
+        scrollX: "scrollX 15s linear infinite",
+				scrollY: "scrollY 15s linear infinite",
+        brightnessPulse: "brightnessPulse 4s infinite linear",
       },
       backgroundImage: (theme) => ({
         "al-pacino":

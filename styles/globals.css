@@ -11,6 +11,63 @@
 body {
   background-color: #100f12;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  background-image: url("/Assets/greenBack.png"); 
+ 
+  
+  background-repeat: no-repeat;
+
+
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden; 
+  overflow-y: auto;
+  scrollbar-width: thin;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  z-index: -1; 
+
+
+}
+
+
+@media (min-width: 650px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    background-image: url("/Assets/background2.png"); 
+    background-repeat: no-repeat;
+  
+  
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    scrollbar-width: thin;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    z-index: -1; 
+  
+  }
+}
+
+
+
+
+
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -101,7 +158,74 @@ html {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'batman';
+  src: url('/assets/fonts/BatmanForever.ttf') format('truetype');
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'orbitron';
+  src: url('/assets/fonts/Orbitron-Medium.ttf') format('truetype');
+  font-weight:200 ; /* Bold weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'grace';
+  src: url('/assets/fonts/Grace.otf') format('opentype');
+  font-weight:400 ; /* Bold weight */
+  font-style: normal;
+}
 
+
+@media (min-width: 768px) {  
+  /* WebKit Browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+      width: 12px; /* Wider scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: #1aff00;
+      border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+  }
+
+  /* Firefox */
+  * {
+      scrollbar-width: thin;
+      scrollbar-color: #373737ac #f8f8f803;
+  }
+}
+
+/* Smaller screens (Mobile Devices) */
+@media (max-width: 767px) {
+  /* Hide scrollbar for a cleaner look */
+  ::-webkit-scrollbar {
+      width: 5px; /* Thin scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+      background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: #ccc; /* Lighter color */
+      border-radius: 10px;
+  }
+
+  /* Firefox */
+  * {
+      scrollbar-width: none; /* Hides scrollbar */
+  }
+}
 
 :root {
   --border-radius--menu-wrapper: 100px;
@@ -109,14 +233,15 @@ html {
 }
 
 .menuLink {
-  @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer border flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex py-4 max-sm:py-2 px-6 max-sm:px-3 rounded-[80px] border-solid border-[#999999] hover:border-[#] hover:bg-[#36353a];
+  @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer  flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex lg:py-3 py-2 lg:px-4 max-sm:py-2  max-sm:px-3 rounded-[10px] border-solid border-[#999999] hover:border-[#] ;
 }
 
 .menuLinkm {
   @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex py-4 max-sm:py-2 px-6 max-sm:px-3 rounded-[80px] border-solid border-[#999999] hover:border-[#] hover:bg-[#36353a];
 }
 .menuLink.active {
-  background-color: #414141; /* Change this to the desired background color */
+  /* background-color: #414141;  */
+  color: #34a134ee;
 }
 
 .transition-custom {
