@@ -1,16 +1,18 @@
+"use client"
 import Head from "next/head";
 import Layout from "../Components/UI/Layout";
 import FAQs from "../Components/UI/FAQs";
 import Contact from "../Components/Contact";
-import backgroundImage from "../public/Assets/bg3.webp";
-import Image from "next/image";
+
 import LandingPage from "../Components/LandingPage";
 import CC from "../Components/CC";
 import Gallery from "../Components/Gallery";
 import AboutUs from "../Components/AboutUs";
 
+import GameSection from "../Components/GameSection";
 
 export default function Home() {
+ 
   return (
     <>
       <Head>
@@ -21,32 +23,48 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Projects , Eventsnew , Workshops , Our Team , Our Work , Alumni "
+          content="Projects , Events , Workshops , Our Team , Our Work , Alumni "
         />
         <link rel="icon" href="/favicon.ico?" />
       </Head>
       <main>
         <Layout>
-          <div className="bg-cover bg-center fixed z-0 h-screen w-full blur-sm">
-            <Image
-              src={backgroundImage}
-              alt="Background"
-              layout="fill"
-              objectFit="cover"
-              loading="lazy"
+          {/* Background */}
+          <div className="absolute h-screen w-screen top-0 overflow-hidden inset-0"></div>
+          <div className="z-50 flex flex-col  ">
+            {/* Home Section */}
+            <section
+              id="home"
+             
+              className="bg-cover h-screen bg-center relative z-0  pb-12 w-full backdrop-blur-2xl wave-contrast "
+            >
+              <video
+               
+               src="/Assets/backgroundVd.mp4"
+               alt="Background"
+               autoPlay
+               loop
+               muted
+               playsInline
+               className="fixed z-[-1] landing-video"
+               style={{ objectFit: "cover", width: "100vw", height: "100vh" ,zIndex:"-1"}}
+             />
+             
               
-            />
-            <div className="absolute top-0 left-0 bg-gray-900 opacity-20 h-screen w-full z-10"></div>
-          </div>
-          <div className="z-50 flex flex-col">
-            <LandingPage />
-            <AboutUs />
+              <LandingPage />
+            </section>
+<section className="">
+       
+              <AboutUs />
+  
+
+            {/* Other Sections */}
             <Gallery />
             <CC />
+            <GameSection/>
             <FAQs />
             <Contact />
-
-            
+            </section>
           </div>
         </Layout>
       </main>
