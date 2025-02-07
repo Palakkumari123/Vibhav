@@ -37,7 +37,7 @@ body {
 }
 
 
-@media (min-width: 650px) {
+@media (min-width: 1030px) {
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-attachment: fixed;

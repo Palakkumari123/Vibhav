@@ -192,6 +192,7 @@ import { useEffect } from "react";
 export default function LandingPage() {
   return (
     <header className="relative mx-auto h-full mt-32">
+  
       <div className="grid min-h-[70vh] place-items-center text-white">
         <div className="flex w-full flex-col items-center max-sm:gap-5 lg:max-w-[700px] lg:max-w-[100%] relative content-center">
         
