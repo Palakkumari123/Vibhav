@@ -96,10 +96,11 @@ export default function Navigation() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const scrollToBottom = () => {
+    
     setTimeout(() => {
       if (window.innerWidth <= 640) {
         window.scrollTo({
-          top: document.body.scrollHeight - window.innerHeight - 200,
+          top: document.body.scrollHeight - window.innerHeight - 100,
           behavior: "smooth",
         });
       } else {
@@ -295,9 +296,10 @@ export default function Navigation() {
   return isMobile ? (
     <div
       className={`navbar fixed font-orbitron  z-[100] inset-0 flex flex-col w-full h-fit  top-0 z-90 transition-colors duration-300
-      ease-in-out ${isVisible ? " " : ""} `}
+      ease-in-out  `}
+      
     >
-      <ul className="flex items-center   bg-black/20 backdrop-blur-lg justify-between px-3 py-1 mx-auto w-full ">
+      <ul className={`flex items-center   bg-black/20 backdrop-blur-lg justify-between px-3 py-1 mx-auto w-full transition-all duration-500 delay-100 ease-out ${showNavbar? "bg-black/90 bg-blur-xl": "bg-black/20"}`}>
         <li className="z-40 p-1 flex items-center gap-2">
           <Link href="/" className="block">
             <img src="/Assets/Yellow.png" className="h-10  " />
@@ -335,7 +337,7 @@ export default function Navigation() {
       </ul>
 
       <div
-        className={` transition-all duration-700 delay-100 ease-in-out fixed top-14 backdrop-blur-lg w-[100%] overflow-y-auto ${showNavbar ? " h-full" : " h-0"
+        className={` transition-all duration-700 delay-100 ease-in-out fixed top-14 bg-black/85 backdrop-blur-lg w-[100%] overflow-y-auto ${showNavbar ? " h-full" : " h-0"
           } `}
       >
         <div className="flex h-screen flex-col justify-between border-e text-gray-100">
@@ -517,6 +519,7 @@ export default function Navigation() {
 
               <li
                 onClick={() => {
+                  document.body.classList.remove("overflow-hidden");
                   setShowNavbar(false);
                   setTimeout(() => {
                     scrollToBottom();

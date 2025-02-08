@@ -23,7 +23,7 @@ const Page = () => {
         <span className="text-3xl text-white text-center mt-12 font-bold">
           EMBEDDED SYSTEMS
         </span>
-        <div className="container mx-auto  p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+        <div className="container mx-auto  p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 ">
           {loading
             ? Array.from({ length: projectList.length || 6 }).map(
                 (projectSkelatol, index) => <SkeletonProjectCard key={index} />

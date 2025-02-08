@@ -33,7 +33,7 @@ export default function WorkDetails() {
         {workshop.name}
       </motion.h1>
 
-      <div className="space-y-16 p-5 md:p-8 my-5 text-justify">
+      <div className="space-y-16 p-5 md:p-8 my-5 text-justify font-sans">
         {workshop.images.map((image, index) => (
           <motion.div
             key={index}
@@ -64,7 +64,7 @@ export default function WorkDetails() {
 
             {/* Text Section */}
             <motion.div
-              className="lg:w-[65%] w-full flex md:p-10 flex-col justify-center space-y-4 font-grace"
+              className="lg:w-[65%] w-full flex md:p-10 flex-col justify-center space-y-4 font-sans"
               {...(isLaptop && {
                 whileInView: index % 2 !== 0 ? { x: 10 } : { x: -10 },
                 initial: { opacity: 0, x: index % 2 === 0 ? 100 : -100 },

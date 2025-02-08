@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Head from "next/head";
 import Layout from "../Components/UI/Layout";
 import FAQs from "../Components/UI/FAQs";
@@ -12,7 +12,6 @@ import AboutUs from "../Components/AboutUs";
 import GameSection from "../Components/GameSection";
 
 export default function Home() {
- 
   return (
     <>
       <Head>
@@ -35,35 +34,34 @@ export default function Home() {
             {/* Home Section */}
             <section
               id="home"
-             
-              className="bg-cover h-screen bg-center relative z-0  pb-12 w-full backdrop-blur-2xl wave-contrast "
+              className="bg-cover h-screen bg-center relative z-0 pb-12 w-full backdrop-blur-2xl wave-contrast"
             >
+              {/* Background Video */}
               <video
-               
-               src="/Assets/backgroundVd.mp4"
-               alt="Background"
-               autoPlay
-               loop
-               muted
-               playsInline
-               className="fixed z-[-1] landing-video"
-               style={{ objectFit: "cover", width: "100vw", height: "100vh" ,zIndex:"-1"}}
-             />
-             
-              
-              <LandingPage />
-            </section>
-<section className="">
-       
-              <AboutUs />
-  
+                src="/Assets/backgroundVd.mp4"   
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+              />
 
-            {/* Other Sections */}
-            <Gallery />
-            <CC />
-            <GameSection/>
-            <FAQs />
-            <Contact />
+              {/* Smooth Black Fade Effect */}
+              
+
+              <LandingPage />
+              <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none"></div>
+            </section>
+
+            <section className="">
+              <AboutUs />
+
+              {/* Other Sections */}
+              <Gallery />
+              <CC />
+              <GameSection />
+              <FAQs />
+              <Contact />
             </section>
           </div>
         </Layout>
