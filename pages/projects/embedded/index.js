@@ -16,24 +16,39 @@ const Page = () => {
 
   return (
     <Layout>
-      <div className="pt-32 text-center font-batman">
-        <div className="text-4xl text-white text-center font-extrabold mb-5">
+    <div className="">
+    <div className="fixed bottom-0 top-0 left-0 w-full  bg-black/65 pointer-events-none z-[-1]"></div>
+      <video
+        src="/Assets/backvd.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+      />
+    
+      {/* <img src="/Assets/background3.png" className="fixed h-screen w-screen z-[-1]  "/> */}
+      <div className="pt-32  bg-black/50 text-center z-50 font-batman">
+        <div className="text-4xl text-white text-center font-extrabold mb-5 z-50">
           Projects
         </div>
-        <span className="text-3xl text-white text-center mt-12 font-bold">
-          EMBEDDED SYSTEMS
+        <span className="text-3xl text-white text-center mt-12 font-bold z-50">
+          EMBEDDED SYSTEM
         </span>
-        <div className="container mx-auto  p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 ">
+        <div className="container mx-auto  p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16  ">
           {loading
             ? Array.from({ length: projectList.length || 6 }).map(
-                (projectSkelatol, index) => <SkeletonProjectCard key={index} />
+                (projectSkelatol, index) => (
+                  <SkeletonProjectCard key={index} />
+                )
               )
             : projectList.map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}
         </div>
       </div>
-    </Layout>
+    </div>
+  </Layout>
   );
 };
 

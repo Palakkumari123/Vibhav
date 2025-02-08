@@ -37,7 +37,7 @@ export default function Gallery() {
                 REFLECTING ON THE JOURNEY
               </h2>
 
-              <p className="w-full font-grace max-w-lg px-2 text-lg md:max-w-xl">
+              <p className="w-full font-chakra max-w-lg px-2 text-xl sm:text-2xl text-gray-400 md:max-w-xl">
                 A glimpse into our team's past adventures, memories that shape
                 our present.
               </p>

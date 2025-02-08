@@ -36,7 +36,7 @@ function Card({ name, image ,github, linkdin}) {
             <VscGithub className="w-[1.9rem] h-[1.9rem] text-gray-300" />
             </Link>
           </div>
-          <h2 className="text-white text-xl font-grace">{name}</h2>
+          <h2 className="text-white text-2xl font-chakra">{name}</h2>
         </div>
       </motion.div>
     </Fade>
@@ -74,11 +74,11 @@ export default function CC() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <h2 className="w-full max-w-6xl font-batman text-4xl sm:text-4xl md:text-5xl lg:text-7xl bg-clip-text  text-gray-200">
+              <h2 className="w-full max-w-6xl font-batman text-4xl  md:text-5xl lg:text-7xl bg-clip-text  text-gray-200">
                 CLUB COORDINATOR
               </h2>
 
-              <p className="w-full max-w-lg px-2 text-lg md:max-w-xl font-grace">
+              <p className="w-full max-w-lg px-2 text-xl sm:text-2xl text-gray-400 md:max-w-xl font-chakra">
                 Streamlining operations and maximizing efficiency.
               </p>
             </motion.div>

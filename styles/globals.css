@@ -7,6 +7,12 @@
     @apply p-1;
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
 
 body {
   background-color: #100f12;
@@ -160,24 +166,33 @@ html {
 
 @font-face {
   font-family: 'batman';
-  src: url('/assets/fonts/BatmanForever.ttf') format('truetype');
+  src: url('/Assets/Fonts/BatmanForever.ttf') format('truetype');
   font-weight: 700; /* Bold weight */
   font-style: normal;
 }
 @font-face {
   font-family: 'orbitron';
-  src: url('/assets/fonts/Orbitron-Medium.ttf') format('truetype');
+  src: url('/Assets/Fonts/Orbitron-Medium.ttf') format('truetype');
   font-weight:200 ; /* Bold weight */
   font-style: normal;
 }
 @font-face {
   font-family: 'grace';
-  src: url('/assets/fonts/Grace.otf') format('opentype');
+  src: url('/Assets/Fonts/Grace.otf') format('opentype');
   font-weight:400 ; /* Bold weight */
   font-style: normal;
 }
 
 
+
+@font-face {
+  font-family: 'Chakra Petch';
+  src: 
+       url('/Assets/Fonts/ChakraPetch-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 @media (min-width: 768px) {  
   /* WebKit Browsers (Chrome, Safari, Edge) */
   ::-webkit-scrollbar {

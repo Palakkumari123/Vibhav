@@ -11,6 +11,7 @@ module.exports = {
         batman: ["batman", "sans-serif"],
         orbitron: ["orbitron","sans-serif"],
         grace: ["grace","sans-serif"],
+        chakra: ['Chakra Petch', 'sans-serif'],
       },
       keyframes: {
         glitter: {

@@ -51,7 +51,7 @@ const FloatingGameInfo = () => {
             <img
               src="/Assets/Homepage/gameCoverImg.jpg"
               alt="Game Cover"
-              className="w-full h-40 object-cover rounded transition-all duration-300 group-hover:brightness-50"
+              className="w-full h-40 object-cover rounded transition-all duration-300 group-hover:scale-95 group-hover:brightness-50"
             />
 
             {/* Play Button (Initially Hidden) */}
@@ -61,7 +61,7 @@ const FloatingGameInfo = () => {
               rel="noopener noreferrer"
               className="bg-black bg-opacity-25  text-white z-40 absolute inset-0 flex items-center justify-center rounded transition-opacity duration-500 ease-in-out opacity-0  group-hover:opacity-100"
             >
-              <button className="bg-black/80 px-3 py-1 rounded-full">Play</button>
+              <button className="bg-black px-3 py-1 rounded-full shadow-2xl shadow-black z-50">Play</button>
               
             </a>
           </div>
