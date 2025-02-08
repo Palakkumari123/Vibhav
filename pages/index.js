@@ -50,7 +50,7 @@ export default function Home() {
               
 
               <LandingPage />
-              <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none"></div>
+              <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none"></div>
             </section>
 
             <section className="">

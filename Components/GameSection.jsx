@@ -10,8 +10,10 @@ function GameSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
+      <div>
       <h1 className="text-3xl sm:text-3xl font-batman mb-5">Play Our Game</h1>
-      <p className="mx-0 font-grace text-lg  text-center">Think You Know Us? Put Your Knowledge to the Test!</p>
+      <p className="mx-0 text-xl text-gray-400  text-center font-chakra ">Think You Know Us? Put Your Knowledge to the Test!</p>
+      </div>
       
       {/* Game Card */}
       <div className="relative p-5 mt-5 rounded-xl bg-gray-600/30">
