@@ -7,7 +7,7 @@ import Link from "next/link";
 export function Popup({ title, description, image, onClose, github }) {
   return (
     <div className="fixed top-0 pt-10 inset-0 z-50 flex items-center justify-center bg-black backdrop-opacity-100 bg-opacity-75  rounded-2xl">
-      <div className="h-fit max-h-3/5 p-1 sm:w-3/4 w-[95%] fixed rounded-2xl bg-gray-900/90 bg-gradient-to-t from-[#56f4df] to-[#1333e980]  py-7">
+      <div className="h-fit max-h-3/5 p-1 sm:w-3/4 w-[95%] fixed rounded-2xl bg-gray-900/90 bg-gradient-to-t from-[#222932] to-[#0a0e0c80]  py-7">
         <button
           className="absolute top-5 right-5 text-gray-200 hover:text-white transition-all duration-300 ease-in-out hover:scale-125 hover:bg-gray-900 rounded-3xl px-[6px]"
           onClick={onClose}

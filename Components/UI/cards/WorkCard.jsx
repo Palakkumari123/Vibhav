@@ -1,6 +1,9 @@
 import { FaEye } from "react-icons/fa";
 import Link from "next/link"; 
 import { IoOpenOutline } from "react-icons/io5";
+import { MdOpenInNew } from "react-icons/md";
+
+
 
 export const SkeletonWorkCard = () => {
   return (
@@ -55,7 +58,7 @@ const WorkCard = ({ work ,type,year}) => {
             <h3 className="text-white text-lg font-semibold text-center p-3">
               {work.name}
             </h3>
-            <IoOpenOutline className="h-[1.3rem] w-[1.3rem] z-50  text-white  bottom-[1rem] right-[5.3rem] hover:scale-105" />
+            <MdOpenInNew className="h-[1.3rem] w-[1.3rem] z-50  text-white  bottom-[1rem] right-[5.3rem] hover:scale-105" />
 
             {/* <h4 className="text-center">{work.content}</h4> */}
           </div>

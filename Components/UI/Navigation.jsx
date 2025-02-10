@@ -536,7 +536,7 @@ export default function Navigation() {
     </div>
   ) : (
     <div
-      className={`fixed top-1 left-0 right-0 z-50 flex justify-between p-3 backdrop:blur-sm backdrop:brightness-75 transition-custom transition-all ease-in-out duration-300 font-batman  ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+      className={`fixed top-1 left-0 right-0 z-50 flex justify-between p-3 backdrop:blur-sm backdrop:brightness-75 transition-custom transition-all ease-in-out duration-300 text-4xl font-orbitron    ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
     >
       <Link href="/">
@@ -558,7 +558,7 @@ export default function Navigation() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
+                  className="text-white text-center text-sm max-sm:text-xs  leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
                   onClick={handleSubmenuClick}
                 >
                   <item.icon className="inline mx-4 w-6 h-6" />
@@ -576,7 +576,7 @@ export default function Navigation() {
                   key={item.name}
                   href={item.href}
                   onClick={handleSubmenuClick}
-                  className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
+                  className="text-white text-center text-sm max-sm:text-xs leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
                 >
                   <item.icon className="inline mx-4 w-6 h-6" />
                   {item.name}
@@ -593,7 +593,7 @@ export default function Navigation() {
                   onClick={handleSubmenuClick}
                   key={item.name}
                   href={item.href}
-                  className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
+                  className="text-white text-center text-sm max-sm:text-xs  leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
                 >
                   <item.icon className="inline mx-4 w-6 h-6" />
                   {item.name}
@@ -605,7 +605,7 @@ export default function Navigation() {
         <div
           className={`w-full flex gap-x-0 gap-y-2 rounded-[var(--border-radius--menu-link)] 
     bg-black bg-opacity-60 justify-evenly items-center overflow-auto p-1 max-sm:p-2 
-    transition-custom text-xl shadow-2xl shadow-yellow/10
+    transition-custom text-2xl font-orbitron shadow-2xl shadow-yellow/10
  backdrop-blur-md 
     ${isVisible ? "backdrop-blur" : ""}`}
         >
@@ -615,7 +615,7 @@ export default function Navigation() {
             onClick={handleProjectClick}
             className={`menuLink ${activeRoute.startsWith("/projects") ? "active" : ""}`}
           >
-            <div className="group flex items-center gap-2">
+            <div className="group flex items-center gap-2 ">
               <span
                 className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/projects/") || ProjectVisible
                   ? "opacity-100"
@@ -624,7 +624,7 @@ export default function Navigation() {
               >
                 {"["}
               </span>
-              <span className="flex items-center h-full leading-none pt-[1px]">Projects</span>
+              <span className="flex items-center h-full leading-none text-[1rem] pt-[1px]">Projects</span>
               <span
                 className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/projects/") || ProjectVisible
                   ? "opacity-100"
@@ -650,7 +650,7 @@ export default function Navigation() {
               >
                 {"["}
               </span>
-              <span className="flex items-center h-full leading-none pt-[1px]">Work</span>
+              <span className="flex items-center h-full leading-none pt-[1px] text-[1rem]">Work</span>
               <span
                 className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/work/") || WorkVisible
                   ? "opacity-100"
@@ -671,7 +671,7 @@ export default function Navigation() {
               >
                 {"["}
               </span>
-              <span className="flex items-center h-full leading-none pt-[1px]">Home</span>
+              <span className="flex items-center h-full leading-none pt-[1px] text-[1rem]">Home</span>
               <span
                 className={`text-3xl transition-opacity pb-[1px] ${location.pathname === "/" ? "opacity-100" : "opacity-0 group-hover:opacity-80"
                   }`}
@@ -695,7 +695,7 @@ export default function Navigation() {
               >
                 {"["}
               </span>
-              <span className="flex items-center h-full leading-none pt-[1px]">Team</span>
+              <span className="flex items-center h-full leading-none pt-[1px] text-[1rem]">Team</span>
               <span
                 className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/team/") || TeamVisible
                   ? "opacity-100"
@@ -712,7 +712,7 @@ export default function Navigation() {
             <p onClick={scrollToBottom} className="menuLink">
               <div className="group flex items-center gap-2">
                 <span className="text-3xl opacity-0 group-hover:opacity-80 pb-[1px]">{"["}</span>
-                <span className="flex items-center h-full leading-none pt-[1px]">Contact</span>
+                <span className="flex items-center h-full leading-none pt-[1px] text-[1rem]">Contact</span>
                 <span className="text-3xl opacity-0 group-hover:opacity-80 pb-[1px]">{"]"}</span>
               </div>
             </p>
