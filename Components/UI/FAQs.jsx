@@ -26,20 +26,20 @@ export default function FAQs() {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: .7 }}
     >
-      <h2 className="text-2xl font-bold font-batman">FAQs</h2>
-      <div className="leading-loose text-md mt-6">
+      <h2 className="sm:text-4xl text-2xl text-center  font-batman">FAQs</h2>
+      <div className="leading-loose  mt-6 ">
         {faqs.map((faq, index) => (
           <div key={faq.question}>
             <button
               className={`w-full font-bold py-3 flex justify-between items-center mt-4 ${index !== faqs.length - 1 && "text-gray-200 border-b border-gray-400"}`}
               onClick={() => toggleFAQ(index)}
             >
-              <div className="text-left font-grace">
+              <div className="text-base sm:text-lg   font-sans text-left">
               {faq.question}
               </div>
               {faq.isOpen ? (
                 <div>
-                <HiMinusCircle className="w-7 h-7 mr-2" />
+                <HiMinusCircle className="w-7 h-7 " />
               </div>
               ) : (
                 <div>
@@ -48,7 +48,7 @@ export default function FAQs() {
               )}
             </button>
             <div
-              className={`text-gray-300  text-sm mt-2 transition-all duration-500 font-orbitron ${faq.isOpen ? "h-auto opacity-100" : "h-0 opacity-0"}`}
+              className={`text-gray-300 text-base sm:text-md  leading-6 font-sans mt-2 transition-all duration-500  ${faq.isOpen ? "h-auto opacity-100" : "h-0 opacity-0"}`}
             >
               {faq.answer}
             </div>

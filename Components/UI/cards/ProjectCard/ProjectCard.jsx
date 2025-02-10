@@ -1,21 +1,29 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {Popup} from './ProjectModal';
+import { Popup } from "./ProjectModal";
 
 export const SkeletonProjectCard = () => {
   return (
     <motion.div
-      className="relative bg-gray-300 animate-pulse rounded-lg shadow-lg overflow-hidden group"
-      style={{ height: "300px" }}
+      className="select-none border border-white/10 bg-[#282c34] 
+        bg-gradient-to-t from-[#161c18] to-[#1f1f1f80] shadow-[0_7px_20px_5px_rgba(0,0,0,0.5)] 
+        rounded-lg backdrop-blur-lg overflow-hidden transition-all duration-500 h-auto w-[300px]"
       whileHover={{ scale: 1.05 }}
     >
-      {/* Skeleton for card image */}
-      <div className="absolute inset-0 bg-gray-400"></div>
+      {/* Skeleton Image Placeholder */}
+      <div className="relative w-full h-80 flex items-center justify-center p-5 rounded-md">
+        <div className="w-[260px] h-[260px] bg-gray-700/20 animate-pulse rounded-md"></div>
+      </div>
 
-      {/* Skeleton for text content */}
-      <div className="absolute bottom-0 w-full p-4 bg-gradient-to-t from-gray-500 to-transparent">
-        <div className="h-6 w-3/4 bg-gray-500 rounded mb-2"></div>
-        <div className="h-4 w-1/2 bg-gray-500 rounded"></div>
+      {/* Skeleton Content */}
+      <div className="p-4 text-center">
+        {/* Title Placeholder */}
+        <div className="w-3/4 h-5 bg-gray-700/20 animate-pulse mx-auto rounded-md"></div>
+
+        {/* Button Placeholder */}
+        <motion.div whileHover={{ scale: 1.1 }} className="mt-3">
+          <div className="w-24 h-8 bg-gray-700/20 animate-pulse mx-auto rounded-lg"></div>
+        </motion.div>
       </div>
     </motion.div>
   );
@@ -29,35 +37,44 @@ const ProjectCard = ({ project }) => {
 
   return (
     <>
-      {/* Card */}
-      <motion.div
-        className="relative bg-cover bg-center rounded-lg shadow-lg overflow-hidden group cursor-pointer hover:shadow-xl"
-        style={{ backgroundImage: `url(${project.images})`, height: "300px" }}
-        whileHover={{ scale: 1.05 }}
-        onClick={openPopup}
-      >
-        <div className="w-full flex justify-end p-2 ">
-          <div className="hover:scale-105">
-        <svg stroke="currentColor" fill="white" strokeWidth="0" viewBox="0 0 448 512" className="text-white text-2xl transform hover:scale-150 duration-300" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg"><path d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path></svg>
-        </div>
-        </div>
-        <div className="absolute bottom-0 w-full p-4 bg-gradient-to-t from-black to-transparent text-white">
-          <h2 className="text-xl font-bold">{project.name}</h2>
-          {/* <p className="text-sm">{project.shortDescription}</p> */}
-        </div>
-      </motion.div>
+    <motion.div
+      className="select-none border border-white/10 bg-[#282c34] 
+  bg-gradient-to-t from-[#161c18] to-[#1f1f1f80] shadow-[0_7px_20px_5px_rgba(0,0,0,0.5)] 
+  rounded-lg backdrop-blur-lg overflow-hidden transition-all duration-500 h-auto w-[300px]"
+      whileHover={{ scale: 1.05 }}
+    >
+      {/* Card Image */}
+      <div className="relative w-full  flex items-center justify-center  p-5 rounded-md">
+        <img
+          src={project.images}
+          alt={project.name}
+          className=" h-[262px] w-[262px] object-contain transition-transform duration-300 group-hover:scale-10 rounded-md"
+        />
+      </div>
 
-      {/* Popup */}
+      {/* Card Content */}
+      <div className="p-4 text-center">
+        <h4 className="text-white text-lg font-semibold">{project.name}</h4>
+
+        {/* Explore Button */}
+        <motion.div whileHover={{ scale: 1.1 }} className="mt-3 w-full  flex justify-center">
+         
+            <button className=" px-4 py-2 text-sm font-semibold text-white bg-green-700 rounded-lg hover:bg-blue-500 transition-all duration-300   bg-gradient-to-t from-[#282c34] to-[#11002080] shadow-[0_7px_20px_5px_rgba(0,0,0,0.5)]   " onClick={openPopup}>
+              EXPLORE
+            </button>
+          
+        </motion.div>
+      </div>
+    </motion.div>
       {isPopupOpen && (
         <Popup
           title={project.name}
           description={project.content}
           image={project.images}
-          github={project.github||""}
+          github={project.github || ""}
           onClose={closePopup}
         />
-      )}
-    </>
+      )}</>
   );
 };
 

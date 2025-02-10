@@ -102,7 +102,7 @@
       "name": "Swarm Bot",
       "content": "Swarm robotics is an approach to the coordination of multiple robots as a system that consists of large numbers of mostly simple physical robots. It is supposed that a desired collective behaviour emerges from the interactions between the robots and interactions of robots with the environment.",
       "github": "https://github.com/kamatji/SWARM_BOT",
-      "images": "/Assets/Projects/IOT/swarm_bot.webp"
+      "images": "/Assets/Projects/IOT/swarm bot.webp"
     },
     {
       "name": "Smart Blind",

@@ -17,24 +17,31 @@ export default function Home() {
       setIsLoading(false);
     }, 500);
   }, []);
- 
 
   return (
     <Layout>
       <div className="container relative text-center mx-auto mt-0 p-1 pt-32 text-white ">
-        <h1 className="text-3xl font-extrabold font-batman">Our Work</h1>
+      <div className="fixed bottom-0 top-0 left-0 w-full  bg-black/70 pointer-events-none z-[-1]"></div>
+      <video
+          src="/Assets/backvd.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
+        />
+        <h1 className="sm:text-5xl text-3xl  font-batman ">Our Work</h1>
 
-        <div className="mb-3 md:p-5 xl:p-10">
-          <div className="text-3xl font-bold pb-5 mb-5 font-grace">
+        <div className="mb-3 md:p-5 xl:p-10 mt-5">
+          <div className="sm:text-3xl text-2xl  pb-5 mb-5 font-chakraBold">
             Previous Year Events
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center max-sm:gap-10 px-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-items-center max-xl:gap-16 px-0">
             {isLoading
               ? Array.from({ length: 2 }).map((_, index) => (
                   <SkeletonWorkCard key={index} />
                 ))
               : events.map((item, index) => (
-                
                   <WorkCard
                     key={item.id}
                     index={index}
@@ -47,8 +54,10 @@ export default function Home() {
         </div>
 
         <div className="mt-7 mb-4 pt-7 md:p-5 xl:p-10">
-          <div className="text-3xl font-bold pb-5 font-batman">Previous Year Workshops</div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center max-sm:gap-10 mt-5">
+          <div className="sm:text-3xl text-2xl font-bold pb-5 font-chakraBold">
+            Previous Year Workshops
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-items-center max-xl:gap-16  mt-5">
             {isLoading
               ? Array.from({ length: 3 }).map((_, index) => (
                   <SkeletonWorkCard key={index} />

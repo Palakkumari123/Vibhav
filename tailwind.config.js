@@ -5,12 +5,13 @@ module.exports = {
     "./Components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    
     extend: {
-      fontFamily:{
+      fontFamily: {
         batman: ["batman", "sans-serif"],
-        orbitron: ["orbitron","sans-serif"],
-        grace: ["grace","sans-serif"],
+        orbitron: ["orbitron", "sans-serif"],
+        grace: ["grace", "sans-serif"],
+        chakra: ["Chakra Petch", "sans-serif"],
+        chakraBold: ["Chakra Petch Bold", "sans-serif"],
       },
       keyframes: {
         glitter: {
@@ -27,10 +28,10 @@ module.exports = {
           },
         },
         gradient: {
-					'0%': { backgroundPosition: '0% 50%' },
-					'50%': { backgroundPosition: '100% 50%' },
-					'100%': { backgroundPosition: '0% 50%' },
-				},
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
         mover: {
           "0%": { transform: "translateY(-35px)" },
           "100%": { transform: "translateY(-5px)" },
@@ -40,13 +41,13 @@ module.exports = {
           "100%": { transform: "translateY(-15px)" },
         },
         scrollX: {
-					"0%": { transform: "translateX(0)" },
-					"100%": { transform: "translateX(-100%)" }
-				},
-				scrollY: {
-					"0%": { transform: "translateY(0)" },
-					"100%": { transform: "translateY(-100%)" }
-				},
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        scrollY: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-100%)" },
+        },
         brightnessPulse: {
           "0%, 100%": { filter: "brightness(50%)" },
           "50%": { filter: "brightness(120%)" },
@@ -55,9 +56,9 @@ module.exports = {
       animation: {
         mover: "mover 3s infinite alternate",
         mover2: "mover2 3s infinite alternate",
-        gradient: 'gradient 8s linear infinite',
+        gradient: "gradient 8s linear infinite",
         scrollX: "scrollX 15s linear infinite",
-				scrollY: "scrollY 15s linear infinite",
+        scrollY: "scrollY 15s linear infinite",
         brightnessPulse: "brightnessPulse 4s infinite linear",
       },
       backgroundImage: (theme) => ({

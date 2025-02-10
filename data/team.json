@@ -157,12 +157,12 @@
   ],
   "Third Year": [
     {
-      "Name": "Sahil Attri",
-      "NickName": "Attri",
+      "Name": "Sahil Atri",
+      "NickName": "Atri",
       "Profile": "/Assets/TeamPhotos/CC/Sahil.jpg",
       "Github": "https://github.com/sahilatri-91",
       "LinkedIn": "https://www.linkedin.com/in/sahil-atri-279940263",
-      "Position": "CORE COORDINATOR"
+      "Position": "CLUB COORDINATOR"
     },
     {
       "Name": "Vishesh Chadha",
@@ -170,7 +170,7 @@
       "Profile": "/Assets/TeamPhotos/CC/VISHESH Chaddha.jpg",
       "Github": "https://github.com/Vishesh0718",
       "LinkedIn": "https://www.linkedin.com/in/vishesh-chadha-a9172525a",
-      "Position": "CORE COORDINATOR"
+      "Position": "CLUB COORDINATOR"
     },
     {
       "Name": "Abhishek Raj",
@@ -333,7 +333,7 @@
     {
       "Name": "Deepanshu Singh",
       "NickName": "DJ Singh",
-      "Profile": "/Assets/TeamPhotos/Second/Deepanshu Singh.webp",
+      "Profile": "/Assets/TeamPhotos/Second/Deepanshu singh.webp",
       "Github": "https://github.com/Deepanshusingh5151",
       "LinkedIn": "https://www.linkedin.com/in/deepanshu-singh-492bb3283/",
       "Instagram": "https://www.instagram.com/deepanshusingh5151/",
@@ -387,9 +387,9 @@
     {
       "Name": "Mohit Sharma",
       "NickName": "Mohit",
-      "Profile": "/Assets/TeamPhotos/Second/Mohit.webp",
+      "Profile": "/Assets/TeamPhotos/Second/mohit.webp",
       "Github": "",
-      "LinkedIn": "",
+      "LinkedIn": "https://www.linkedin.com/in/mohit-sharma-dmz",
       "Instagram": "",
       "Position": "EXECUTIVE MEMBER"
     },
@@ -708,15 +708,6 @@
       "Github": "https://github.com/SoniHubb-b",
       "LinkedIn": "https://www.linkedin.com/in/sonia-saini-5a1570332/",
       "Instagram": "https://www.instagram.com/soni.s_17?igsh=bnIyMnk4NTk4d2Mx",
-      "Position": "VOLUNTEER"
-    },
-    {
-      "Name": "Vineet Kumar",
-      "NickName": "Vineet",
-      "Profile": "/Assets/TeamPhotos/First/Vineet.webp",
-      "Github": "https://github.com/vineetkumar41",
-      "LinkedIn": "https://www.linkedin.com/in/vineet-mangalraw-461167325/",
-      "Instagram": "https://www.instagram.com/vineet__mangalrao/?utm_source=ig_web_button_share_sheet",
       "Position": "VOLUNTEER"
     },
     {

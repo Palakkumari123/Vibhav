@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { IoOpenOutline } from "react-icons/io5";
+import { MdOutlineOpenInNew } from "react-icons/md";
+
 
 function GameSection() {
   return (
@@ -10,8 +12,10 @@ function GameSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h1 className="text-3xl sm:text-3xl font-batman mb-5">Play Our Game</h1>
-      <p className="mx-0 font-grace text-lg  text-center">Think You Know Us? Put Your Knowledge to the Test!</p>
+      <div>
+      <h1 className="text-4xl  md:text-5xl lg:text-7xl bg-clip-text  text-gray-200 font-batman mb-5 text-center">Play Our Game</h1>
+      <p className="mx-0 text-xl text-gray-400  text-center font-chakra ">Think You Know Us? Put Your Knowledge to the Test!</p>
+      </div>
       
       {/* Game Card */}
       <div className="relative p-5 mt-5 rounded-xl bg-gray-600/30">
@@ -53,10 +57,10 @@ function GameSection() {
             className="flex items-center justify-center space-x-2 text-lg font-orbitron p-2"
           >
             <p>Portal Hunt</p>
-            <IoOpenOutline className="h-5 w-5 text-white hover:scale-105 transition-transform" />
+            <MdOutlineOpenInNew  className="h-5 w-5 text-white hover:scale-105 transition-transform" />
           </a>
           
-          <p className="text-justify font-orbitron  text-gray-300 text-base">
+          <p className="text-justify font-sans  text-gray-300 text-base sm:text-lg">
           Put Your Memory to the Ultimate Test! Beat the Game, Prove You're the One, and Enjoy Endless Fun. Play Now!
           </p>
         </div>

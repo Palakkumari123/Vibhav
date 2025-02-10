@@ -68,7 +68,7 @@ console.log(Event)
 
             {/* Text Section */}
             <motion.div
-              className="lg:w-[65%] w-full flex md:p-10 flex-col justify-center space-y-4 font-grace"
+              className="lg:w-[65%] w-full flex md:p-10 flex-col justify-center space-y-4 font-sans"
               {...(isLaptop && {
                 whileInView: index % 2 !== 0 ? { x: 10 } : { x: -10 },
                 initial: { opacity: 0, x: index % 2 === 0 ? 100 : -100 },
