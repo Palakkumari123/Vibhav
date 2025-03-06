@@ -8,7 +8,7 @@ export default function Footer() {
           <p className="flex items-center justify-center text-md sm:text-2xl font-chakra">
             Made with ❤️ by
             <Link
-              href="/team/current-team"
+              href="https://www.linkedin.com/company/team-vibhav/"
               className="sm:text-3xl text-xl text-red-400 cursor-pointer "
             >
               {" "}
