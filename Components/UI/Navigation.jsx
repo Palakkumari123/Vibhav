@@ -1,730 +1,661 @@
-import React from "react";
-import { useState } from "react";
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 import { RiTeamLine } from "react-icons/ri";
 import { AiOutlineTeam } from "react-icons/ai";
 import { HiPresentationChartBar } from "react-icons/hi";
 import { MdWork } from "react-icons/md";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
-import {
-  AudioLines,
-  BookMarked,
-  Box,
-  Cpu,
-  History,
-  Home,
-  Mail,
-  Slack,
-  User,
-  Wifi,
-} from "lucide-react";
-import { Bot } from "lucide-react";
-import { useRef } from "react";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
+import { AudioLines, Box, Cpu, Slack, Wifi, Bot } from "lucide-react";
+
+/* ---------------- DATA ---------------- */
 const projects = [
-  {
-    name: "AI/ML",
-    href: "/projects/ai-ml",
-    icon: Bot,
-  },
-  {
-    name: "AR/VR",
-    href: "/projects/ar-vr",
-    icon: Box,
-  },
-  {
-    name: "IoT",
-    href: "/projects/iot",
-    icon: Wifi,
-  },
-  {
-    name: "DSP",
-    href: "/projects/dsp",
-    icon: AudioLines,
-  },
-  {
-    name: "EMBEDDED SYSTEMS",
-    href: "/projects/embedded",
-    icon: Cpu,
-  },
+  { name: "AI/ML", href: "/projects/ai-ml", icon: Bot },
+  { name: "AR/VR", href: "/projects/ar-vr", icon: Box },
+  { name: "IoT", href: "/projects/iot", icon: Wifi },
+  { name: "DSP", href: "/projects/dsp", icon: AudioLines },
+  { name: "EMBEDDED SYSTEMS", href: "/projects/embedded", icon: Cpu },
+  { name: "QUANTUM COMPUTING", href: "/projects/quantum", icon: Slack },
+];
 
-  {
-    name: "QUANTUM COMPUTING",
-    href: "/projects/quantum",
-    icon: Slack,
-  },
-];
 const ourwork = [
-  {
-    name: "Current Year",
-    href: "/work/current-year",
-    icon: MdWork,
-  },
-  {
-    name: "Previous Year",
-    href: "/work/previous-year",
-    icon: HiPresentationChartBar,
-  },
+  { name: "Current Year", href: "/work/current-year", icon: MdWork },
+  { name: "Previous Year", href: "/work/previous-year", icon: HiPresentationChartBar },
 ];
+
 const ourteam = [
-  {
-    name: "Current Team",
-    href: "/team/current-team",
-    icon: RiTeamLine,
-  },
-  {
-    name: "Alumni",
-    href: "/team/alumni",
-    icon: AiOutlineTeam,
-  },
+  { name: "Current Team", href: "/team/current-team", icon: RiTeamLine },
+  { name: "Alumni", href: "/team/alumni", icon: AiOutlineTeam },
 ];
+
+/* ---------------- NAVIGATION ---------------- */
 
 export default function Navigation() {
+  const router = useRouter();
+  const navRef = useRef(null);
+
   const [isMobile, setIsMobile] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
+
   const [ProjectVisible, setProjectVisible] = useState(false);
   const [WorkVisible, setWorkVisible] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-
   const [TeamVisible, setTeamVisible] = useState(false);
-  const navRef = useRef(null);
-  const router = useRouter();
-  const [activeRoute, setActiveRoute] = useState("");
+
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const scrollToBottom = () => {
-    
-    setTimeout(() => {
-      if (window.innerWidth <= 640) {
-        window.scrollTo({
-          top: document.body.scrollHeight - window.innerHeight - 100,
-          behavior: "smooth",
-        });
-      } else {
-        window.scrollTo({
-          top: document.body.scrollHeight - window.innerHeight - 400,
-          behavior: "smooth",
-        });
-      }
-    }, 800);
-  };
-
-  const toggleNavbar = () => {
-    if (isAnimating) return;
-
-    setIsAnimating(true);
-    if (!showNavbar) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-    setTimeout(() => {
-      setIsAnimating(false);
-    }, 500);
-
-    setShowNavbar(() => !showNavbar);
-  };
-
+  /* ---------------- LOADING NAVBAR AFTER LANDING ---------------- */
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
-    };
-    setActiveRoute(router.pathname);
+    // Delay navbar appearance by 1.5s (adjust as needed)
+    const timer = setTimeout(() => {
+      setShowNavbar(true);
+    }, 1500);
 
-    handleResize(); // Call handleResize initially to set the initial state
-    window.addEventListener("resize", handleResize);
+    return () => clearTimeout(timer);
+  }, []);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [router.pathname]); //for resize
-
-  const toggleProjectVisibility = () => {
-    setProjectVisible(!ProjectVisible);
-  };
-
-  const handleProjectClick = (e) => {
-    e.preventDefault();
-    if (ProjectVisible) {
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-wrapper",
-        "10px"
-      );
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-link",
-        "10px"
-      );
-    } else {
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-wrapper",
-        "10px"
-      );
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-link",
-        "10px"
-      );
-    }
-    toggleProjectVisibility();
-    setWorkVisible(false);
-    setTeamVisible(false);
-  };
-
-  const toggleWorkVisibility = () => {
-    setWorkVisible(!WorkVisible);
-  };
-
-  const handleWorkClick = (e) => {
-    e.preventDefault();
-    if (WorkVisible) {
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-wrapper",
-        "10px"
-      );
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-link",
-        "10px"
-      );
-    } else {
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-wrapper",
-        "10px"
-      );
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-link",
-        "10px"
-      );
-    }
-    toggleWorkVisibility();
-    setProjectVisible(false);
-    setTeamVisible(false);
-  };
-
-  const toggleTeamVisibility = () => {
-    setTeamVisible(!TeamVisible);
-  };
-
-  const handleTeamClick = (e) => {
-    e.preventDefault();
-    if (TeamVisible) {
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-wrapper",
-        "10px"
-      );
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-link",
-        "10px"
-      );
-    } else {
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-wrapper",
-        "10px"
-      );
-      document.documentElement.style.setProperty(
-        "--border-radius--menu-link",
-        "10px"
-      );
-    }
-    toggleTeamVisibility();
-    setProjectVisible(false);
-    setWorkVisible(false);
-  };
-
+  /* ---------------- RESPONSIVE ---------------- */
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
-        setProjectVisible(false);
-        setWorkVisible(false);
-        setTeamVisible(false);
-      }
-    };
-    // const [blurBack, setBlurBack]=useState(false)
-    const handleScroll = () => {
-      // Close subnavigation menus when scrolling down
-      if (
-        window.scrollY > window.scrollY / 2 &&
-        (ProjectVisible || WorkVisible || TeamVisible)
-      ) {
-        setProjectVisible(false);
-        setWorkVisible(false);
-        setTeamVisible(false);
-      }
-    };
+    const resize = () => setIsMobile(window.innerWidth < 768);
+    resize();
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  }, []);
 
-    document.addEventListener("mousedown", handleClickOutside);
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [ProjectVisible, WorkVisible, TeamVisible]); //navigation of submenus
-
-  const handleSubmenuClick = () => {
-    setProjectVisible(false);
-    setWorkVisible(false);
-    setTeamVisible(false);
-  };
-
-  const handleScroll = () => {
-    if (typeof window !== "undefined") {
+  /* ---------------- SCROLL SHOW / HIDE ---------------- */
+  useEffect(() => {
+    const onScroll = () => {
       if (window.scrollY > 300) {
-        if (window.scrollY > lastScrollY) {
-          // Scrolling down
-          setIsVisible(false);
-        } else {
-          // Scrolling up
-          setIsVisible(true);
-        }
+        setIsVisible(window.scrollY < lastScrollY);
       }
       setLastScrollY(window.scrollY);
-    }
-  };
+    };
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", handleScroll);
-
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, [lastScrollY]);
 
-  return isMobile ? (
-    <div
-      className={`navbar fixed font-orbitron  z-[100] inset-0 flex flex-col w-full h-fit  top-0 z-90 transition-colors duration-300
-      ease-in-out  `}
-      
-    >
-      <ul className={`flex items-center   bg-black/20 backdrop-blur-lg justify-between px-3 py-1 mx-auto w-full transition-all duration-500 delay-100 ease-out ${showNavbar? "bg-black/90 bg-blur-xl": "bg-black/20"}`}>
-        <li className="z-40 p-1 flex items-center gap-2">
-          <Link href="/" className="block">
-            <img src="/Assets/Yellow.png" className="h-10  " />
-          </Link>
-          <div className="h-10 w-[1px] bg-white"></div>
+  /* ---------------- CLICK OUTSIDE ---------------- */
+  useEffect(() => {
+    const handler = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setProjectVisible(false);
+        setWorkVisible(false);
+        setTeamVisible(false);
+      }
+    };
 
-          <Link href="https://festnimbus.nith.ac.in">
-            <div className="pl-3 z-50">
-              <img src="/Assets/nimbusLogo.png" className="h-10"></img>
-            </div>
-          </Link>
-        </li>
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
-        <li>
+  const closeAll = () => {
+    setProjectVisible(false);
+    setWorkVisible(false);
+    setTeamVisible(false);
+  };
+
+  const scrollToBottom = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
+    }, 600);
+  };
+
+  /* ---------------- MOBILE ---------------- */
+  if (isMobile) {
+    return (
+      <div className="fixed inset-0 z-[100] font-orbitron">
+        <div className="flex justify-between items-center px-4 py-2 bg-black/50 backdrop-blur-lg">
+          <div className="flex items-center gap-3">
+            <Link href="/">
+              <img src="/Assets/Yellow.png" className="h-10" />
+            </Link>
+            <div className="h-8 w-[1px] bg-white/70" />
+            <a href="https://festnimbus.nith.ac.in">
+              <img src="/Assets/nimbusLogo.png" className="h-10" />
+            </a>
+          </div>
+
           <button
-            onClick={toggleNavbar}
-            className="relative w-6 h-6 flex flex-col justify-center items-center group"
+            onClick={() => {
+              setShowNavbar(!showNavbar);
+              document.body.classList.toggle("overflow-hidden");
+            }}
+            className="w-7 h-7 flex flex-col justify-center"
           >
             <span
-              className={`block w-full h-[3px] bg-stone-300 rounded-md transition-all duration-300 ease-in-out ${showNavbar ? "rotate-45 translate-y-2" : ""
-                }`}
-            ></span>
-
+              className={`h-[3px] bg-white mb-1 transition-all duration-300 ${
+                showNavbar && "rotate-45 translate-y-2"
+              }`}
+            />
             <span
-              className={`block w-full h-[3px] bg-stone-300 rounded-md my-1 transition-all duration-300 ease-in-out ${showNavbar ? "opacity-0" : ""
-                }`}
-            ></span>
-
+              className={`h-[3px] bg-white mb-1 transition-all duration-300 ${
+                showNavbar && "opacity-0"
+              }`}
+            />
             <span
-              className={`block w-full h-[3px] bg-stone-300 rounded-md transition-all duration-300 ease-in-out ${showNavbar ? "-rotate-45 -translate-y-2" : ""
-                }`}
-            ></span>
+              className={`h-[3px] bg-white transition-all duration-300 ${
+                showNavbar && "-rotate-45 -translate-y-2"
+              }`}
+            />
           </button>
-        </li>
-      </ul>
+        </div>
 
-      <div
-        className={` transition-all duration-700 delay-100 ease-in-out fixed top-14 bg-black/85 backdrop-blur-lg w-[100%] overflow-y-auto ${showNavbar ? " h-full" : " h-0"
-          } `}
-      >
-        <div className="flex h-screen flex-col justify-between border-e text-gray-100">
-          <div className="px-4 py-6">
-            <ul className="mt-6 space-y-1 ">
-              <li>
-                <a
-                  href="/"
-                  className="block rounded-lg px-4 py-2 text-sm font-medium  hover:bg-gray-800/30 hover:text-gray-200"
-                >
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <details className="group menu [&_summary::-webkit-details-marker]:hidden">
-                  <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2  hover:bg-gray-800/30 hover:text-gray-200">
-                    <span className="text-sm font-medium"> Projects </span>
-
-                    <span className="shrink-0 transition duration-300 group-open:-rotate-180">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </summary>
-
-                  <ul className="mt-2 space-y-1 px-4">
-                    <li>
-                      <a
-                        href="/projects/ai-ml"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400  hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        AI/ML
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="/projects/ar-vr"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400 hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        AR/VR
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="/projects/iot"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400 hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        IOT
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="/projects/dsp"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400  hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        DSP
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="/projects/embedded"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400  hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        EMBEDDED SYSTEMS
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="/projects/quantum"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400  hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        QUANTAM COMPUTING
-                      </a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-
-              <li>
-                <details className="group menu [&_summary::-webkit-details-marker]:hidden">
-                  <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2  hover:bg-gray-800/30 hover:text-gray-200">
-                    <span className="text-sm font-medium"> Team </span>
-
-                    <span className="shrink-0 transition duration-300 group-open:-rotate-180">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </summary>
-
-                  <ul className="mt-2 space-y-1 px-4">
-                    <li>
-                      <a
-                        href="/team/current-team"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400  hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        Current
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="/team/alumni"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400  hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        Alumni
-                      </a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-
-              <li>
-                <details className="group menu [&_summary::-webkit-details-marker]:hidden">
-                  <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2  hover:bg-gray-800/30 hover:text-gray-200">
-                    <span className="text-sm font-medium"> Work </span>
-
-                    <span className="shrink-0 transition duration-300 group-open:-rotate-180">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </summary>
-
-                  <ul className="mt-2 space-y-1 px-4">
-                    <li>
-                      <a
-                        href="/work/current-year"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400  hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        Current Year
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="/work/previous-year"
-                        className="block rounded-lg px-4 py-1 text-sm font-medium text-gray-400  hover:bg-gray-800/30 hover:text-gray-200"
-                      >
-                        Previous Year
-                      </a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-
-              <li
-                onClick={() => {
-                  document.body.classList.remove("overflow-hidden");
-                  setShowNavbar(false);
-                  setTimeout(() => {
-                    scrollToBottom();
-                  }, 800);
-                }}
-              ><Link href='/' className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-100  hover:bg-gray-800/30 hover:text-gray-200">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+        <div
+          className={`fixed top-[56px] left-0 w-full bg-black/90 backdrop-blur-xl transition-all duration-500 ${
+            showNavbar ? "h-full" : "h-0 overflow-hidden"
+          }`}
+        >
+          <div className="flex flex-col px-8 py-10 text-white text-2xl space-y-6">
+            <Link href="/" onClick={closeAll}>Home</Link>
+            <Link href="#projects" onClick={closeAll}>Projects</Link>
+            <Link href="#work" onClick={closeAll}>Work</Link>
+            <Link href="#team" onClick={closeAll}>Team</Link>
+            <button onClick={scrollToBottom}>Contact</button>
           </div>
         </div>
       </div>
-    </div>
-  ) : (
+    );
+  }
+
+  /* ---------------- DESKTOP ---------------- */
+  return (
     <div
-      className={`fixed top-1 left-0 right-0 z-50 flex justify-between p-3 backdrop:blur-sm backdrop:brightness-75 transition-custom transition-all ease-in-out duration-300 text-4xl font-orbitron    ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        }`}
+      className={`fixed top-1 left-0 right-0 z-50 transition-all duration-300 font-orbitron ${
+        showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
+      }`}
     >
-      <Link href="/">
-        <div className="pl-3 z-50">
-          <img src="/Assets/Yellow.png" className=" h-12"></img>
-        </div>
+      <Link href="/" className="absolute left-5 top-2 z-50">
+        <img src="/Assets/Yellow.png" className="h-12" />
       </Link>
+
+      <Link href="https://festnimbus.nith.ac.in" className="absolute right-5 top-2 z-50">
+        <img src="/Assets/nimbusLogo.png" className="h-12" />
+      </Link>
+
       <nav
         ref={navRef}
-        className={`fixed top-1 left-0 right-0 z-50 mx-auto  w-[70%] gap-x-2 gap-y-2 text-gray-200 rounded-[var(--border-radius--menu-wrapper)]  bg-[rgba(26,27,30,0.4)] bg-opacity-60 border  flex-col-reverse flex  max-sm:p-[5px] border-solid border-[#333333] border-opacity-55 transition-custom transition-all ease-in-out duration-300 max-w-[900px] shadow-2xl  ${isVisible
-          ? "translate-y-0 opacity-100"
-          : "-translate-y-full opacity-0"
-          } `}
+        className="mx-auto mt-6 w-[80%] max-w-[1400px] bg-black/30 backdrop-blur-md rounded-2xl shadow-2xl px-8 py-3 flex justify-center gap-16"
       >
+        <p onClick={() => { setProjectVisible(!ProjectVisible); setWorkVisible(false); setTeamVisible(false); }} className="cursor-pointer">Projects</p>
+        <p onClick={() => { setWorkVisible(!WorkVisible); setProjectVisible(false); setTeamVisible(false); }} className="cursor-pointer">Work</p>
+
+        <p onClick={() => router.push("/")} className="cursor-pointer">Home</p>
+
+        <p onClick={() => { setTeamVisible(!TeamVisible); setProjectVisible(false); setWorkVisible(false); }} className="cursor-pointer">Team</p>
+
+        <button onClick={scrollToBottom}>Contact</button>
+
+        {/* SUBMENUS */}
         {ProjectVisible && (
-          <div className="max-w-full gap-x-6 gap-y-6 bg-black bg-opacity-60 flex-col flex overflow-hidden p-0 rounded-[10px] animateNav transition-custom">
-            <div className="gap-x-4 gap-y-4 grid-rows-[auto_auto] grid-cols-[1fr_1fr_1fr] auto-cols-[1fr] justify-items-center grid my-6 mx-6 ">
-              {projects.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-white text-center text-sm max-sm:text-xs  leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
-                  onClick={handleSubmenuClick}
-                >
-                  <item.icon className="inline mx-4 w-6 h-6" />
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+          <div className="grid grid-cols-3 gap-6 p-6 bg-black/70 rounded-xl absolute top-[60px]">
+            {projects.map((item) => (
+              <Link key={item.name} href={item.href} onClick={closeAll}>
+                <item.icon className="mx-auto mb-1" />
+                {item.name}
+              </Link>
+            ))}
           </div>
         )}
+
         {WorkVisible && (
-          <div className="max-w-full gap-x-6 gap-y-6 bg-black bg-opacity-60 flex-col flex overflow-hidden p-0 rounded-[10px] animateNav transition-custom">
-            <div className="grid-rows-[auto] grid-cols-[1fr_1fr] auto-cols-[1fr] justify-items-center grid my-6 mx-6">
-              {ourwork.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={handleSubmenuClick}
-                  className="text-white text-center text-sm max-sm:text-xs leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
-                >
-                  <item.icon className="inline mx-4 w-6 h-6" />
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 gap-6 p-6 bg-black/70 rounded-xl absolute top-[60px]">
+            {ourwork.map((item) => (
+              <Link key={item.name} href={item.href} onClick={closeAll}>
+                <item.icon className="mx-auto mb-1" />
+                {item.name}
+              </Link>
+            ))}
           </div>
         )}
+
         {TeamVisible && (
-          <div className="max-w-full gap-x-6 gap-y-6 bg-black bg-opacity-60 flex-col flex overflow-hidden p-0 rounded-[10px] animateNav transition-custom">
-            <div className="gap-x-4 gap-y-4 grid-rows-[auto] grid-cols-[1fr_1fr] auto-cols-[1fr] justify-items-center grid my-6 mx-6">
-              {ourteam.map((item) => (
-                <Link
-                  onClick={handleSubmenuClick}
-                  key={item.name}
-                  href={item.href}
-                  className="text-white text-center text-sm max-sm:text-xs  leading-[142.857%] max-sm:leading-none no-underline  transition-all duration-[0.2s] ease-[ease-in-out]"
-                >
-                  <item.icon className="inline mx-4 w-6 h-6" />
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 gap-6 p-6 bg-black/70 rounded-xl absolute top-[60px]">
+            {ourteam.map((item) => (
+              <Link key={item.name} href={item.href} onClick={closeAll}>
+                <item.icon className="mx-auto mb-1" />
+                {item.name}
+              </Link>
+            ))}
           </div>
         )}
-        <div
-          className={`w-full flex gap-x-0 gap-y-2 rounded-[var(--border-radius--menu-link)] 
-    bg-black bg-opacity-60 justify-evenly items-center overflow-auto p-1 max-sm:p-2 
-    transition-custom text-2xl font-orbitron shadow-2xl shadow-yellow/10
- backdrop-blur-md 
-    ${isVisible ? "backdrop-blur" : ""}`}
-        >
-
-          {/* Projects */}
-          <p
-            onClick={handleProjectClick}
-            className={`menuLink ${activeRoute.startsWith("/projects") ? "active" : ""}`}
-          >
-            <div className="group flex items-center gap-2 ">
-              <span
-                className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/projects/") || ProjectVisible
-                  ? "opacity-100"
-                  : "opacity-0 group-hover:opacity-80"
-                  }`}
-              >
-                {"["}
-              </span>
-              <span className="flex items-center h-full leading-none text-[1rem] pt-[1px]">Projects</span>
-              <span
-                className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/projects/") || ProjectVisible
-                  ? "opacity-100"
-                  : "opacity-0 group-hover:opacity-80"
-                  }`}
-              >
-                {"]"}
-              </span>
-            </div>
-          </p>
-
-          {/* Work */}
-          <p
-            onClick={handleWorkClick}
-            className={`menuLink ${activeRoute.startsWith("/work/") ? "active" : ""}`}
-          >
-            <div className="group flex items-center gap-2">
-              <span
-                className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/work/") || WorkVisible
-                  ? "opacity-100"
-                  : "opacity-0 group-hover:opacity-80"
-                  }`}
-              >
-                {"["}
-              </span>
-              <span className="flex items-center h-full leading-none pt-[1px] text-[1rem]">Work</span>
-              <span
-                className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/work/") || WorkVisible
-                  ? "opacity-100"
-                  : "opacity-0 group-hover:opacity-80"
-                  }`}
-              >
-                {"]"}
-              </span>
-            </div>
-          </p>
-
-          {/* Home */}
-          <Link href="/" className={`menuLink ${location.pathname === "/" ? "active" : ""}`}>
-            <div className="group flex items-center gap-2">
-              <span
-                className={`text-3xl transition-opacity pb-[1px] ${location.pathname === "/" ? "opacity-100" : "opacity-0 group-hover:opacity-80 "
-                  }`}
-              >
-                {"["}
-              </span>
-              <span className="flex items-center h-full leading-none pt-[1px] text-[1rem]">Home</span>
-              <span
-                className={`text-3xl transition-opacity pb-[1px] ${location.pathname === "/" ? "opacity-100" : "opacity-0 group-hover:opacity-80"
-                  }`}
-              >
-                {"]"}
-              </span>
-            </div>
-          </Link>
-
-          {/* Team */}
-          <p
-            onClick={handleTeamClick}
-            className={`menuLink ${activeRoute.startsWith("/team") ? "active" : ""}`}
-          >
-            <div className="group flex items-center gap-2">
-              <span
-                className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/team/") || TeamVisible
-                  ? "opacity-100"
-                  : "opacity-0 group-hover:opacity-80"
-                  }`}
-              >
-                {"["}
-              </span>
-              <span className="flex items-center h-full leading-none pt-[1px] text-[1rem]">Team</span>
-              <span
-                className={`text-3xl transition-opacity pb-[1px] ${activeRoute.startsWith("/team/") || TeamVisible
-                  ? "opacity-100"
-                  : "opacity-0 group-hover:opacity-80"
-                  }`}
-              >
-                {"]"}
-              </span>
-            </div>
-          </p>
-
-          {/* Contact */}
-          <Link href="/" scroll={false}>
-            <p onClick={scrollToBottom} className="menuLink">
-              <div className="group flex items-center gap-2">
-                <span className="text-3xl opacity-0 group-hover:opacity-80 pb-[1px]">{"["}</span>
-                <span className="flex items-center h-full leading-none pt-[1px] text-[1rem]">Contact</span>
-                <span className="text-3xl opacity-0 group-hover:opacity-80 pb-[1px]">{"]"}</span>
-              </div>
-            </p>
-          </Link>
-        </div>
-
       </nav>
-      <Link href="https://festnimbus.nith.ac.in">
-        <div className="pr-5 z-50">
-          <img src="/Assets/nimbusLogo.png" className="h-12"></img>
-        </div>
-      </Link>
     </div>
   );
 }
+
+
+// "use client";
+
+// import React, { useState, useEffect, useRef } from "react";
+// import Link from "next/link";
+// import { useRouter } from "next/router";
+
+// import { RiTeamLine } from "react-icons/ri";
+// import { AiOutlineTeam } from "react-icons/ai";
+// import { HiPresentationChartBar } from "react-icons/hi";
+// import { MdWork } from "react-icons/md";
+
+// import {
+//   AudioLines,
+//   Box,
+//   Cpu,
+//   Slack,
+//   Wifi,
+//   Bot,
+// } from "lucide-react";
+
+// /* ---------------- DATA ---------------- */
+
+// const projects = [
+//   { name: "AI/ML", href: "/projects/ai-ml", icon: Bot },
+//   { name: "AR/VR", href: "/projects/ar-vr", icon: Box },
+//   { name: "IoT", href: "/projects/iot", icon: Wifi },
+//   { name: "DSP", href: "/projects/dsp", icon: AudioLines },
+//   { name: "EMBEDDED SYSTEMS", href: "/projects/embedded", icon: Cpu },
+//   { name: "QUANTUM COMPUTING", href: "/projects/quantum", icon: Slack },
+// ];
+
+// const ourwork = [
+//   { name: "Current Year", href: "/work/current-year", icon: MdWork },
+//   { name: "Previous Year", href: "/work/previous-year", icon: HiPresentationChartBar },
+// ];
+
+// const ourteam = [
+//   { name: "Current Team", href: "/team/current-team", icon: RiTeamLine },
+//   { name: "Alumni", href: "/team/alumni", icon: AiOutlineTeam },
+// ];
+
+// /* ---------------------------------------------------- */
+
+// export default function Navigation() {
+//   const router = useRouter();
+//   const navRef = useRef(null);
+
+//   const [isMobile, setIsMobile] = useState(false);
+//   const [showNavbar, setShowNavbar] = useState(false);
+
+//   const [ProjectVisible, setProjectVisible] = useState(false);
+//   const [WorkVisible, setWorkVisible] = useState(false);
+//   const [TeamVisible, setTeamVisible] = useState(false);
+
+//   const [isVisible, setIsVisible] = useState(true);
+//   const [lastScrollY, setLastScrollY] = useState(0);
+
+//   /* ---------------- RESPONSIVE ---------------- */
+
+//   useEffect(() => {
+//     const resize = () => setIsMobile(window.innerWidth < 768);
+//     resize();
+//     window.addEventListener("resize", resize);
+//     return () => window.removeEventListener("resize", resize);
+//   }, []);
+
+//   /* ---------------- SCROLL SHOW / HIDE ---------------- */
+
+//   useEffect(() => {
+//     const onScroll = () => {
+//       if (window.scrollY > 300) {
+//         setIsVisible(window.scrollY < lastScrollY);
+//       }
+//       setLastScrollY(window.scrollY);
+//     };
+
+//     window.addEventListener("scroll", onScroll);
+//     return () => window.removeEventListener("scroll", onScroll);
+//   }, [lastScrollY]);
+
+//   /* ---------------- CLICK OUTSIDE ---------------- */
+
+//   useEffect(() => {
+//     const handler = (e) => {
+//       if (navRef.current && !navRef.current.contains(e.target)) {
+//         setProjectVisible(false);
+//         setWorkVisible(false);
+//         setTeamVisible(false);
+//       }
+//     };
+
+//     document.addEventListener("mousedown", handler);
+//     return () => document.removeEventListener("mousedown", handler);
+//   }, []);
+
+//   /* ---------------- HELPERS ---------------- */
+
+//   const closeAll = () => {
+//     setProjectVisible(false);
+//     setWorkVisible(false);
+//     setTeamVisible(false);
+//   };
+
+//   const scrollToBottom = () => {
+//     setTimeout(() => {
+//       window.scrollTo({
+//         top: document.body.scrollHeight,
+//         behavior: "smooth",
+//       });
+//     }, 600);
+//   };
+
+//   /* ====================================================== */
+//   /* ===================== MOBILE ========================= */
+//   /* ====================================================== */
+
+//   if (isMobile) {
+//   return (
+//     <div className="fixed inset-0 z-[100] font-orbitron">
+
+//       {/* ================= TOP BAR ================= */}
+//       <div className="flex justify-between items-center px-4 py-2 bg-black/50 backdrop-blur-lg">
+
+//         {/* Logos */}
+//         <div className="flex items-center gap-3">
+//           <a href="/">
+//             <img src="/Assets/Yellow.png" className="h-10" />
+//           </a>
+
+//           <div className="h-8 w-[1px] bg-white/70" />
+
+//           <a href="https://festnimbus.nith.ac.in">
+//             <img src="/Assets/nimbusLogo.png" className="h-10" />
+//           </a>
+//         </div>
+
+//         {/* Hamburger */}
+//         <button
+//           onClick={() => {
+//             setShowNavbar(!showNavbar);
+//             document.body.classList.toggle("overflow-hidden");
+//           }}
+//           className="w-7 h-7 flex flex-col justify-center"
+//         >
+//           <span
+//             className={`h-[3px] bg-white mb-1 transition-all duration-300 ${
+//               showNavbar && "rotate-45 translate-y-2"
+//             }`}
+//           />
+//           <span
+//             className={`h-[3px] bg-white mb-1 transition-all duration-300 ${
+//               showNavbar && "opacity-0"
+//             }`}
+//           />
+//           <span
+//             className={`h-[3px] bg-white transition-all duration-300 ${
+//               showNavbar && "-rotate-45 -translate-y-2"
+//             }`}
+//           />
+//         </button>
+//       </div>
+
+//       {/* ================= MOBILE MENU ================= */}
+//       <div
+//         className={`fixed top-[56px] left-0 w-full bg-black/90 backdrop-blur-xl
+//         transition-all duration-500
+//         ${showNavbar ? "h-full" : "h-0 overflow-hidden"}`}
+//       >
+//         <div className="flex flex-col px-8 py-10 text-white text-2xl space-y-6">
+
+//           <a href="#home" onClick={closeMenu}>Home</a>
+//           <a href="#about" onClick={closeMenu}>About</a>
+//           <a href="#gallery" onClick={closeMenu}>Gallery</a>
+//           <a href="#cc" onClick={closeMenu}>CC</a>
+//           <a href="#games" onClick={closeMenu}>Games</a>
+//           <a href="#faqs" onClick={closeMenu}>FAQs</a>
+//           <a href="#contact" onClick={closeMenu}>Contact</a>
+
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// function closeMenu() {
+//   setShowNavbar(false);
+//   document.body.classList.remove("overflow-hidden");
+// }
+
+
+         
+
+//   /* ====================================================== */
+//   /* ===================== DESKTOP ======================== */
+//   /* ====================================================== */
+
+//   return (
+//     <div
+//       className={`fixed top-1 left-0 right-0 z-50 transition-all duration-300 font-orbitron
+//       ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
+//     >
+//       {/* Logos */}
+//       <Link href="/" className="absolute left-5 top-2 z-50">
+//         <img src="/Assets/Yellow.png" className="h-12" />
+//       </Link>
+
+//       <Link href="https://festnimbus.nith.ac.in" className="absolute right-5 top-2 z-50">
+//         <img src="/Assets/nimbusLogo.png" className="h-12" />
+//       </Link>
+
+//       {/* Navbar */}
+//       <nav
+//         ref={navRef}
+//         className="
+//           mx-auto mt-6
+//           w-[80%] max-w-[1400px]
+//           bg-black/30 backdrop-blur-md
+//           rounded-2xl shadow-2xl
+//           px-8 py-3
+//           flex justify-center gap-16
+//         "
+//       >
+//         <a href="#home" className="nav-link">Home</a>
+//         <a href="#about" className="nav-link">About</a>
+//         <a href="#gallery" className="nav-link">Gallery</a>
+//         <a href="#cc" className="nav-link">CC</a>
+//         <a href="#games" className="nav-link">Games</a>
+//         <a href="#faqs" className="nav-link">FAQs</a>
+//         <a href="#contact" className="nav-link">Contact</a>
+//         {/* SUBMENUS */}
+//         {ProjectVisible && (
+//           <div className="grid grid-cols-3 gap-6 p-6 bg-black/70 rounded-xl">
+//             {projects.map(item => (
+//               <Link key={item.name} href={item.href} onClick={closeAll}>
+//                 <item.icon className="mx-auto mb-1" />
+//                 {item.name}
+//               </Link>
+//             ))}
+//           </div>
+//         )}
+
+//         {WorkVisible && (
+//           <div className="grid grid-cols-2 gap-6 p-6 bg-black/70 rounded-xl">
+//             {ourwork.map(item => (
+//               <Link key={item.name} href={item.href} onClick={closeAll}>
+//                 <item.icon className="mx-auto mb-1" />
+//                 {item.name}
+//               </Link>
+//             ))}
+//           </div>
+//         )}
+
+//         {TeamVisible && (
+//           <div className="grid grid-cols-2 gap-6 p-6 bg-black/70 rounded-xl">
+//             {ourteam.map(item => (
+//               <Link key={item.name} href={item.href} onClick={closeAll}>
+//                 <item.icon className="mx-auto mb-1" />
+//                 {item.name}
+//               </Link>
+//             ))}
+//           </div>
+//         )}
+
+//         {/* MAIN MENU */}
+//         <div className="flex justify-evenly p-2 text-white">
+//           <p onClick={() => { setProjectVisible(!ProjectVisible); setWorkVisible(false); setTeamVisible(false); }}>Projects</p>
+//           <p onClick={() => { setWorkVisible(!WorkVisible); setProjectVisible(false); setTeamVisible(false); }}>Work</p>
+
+//           <Link href="/" className={router.pathname === "/" ? "active" : ""}>
+//             Home
+//           </Link>
+
+//           <p onClick={() => { setTeamVisible(!TeamVisible); setProjectVisible(false); setWorkVisible(false); }}>Team</p>
+
+//           <button onClick={scrollToBottom}>Contact</button>
+//         </div>
+//       </nav>
+//     </div>
+//   );
+// }
+
+
+
+// "use client";
+
+// import React, { useState, useEffect, useRef } from "react";
+// import Link from "next/link";
+
+// export default function Navigation() {
+//   const [isMobile, setIsMobile] = useState(false);
+//   const [showNavbar, setShowNavbar] = useState(false);
+//   const [isVisible, setIsVisible] = useState(true);
+//   const [lastScrollY, setLastScrollY] = useState(0);
+
+//   const navRef = useRef(null);
+
+//   useEffect(() => {
+//     const handleResize = () => setIsMobile(window.innerWidth < 768);
+//     handleResize();
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (window.scrollY > 300) {
+//         setIsVisible(window.scrollY < lastScrollY);
+//       }
+//       setLastScrollY(window.scrollY);
+//     };
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, [lastScrollY]);
+
+//   const toggleNavbar = () => setShowNavbar(!showNavbar);
+
+//   if (isMobile) {
+//     return (
+//       <div className="fixed top-0 left-0 w-full z-[999] font-orbitron">
+//         {/* Top logos outside navbar */}
+//         <div className="absolute top-4 left-4 z-50">
+//           <Link href="/"><img src="/Assets/Yellow.png" className="h-10" /></Link>
+//         </div>
+//         <div className="absolute top-4 right-4 z-50">
+//           <Link href="https://festnimbus.nith.ac.in"><img src="/Assets/nimbusLogo.png" className="h-10" /></Link>
+//         </div>
+
+//         {/* Hamburger */}
+//         <ul className="flex items-center justify-between px-4 py-2 bg-black/75 backdrop-blur-lg mt-12">
+//           <button onClick={toggleNavbar} className="text-white text-3xl">☰</button>
+//         </ul>
+
+//         {showNavbar && (
+//           <div className="bg-black/90 backdrop-blur-xl min-h-screen px-6 py-10 space-y-8 flex flex-col items-center">
+//             {["Home", "Projects", "Team", "Work", "Contact"].map((item) => (
+//               <p
+//                 key={item}
+//                 className="
+//                   text-3xl font-bold text-white
+//                   transition-all duration-300
+//                   hover:text-transparent
+//                   hover:bg-gradient-to-b
+//                   hover:from-white
+//                   hover:to-purple-900
+//                   hover:bg-clip-text
+//                   shimmer
+//                 "
+//               >
+//                 {item}
+//               </p>
+//             ))}
+//           </div>
+//         )}
+
+//         <style jsx>{`
+//           @keyframes shimmer {
+//             0% { background-position: 0% 50%; }
+//             100% { background-position: 200% 50%; }
+//           }
+//           .shimmer {
+//             background-size: 200% auto;
+//             animation: shimmer 2.8s linear infinite;
+//           }
+//         `}</style>
+//       </div>
+//     );
+//   }
+
+//   /* Desktop */
+//   return (
+//     <div className="fixed top-0 left-0 w-full z-[999] font-orbitron">
+//       {/* Top logos outside navbar */}
+//       <div className="absolute top-4 left-4 z-50">
+//         <Link href="/"><img src="/Assets/Yellow.png" className="h-12" /></Link>
+//       </div>
+//       <div className="absolute top-4 right-4 z-50">
+//         <Link href="https://festnimbus.nith.ac.in"><img src="/Assets/nimbusLogo.png" className="h-12" /></Link>
+//       </div>
+
+//       {/* Navbar */}
+//       <nav
+//         ref={navRef}
+//         className={`
+//           mx-auto mt-6  /* distance from top logos */
+//           w-[80%] max-w-[1400px]
+//           bg-black/30 backdrop-blur-md
+//           rounded-2xl shadow-2xl
+//           px-8 py-3 flex justify-center gap-16
+//           ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
+//           transition-all duration-300
+//         `}
+//       >
+//         {["Home", "Projects", "Team", "Work", "Contact"].map((item) => (
+//           <span
+//             key={item}
+//             className={`
+//               relative cursor-pointer
+//               text-base md:text-lg font-semibold
+//               text-white
+//               transition-all duration-300
+//               hover:text-transparent
+//               hover:bg-gradient-to-b
+//               hover:from-white
+//               hover:to-purple-900
+//               hover:bg-clip-text
+//               shimmer
+//             `}
+//           >
+//             {item}
+//           </span>
+//         ))}
+//       </nav>
+
+//       <style jsx>{`
+//         @keyframes shimmer {
+//           0% { background-position: 0% 50%; }
+//           100% { background-position: 200% 50%; }
+//         }
+//         .shimmer {
+//           background-size: 200% auto;
+//           animation: shimmer 2.8s linear infinite;
+//         }
+//       `}</style>
+//     </div>
+//   );
+// }
+
+

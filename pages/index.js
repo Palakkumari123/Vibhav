@@ -1,71 +1,172 @@
 "use client";
+
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "../Components/UI/Layout";
 import FAQs from "../Components/UI/FAQs";
 import Contact from "../Components/Contact";
-
 import LandingPage from "../Components/LandingPage";
 import CC from "../Components/CC";
 import Gallery from "../Components/Gallery";
 import AboutUs from "../Components/AboutUs";
-
 import GameSection from "../Components/GameSection";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title> Team Vibhav</title>
+        <title>Team Vibhav</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+
         <meta
           name="description"
-          content="Team Vibhav is the Departmental team of Electronics & Communication Engineering Department which works for Nimbus-Annual Technical Festival of National Institute of Technology, Hamirpur"
+          content="Team Vibhav is the Departmental team of Electronics & Communication Engineering Department which works for Nimbus"
         />
         <meta
           name="keywords"
-          content="Projects , Events , Workshops , Our Team , Our Work , Alumni "
+          content="Projects, Events, Workshops, Our Team, Our Work, Alumni"
         />
-        <link rel="icon" href="/favicon.ico?" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main>
         <Layout>
-          {/* Background */}
-          <div className="absolute h-screen w-screen top-0 overflow-hidden inset-0"></div>
-          <div className="z-50 flex flex-col  ">
-            {/* Home Section */}
+          <div className="flex flex-col">
+
+            {/* ================= HOME ================= */}
             <section
               id="home"
-              className="bg-cover h-screen bg-center relative z-0 pb-12 w-full backdrop-blur-2xl wave-contrast"
+              className="relative h-screen w-full overflow-hidden"
             >
-              {/* Background Video */}
-              <video
-                src="/Assets/backgroundVd.mp4"   
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+              <Image
+                src="/images/background2layer.png"
+                alt="Background"
+                fill
+                className="object-cover"
+                priority
               />
 
-              {/* Smooth Black Fade Effect */}
-              
+              {/* dark overlay (optional) */}
+              <div className="absolute inset-0 bg-black/40 z-10" />
 
-              <LandingPage />
-              <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none"></div>
+              <div className="relative z-20">
+                <LandingPage />
+              </div>
             </section>
 
-            <section className="">
+            {/* ================= ABOUT ================= */}
+            <section id="about">
               <AboutUs />
+            </section>
 
-              {/* Other Sections */}
+            {/* ================= GALLERY ================= */}
+            <section id="gallery">
               <Gallery />
+            </section>
+
+            {/* ================= CC ================= */}
+            <section id="cc">
               <CC />
+            </section>
+
+            {/* ================= GAMES ================= */}
+            <section id="games">
               <GameSection />
+            </section>
+
+            {/* ================= FAQ ================= */}
+            <section id="faqs">
               <FAQs />
+            </section>
+
+            {/* ================= CONTACT ================= */}
+            <section id="contact">
               <Contact />
             </section>
+
           </div>
         </Layout>
       </main>
     </>
   );
 }
+
+
+
+// "use client";
+
+// import Head from "next/head";
+// import Image from "next/image";
+// import Layout from "../Components/UI/Layout";
+// import FAQs from "../Components/UI/FAQs";
+// import Contact from "../Components/Contact";
+// import LandingPage from "../Components/LandingPage";
+// import CC from "../Components/CC";
+// import Gallery from "../Components/Gallery";
+// import AboutUs from "../Components/AboutUs";
+// import GameSection from "../Components/GameSection";
+
+// export default function Home() {
+//   return (
+//     <>
+//       <Head>
+//         <title>Team Vibhav</title>
+//         <link rel="preconnect" href="https://fonts.googleapis.com" />
+//         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+//         <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet" />
+//         <meta
+//           name="description"
+//           content="Team Vibhav is the Departmental team of Electronics & Communication Engineering Department which works for Nimbus-Annual Technical Festival of National Institute of Technology, Hamirpur"
+//         />
+//         <meta
+//           name="keywords"
+//           content="Projects , Events , Workshops , Our Team , Our Work , Alumni"
+//         />
+//         <link rel="icon" href="/favicon.ico" />
+//       </Head>
+
+//       <main>
+//         <Layout>
+//           <div className="flex flex-col">
+
+//             {/* Home Section */}
+//             <section id="home" className="relative h-screen w-full ">
+//               {/* Background Image */}
+//               <Image
+//                 src="/images/background2layer.png"
+//                 alt="Background"
+//                 fill
+//                 className="object-cover"
+//                 priority
+//                 // style={{filter: 'brightness(0.1)'}}
+//               />
+
+//               {/* Landing Page */}
+//               <LandingPage />
+//             </section>
+
+//             {/* Other Sections */}
+//             <section>
+//               <AboutUs />
+//               <Gallery />
+//               <CC />
+//               <GameSection />
+//               <FAQs />
+//               <Contact />
+//             </section>
+//           </div>
+//         </Layout>
+//       </main>
+//     </>
+//   );
+// }
+
+
+
+

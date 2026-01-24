@@ -1,3 +1,66 @@
+// "use client";
+
+// import { useState, useEffect } from "react";
+
+// export default function Loading() {
+//   const fonts = [
+//     "Arial, sans-serif",
+//     "Georgia, serif",
+//     "Courier New, monospace",
+//     "Lucida Console, monospace",
+//     "Times New Roman, serif",
+//     "Verdana, sans-serif",
+//     "Comic Sans MS, cursive",
+//     "Impact, sans-serif",
+//   ];
+
+//   const [loading, setLoading] = useState(true);
+
+//   const AnimatedText = ({ text }) => {
+//     const [fontStyles, setFontStyles] = useState([]);
+
+//     useEffect(() => {
+//       const interval = setInterval(() => {
+//         setFontStyles(
+//           text.split("").map(
+//             () => fonts[Math.floor(Math.random() * fonts.length)]
+//           )
+//         );
+//       }, 250);
+
+//       return () => clearInterval(interval);
+//     }, [text]);
+
+//     return (
+//       <div className="z-10 flex space-x-1 sm:text-5xl text-4xl font-bold text-white">
+//         {text.split("").map((char, index) => (
+//           <span key={index} style={{ fontFamily: fontStyles[index] }}>
+//             {char}
+//           </span>
+//         ))}
+//       </div>
+//     );
+//   };
+
+//   if (!loading) return null;
+
+//   return (
+//     <div className="relative flex items-center justify-center h-screen bg-black overflow-hidden">
+      
+//       {/* 🎥 12 second video */}
+//       <video
+//         src="/loading.mp4.mp4"
+//         autoPlay
+//         muted
+//         playsInline
+//         onEnded={() => setLoading(false)} // ⭐ KEY FIX
+//         className="absolute inset-0 w-full h-full object-cover"
+//       />
+
+//       <AnimatedText text="Team Vibhav" />
+//     </div>
+//   );
+// }
 import Image from "next/image";
 
 import { useState, useEffect } from "react";
