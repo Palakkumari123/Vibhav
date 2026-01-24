@@ -1,6 +1,6 @@
 "use client";
-import CC1 from "../public/Assets/TeamPhotos/CC/VISHESH Chaddha.jpg";
-import CC2 from "../public/Assets/TeamPhotos/CC/Sahil.jpg";
+import CC1 from "../public/Assets/TeamPhotos/CC/Bhavneet Singh.webp";
+import CC2 from "../public/Assets/TeamPhotos/CC/Shresth Maheshwari.webp";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
@@ -9,116 +9,107 @@ import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { VscGithub } from "react-icons/vsc";
 import Link from "next/link";
 
-function Card({ name, image ,github, linkdin}) {
+function Card({ name, image, github, linkdin }) {
   return (
-    <Fade bottom distance="30px">
-      <motion.div className="flex max-w-sm flex-col gap-12 rounded-[20px] p-5 bg-gray-600/30 bg-opacity-30 shadow-[0_20px_40px_rgba(0,0,0,.4)] justify-end items-center relative">
-        <div className="relative mx-auto w-full max-w-md overflow-hidden">
-          <div className="relative w-full ">
-            <Image
-              src={image}
-              className="w-full rounded-xl rounded-b-xl"
-              alt="Mobile wire frame"
-              loading="lazy"
-            />
-            {/* Gradient Overlay at Bottom */}
-            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black to-transparent rounded-xl"></div>
+    <Fade bottom distance="20px">
+      
+      <motion.div 
+        whileHover={{ y: -15, scale: 1.02 }}
+        className="group relative flex w-[380px] h-[550px] flex-col items-center justify-start overflow-hidden rounded-[30px] border border-white/10 bg-black/20 p-6 shadow-2xl backdrop-blur-md transition-all duration-500 hover:border-cyan-500/50"
+      >
+       
+        <div className="absolute -inset-1 z-0 bg-gradient-to-br from-purple-600/10 to-cyan-500/10 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
+        
+      
+        <div className="absolute inset-0 z-0 opacity-5 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+
+       
+        <div className="relative z-10 w-full h-[360px] overflow-hidden rounded-2xl border border-white/5">
+          <Image
+            src={image}
+            fill
+            className="object-cover transition-all duration-700 ease-in-out group-hover:scale-110"
+            alt={name}
+          />
+          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+        </div>
+
+       
+        <div className="relative z-20 w-full pt-8 pb-2 text-center">
+          <h2 className="mb-5 font-arvo text-2xl font-bold tracking-tight text-white drop-shadow-md">
+            {name}
+          </h2>
+
+          <div className="flex justify-center gap-8 items-center">
+            <Link href={linkdin} target="_blank">
+              <TiSocialLinkedinCircular className="h-12 w-12 text-gray-400 hover:text-cyan-400 transition-all" />
+            </Link>
+            <Link href={github} target="_blank">
+              <VscGithub className="h-8 w-8 text-gray-400 hover:text-purple-400 transition-all" />
+            </Link>
           </div>
         </div>
 
-        {/* Name & Icons with Background */}
-        <div className="text-center absolute bottom-4 flex flex-col-reverse bg-opacity-30 shadow-xl ">
-          <div className="flex justify-center gap-5 p-2 items-center">
-            <Link href={linkdin}>
-            <TiSocialLinkedinCircular className="w-[2.6rem] h-[2.6rem] text-gray-300" />
-            </Link>
-            <Link href={github}>
-            <VscGithub className="w-[1.9rem] h-[1.9rem] text-gray-300" />
-            </Link>
-          </div>
-          <h2 className="text-white text-2xl font-chakra">{name}</h2>
-        </div>
+       
+        <div className="absolute top-3 left-3 h-6 w-6 border-t-2 border-l-2 border-white/10 group-hover:border-cyan-500/50 transition-colors"></div>
+        <div className="absolute bottom-3 right-3 h-6 w-6 border-b-2 border-r-2 border-white/10 group-hover:border-purple-500/50 transition-colors"></div>
       </motion.div>
     </Fade>
   );
 }
 
-
-export default function CC() {
-  const [isLaptop, setIsLaptop] = useState(null); // Initially `null` to prevent mismatches
+export default function TechCitySection() {
+  const [isLaptop, setIsLaptop] = useState(null);
 
   useEffect(() => {
-    const checkScreenSize = () => {
-      setIsLaptop(window.innerWidth >= 1024);
-    };
-
-    checkScreenSize(); // Run once on mount
+    const checkScreenSize = () => setIsLaptop(window.innerWidth >= 1024);
+    checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
-
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   return (
-    <div className="mx-auto">
-      <div className="py-7 sm:py-20">
+    <section className="relative min-h-screen w-full overflow-hidden bg-transparent">
+      
+      
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_95%)]"></div>
+      </div>
+
+      <div className="relative z-10 mx-auto py-24">
         <motion.div
-          className="flex flex-col gap-14 text-white"
-          initial={{ opacity: 0.2 }}
+          className="flex flex-col gap-20 text-white"
+          initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <Fade>
-            <motion.div
-              className="flex flex-col place-items-center gap-4 text-center"
-              initial={{ opacity: 0.2, y: -50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              <h2 className="w-full max-w-6xl font-batman text-4xl  md:text-5xl lg:text-7xl bg-clip-text  text-gray-200">
-                CLUB COORDINATOR
-              </h2>
+          <div className="flex flex-col items-center gap-6 text-center">
+            <h2 className="w-full max-w-6xl font-batman text-4xl md:text-6xl lg:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-400">
+              CLUB COORDINATOR
+            </h2>
+            <p className="w-full px-4 text-xl sm:text-3xl text-gray-400 font-arvo lg:whitespace-nowrap tracking-wide">
+              Streamlining operations and maximizing efficiency.
+            </p>
+          </div>
 
-              <p className="w-full max-w-lg px-2 text-xl sm:text-2xl text-gray-400 md:max-w-xl font-chakra">
-                Streamlining operations and maximizing efficiency.
-              </p>
-            </motion.div>
-          </Fade>
-
-          {/* Wait until isLaptop is determined before applying animations */}
           {isLaptop !== null && (
-            <motion.div
-              className="flex flex-col items-center justify-center lg:flex-row gap-20 p-1"
-              initial={isLaptop ? { opacity: 0.2, scale: 0.5 } : {}}
-              whileInView={isLaptop ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.4 }}
-            >
-              <motion.div
-                initial={
-                  isLaptop ? { opacity: 0.5, scale: 0.5 } : { scale: 0.6 }
-                }
-                whileInView={
-                  isLaptop ? { opacity: 1, scale: 1 } : { scale: 1 }
-                }
-                transition={{ duration: 0.4 }}
-              >
-                <Card name="Vishesh Chadha" image={CC1} github="https://github.com/Vishesh0718" linkdin= "https://www.linkedin.com/in/vishesh-chadha-a9172525a"/>
-              </motion.div>
-              <motion.div
-                initial={
-                  isLaptop ? { opacity: 0.5, scale: 0.5 } : { scale: 0.6 }
-                }
-                whileInView={
-                  isLaptop ? { opacity: 1, scale: 1 } : { scale: 1 }
-                }
-                transition={{ duration: 0.4 }}
-              >
-                <Card name="Sahil Atri" image={CC2} github="https://github.com/sahilatri-91" linkdin= "https://www.linkedin.com/in/sahil-atri-279940263"/>
-              </motion.div>
-            </motion.div>
+            <div className="flex flex-col items-center justify-center gap-16 lg:flex-row lg:gap-28 p-4">
+              <Card 
+                name="Bhavneet Singh" 
+                image={CC1} 
+                github="https://github.com/bhavneet1512" 
+                linkdin="https://www.linkedin.com/in/bhavneet-singh1512"
+              />
+              <Card 
+                name="Shresth Maheshwari" 
+                image={CC2} 
+                github="https://github.com/shresth2405" 
+                linkdin="https://www.linkedin.com/in/shresth-maheshwari-1a8a7028b"
+              />
+            </div>
           )}
-        
         </motion.div>
       </div>
-    </div>
+    </section>
   );
-}
+} 

@@ -1,61 +1,94 @@
-import faq from "../../data/faq.json";
+"use client";
+import faqData from "../../data/faq.json";
 import { useState } from "react";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
+import { motion, AnimatePresence } from "framer-motion";
 
-import { HiPlusCircle } from "react-icons/hi";
-import { HiMinusCircle } from "react-icons/hi";
-import { motion } from "framer-motion";
 export default function FAQs() {
-  const [faqs, setFaqs] = useState([...faq.faqs]);
+  const [faqs, setFaqs] = useState([...faqData.faqs]);
 
   const toggleFAQ = (index) => {
-    setFaqs((prevFaqs) => {
-      return prevFaqs.map((faq, i) => {
+    setFaqs((prevFaqs) =>
+      prevFaqs.map((faq, i) => {
         if (i === index) {
           return { ...faq, isOpen: !faq.isOpen };
         } else {
           return { ...faq, isOpen: false };
         }
-      });
-    });
+      })
+    );
   };
 
   return (
-    <div className="p-1">
-    <motion.div className="container text-gray-200 z-10 max-w-screen-lg mx-auto my-20 rounded-[20px] p-8 bg-gray-600/30 bg-opacity-30 shadow-[0_20px_40px_rgba(0,0,0,.4)] "
-    initial={{ opacity: 0, y:50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: .7 }}
-    >
-      <h2 className="sm:text-4xl text-2xl text-center  font-batman">FAQs</h2>
-      <div className="leading-loose  mt-6 ">
-        {faqs.map((faq, index) => (
-          <div key={faq.question}>
-            <button
-              className={`w-full font-bold py-3 flex justify-between items-center mt-4 ${index !== faqs.length - 1 && "text-gray-200 border-b border-gray-400"}`}
-              onClick={() => toggleFAQ(index)}
-            >
-              <div className="text-base sm:text-lg   font-sans text-left">
-              {faq.question}
-              </div>
-              {faq.isOpen ? (
-                <div>
-                <HiMinusCircle className="w-7 h-7 " />
-              </div>
-              ) : (
-                <div>
-                  <HiPlusCircle className="w-7 h-7" />
+    <div className="p-4 sm:p-12 relative z-10 bg-transparent">
+      <motion.div 
+        className="max-w-screen-lg mx-auto my-20"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
+        <div className="relative">
+          
+         
+          <svg className="absolute -top-3 -left-3 w-32 h-32 z-30 pointer-events-none filter drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]" viewBox="0 0 100 100" fill="none">
+            <path d="M 100 8 L 40 8 C 22 8 8 22 8 40 L 8 100" stroke="#9333ea" strokeWidth="10" strokeLinecap="round" />
+          </svg>
+          
+          <svg className="absolute -bottom-3 -right-3 w-32 h-32 z-30 pointer-events-none filter drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]" viewBox="0 0 100 100" fill="none">
+            <path d="M 0 92 L 60 92 C 78 92 92 78 92 60 L 92 0" stroke="#06b6d4" strokeWidth="10" strokeLinecap="round" />
+          </svg>
+
+          <div className="bg-black/40 backdrop-blur-xl border border-white/10 rounded-[40px] p-6 md:p-12 shadow-[0_0_50px_rgba(0,0,0,0.8)] relative z-10">
+            
+            <h2 className="text-3xl sm:text-5xl text-center font-batman uppercase tracking-[0.25em] mb-14 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">
+              FAQs
+            </h2>
+
+            <div className="space-y-6">
+              {faqs.map((faq, index) => (
+                <div key={index} className="flex flex-col">
+                  <button
+                    className={`w-full py-5 px-8 flex justify-between items-center transition-all duration-300 
+                      bg-[#1a1429]/60 hover:bg-[#251b3d]/80 
+                      border border-white/5 hover:border-cyan-400/40
+                      ${faq.isOpen 
+                        ? "rounded-t-2xl border-b-transparent ring-1 ring-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.1)]" 
+                        : "rounded-2xl hover:shadow-[0_0_15px_rgba(168,85,247,0.1)]"} 
+                      group`}
+                    onClick={() => toggleFAQ(index)}
+                  >
+                    
+                    
+                  <div className="text-xs sm:text-sm font-arvo font-bold text-left text-gray-200 tracking-[0.05em] leading-relaxed group-hover:text-cyan-300 transition-colors">
+                   {faq.question}
+                       </div>
+                    
+                    <div className={`transition-all transform duration-300 ${faq.isOpen ? "text-cyan-400" : "text-purple-400"}`}>
+                      {faq.isOpen ? <HiChevronUp className="w-5 h-5" /> : <HiChevronDown className="w-5 h-5" />}
+                    </div>
+                  </button>
+
+                  <AnimatePresence>
+                    {faq.isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="overflow-hidden bg-[#1a1429]/40 rounded-b-2xl border-x border-b border-cyan-500/30"
+                      >
+                        <div className="p-8 text-gray-400 text-sm sm:text-base font-sans leading-relaxed border-t border-white/5">
+                          {faq.answer}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-              )}
-            </button>
-            <div
-              className={`text-gray-300 text-base sm:text-md  leading-6 font-sans mt-2 transition-all duration-500  ${faq.isOpen ? "h-auto opacity-100" : "h-0 opacity-0"}`}
-            >
-              {faq.answer}
+              ))}
             </div>
           </div>
-        ))}
-      </div>
-    </motion.div>
+        </div>
+      </motion.div>
     </div>
   );
 }

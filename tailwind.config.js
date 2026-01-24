@@ -12,6 +12,7 @@ module.exports = {
         grace: ["grace", "sans-serif"],
         chakra: ["Chakra Petch", "sans-serif"],
         chakraBold: ["Chakra Petch Bold", "sans-serif"],
+        arvo: ["Arvo", "serif"],
       },
       keyframes: {
         glitter: {

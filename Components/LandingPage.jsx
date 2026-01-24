@@ -10,10 +10,10 @@ export default function LandingPage() {
   return (
     <header className="relative h-screen w-full overflow-hidden">
 
-      {/* ===== FULL SCREEN BLACK OVERLAY ===== */}
-      <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+     
+      <div className="absolute inset-0 bg-black/55 z-10 pointer-events-none" />
 
-      {/* ================= TEAM VIBHAV LOGO ================= */}
+     
        <div className="absolute top-28 left-1/2 -translate-x-1/2 z-50 h-[240px] flex items-center">
   <Image
     src="/images/vibhavfont.png"
@@ -30,7 +30,7 @@ export default function LandingPage() {
 
 
 
-      {/* ================= BUILDINGS ================= */}
+    
       <div className="absolute bottom-0 w-full h-4/5 overflow-hidden z-0">
         <div className="flex w-[200%] h-full animate-scroll">
           <div className="relative w-1/2 h-full">
@@ -52,13 +52,13 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* ================= ROAD ================= */}
+     
       <div className="absolute bottom-0 w-full h-20 z-20 pointer-events-none overflow-visible">
 
-        {/* Road base */}
+      
         <div className="absolute inset-0 road-base z-10" />
 
-        {/* Moving black road layer */}
+
         <div className="absolute bottom-0 left-0 w-full h-[300px] z-30 overflow-hidden">
           <div className="flex w-[200%] h-full animate-scroll-fast">
             <div className="relative w-1/2 h-full">
@@ -81,7 +81,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* ================= CAR ================= */}
+    
       <div className="absolute bottom-[-25px] left-1/4 z-15 pointer-events-none">
         <Image
           src="/images/car.png"
@@ -92,7 +92,7 @@ export default function LandingPage() {
         />
       </div>
 
-      {/* ================= CONTENT ================= */}
+    
       <div className="relative z-50 h-full flex flex-col items-center justify-center text-center text-white px-4">
 
         <div className="absolute top-80 left-1/2 transform -translate-x-1/2
@@ -120,7 +120,6 @@ export default function LandingPage() {
         <FloatingGameInfo />
       </div>
 
-      {/* ================= STYLES ================= */}
       <style jsx>{`
         @keyframes scroll {
           0% {
