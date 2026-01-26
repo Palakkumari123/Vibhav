@@ -1,14 +1,13 @@
+"use client";
 import { useEffect, useState } from "react";
-import WorkCard, {
-  SkeletonWorkCard,
-} from "../../../Components/UI/cards/WorkCard";
+import WorkCard, { SkeletonWorkCard } from "../../../Components/UI/cards/WorkCard";
 import ourWorkData from "../../../data/ourwork.json";
 import Layout from "../../../Components/UI/Layout";
 
-export default function Home() {
+export default function PreviousYearWork() {
   const [events, setEvents] = useState([]);
   const [workshops, setWorkshops] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Add loading state
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,56 +19,54 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="container relative text-center mx-auto mt-0 p-1 pt-32 text-white ">
-      <div className="fixed bottom-0 top-0 left-0 w-full  bg-black/70 pointer-events-none z-[-1]"></div>
-      <video
+      <div className="relative min-h-screen text-white pt-24 sm:pt-32 p-4">
+        
+        {/* Background Overlay and Video */}
+        <div className="fixed inset-0 bg-black/75 pointer-events-none z-[-1]"></div>
+        <video
           src="/Assets/backvd.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
+          autoPlay loop muted playsInline
           className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
         />
-        <h1 className="sm:text-5xl text-3xl  font-batman ">Our Work</h1>
 
-        <div className="mb-3 md:p-5 xl:p-10 mt-5">
-          <div className="sm:text-3xl text-2xl  pb-5 mb-5 font-chakraBold">
-            Previous Year Events
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-items-center max-xl:gap-16 px-0">
-            {isLoading
-              ? Array.from({ length: 2 }).map((_, index) => (
-                  <SkeletonWorkCard key={index} />
-                ))
-              : events.map((item, index) => (
-                  <WorkCard
-                    key={item.id}
-                    index={index}
-                    work={item}
-                    year="previous-year"
-                    type="events"
-                  />
-                ))}
-          </div>
-        </div>
+        <div className="container mx-auto text-center">
+          {/* Main Page Title */}
+          <h1 className="text-4xl sm:text-6xl font-batman tracking-normal uppercase mb-16 text-[#5b8ef3] drop-shadow-[0_0_15px_rgba(91,142,243,0.5)]">
+            Our Work
+          </h1>
 
-        <div className="mt-7 mb-4 pt-7 md:p-5 xl:p-10">
-          <div className="sm:text-3xl text-2xl font-bold pb-5 font-chakraBold">
-            Previous Year Workshops
+          {/* SECTION 1: PREVIOUS YEAR EVENTS (Takes up the first view) */}
+          <div className="min-h-[85vh] flex flex-col items-center justify-start mb-20">
+            <div className="inline-block mb-12">
+              <h2 className="sm:text-4xl text-2xl font-chakraBold text-[#5b8ef3] uppercase tracking-normal px-4 drop-shadow-[0_0_10px_rgba(91,142,243,0.5)]">
+                Previous Year Events
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 justify-items-center px-4 w-full">
+              {isLoading
+                ? Array.from({ length: 2 }).map((_, i) => <SkeletonWorkCard key={i} />)
+                : events.map((item) => (
+                    <WorkCard key={item.id} work={item} year="previous-year" type="events" />
+                  ))}
+            </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-items-center max-xl:gap-16  mt-5">
-            {isLoading
-              ? Array.from({ length: 3 }).map((_, index) => (
-                  <SkeletonWorkCard key={index} />
-                ))
-              : workshops.map((item, index) => (
-                  <WorkCard
-                    key={item.id}
-                    work={item}
-                    year="previous-year"
-                    type="workshops"
-                  />
-                ))}
+
+          {/* SECTION 2: PREVIOUS YEAR WORKSHOPS (Visible only after sliding down) */}
+          <div className="min-h-[85vh] flex flex-col items-center justify-start pb-20">
+            <div className="inline-block mb-12">
+              <h2 className="sm:text-4xl text-2xl font-chakraBold text-[#5b8ef3] uppercase tracking-normal px-4 drop-shadow-[0_0_10px_rgba(91,142,243,0.5)]">
+                Previous Year Workshops
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 justify-items-center px-4 w-full">
+              {isLoading
+                ? Array.from({ length: 3 }).map((_, i) => <SkeletonWorkCard key={i} />)
+                : workshops.map((item) => (
+                    <WorkCard key={item.id} work={item} year="previous-year" type="workshops" />
+                  ))}
+            </div>
           </div>
         </div>
       </div>
