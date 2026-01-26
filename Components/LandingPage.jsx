@@ -11,7 +11,7 @@ export default function LandingPage() {
     <header className="relative h-screen w-full overflow-hidden">
 
      
-      <div className="absolute inset-0 bg-black/55 z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none" />
 
      
        <div className="absolute top-28 left-1/2 -translate-x-1/2 z-50 h-[240px] flex items-center">
