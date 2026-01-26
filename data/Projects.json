@@ -61,7 +61,7 @@
       "images": "/Assets/Projects/AI/tablet-1.webp"
     }
   ],
-  "IoT": [
+  "IOT": [
     {
       "name": "Automatic Drug Dispenser",
       "content": "The Automatic Drug Dispenser (ADD) revolutionizes medication management, ensuring timely and accurate dispensing for elderly and chronic patients. Integrated with ABHA IDs, it enables digital prescriptions and real-time tracking via a QR-based system. Voice-guided dosage instructions enhance accessibility, benefiting visually impaired users. By automating dispensing, ADD reduces pharmacy wait times and minimizes human errors in medication. It promotes eco-friendly, paperless healthcare with secure digital records. ADD is a game-changer, enhancing treatment adherence and making healthcare smarter and more efficient.",

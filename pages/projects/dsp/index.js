@@ -8,7 +8,7 @@ const Page = () => {
   const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
-    setProjectList(projects["EMBEDDED SYSTEMS"]);
+    setProjectList(projects["DSP"]);
     const timer = setTimeout(() => {
       setLoading(false);
     }, 500);
@@ -30,9 +30,10 @@ const Page = () => {
 
         <div className="pt-32 bg-black/50 text-center z-50 font-batman">
           {/* Heading */}
-          <div className="sm:text-5xl text-3xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-400 text-center font-extrabold mb-10 z-50 font-batman">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-10 font-batman tracking-widest uppercase 
+              text-[#3f7aff] drop-shadow-[0_0_15px_rgba(63,122,255,0.9)]">
             Projects
-          </div>
+          </h1>
           <span className="sm:text-3xl text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-300 to-purple-400 text-center font-chakraBold z-50">
             DSP
           </span>
