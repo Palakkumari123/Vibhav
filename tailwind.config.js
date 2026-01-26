@@ -13,6 +13,8 @@ module.exports = {
         chakra: ["Chakra Petch", "sans-serif"],
         chakraBold: ["Chakra Petch Bold", "sans-serif"],
         arvo: ["Arvo", "serif"],
+        michroma: ["Michroma", "sans-serif"],
+
       },
       keyframes: {
         glitter: {

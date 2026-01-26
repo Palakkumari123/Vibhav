@@ -1,98 +1,58 @@
-
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-
 import { RiLinkedinFill } from "react-icons/ri";
-
-
 
 export function SkeletonProfileCard() {
   return (
-    <div className="relative bg-gray-200 rounded-xl shadow-lg w-72 h-96 overflow-hidden animate-pulse">
-      {/* Background Image Skeleton */}
-      <div className="absolute inset-0 bg-gray-300"></div>
-
-      {/* Rounded Top Center Image Skeleton */}
-      <div className="absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 rounded-full bg-gray-400 border-4 border-gray-200"></div>
-
-      {/* Blurred Text Container Skeleton */}
-      <div className="absolute bottom-0 w-full p-4 text-gray-500 backdrop-blur-md">
-        <div className="w-3/4 h-4 bg-gray-400 rounded mb-2 mx-auto"></div>
-        <div className="w-1/2 h-3 bg-gray-300 rounded mx-auto"></div>
-        <div className="flex justify-center space-x-4 mt-4">
-          <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
-          <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
-        </div>
-      </div>
+    <div className="relative bg-[#12181d] border-2 border-zinc-800/50 rounded-2xl w-[80vw] sm:w-72 h-[380px] sm:h-[450px] animate-pulse">
+      <div className="m-4 h-48 sm:h-64 bg-zinc-800/20 rounded-xl"></div>
     </div>
   );
 }
 
+function ProfileCard({ name, position, profileImg, githubLink, linkdinLink }) {
+  const brandBlue = "#5b8ef3"; 
 
-
-
-function ProfileCard({
-  name,
-  position,
-  profileImg,
-  backgroundImg,
-  githubLink,
-  linkdinLink,
-}) {
   return (
-    <div className="relative bg-white rounded-xl shadow-lg w-72 h-96 overflow-hidden group">
-      {/* Background Image */}
-      <div className="absolute inset-0 transition-all duration-500 ease-in-out group-hover:bg-gradient-to-t from-black/70 to-transparent group-hover:blur-xl overflow-hidden">
-        <img
-          src={backgroundImg}
-          alt='photo'
-          className="w-full h-full object-cover"
-        />
+    <div className="group relative bg-[#12181d] border-2 border-zinc-700/50 rounded-2xl w-[80vw] sm:w-72 h-auto pb-4 sm:h-[450px] overflow-hidden cursor-pointer transition-all duration-500 hover:border-[#5b8ef3] hover:shadow-[0_0_30px_rgba(91,142,243,0.3)]">
+      
+      {/* HUD Grid Overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none transition-opacity duration-500 opacity-0 group-hover:opacity-10"
+        style={{ 
+            backgroundImage: `linear-gradient(${brandBlue} 1px, transparent 1px), linear-gradient(90deg, ${brandBlue} 1px, transparent 1px)`, 
+            backgroundSize: '20px 20px' 
+        }}
+      ></div>
+
+      {/* Image Container - Size reduced for mobile */}
+      <div className="relative m-3 sm:m-4 overflow-hidden rounded-xl h-56 sm:h-64 bg-zinc-900 border border-white/5">
+        <img src={profileImg} alt={name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
       </div>
 
-      {/* Rounded Top Center Image */}
-      <div className="absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-lg opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:overflow-hidden transition-all duration-500 ease-in-out">
-        <img
-          src={profileImg}
-          alt={`${name}'s Profile`}
-          className="w-full h-full object-cover"
-        />
-      </div>
+      {/* Info Section */}
+      <div className="flex flex-col items-center px-4 mt-1 relative z-10">
+        <h1 className="text-lg sm:text-xl font-bold text-center font-chakraBold text-zinc-100 uppercase">
+          {name}
+        </h1>
+        
+        {/* EXECUTIVE MEMBER - Increased size as requested */}
+        <p className="uppercase text-[11px] sm:text-sm tracking-[0.2em] font-chakraBold mt-1" style={{ color: brandBlue }}>
+          {position}
+        </p>
 
-      {/* Blurred Text Container */}
-      <div className="absolute bottom-0 w-full group-hover:p-5 backdrop-blur-md p-2 text-white transition-all duration-500 ease-in-out group-hover:flex group-hover:flex-col group-hover:items-center overflow-hidden">
-        <h1 className="text-lg font-semibold">{name}</h1>
-        <p className="text-sm text-gray-300">{position}</p>
-        <div className="flex justify-center items-center space-x-4  pt-3">
-          <div>
-            {githubLink && (
-              <a
-                href={githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gray-400 block"
-              >
-           
-                <FaGithub className="w-[1.6rem] h-[1.6rem]"/>
-
-          
-              </a>
-            )}
-          </div>
-          <div>
-            {linkdinLink && (
-              <a
-                href={linkdinLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gray-400 block"
-              >
-           
-              <RiLinkedinFill  className="w-7 h-7 "/>
-               
-              </a>
-            )}
-          </div>
+        {/* Social Links - Compact for mobile */}
+        <div className="flex justify-center items-center space-x-4 sm:space-x-6 mt-4 sm:mt-6">
+          {linkdinLink && (
+            <a href={linkdinLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-zinc-600 text-white transition-all hover:bg-[#5b8ef3] hover:text-black">
+              <RiLinkedinFill className="w-4 h-4 sm:w-5 sm:h-5" />
+            </a>
+          )}
+          {githubLink && (
+            <a href={githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-zinc-600 text-white transition-all hover:bg-[#5b8ef3] hover:text-black">
+              <FaGithub className="w-4 h-4 sm:w-5 sm:h-5" />
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -30,23 +30,23 @@ export default function True3DPhotoFrameCarousel() {
     return () => clearInterval(id);
   }, []);
 
-  // Circular index helper
+  
   const getCircularIndex = (i) => (i + images.length) % images.length;
 
   return (
     <div className="relative w-full h-[400px] bg-black overflow-hidden">
-      {/* CAMERA */}
+     
       <div className="absolute inset-0 flex items-center justify-center [perspective:1600px]">
 
         <AnimatePresence initial={false}>
-          {/* Always render 5 frames: center + 2 left + 2 right */}
+       
           {[...Array(5)].map((_, i) => {
-            const offset = i - 2; // center at i=2
+            const offset = i - 2; 
             const imgIndex = getCircularIndex(index + offset);
             const isCenter = offset === 0;
 
-            // Reduced distance for side frames
-            const xOffset = offset * 180; // reduced from 220 → 180
+       
+            const xOffset = offset * 180;
 
             return (
               <motion.div
@@ -62,10 +62,10 @@ export default function True3DPhotoFrameCarousel() {
                   opacity: Math.abs(offset) > 2 ? 0 : 1,
                 }}
               >
-                {/* ================= FRAME ================= */}
+              
                 <div className="relative w-[160px] h-[240px] [transform-style:preserve-3d]">
 
-                  {/* BACK BLACK SHEET WITH WHITE BORDER + PURPLE GLOW */}
+                 
                   <div
                     className="absolute -inset-[3px] bg-[#111111] rounded-md border border-white"
                     style={{
@@ -78,7 +78,6 @@ export default function True3DPhotoFrameCarousel() {
                     }}
                   />
 
-                  {/* FRONT IMAGE */}
                   <img
                     src={images[imgIndex]}
                     alt=""

@@ -36,7 +36,7 @@ function Card({ name, image, github, linkdin }) {
 
        
         <div className="relative z-20 w-full pt-8 pb-2 text-center">
-          <h2 className="mb-5 font-arvo text-2xl font-bold tracking-tight text-white drop-shadow-md">
+          <h2 className="mb-5 font-arvo text-2xl font-medium tracking-tight text-white drop-shadow-md">
             {name}
           </h2>
 
