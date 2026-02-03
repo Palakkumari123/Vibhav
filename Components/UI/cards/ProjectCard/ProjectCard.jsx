@@ -15,16 +15,16 @@ export const SkeletonProjectCard = () => {
         border border-purple-700/30
         rounded-xl
         overflow-hidden
-        shadow-[0_0_20px_#9b59b644,0_0_20px_#00ffff22,0_0_40px_#9b59b644,0_0_40px_#00ffff22]
+        shadow-[0_0_20px_#9b59b644,0_0_40px_#9b59b644]
       "
     >
       {/* grid bg */}
-      <div className="absolute inset-0 bg-[linear-gradient(#9b59b622_1px,transparent_1px),linear-gradient(90deg,#00ffff11_1px,transparent_1px)] bg-[size:24px_24px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(#9b59b622_1px,transparent_1px),linear-gradient(90deg,#9b59b622_1px,transparent_1px)] bg-[size:24px_24px]" />
 
       <div className="relative p-5">
-        <div className="h-[260px] bg-gradient-to-r from-purple-500/20 via-cyan-300/20 to-purple-500/20 animate-pulse rounded-md" />
-        <div className="mt-4 h-5 w-3/4 mx-auto bg-gradient-to-r from-purple-500/20 via-cyan-300/20 to-purple-500/20 animate-pulse rounded" />
-        <div className="mt-3 h-8 w-24 mx-auto bg-gradient-to-r from-purple-500/20 via-cyan-300/20 to-purple-500/20 animate-pulse rounded" />
+        <div className="h-[260px] bg-gradient-to-r from-purple-500/20 via-purple-400/20 to-purple-500/20 animate-pulse rounded-md" />
+        <div className="mt-4 h-5 w-3/4 mx-auto bg-gradient-to-r from-purple-500/20 via-purple-400/20 to-purple-500/20 animate-pulse rounded" />
+        <div className="mt-3 h-8 w-24 mx-auto bg-gradient-to-r from-purple-500/20 via-purple-400/20 to-purple-500/20 animate-pulse rounded" />
       </div>
     </motion.div>
   );
@@ -43,11 +43,8 @@ const ProjectCard = ({ project }) => {
           scale: 1.05,
           boxShadow: `
             0 0 15px #9b59b644,
-            0 0 25px #00ffff22,
             0 0 40px #9b59b666,
-            0 0 60px #00ffff44,
-            0 0 80px #9b59b688,
-            0 0 100px #00ffff33
+            0 0 80px #9b59b688
           `,
         }}
         transition={{ type: "spring", stiffness: 200 }}
@@ -58,11 +55,11 @@ const ProjectCard = ({ project }) => {
           rounded-xl
           overflow-hidden
           backdrop-blur-xl
-          shadow-[0_0_15px_#9b59b644,0_0_25px_#00ffff22,0_0_40px_#9b59b666,0_0_60px_#00ffff44]
+          shadow-[0_0_15px_#9b59b644,0_0_40px_#9b59b666]
         "
       >
         {/* ================= GRID BACKGROUND ================= */}
-        <div className="absolute inset-0 bg-[linear-gradient(#9b59b622_1px,transparent_1px),linear-gradient(90deg,#00ffff11_1px,transparent_1px)] bg-[size:26px_26px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(#9b59b622_1px,transparent_1px),linear-gradient(90deg,#9b59b622_1px,transparent_1px)] bg-[size:26px_26px]" />
 
         {/* ================= HUD CORNERS ================= */}
         <span className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-purple-500/70" />
@@ -81,7 +78,7 @@ const ProjectCard = ({ project }) => {
 
         {/* ================= CONTENT ================= */}
         <div className="relative z-10 text-center pb-5">
-          <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-300 to-purple-400 text-lg font-bold tracking-wider">
+          <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-300 to-purple-400 text-lg font-bold tracking-wider">
             {project.name}
           </h4>
 
@@ -93,7 +90,7 @@ const ProjectCard = ({ project }) => {
               text-purple-300
               border border-purple-400
               rounded-md
-              hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-cyan-400/20
+              hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-purple-400/20
               transition-all
               tracking-widest
             "
@@ -118,6 +115,129 @@ const ProjectCard = ({ project }) => {
 };
 
 export default ProjectCard;
+
+
+// import React, { useState } from "react";
+// import { motion } from "framer-motion";
+// import { Popup } from "./ProjectModal";
+
+// /* =======================
+//    SKELETON CARD
+// ======================= */
+// export const SkeletonProjectCard = () => {
+//   return (
+//     <motion.div
+//       whileHover={{ scale: 1.03 }}
+//       className="
+//         relative w-[300px]
+//         bg-[#050d14]
+//         border border-purple-700/30
+//         rounded-xl
+//         overflow-hidden
+//         shadow-[0_0_20px_#9b59b644,0_0_40px_#9b59b644]
+//       "
+//     >
+//       {/* grid bg */}
+//       <div className="absolute inset-0 bg-[linear-gradient(#9b59b622_1px,transparent_1px),linear-gradient(90deg,#9b59b611_1px,transparent_1px)] bg-[size:24px_24px]" />
+
+//       <div className="relative p-5">
+//         <div className="h-[260px] bg-purple-500/20 animate-pulse rounded-md" />
+//         <div className="mt-4 h-5 w-3/4 mx-auto bg-purple-500/20 animate-pulse rounded" />
+//         <div className="mt-3 h-8 w-24 mx-auto bg-purple-500/20 animate-pulse rounded" />
+//       </div>
+//     </motion.div>
+//   );
+// };
+
+// /* =======================
+//    PROJECT CARD
+// ======================= */
+// const ProjectCard = ({ project }) => {
+//   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+//   return (
+//     <>
+//       <motion.div
+//         whileHover={{
+//           scale: 1.05,
+//           boxShadow: `
+//             0 0 15px #9b59b644,
+//             0 0 25px #9b59b655,
+//             0 0 40px #9b59b666,
+//             0 0 60px #9b59b677,
+//             0 0 80px #9b59b688,
+//             0 0 100px #9b59b699
+//           `,
+//         }}
+//         transition={{ type: "spring", stiffness: 200 }}
+//         className="
+//           relative w-[300px]
+//           bg-[#050d14]
+//           border border-purple-700/40
+//           rounded-xl
+//           overflow-hidden
+//           backdrop-blur-xl
+//           shadow-[0_0_15px_#9b59b644,0_0_25px_#9b59b655,0_0_40px_#9b59b666,0_0_60px_#9b59b677]
+//         "
+//       >
+//         {/* ================= GRID BACKGROUND ================= */}
+//         <div className="absolute inset-0 bg-[linear-gradient(#9b59b622_1px,transparent_1px),linear-gradient(90deg,#9b59b611_1px,transparent_1px)] bg-[size:26px_26px]" />
+
+//         {/* ================= HUD CORNERS ================= */}
+//         <span className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-purple-500/70" />
+//         <span className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-purple-500/70" />
+//         <span className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-purple-500/70" />
+//         <span className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-purple-500/70" />
+
+//         {/* ================= IMAGE ================= */}
+//         <div className="relative z-10 p-5 flex justify-center">
+//           <img
+//             src={project.images}
+//             alt={project.name}
+//             className="h-[260px] w-[260px] object-contain rounded-md"
+//           />
+//         </div>
+
+//         {/* ================= CONTENT ================= */}
+//         <div className="relative z-10 text-center pb-5">
+//           <h4 className="text-transparent bg-clip-text bg-purple-400 text-lg font-bold tracking-wider">
+//             {project.name}
+//           </h4>
+
+//           <motion.button
+//             whileHover={{ scale: 1.05 }}
+//             onClick={() => setIsPopupOpen(true)}
+//             className="
+//               mt-4 px-5 py-2 text-sm font-bold
+//               text-purple-300
+//               border border-purple-400
+//               rounded-md
+//               hover:bg-purple-500/20
+//               transition-all
+//               tracking-widest
+//             "
+//           >
+//             EXPLORE
+//           </motion.button>
+//         </div>
+//       </motion.div>
+
+//       {/* ================= POPUP ================= */}
+//       {isPopupOpen && (
+//         <Popup
+//           title={project.name}
+//           description={project.content}
+//           image={project.images}
+//           github={project.github || ""}
+//           onClose={() => setIsPopupOpen(false)}
+//         />
+//       )}
+//     </>
+//   );
+// };
+
+// export default ProjectCard;
+
 
 
 
