@@ -40,7 +40,21 @@
         "round3": "Interactive sessions played a crucial role in making the event engaging and informative. Our team conducted hands-on activities, live demonstrations, and discussions that helped students visualize scientific principles in action. From understanding basic electronics to exploring the applications of modern technology, every session was designed to enhance curiosity and inspire creative thinking. The enthusiasm with which students participated was a testament to the effectiveness of this initiative.",
       
         "round4": "Overall, the event organized by Team Vibhav proved to be a resounding success, leaving a lasting impact on the students. By demystifying the world of engineering and empowering young minds with knowledge and inspiration, we have taken a step toward fostering the next generation of innovators. PRERAK was not just an event—it was a movement toward inclusivity, empowerment, and progress, reminding us that each small step today shapes a brighter tomorrow. "
-      }
+      },
+          {
+      "id": 3,
+      "name": "Clean the Peaks",
+      "content": "An environmental awareness and cleanliness drive aimed at preserving the natural beauty of the Himalayan region.",
+      "images": [
+        "/Assets/Events/cleanthepeaks.webp",
+        "/Assets/Events/cleanthepeaks2.webp"
+      ],
+      "round1": "Clean the Peaks was organized by Team Vibhav with the objective of promoting environmental responsibility and cleanliness in mountainous regions. The event focused on spreading awareness about the impact of littering on fragile ecosystems and the importance of sustainable practices.",
+      "round2": "Volunteers actively participated in cleaning drives at selected locations, collecting plastic waste and other non-biodegradable materials. Alongside the cleanup activity, participants engaged in discussions about waste management and the long-term consequences of environmental neglect.",
+      "round3": "The event also emphasized community involvement by encouraging locals and visitors to adopt eco-friendly habits. By interacting with people on-site, the team highlighted simple actions that can collectively make a significant difference in protecting nature.",
+      "round4": "Clean the Peaks successfully reinforced the idea that environmental conservation is a shared responsibility. The initiative served as a reminder that preserving natural landscapes requires continuous effort, awareness, and commitment from individuals and communities alike."
+    }
+
     ],
     "Workshops": [
       {
@@ -87,7 +101,48 @@
         "round2": "Whether you're an aspiring engineer, a seasoned developer, or a tech enthusiast hungry for knowledge, this workshop promises to fuel your curiosity and enhance your expertise. We will break down the fundamentals of SoC architecture, including processor cores, communication buses, power management, and hardware-software co-design. Understanding these concepts is essential for anyone looking to delve into embedded systems, VLSI design, or chip-level programming.",
         "round3": "Beyond theory, the workshop will feature interactive hands-on sessions, allowing participants to work with SoC development boards and simulation tools. You will gain practical experience in designing, programming, and optimizing SoC-based systems, making this workshop an excellent platform to bridge the gap between academia and industry requirements. Whether you are working with FPGA-based SoC designs or ARM-based architectures, this session will provide valuable insights into real-world implementations.",
         "round4": "Apart from gaining technical skills, this workshop offers a fantastic opportunity to connect with industry experts, professors, and fellow tech enthusiasts who share a passion for semiconductor technology and embedded systems. Engage in thought-provoking discussions, brainstorming sessions, and networking opportunities, paving the way for future collaborations and innovations in chip design."
+      },
+      {
+        "id": 4,
+        "name": "PCB Design",
+        "content": "This workshop provides hands-on experience in designing, simulating, and fabricating Printed Circuit Boards (PCBs) used in real-world electronic systems.",
+        "images": [
+          "/Assets/Workshop/PCBDesign.webp",
+          "/Assets/Workshop/PCBDesign2.webp"
+        ],
+        "round1": "The PCB Design workshop was organized to introduce participants to the fundamentals of printed circuit boards and their importance in modern electronic systems. From consumer electronics to industrial automation, PCBs form the backbone of almost every electronic device, making this skill essential for electronics enthusiasts and aspiring engineers.",
+        "round2": "Participants were guided through the complete PCB design workflow, including schematic design, component selection, footprint creation, and layout routing using industry-standard tools. The session emphasized best practices such as signal integrity, power management, and component placement to ensure reliable and efficient designs.",
+        "round3": "Hands-on demonstrations allowed students to design their own PCB layouts, perform design rule checks (DRC), and generate fabrication files such as Gerber and BOM files. This practical exposure helped bridge the gap between theoretical knowledge and real-world hardware implementation.",
+        "round4": "The workshop also covered PCB fabrication and assembly processes, giving participants insights into manufacturing techniques, soldering methods, and common design mistakes to avoid. By the end of the session, attendees gained the confidence to design and prototype their own PCBs for academic projects, startups, and personal innovations."
       }
-    ]
+    ],
+
+        "GuestLectures": [
+        {
+          "id": 1,
+          "name": "Exploring the Potential of MEMS Technology",
+          "speaker": "Dr.Gargi Khanna, Associate Professor,NIT Hamirpur",
+          "content": "A technical guest lecture focused on Micro-Electro-Mechanical Systems (MEMS), their design, applications, and impact on modern electronics.",
+          "images": [
+            "/Assets/Events/GargiKhanna.webp",
+            "/Assets/Events/GargiKhanna2.webp"
+          ],
+          "round1": "The session introduced the fundamentals of MEMS technology, including microfabrication techniques, sensors, actuators, and their integration with electronic systems.",
+          "round2": "Real-world applications of MEMS in smartphones, automotive systems, biomedical devices, and IoT were discussed, along with insights into research opportunities and future industry trends."
+        },
+        {
+          "id": 2,
+          "name": "How Large Language Models (LLMs) Work",
+          "speaker": "Srishti Gureja",
+          "content": "An informative guest lecture explaining the fundamentals of Large Language Models, their working principles, and real-world applications.",
+          "images": [
+            "/Assets/Events/shrishtiGureja.webp"
+            
+          ],
+          "round1": "The lecture covered the core concepts behind Large Language Models, including neural networks, transformers, training data, and model architectures that enable machines to understand and generate human-like text.",
+          "round2": "Students explored practical applications of LLMs in areas such as chatbots, content generation, coding assistance, and research, along with discussions on ethical considerations and future advancements."
+        }
+      ]
+
   }
 }

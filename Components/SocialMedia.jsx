@@ -28,7 +28,7 @@ export default function SocialMedia() {
     <>
       <style>{`
         .social-container {
-          position: fixed;
+          position: absolute;
           left: 50%;
           top: 47%;
           transform: translate(-50%, -50%);
@@ -87,147 +87,6 @@ export default function SocialMedia() {
   );
 }
 
-
-
-
-// import React from "react";
-// import {
-//   FaLinkedin,
-//   FaGithub,
-//   FaFacebook,
-//   FaInstagram,
-//   FaDiscord,
-// } from "react-icons/fa";
-
-// export default function SocialLinks() {
-//   return (
-//     <>
-//       <style>{`
-//         /* =============================
-//            POSITION — MIDDLE RIGHT
-//         ============================== */
-//         .social-container {
-//           position: fixed;
-//           right: 12px;
-//           top: 42%;
-//           transform: translateY(-50%);
-//           z-index: 999;
-//         }
-
-//         /* =============================
-//            DARK BACKGROUND BAR
-//         ============================== */
-//         .social-bar {
-//           display: flex;
-//           flex-direction: column;
-//           align-items: center;
-//           gap: 22px;
-
-//           padding: 20px 10px;
-
-//           /* DARK BLACK OVERLAY */
-//           background: rgba(0, 0, 0, 0.2);
-
-//           backdrop-filter: blur(14px);
-
-//           /* SHARP EDGES */
-//           border-radius: 8px;
-
-//           /* SUBTLE BORDER */
-//           border-left: 1px solid rgba(255, 255, 255, 0.15);
-//           border-right: 1px solid rgba(255, 255, 255, 0.15);
-//         }
-
-//         /* =============================
-//            ICON STYLE
-//         ============================== */
-//         .icon {
-//           font-size: 28px;
-//           color: #ffffff;
-//           cursor: pointer;
-//           transition: all 0.25s ease;
-//         }
-
-//         .icon:hover {
-//           transform: scale(1.25);
-//         }
-
-//         .icon:active {
-//           transform: scale(1.35);
-//         }
-
-//         /* =============================
-//            BRAND COLORS
-//         ============================== */
-//         .github:hover {
-//           color: #ffffff;
-//         }
-
-//         .instagram:hover {
-//           color: #e1306c;
-//         }
-
-//         .facebook:hover {
-//           color: #1877f2;
-//         }
-
-//         .discord:hover {
-//           color: #5865f2;
-//         }
-
-//         .linkedin:hover {
-//           color: #0a66c2;
-//         }
-
-//       `}</style>
-
-//       {/* =============================
-//           SOCIAL ICON BAR
-//       ============================== */}
-//       <div className="social-container">
-//         <div className="social-bar">
-
-//           <a
-//             href="https://github.com/Team-Vibhav"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaGithub className="icon github" />
-//           </a>
-
-//           <a target="_blank" rel="noreferrer">
-//             <FaInstagram className="icon instagram" />
-//           </a>
-
-//           <a
-//             href="https://m.facebook.com/262566097142744/"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaFacebook className="icon facebook" />
-//           </a>
-
-//           <a
-//             href="https://discord.gg/cc3j3GbCrX"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaDiscord className="icon discord" />
-//           </a>
-
-//           <a
-//             href="https://www.linkedin.com/company/team-vibhav"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaLinkedin className="icon linkedin" />
-//           </a>
-
-//         </div>
-//       </div>
-//     </>
-//   );
-// // }
 // "use client";
 
 // import React from "react";
@@ -241,273 +100,55 @@ export default function SocialMedia() {
 
 // export default function SocialLinks() {
 //   return (
-//     <>
-//       <style>{`
-//         /* =============================
-//            CENTER POSITION
-//         ============================== */
-//         .social-container {
-//           position: fixed;
-//           left: 50%;
-//           top: 47%;
-//           transform: translate(-50%, -50%);
-//           z-index: 999;
-//         }
+//     <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50">
+//       <div className="flex flex-wrap justify-center">
 
-//         /* =============================
-//            NO BACKGROUND BAR
-//         ============================== */
-//         .social-bar {
-//           display: flex;
-//           flex-direction: row;
-//           align-items: center;
-//           gap: 28px;
+//         <a
+//           aria-label="Github"
+//           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black mt-4 hover:text-white hover:bg-[#303033] ease-in-out duration-200 hover:scale-125"
+//           href="https://github.com/Team-Vibhav"
+//           target="_blank"
+//         >
+//           <FaGithub className="w-7 h-7 md:w-10 md:h-10" />
+//         </a>
 
-//           padding: 0;
+//         <a
+//           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-gradient-to-tr hover:from-[#fa7e1e] hover:to-[#962fbf] ease-in-out duration-200 hover:scale-125"
+//           aria-label="Instagram"
+//           href="https://www.instagram.com/team_vibhav/"
+//           target="_blank"
+//         >
+//           <FaInstagram className="w-7 h-7 md:w-10 md:h-10" />
+//         </a>
 
-//           /* ❌ removed background */
-//           background: none;
-//           backdrop-filter: none;
-//           border: none;
-//           border-radius: 0;
-//         }
+//         <a
+//           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-blue-600 ease-in-out duration-200 hover:scale-125"
+//           aria-label="Facebook"
+//           href="https://m.facebook.com/262566097142744/"
+//           target="_blank"
+//         >
+//           <FaFacebook className="w-7 h-7 md:w-10 md:h-10" />
+//         </a>
 
-//         /* =============================
-//            ICON STYLE
-//         ============================== */
-//         .icon {
-//           font-size: 36px;
-//           color: #ffffff;
-//           cursor: pointer;
-//           // padding:10px 0;
-//           transition: all 0.25s ease;
-//         }
+//         <a
+//           aria-label="Discord"
+//           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#576fbf] ease-in-out duration-200 hover:scale-125"
+//           href="https://discord.gg/cc3j3GbCrX"
+//           target="_blank"
+//         >
+//           <FaDiscord className="w-7 h-7 md:w-10 md:h-10" />
+//         </a>
 
-//         .icon:hover {
-//           transform: scale(1.25);
-//         }
+//         <a
+//           className="flex items-center justify-center p-1.5 rounded-full bg-white text-black ml-5 md:ml-7 mt-4 hover:text-white hover:bg-[#0072b1] ease-in-out duration-200 hover:scale-125"
+//           aria-label="LinkedIn"
+//           href="https://www.linkedin.com/company/team-vibhav"
+//           target="_blank"
+//         >
+//           <FaLinkedin className="w-7 h-7 md:w-10 md:h-10" />
+//         </a>
 
-//         .icon:active {
-//           transform: scale(1.35);
-//         }
-
-//         /* =============================
-//            BRAND COLORS
-//         ============================== */
-//         .github:hover {
-//           color: #ffffff;
-//         }
-
-//         .instagram:hover {
-//           color: #e1306c;
-//         }
-
-//         .facebook:hover {
-//           color: #1877f2;
-//         }
-
-//         .discord:hover {
-//           color: #5865f2;
-//         }
-
-//         .linkedin:hover {
-//           color: #0a66c2;
-//         }
-//       `}</style>
-
-//       {/* =============================
-//            SOCIAL ICONS
-//       ============================== */}
-//       <div className="social-container">
-//         <div className="social-bar">
-
-//           <a
-//             href="https://github.com/Team-Vibhav"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaGithub className="icon github" />
-//           </a>
-
-//           <a
-//             href="https://www.instagram.com/"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaInstagram className="icon instagram" />
-//           </a>
-
-//           <a
-//             href="https://m.facebook.com/262566097142744/"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaFacebook className="icon facebook" />
-//           </a>
-
-//           <a
-//             href="https://discord.gg/cc3j3GbCrX"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaDiscord className="icon discord" />
-//           </a>
-
-//           <a
-//             href="https://www.linkedin.com/company/team-vibhav"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaLinkedin className="icon linkedin" />
-//           </a>
-
-//         </div>
 //       </div>
-//     </>
-//   );
-// }
-
-
-
-
-// "use client";
-
-// import React from "react";
-// import {
-//   FaLinkedin,
-//   FaGithub,
-//   FaFacebook,
-//   FaInstagram,
-//   FaDiscord,
-// } from "react-icons/fa";
-
-// export default function SocialLinks() {
-//   return (
-//     <>
-//       <style>{`
-//         /* =============================
-//            CENTER POSITION
-//         ============================== */
-//         .social-container {
-//           position: fixed;
-//           left: 50%;
-//           top: 50%;
-//           transform: translate(-50%, -50%);
-//           z-index: 999;
-//         }
-
-//         /* =============================
-//            DARK GLASS BAR
-//         ============================== */
-//         .social-bar {
-//           display: flex;
-//           flex-direction: row;
-//           align-items: center;
-//           gap: 28px;
-
-//           padding: 18px 30px;
-
-//           background: rgba(0, 0, 0, 0.25);
-//           backdrop-filter: blur(14px);
-
-//           /* sharp edges */
-//           border-radius: 8px;
-
-//           /* subtle borders */
-//           border-top: 1px solid rgba(255, 255, 255, 0.15);
-//           border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-//         }
-
-//         /* =============================
-//            ICON STYLE
-//         ============================== */
-//         .icon {
-//           font-size: 30px;
-//           color: #ffffff;
-//           cursor: pointer;
-//           transition: all 0.25s ease;
-//         }
-
-//         .icon:hover {
-//           transform: scale(1.25);
-//         }
-
-//         .icon:active {
-//           transform: scale(1.35);
-//         }
-
-//         /* =============================
-//            BRAND COLORS
-//         ============================== */
-//         .github:hover {
-//           color: #ffffff;
-//         }
-
-//         .instagram:hover {
-//           color: #e1306c;
-//         }
-
-//         .facebook:hover {
-//           color: #1877f2;
-//         }
-
-//         .discord:hover {
-//           color: #5865f2;
-//         }
-
-//         .linkedin:hover {
-//           color: #0a66c2;
-//         }
-//       `}</style>
-
-//       {/* =============================
-//            SOCIAL LINKS
-//       ============================== */}
-//       <div className="social-container">
-//         <div className="social-bar">
-
-//           <a
-//             href="https://github.com/Team-Vibhav"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaGithub className="icon github" />
-//           </a>
-
-//           <a
-//             href="https://www.instagram.com/"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaInstagram className="icon instagram" />
-//           </a>
-
-//           <a
-//             href="https://m.facebook.com/262566097142744/"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaFacebook className="icon facebook" />
-//           </a>
-
-//           <a
-//             href="https://discord.gg/cc3j3GbCrX"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaDiscord className="icon discord" />
-//           </a>
-
-//           <a
-//             href="https://www.linkedin.com/company/team-vibhav"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <FaLinkedin className="icon linkedin" />
-//           </a>
-
-//         </div>
-//       </div>
-//     </>
+//     </div>
 //   );
 // }

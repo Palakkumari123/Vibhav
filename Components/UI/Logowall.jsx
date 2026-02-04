@@ -259,25 +259,32 @@ export default function True3DPhotoFrameCarousel() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => setIndex((i) => (i + 1) % images.length), 2800);
+    const id = setInterval(
+      () => setIndex((i) => (i + 1) % images.length),
+      2800
+    );
     return () => clearInterval(id);
   }, []);
 
   const getCircularIndex = (i) => (i + images.length) % images.length;
 
   return (
-    <div
-      className="relative w-full h-[600px] overflow-hidden"
-      style={{
-        backgroundImage: "url('/Assets/backgroundlmg.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* Optional: dark overlay for better contrast */}
-      <div className="absolute inset-0 bg-black/20 z-0"></div>
+    <div className="relative w-full h-[600px] overflow-hidden">
+      
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 z-[-2]"
+        style={{
+          backgroundImage: "url('/Assets/backgroundImg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
 
-      {/* Carousel container */}
+      {/* Black Overlay */}
+      <div className="absolute inset-0 bg-black/30 z-[-1]" />
+
+      {/* Carousel */}
       <div className="absolute inset-0 flex items-center justify-center [perspective:2000px] z-10">
         <AnimatePresence initial={false}>
           {[...Array(5)].map((_, i) => {
@@ -291,7 +298,10 @@ export default function True3DPhotoFrameCarousel() {
                 key={imgIndex}
                 className="absolute"
                 transition={SPRING}
-                style={{ transformStyle: "preserve-3d", zIndex: 100 - Math.abs(offset) }}
+                style={{
+                  transformStyle: "preserve-3d",
+                  zIndex: 100 - Math.abs(offset),
+                }}
                 animate={{
                   x: xOffset,
                   rotateY: offset * -30,
@@ -301,7 +311,8 @@ export default function True3DPhotoFrameCarousel() {
                 }}
               >
                 <div className="relative w-[240px] h-[320px] [transform-style:preserve-3d]">
-                  {/* 3D shadow/back layer */}
+                  
+                  {/* Back Shadow Layer */}
                   <div
                     className="absolute -inset-[3px] bg-[#111111] rounded-md border border-white"
                     style={{
@@ -314,7 +325,7 @@ export default function True3DPhotoFrameCarousel() {
                     }}
                   />
 
-                  {/* Actual image */}
+                  {/* Image */}
                   <img
                     src={images[imgIndex]}
                     alt=""
@@ -336,19 +347,3 @@ export default function True3DPhotoFrameCarousel() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

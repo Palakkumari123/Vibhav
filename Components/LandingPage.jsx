@@ -592,7 +592,7 @@ export default function LandingPage() {
           />
         </div>
 
-        <div className="absolute right-4 top-1/4 flex flex-col">
+        <div style={{ position: "relative", minHeight: "100vh" }}>
           <SocialLinks />
         </div>
 
