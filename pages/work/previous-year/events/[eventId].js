@@ -2,14 +2,14 @@
 import { useParams, useRouter } from "next/navigation";
 import Layout from "@/Components/UI/Layout";
 import { motion } from "framer-motion";
-import workData from "../../../../data/ourwork.json"; // Import work data
+import workData from "../../../../data/ourwork.json"; 
 import { useEffect, useState } from "react";
 
 export default function WorkDetails() {
   const router = useRouter();
   const { eventId } = useParams();
 
-  // Find project by ID
+ 
   const Event = workData.Previous.Events.find(
     (item) => item.id === parseInt(eventId)
   );
@@ -20,7 +20,7 @@ console.log(Event)
 
   const [isLaptop, setIsLaptop] = useState(false);
   useEffect(() => {
-    // Check screen width once on component mount
+   
     setIsLaptop(window.innerWidth >= 768);
   }, []);
 

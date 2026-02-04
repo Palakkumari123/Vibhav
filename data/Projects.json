@@ -1,5 +1,28 @@
 {
+  "blockchain": [
+    {
+      "name": "CIVICLEDGER",
+      "content": " Civic Ledger is a Blockchain and Fintech project designed to ensure transparency and accountability in government tendering and public works management. By establishing a tamper-proof decentralized platform on the Polygon network, the system tracks fund utilization in real-time and uses smart contracts to automate payments only upon the verified completion of project milestones. A key innovation of the project is its citizen-centric approach, which empowers the public to validate the quality of construction and services through a secure, weighted voting and feedback mechanism. This integrated framework aims to reduce corruption, minimize administrative delays, and foster trust between contractors, government agencies, and the general public.",
+      "github": "https://github.com/Paritrajput/civicledger",
+      "images": ""
+    }
+  ],
+
+  
   "AI/ML": [
+    {
+      "name": "TEXT TO VERILOG",
+      "content": "TEXT TO VERILOG is an AI-powered system within the VLSI and AI/ML domain that automates the generation of Verilog code from textual descriptions and design images. The project leverages a fine-tuned Llama 3.2 (3B) Large Language Model integrated with a Retrieval-Augmented Generation (RAG) database to provide accurate, context-aware hardware designs. By using specialized agents for task planning, implementation, and debugging, the system converts high-level concepts into verifiable code that can be tested using integrated simulation tools. This scalable, web-based solution significantly reduces development time and improves accessibility for hardware design automation.",
+      "github": "https://github.com/pazs10ve/SyntaxSilicon-.git",
+      "images": "/Assets/Projects/AI/syntax sillicon.webp"
+    },
+
+     {
+      "name": "JURIS AI",
+      "content": "Juris AI is a LegalTech and AI/ML project designed to automate the processing of complex legal documents, contracts, and compliance guidelines. By utilizing a Retrieval-Augmented Generation (RAG) pipeline, the system combines fine-tuned models like Llama 3.2 with vector search and knowledge graphs to provide legally accurate, grounded insights. This transformative approach minimizes human error and significantly reduces the time required for case analysis and risk identification, allowing professionals to focus on strategic decision-making.",
+      "github": "https://github.com/divya-36736/juris.git",
+      "images": "/Assets/Projects/AI/jurisAI.webp"
+    },
     {
       "name": "Steganomage",
       "content": "Our objective is to hide secret image data within an ordinary, non-secret, file or message in order to avoid detection, the secret image data is then extracted at its destination. Our objective is to hide secret image data within an ordinary, non-secret, file or message in order to avoid detection, the secret image data is then extracted at its destination.",
@@ -113,6 +136,13 @@
   ],
   "AR/VR": [
     {
+      "name": " Virtual Scalpel ",
+      "content": "The Virtual Scalpel is a Healthcare Technology and Extended Reality (XR) project designed to redefine medical education through immersive AR/VR simulations. The system provides a risk-free, controlled environment where trainees can practice complex procedures in a highly interactive and practice-driven setting. By incorporating haptic feedback and realistic 3D modeling, the project addresses the high costs and accessibility issues associated with traditional training methods. This platform enhances precision and confidence, offering a scalable and future-ready solution for professional skill development.",
+      "github": "https://github.com/httpsAKayush/virtual_scalpel_unity ",
+      "images": "/Assets/Projects/AR/virtualscalpel.webp"
+    },
+    
+    {
       "name": "VRET",
       "content": "Virtual Reality Exposure Therapy (VRET) offers a safe, drug-free approach to treating acrophobia by immersing individuals in height-related VR scenarios. Using biosensors to monitor anxiety levels, the system dynamically adjusts exposure to ensure a controlled and gradual desensitization process. This personalized therapy enhances effectiveness, eliminating the risks of traditional drug-induced treatments. VRET provides a repeatable, stress-free alternative to real-world exposure, making phobia therapy more accessible and efficient.",
       "github": "https://github.com/Team-Vibhav/VRET",
@@ -157,6 +187,12 @@
     }
   ],
   "EMBEDDED SYSTEMS": [
+    {
+      "name": "Waste Segregation robot",
+      "content": "The Waste Segregation Robot is an autonomous Embedded Systems and AI project designed to identify, pick, and sort waste into categories like biodegradable, recyclable, and non-recyclable. Built on a Raspberry Pi 4 platform, the robot uses a camera module to capture real-time images, which are then classified using Convolutional Neural Networks (CNN) or YOLO models. Once the waste type is identified, a robotic arm—controlled by high-torque servo motors—physically moves the item into the designated bin. By integrating sensors like IR or metal detectors with mechanical actuators, the system automates the sorting process for public spaces and institutes, significantly reducing manual labor and improving recycling accuracy",
+      "github": "https://github.com/pazs10ve/Waste-Management.git",
+      "images": "/Assets/Projects/Embd/wastesegregatio.webp"
+    },
   
     {
       "name": "SpidyBOT",
