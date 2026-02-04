@@ -8,16 +8,19 @@ import { useRouter } from "next/navigation";
 import { RiTeamLine, AiOutlineTeam } from "react-icons/ri";
 import { HiPresentationChartBar } from "react-icons/hi";
 import { MdWork } from "react-icons/md";
-import { AudioLines, Box, Cpu, Slack, Wifi, Bot } from "lucide-react";
+import { AudioLines, Box, Cpu, Slack, Wifi, Bot,Blocks } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const projects = [
   { name: "AI/ML", href: "/projects/ai-ml", icon: Bot },
   { name: "AR/VR", href: "/projects/ar-vr", icon: Box },
-  { name: "IoT", href: "/projects/iot", icon: Wifi },
+  { name: "Quantum Computing", href: "/projects/quantum", icon: Slack },
+  // { name: "IoT", href: "/projects/iot", icon: Wifi },
   { name: "DSP", href: "/projects/dsp", icon: AudioLines },
   { name: "Embedded Systems", href: "/projects/embedded", icon: Cpu },
-  { name: "Quantum Computing", href: "/projects/quantum", icon: Slack },
+  { name: "BlockChain", href: "/projects/blockchain", icon: Blocks },
+  // { name: "Quantum Computing", href: "/projects/quantum", icon: Slack },
+  { name: "IoT", href: "/projects/iot", icon: Wifi },
 ];
 
 const ourwork = [
@@ -110,7 +113,12 @@ export default function Navigation() {
             >
               <div className="w-[94%] mx-auto h-[1px] bg-white/10 mt-2"></div>
 
-              <div className={`grid py-10 px-10 gap-x-8 gap-y-8 items-center justify-center ${activeMenu === 'projects' ? 'grid-cols-3' : 'grid-cols-2'}`}>
+                <div
+                  className={`grid py-10 px-10 gap-x-8 gap-y-8 place-items-center ${
+                    activeMenu === "projects" ? "grid-cols-3" : "grid-cols-2"
+                  }`}
+                >
+
                 {(activeMenu === 'projects' ? projects : activeMenu === 'work' ? ourwork : ourteam).map((item) => (
                   <Link 
                     key={item.name} 

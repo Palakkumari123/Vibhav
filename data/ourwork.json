@@ -27,20 +27,24 @@
         "round6": "Overall, PAHAL was a remarkable step towards community development, reinforcing the idea that awareness is the first step toward empowerment. The enthusiasm and participation of the villagers reflected their eagerness to embrace new opportunities. Team Vibhav remains committed to organizing such initiatives in the future, striving to bridge the gap between policy implementation and public awareness, ensuring that every individual can benefit from government efforts aimed at progress and prosperity."
       },
       {
+              
         "id": 2,
         "name": "Prerak",
-        "content": "Reflecting on a day filled with inspiration and hope at Government Senior Secondary Girls School, Hamirpur,",
+        "content": "Reflecting on a day full of inspiration and learning at Government Boys School, Hamirpur.",
         "images": [
           "/Assets/Events/prerak.webp",
           "/Assets/Events/prerak2.webp"
         ],
 
-        "round1": "   Witnessing the spark of curiosity in young minds as we shared the wonders of engineering and technical fields was truly uplifting. The excitement in their eyes as they explored new concepts and possibilities reaffirmed our belief in the power of education and awareness. Through PRERAK, Team Vibhav aimed to ignite a passion for learning and innovation, showing students how technology can shape the world around them. ",
-        "round2": "The event, organized at a local girls' school in Hamirpur, was designed to introduce students to the fascinating world of engineering and its real-world applications. By simplifying complex technical concepts and making them engaging, we ensured that young learners could grasp the fundamentals and develop a keen interest in science and technology. Our goal was to break stereotypes and encourage more girls to consider careers in STEM (Science, Technology, Engineering, and Mathematics).",
-        "round3": "Interactive sessions played a crucial role in making the event engaging and informative. Our team conducted hands-on activities, live demonstrations, and discussions that helped students visualize scientific principles in action. From understanding basic electronics to exploring the applications of modern technology, every session was designed to enhance curiosity and inspire creative thinking. The enthusiasm with which students participated was a testament to the effectiveness of this initiative.",
-      
-        "round4": "Overall, the event organized by Team Vibhav proved to be a resounding success, leaving a lasting impact on the students. By demystifying the world of engineering and empowering young minds with knowledge and inspiration, we have taken a step toward fostering the next generation of innovators. PRERAK was not just an event—it was a movement toward inclusivity, empowerment, and progress, reminding us that each small step today shapes a brighter tomorrow. "
+        "round1": "It was a day filled with inspiration and learning as Team Vibhav witnessed young minds light up with curiosity while exploring the wonders of engineering and technology. The enthusiasm and eagerness shown by the students made the experience truly rewarding. Through PRERAK, we aimed to spark interest, creativity, and confidence among students, encouraging them to dream beyond boundaries and explore the limitless possibilities of technology.",
+
+        "round2": "On February 11th, Team Vibhav had the privilege of interacting with students of Government Boys School, Hamirpur. The session was designed to introduce students to the fundamentals of engineering and technology in a simple, engaging, and relatable manner. By connecting classroom concepts with real-world applications, we helped students understand how engineering plays a vital role in everyday life.",
+
+        "round3": "Interactive discussions and engaging demonstrations formed the heart of the event. Students actively participated, asked thoughtful questions, and showed great curiosity about various technical domains. The hands-on approach not only enhanced their understanding but also instilled confidence and excitement about learning new concepts, making the experience both educational and enjoyable.",
+
+        "round4": "Overall, PRERAK proved to be a meaningful and impactful initiative for Team Vibhav. By guiding and motivating young students, we took another step toward empowering the next generation of innovators and problem-solvers. The event reaffirmed our belief that consistent guidance and encouragement can shape bright futures—one inspired mind at a time."
       },
+
           {
       "id": 3,
       "name": "Clean the Peaks",
@@ -53,31 +57,30 @@
       "round2": "Volunteers actively participated in cleaning drives at selected locations, collecting plastic waste and other non-biodegradable materials. Alongside the cleanup activity, participants engaged in discussions about waste management and the long-term consequences of environmental neglect.",
       "round3": "The event also emphasized community involvement by encouraging locals and visitors to adopt eco-friendly habits. By interacting with people on-site, the team highlighted simple actions that can collectively make a significant difference in protecting nature.",
       "round4": "Clean the Peaks successfully reinforced the idea that environmental conservation is a shared responsibility. The initiative served as a reminder that preserving natural landscapes requires continuous effort, awareness, and commitment from individuals and communities alike."
+    },
+    {
+      "id": 4,
+      "name": "Vanpravartak",
+      "content": "Vanpravartak is an awareness-driven initiative focused on promoting forest conservation, environmental responsibility, and sustainable practices among local communities.",
+      "images": [
+        "/Assets/Events/vanpravartak.webp",
+        "/Assets/Events/vanpravartak2.webp"
+        
+      ],
+      "round1": "Team Vibhav successfully organized VANPRAVARTAK, an impactful environmental awareness campaign, aimed at educating local communities about the importance of forest conservation and sustainable living. The initiative was conducted with the objective of fostering a sense of responsibility towards nature and encouraging people to actively participate in protecting forest resources that are vital for ecological balance and rural livelihoods.",
+      
+      "round2": "As part of this campaign, we focused on spreading awareness about government-led afforestation programs, forest protection schemes, and sustainable resource management practices. The initiative highlighted how responsible use of forest resources, plantation drives, and conservation efforts can help combat climate change, prevent soil erosion, and ensure long-term environmental sustainability. Through VANPRAVARTAK, we aimed to bridge the gap between environmental policies and public participation.",
+      "round3": "The campaign also emphasized the role of technology, awareness, and government initiatives in promoting sustainable forestry and environmental conservation. We demonstrated how simple practices such as plantation, waste reduction, and mindful consumption can significantly contribute to protecting ecosystems. The information was delivered in a simple and relatable manner, ensuring that people could easily understand the importance of conservation and their role in it.",
+      "round4": "Overall, VANPRAVARTAK stood as a significant step toward environmental consciousness and sustainable development. The campaign reinforced the idea that protecting forests is not just a responsibility but a necessity for future generations. Team Vibhav remains committed to organizing such initiatives, striving to promote harmony between development and nature, and ensuring a greener and more sustainable future for all."
     }
+
 
     ],
     "Workshops": [
+      
+        
       {
         "id": 1,
-        "name": "Aavardhan",
-        "content": "Anytime is a Good time to start a Company. Driven by passion and perseverance, startups have the power to disrupt industries and shape the future.",
-        "images": [
-          "/Assets/Workshop/aavardhan.webp",
-          "/Assets/Workshop/aavardhan2.webp"
-        ],
-
-      
-
-
-
-
-        "round1": "  Team Vibhav, in collaboration with the Incubation Centre, NIT Hamirpur, under the CM Startup Project of Himachal Pradesh, proudly presents आवर्धनः – From Spark to Unicorn Brilliance. This dynamic guest lecture is designed to inspire and educate aspiring entrepreneurs and innovators, providing them with valuable insights into the world of startups, business growth, and technological advancements. आवर्धनः aims to bridge the gap between ideas and execution, encouraging young minds to turn their visions into successful ventures.",
-        "round2": "We are honored to welcome Dr. Puran Singh, Associate Professor at IIT Mandi and Director of the Incubation Centre, IIT Mandi, as our esteemed guest lecturer. With extensive experience and expertise in entrepreneurship, innovation, and startup ecosystems, he has guided countless individuals in transforming their business ideas into thriving enterprises. His insights into business incubation, funding strategies, and scaling startups will provide invaluable knowledge to all participants.",
-        "round3": "Beyond theoretical knowledge, Dr. Puran Singh will share real-life experiences and success stories, highlighting the essential skills, mindset, and resources required to navigate the competitive landscape of entrepreneurship. Attendees will gain clarity on crucial aspects such as business model development, investor pitching, market strategies, and technology-driven innovation, ensuring that they are well-equipped to embark on their own entrepreneurial journeys. ",
-        "round4": "The event is not just about learning—it’s about networking and fostering a community of like-minded individuals who are passionate about innovation and business development. Participants will have the chance to connect with mentors, industry experts, and fellow aspiring entrepreneurs, opening doors to potential collaborations, mentorship opportunities, and future ventures. The session will serve as a launchpad for students looking to engage with startup incubators, accelerators, and investment programs."
-      },
-      {
-        "id": 2,
         "name": "Cloud Computing",
         "content": "This workshop offers practical training and insights into utilizing remote servers to store, manage, and process data and applications over the internet.",
         "images": [
@@ -90,7 +93,7 @@
         "round4": "This workshop is not just about learning—it’s about collaboration and networking. Participants will engage in group discussions, real-world case studies, and problem-solving exercises, fostering a community of cloud enthusiasts who can exchange ideas, troubleshoot challenges, and explore career opportunities in cloud computing. With cloud adoption accelerating across industries, acquiring cloud skills will open new doors in fields such as software development, cybersecurity, and IT infrastructure management."
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "System on Chip",
         "content": "This workshop provides hands-on learning and expertise in developing integrated circuits that incorporate all necessary components of electronic system onto a single chip.",
         "images": [
@@ -103,7 +106,7 @@
         "round4": "Apart from gaining technical skills, this workshop offers a fantastic opportunity to connect with industry experts, professors, and fellow tech enthusiasts who share a passion for semiconductor technology and embedded systems. Engage in thought-provoking discussions, brainstorming sessions, and networking opportunities, paving the way for future collaborations and innovations in chip design."
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "PCB Design",
         "content": "This workshop provides hands-on experience in designing, simulating, and fabricating Printed Circuit Boards (PCBs) used in real-world electronic systems.",
         "images": [
@@ -141,7 +144,22 @@
           ],
           "round1": "The lecture covered the core concepts behind Large Language Models, including neural networks, transformers, training data, and model architectures that enable machines to understand and generate human-like text.",
           "round2": "Students explored practical applications of LLMs in areas such as chatbots, content generation, coding assistance, and research, along with discussions on ethical considerations and future advancements."
-        }
+        },
+        {
+        "id": 3,
+        "name": "Aavardhan",
+        
+      "speaker": "Dr. Puran Singh, Associate Professor,IIT Mandi",
+        "content": "Anytime is a Good time to start a Company. Driven by passion and perseverance, startups have the power to disrupt industries and shape the future.",
+        "images": [
+          "/Assets/Workshop/aavardhan.webp",
+          "/Assets/Workshop/aavardhan2.webp"
+        ],
+        "round1": "  Team Vibhav, in collaboration with the Incubation Centre, NIT Hamirpur, under the CM Startup Project of Himachal Pradesh, proudly presents आवर्धनः – From Spark to Unicorn Brilliance. This dynamic guest lecture is designed to inspire and educate aspiring entrepreneurs and innovators, providing them with valuable insights into the world of startups, business growth, and technological advancements. आवर्धनः aims to bridge the gap between ideas and execution, encouraging young minds to turn their visions into successful ventures.",
+        "round2": "We are honored to welcome Dr. Puran Singh, Associate Professor at IIT Mandi and Director of the Incubation Centre, IIT Mandi, as our esteemed guest lecturer. With extensive experience and expertise in entrepreneurship, innovation, and startup ecosystems, he has guided countless individuals in transforming their business ideas into thriving enterprises. His insights into business incubation, funding strategies, and scaling startups will provide invaluable knowledge to all participants.",
+        "round3": "Beyond theoretical knowledge, Dr. Puran Singh will share real-life experiences and success stories, highlighting the essential skills, mindset, and resources required to navigate the competitive landscape of entrepreneurship. Attendees will gain clarity on crucial aspects such as business model development, investor pitching, market strategies, and technology-driven innovation, ensuring that they are well-equipped to embark on their own entrepreneurial journeys. ",
+        "round4": "The event is not just about learning—it’s about networking and fostering a community of like-minded individuals who are passionate about innovation and business development. Participants will have the chance to connect with mentors, industry experts, and fellow aspiring entrepreneurs, opening doors to potential collaborations, mentorship opportunities, and future ventures. The session will serve as a launchpad for students looking to engage with startup incubators, accelerators, and investment programs."
+      }
       ]
 
   }
