@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="p-4 relative bottom-0 z-10  pb-4 mx-auto text-white  footer footer-center bg-base-300 text-base-content">
         <div className="">
           <p className="flex items-center justify-center text-md sm:text-2xl font-chakra">
-            Made with ❤️ by
+            Made with <span className="text-cyan-400">❤️</span> by
             <Link
               href="https://www.linkedin.com/company/team-vibhav/"
               className="sm:text-3xl text-xl text-red-400 cursor-pointer "

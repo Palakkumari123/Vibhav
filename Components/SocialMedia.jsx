@@ -1,6 +1,5 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   FaLinkedin,
   FaGithub,
@@ -9,83 +8,78 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 
-export default function SocialMedia() {
-  const [show, setShow] = useState(true);
+export default function SocialLinks() {
+  const [isVisible, setIsVisible] = useState(true);
+  const landingPageRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      // hide after first screen height
-      setShow(window.scrollY < window.innerHeight - 100);
-    };
+    // Use Intersection Observer for precise landing page detection
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Show social handles only when landing page is in view
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of landing page is visible
+      }
+    );
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    // Get the landing page header element
+    const landingPage = document.querySelector("header.relative");
+    if (landingPage) {
+      observer.observe(landingPage);
+    }
+
+    return () => {
+      if (landingPage) {
+        observer.unobserve(landingPage);
+      }
+    };
   }, []);
 
-  if (!show) return null;
+  const iconClass =
+    "w-5 h-5 md:w-6 md:h-6 text-cyan-300";
+
+  const wrapperClass =
+    "flex items-center justify-center w-12 h-12 rounded-full \
+     bg-cyan-900/30 backdrop-blur-md border border-cyan-400/30 \
+     shadow-[0_0_15px_rgba(34,211,238,0.6)] \
+     hover:shadow-[0_0_30px_rgba(34,211,238,0.9)] \
+     hover:scale-110 transition-all duration-300";
 
   return (
-    <>
-      <style>{`
-        .social-container {
-          position: absolute;
-          left: 50%;
-          top: 47%;
-          transform: translate(-50%, -50%);
-          z-index: 999;
-        }
+    <div className={`flex items-center justify-center gap-4 mt-8 transition-all duration-500 ${
+      isVisible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+    }`}>
+      
+      <a href="https://github.com/Team-Vibhav" target="_blank" aria-label="Github" className={wrapperClass}>
+        <FaGithub className={iconClass} />
+      </a>
 
-        .social-bar {
-          display: flex;
-          gap: 28px;
-        }
+      <a href="https://www.instagram.com/team_vibhav/" target="_blank" aria-label="Instagram" className={wrapperClass}>
+        <FaInstagram className={iconClass} />
+      </a>
 
-        .icon {
-          font-size: 36px;
-          color: #ffffff;
-          cursor: pointer;
-          transition: all 0.25s ease;
-        }
+      <a href="https://m.facebook.com/262566097142744/" target="_blank" aria-label="Facebook" className={wrapperClass}>
+        <FaFacebook className={iconClass} />
+      </a>
 
-        .icon:hover {
-          transform: scale(1.25);
-        }
+      <a href="https://discord.gg/cc3j3GbCrX" target="_blank" aria-label="Discord" className={wrapperClass}>
+        <FaDiscord className={iconClass} />
+      </a>
 
-        .github:hover { color: #ffffff; }
-        .instagram:hover { color: #e1306c; }
-        .facebook:hover { color: #1877f2; }
-        .discord:hover { color: #5865f2; }
-        .linkedin:hover { color: #0a66c2; }
-      `}</style>
+      <a href="https://www.linkedin.com/company/team-vibhav" target="_blank" aria-label="LinkedIn" className={wrapperClass}>
+        <FaLinkedin className={iconClass} />
+      </a>
 
-      <div className="social-container">
-        <div className="social-bar">
-
-          <a href="https://github.com/Team-Vibhav" target="_blank" rel="noreferrer">
-            <FaGithub className="icon github" />
-          </a>
-
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            <FaInstagram className="icon instagram" />
-          </a>
-
-          <a href="https://m.facebook.com/262566097142744/" target="_blank" rel="noreferrer">
-            <FaFacebook className="icon facebook" />
-          </a>
-
-          <a href="https://discord.gg/cc3j3GbCrX" target="_blank" rel="noreferrer">
-            <FaDiscord className="icon discord" />
-          </a>
-
-          <a href="https://www.linkedin.com/company/team-vibhav" target="_blank" rel="noreferrer">
-            <FaLinkedin className="icon linkedin" />
-          </a>
-
-        </div>
-      </div>
-    </>
+    </div>
   );
 }
+
 
 // "use client";
 

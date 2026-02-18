@@ -310,7 +310,7 @@ export default function True3DPhotoFrameCarousel() {
                   opacity: Math.abs(offset) > 2 ? 0 : 1,
                 }}
               >
-                <div className="relative w-[240px] h-[320px] [transform-style:preserve-3d]">
+                <div className="relative w-[3200px] h-[120px] [transform-style:preserve-3d]">
                   
                   {/* Back Shadow Layer */}
                   <div

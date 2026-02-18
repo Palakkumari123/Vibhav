@@ -1,635 +1,72 @@
-// "use client";
-
-// import React from "react";
-// import Image from "next/image";
-// import Typewriter from "typewriter-effect";
-// import SocialLinks from "./SocialMedia";
-// import FloatingGameInfo from "./UI/GameIcon";
-
-// export default function LandingPage() {
-//   return (
-//     <header className="relative h-screen w-full overflow-hidden">
-//       {/* Dark overlay */}
-//       <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
-
-//       {/* TEAM VIBHAV Text with ZakenManus font */}
-//       <div className="absolute top-40 left-1/2 -translate-x-1/2 z-50 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex  justify-center">
-//         <style>{`
-//         @font-face {
-//           font-family: "ZakenManus";
-//           src: url("/Assets/Fonts/ZakenManus_PERSONAL_USE_ONLY.otf") format("opentype");
-//           font-weight: normal;
-//           font-style: normal;
-//         }
-//       `}</style>
-
-//         <h1
-//           style={{
-//             fontFamily: "ZakenManus, sans-serif",
-//             fontWeight: "800",
-//             fontSize: "6rem",
-//             backgroundImage: "linear-gradient(to right, #ffffff, #a855f7, #06b6d4)",
-//             WebkitBackgroundClip: "text",
-//             WebkitTextFillColor: "transparent",
-//           }}
-//           className="sm:text-6xl md:text-8xl lg:text-[9rem]"
-//         >
-//           TEAM VIBHAV
-//         </h1>
-//       </div>
-
-//       {/* Scrolling buildings layer */}
-//       <div className="absolute bottom-0 w-full h-4/5 overflow-hidden z-0">
-//         <div className="flex w-[200%] h-full animate-scroll">
-//           <div className="relative w-1/2 h-full">
-//             <Image
-//               src="/images/new2ndlayerbuildings.png"
-//               alt="Buildings"
-//               fill
-//               className="object-cover object-bottom"
-//             />
-//           </div>
-//           <div className="relative w-1/2 h-full">
-//             <Image
-//               src="/images/new2ndlayerbuildings.png"
-//               alt="Buildings duplicate"
-//               fill
-//               className="object-cover object-bottom"
-//             />
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Road layers */}
-//       <div className="absolute bottom-0 w-full h-20 z-20 pointer-events-none overflow-visible">
-//         <div className="absolute inset-0 road-base z-10" />
-//         <div className="absolute bottom-0 left-0 w-full h-[300px] z-30 overflow-hidden">
-//           <div className="flex w-[200%] h-full animate-scroll-fast">
-//             <div className="relative w-1/2 h-full">
-//               <Image
-//                 src="/images/blacklayer.png"
-//                 alt="Black Road Layer"
-//                 fill
-//                 className="object-cover object-bottom"
-//               />
-//             </div>
-//             <div className="relative w-1/2 h-full">
-//               <Image
-//                 src="/images/blacklayer.png"
-//                 alt="Black Road Layer Duplicate"
-//                 fill
-//                 className="object-cover object-bottom"
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Car */}
-//       <div className="absolute bottom-[-40px] left-12 z-15 pointer-events-none">
-//         <Image
-//           src="/images/car.png"
-//           alt="Car"
-//           width={160}
-//           height={80}
-//           className="drop-shadow-[0_0_25px_rgba(200,140,255,0.9)]"
-//         />
-//       </div>
-
-//       {/* Foreground content */}
-//       <div className="relative z-50 h-full flex flex-col items-center justify-center text-center text-white px-4">
-//         {/* Typewriter */}
-//         <div
-//           className="absolute top-80 left-1/2 transform -translate-x-1/2 text-2xl font-orbitron
-//                 bg-gradient-to-b from-white to-indigo-700 bg-clip-text text-transparent"
-//         >
-//           <Typewriter
-//             options={{ loop: true }}
-//             onInit={(typewriter) => {
-//               typewriter
-//                 .typeString("Beyond the Infinity")
-//                 .pauseFor(1000)
-//                 .deleteAll()
-//                 .typeString("अनंत से भी आगे")
-//                 .pauseFor(1000)
-//                 .start();
-//             }}
-//           />
-//         </div>
-
-//         {/* Social links */}
-//         <div className="absolute right-4 top-1/4 flex flex-col">
-//           <SocialLinks />
-//         </div>
-
-//         <FloatingGameInfo />
-//       </div>
-
-//       {/* Inline styles */}
-//       <style jsx>{`
-//         @keyframes scroll {
-//           0% {
-//             transform: translateX(0);
-//           }
-//           100% {
-//             transform: translateX(-50%);
-//           }
-//         }
-
-//         .animate-scroll {
-//           animation: scroll 30s linear infinite;
-//         }
-
-//         .animate-scroll-fast {
-//           animation: scroll 5s linear infinite;
-//         }
-
-//         .road-base {
-//           background: linear-gradient(
-//             to top,
-//             rgba(0, 0, 0, 0.95),
-//             rgba(20, 10, 30, 0.9),
-//             rgba(40, 20, 60, 0.7)
-//           );
-//           filter: blur(1px);
-//           box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9),
-//             0 0 30px rgba(0, 0, 0, 0.6);
-//           border-top: 2px solid rgba(255, 255, 255, 0.2);
-//         }
-//       `}</style>
-//     </header>
-//   );
-// }
-
-
-
-// "use client";
-
-// import React from "react";
-// import Image from "next/image";
-// import Typewriter from "typewriter-effect";
-// import SocialLinks from "./SocialMedia";
-// import FloatingGameInfo from "./UI/GameIcon";
-
-// export default function LandingPage() {
-//   return (
-//     <header className="relative h-screen w-full overflow-hidden">
-//       {/* --- BACKGROUND LAYERS (UNCHANGED) --- */}
-//       <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
-
-//       {/* Your exact scrolling city background */}
-//       <div className="absolute bottom-0 w-full h-4/5 overflow-hidden z-0">
-//         <div className="flex w-[200%] h-full animate-scroll">
-//           <div className="relative w-1/2 h-full">
-//             <Image
-//               src="/images/new2ndlayerbuildings.png"
-//               alt="Buildings"
-//               fill
-//               className="object-cover object-bottom"
-//             />
-//           </div>
-//           <div className="relative w-1/2 h-full">
-//             <Image
-//               src="/images/new2ndlayerbuildings.png"
-//               alt="Buildings duplicate"
-//               fill
-//               className="object-cover object-bottom"
-//             />
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Your exact road and black layers */}
-//       <div className="absolute bottom-0 w-full h-20 z-20 pointer-events-none overflow-visible">
-//         <div className="absolute inset-0 road-base z-10" />
-//         <div className="absolute bottom-0 left-0 w-full h-[300px] z-30 overflow-hidden">
-//           <div className="flex w-[200%] h-full animate-scroll-fast">
-//             <div className="relative w-1/2 h-full">
-//               <Image
-//                 src="/images/blacklayer.png"
-//                 alt="Black Road Layer"
-//                 fill
-//                 className="object-cover object-bottom"
-//               />
-//             </div>
-//             <div className="relative w-1/2 h-full">
-//               <Image
-//                 src="/images/blacklayer.png"
-//                 alt="Black Road Layer Duplicate"
-//                 fill
-//                 className="object-cover object-bottom"
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Your exact car */}
-//       <div className="absolute bottom-[-40px] left-12 z-15 pointer-events-none">
-//         <Image
-//           src="/images/car.png"
-//           alt="Car"
-//           width={160}
-//           height={80}
-//           className="drop-shadow-[0_0_25px_rgba(200,140,255,0.9)]"
-//         />
-//       </div>
-
-//       {/* --- UPDATED LOGO SECTION (BATMAN STYLE) --- */}
-//       <div className="absolute top-28 left-1/2 -translate-x-1/2 z-50 h-[240px] flex flex-col items-center">
-//         {/* OPTION: If you want to use a Batman Font directly in code for the metallic look */}
-//         <h1 className="batman-text text-7xl md:text-8xl tracking-tighter uppercase">
-//           Team Vibhav
-//         </h1>
-        
-//         {
-//         <Image
-//           src="/images/vibhavfont.png"
-//           width={800}
-//           height={400}
-//           alt="Team Vibhav"
-//           className="h-full w-auto object-contain"
-//           style={{
-//             filter: "brightness(1.2) drop-shadow(0 0 15px #22d3ee) contrast(1.1)",
-//           }}
-//         /> 
-// }
-//       </div>
-
-//       {/* --- CONTENT OVERLAY --- */}
-//       <div className="relative z-50 h-full flex flex-col items-center justify-center text-center text-white px-4">
-//         <div className="absolute top-80 left-1/2 transform -translate-x-1/2
-//                         text-2xl font-orbitron
-//                         bg-gradient-to-b from-white to-cyan-500
-//                         bg-clip-text text-transparent">
-//           <Typewriter
-//             options={{ loop: true }}
-//             onInit={(typewriter) => {
-//               typewriter
-//                 .typeString("Beyond the Infinity")
-//                 .pauseFor(1000)
-//                 .deleteAll()
-//                 .typeString("अनंत से भी आगे")
-//                 .pauseFor(1000)
-//                 .start();
-//             }}
-//           />
-//         </div>
-
-//         <div className="absolute right-4 top-1/4 flex flex-col">
-//           <SocialLinks />
-//         </div>
-
-//         <FloatingGameInfo />
-//       </div>
-
-//       <style jsx>{`
-//         /* BATMAN FONT & METALLIC STYLE */
-//         @font-face {
-//           font-family: 'BatmanForever';
-//           src: url('/fonts/batman_forever.ttf'); /* Path to your font file */
-//         }
-
-//         .batman-text {
-//           font-family: 'BatmanForever', sans-serif;
-//           /* Cyan/Chrome Gradient to match the generated images */
-//           background: linear-gradient(to bottom, #ffffff 10%, #22d3ee 45%, #0891b2 55%, #ffffff 90%);
-//           -webkit-background-clip: text;
-//           -webkit-text-fill-color: transparent;
-//           filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.7));
-//         }
-
-//         @keyframes scroll {
-//           0% { transform: translateX(0); }
-//           100% { transform: translateX(-50%); }
-//         }
-
-//         .animate-scroll { animation: scroll 30s linear infinite; }
-//         .animate-scroll-fast { animation: scroll 5s linear infinite; }
-
-//         .road-base {
-//           background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(20, 10, 30, 0.9), rgba(40, 20, 60, 0.7));
-//           filter: blur(1px);
-//           box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.6);
-//           border-top: 2px solid rgba(255, 255, 255, 0.2);
-//         }
-//       `}</style>
-//     </header>
-//   );
-// }
-
-// // "use client";
-
-// // import React from "react";
-// // import Image from "next/image";
-// // import Typewriter from "typewriter-effect";
-// // import SocialLinks from "./SocialMedia";
-// // import FloatingGameInfo from "./UI/GameIcon";
-
-// // export default function LandingPage() {
-// //   return (
-// //     <header className="relative h-screen w-full overflow-hidden">
-
-     
-// //           <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
-
-     
-     
-// // <div className="absolute -top-1 left-1/2 -translate-x-1/2 z-50 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex items-center">
-// //   <Image
-// //     src="/images/teamfont.png"
-// //     width={1800}
-// //     height={900}
-// //     alt="Team Vibhav"
-// //     className="h-full w-auto object-contain"
-// //     style={{
-// //       filter: "saturate(1.5) brightness(1.1) contrast(1.2)",
-// //     }}
-// //   />
-// // </div>
-
-
-
-
-
-    
-// //       <div className="absolute bottom-0 w-full h-4/5 overflow-hidden z-0">
-// //         <div className="flex w-[200%] h-full animate-scroll">
-// //           <div className="relative w-1/2 h-full">
-// //             <Image
-// //               src="/images/new2ndlayerbuildings.png"
-// //               alt="Buildings"
-// //               fill
-// //               className="object-cover object-bottom"
-// //             />
-// //           </div>
-// //           <div className="relative w-1/2 h-full">
-// //             <Image
-// //               src="/images/new2ndlayerbuildings.png"
-// //               alt="Buildings duplicate"
-// //               fill
-// //               className="object-cover object-bottom"
-// //             />
-// //           </div>
-// //         </div>
-// //       </div>
-
-     
-// //       <div className="absolute bottom-0 w-full h-20 z-20 pointer-events-none overflow-visible">
-
-      
-// //         <div className="absolute inset-0 road-base z-10" />
-
-
-// //         <div className="absolute bottom-0 left-0 w-full h-[300px] z-30 overflow-hidden">
-// //           <div className="flex w-[200%] h-full animate-scroll-fast">
-// //             <div className="relative w-1/2 h-full">
-// //               <Image
-// //                 src="/images/blacklayer.png"
-// //                 alt="Black Road Layer"
-// //                 fill
-// //                 className="object-cover object-bottom"
-// //               />
-// //             </div>
-// //             <div className="relative w-1/2 h-full">
-// //               <Image
-// //                 src="/images/blacklayer.png"
-// //                 alt="Black Road Layer Duplicate"
-// //                 fill
-// //                 className="object-cover object-bottom"
-// //               />
-// //             </div>
-// //           </div>
-// //         </div>
-// //       </div>
-
-    
-// //       <div className="absolute bottom-[-40px] left-12 z-15 pointer-events-none">
-// //         <Image
-// //           src="/images/car.png"
-// //           alt="Car"
-// //           width={160}
-// //           height={80}
-// //           className="drop-shadow-[0_0_25px_rgba(200,140,255,0.9)]"
-// //         />
-// //       </div>
-
-    
-// //       <div className="relative z-50 h-full flex flex-col items-center justify-center text-center text-white px-4">
-
-// //         <div className="absolute top-80 left-1/2 transform -translate-x-1/2
-// //                 text-2xl font-orbitron
-// //                 bg-gradient-to-b from-white to-indigo-700
-// //                 bg-clip-text text-transparent">
-// //           <Typewriter
-// //             options={{ loop: true }}
-// //             onInit={(typewriter) => {
-// //               typewriter
-// //                 .typeString("Beyond the Infinity")
-// //                 .pauseFor(1000)
-// //                 .deleteAll()
-// //                 .typeString("अनंत से भी आगे")
-// //                 .pauseFor(1000)
-// //                 .start();
-// //             }}
-// //           />
-// //         </div>
-
-// //         <div className="absolute right-4 top-1/4 flex flex-col">
-// //           <SocialLinks />
-// //         </div>
-
-// //         <FloatingGameInfo />
-// //       </div>
-
-// //       <style jsx>{`
-// //         @keyframes scroll {
-// //           0% {
-// //             transform: translateX(0);
-// //           }
-// //           100% {
-// //             transform: translateX(-50%);
-// //           }
-// //         }
-
-// //         .animate-scroll {
-// //           animation: scroll 30s linear infinite;
-// //         }
-
-// //         .animate-scroll-fast {
-// //           animation: scroll 5s linear infinite;
-// //         }
-
-// //         .road-base {
-// //           background: linear-gradient(
-// //             to top,
-// //             rgba(0, 0, 0, 0.95),
-// //             rgba(20, 10, 30, 0.9),
-// //             rgba(40, 20, 60, 0.7)
-// //           );
-// //           filter: blur(1px);
-// //           box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9),
-// //             0 0 30px rgba(0, 0, 0, 0.6);
-// //           border-top: 2px solid rgba(255, 255, 255, 0.2);
-// //         }
-// //       `}</style>
-// //     </header>
-// //   );
-// // }
-
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import Typewriter from "typewriter-effect";
 import SocialLinks from "./SocialMedia";
+import Typewriter from "typewriter-effect";
+import { FaStar } from "react-icons/fa";
 import FloatingGameInfo from "./UI/GameIcon";
 
 export default function LandingPage() {
   return (
-    <header className="relative h-screen w-full overflow-hidden">
+    <header className="relative mx-auto h-screen overflow-hidden mt-32">
 
-     
-          <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
+      {/* ===== MAIN CONTENT ===== */}
+      <div className="relative z-20 grid min-h-[70vh] place-items-center text-white">
+        <div className="flex w-full flex-col items-center gap-6 lg:max-w-full">
 
-     
-       <div className="absolute top-20 left-1/2 -translate-x-1/2 z-50 ml-[40px] h-[240px] flex items-center">
-  <Image
-    src="/images/vibhavteam.png"
-    width={800}
-    height={400}
-    alt="Team Vibhav"
-    className="h-full w-auto object-contain"
-    style={{
-      filter: "saturate(1.5) brightness(1.1) contrast(1.2)",
-    }}
-  />
-</div>
-
-
-
-
-    
-      <div className="absolute bottom-0 w-full h-4/5 overflow-hidden z-0">
-        <div className="flex w-[200%] h-full animate-scroll">
-          <div className="relative w-1/2 h-full">
-            <Image
-              src="/images/new2ndlayerbuildings.png"
-              alt="Buildings"
-              fill
-              className="object-cover object-bottom"
-            />
+          {/* ===== TEAM VIBHAV TITLE ===== */}
+          <div className="relative flex flex-col items-center -translate-y-2">
+            <h1 className="font-batman text-[3rem] sm:text-8xl tracking-widest text-white text-center">
+              TEAM VIBHAV
+            </h1>
+            <div className="mt-2 w-[60%] h-[2px] bg-gradient-to-r from-transparent via-white to-transparent" />
           </div>
-          <div className="relative w-1/2 h-full">
-            <Image
-              src="/images/new2ndlayerbuildings.png"
-              alt="Buildings duplicate"
-              fill
-              className="object-cover object-bottom"
-            />
-          </div>
-        </div>
-      </div>
 
-     
-      <div className="absolute bottom-0 w-full h-20 z-20 pointer-events-none overflow-visible">
-
-      
-        <div className="absolute inset-0 road-base z-10" />
-
-
-        <div className="absolute bottom-0 left-0 w-full h-[300px] z-30 overflow-hidden">
-          <div className="flex w-[200%] h-full animate-scroll-fast">
-            <div className="relative w-1/2 h-full">
-              <Image
-                src="/images/blacklayer.png"
-                alt="Black Road Layer"
-                fill
-                className="object-cover object-bottom"
+          {/* ===== TAGLINE + STARS ===== */}
+          <div className="flex flex-col items-center translate-y-2 mb-4">
+            <div className="text-2xl font-orbitron text-white">
+              <Typewriter
+                options={{ loop: true }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Beyond the Infinity")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("अनंत से भी आगे")
+                    .pauseFor(1000)
+                    .start();
+                }}
               />
             </div>
-            <div className="relative w-1/2 h-full">
-              <Image
-                src="/images/blacklayer.png"
-                alt="Black Road Layer Duplicate"
-                fill
-                className="object-cover object-bottom"
-              />
+
+            <div className="flex text-2xl justify-center items-center mt-8">
+              {[...Array(5)].map((_, i) => (
+                <FaStar key={i} className="mx-2 mt-4" />
+              ))}
+              <FaStar className="animate-pulse text-white mx-2 mt-4" />
             </div>
           </div>
-        </div>
-      </div>
 
-    
-      <div className="absolute bottom-[-25px] left-1/4 z-15 pointer-events-none">
-        <Image
-          src="/images/car.png"
-          alt="Car"
-          width={130}
-          height={65}
-          className="drop-shadow-[0_0_25px_rgba(200,140,255,0.9)]"
-        />
-      </div>
-
-    
-      <div className="relative z-50 h-full flex flex-col items-center justify-center text-center text-white px-4">
-
-        <div className="absolute top-64 left-1/2 transform -translate-x-1/2
-                text-2xl font-orbitron
-                bg-gradient-to-b from-white to-indigo-700
-                bg-clip-text text-transparent">
-          <Typewriter
-            options={{ loop: true }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Beyond the Infinity....")
-                .pauseFor(1000)
-                .deleteAll()
-                .typeString("अनंत से भी आगे....")
-                .pauseFor(1000)
-                .start();
-            }}
-          />
-        </div>
-
-        <div style={{ position: "relative", minHeight: "100vh" }}>
           <SocialLinks />
         </div>
 
-        <FloatingGameInfo />
+        {/* <FloatingGameInfo /> */}
       </div>
 
-      <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-
-        .animate-scroll-fast {
-          animation: scroll 5s linear infinite;
-        }
-
-        .road-base {
-          background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.95),
-            rgba(20, 10, 30, 0.9),
-            rgba(40, 20, 60, 0.7)
-          );
-          filter: blur(1px);
-          box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9),
-            0 0 30px rgba(0, 0, 0, 0.6);
-          border-top: 2px solid rgba(255, 255, 255, 0.2);
-        }
-      `}</style>
+      {/* ===== GLASS BLUE BOTTOM SECTION (NOT DARKENED) ===== */}
+      {/* <div
+        className="
+          absolute
+          bottom-0
+          left-0
+          w-full
+          h-[42vh]
+          bg-blue-300/20
+          backdrop-blur-xl
+          border-t border-blue-400/30
+          z-30
+        "
+      /> */}
     </header>
   );
 }

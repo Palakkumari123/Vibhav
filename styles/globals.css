@@ -270,20 +270,20 @@ html {
 }
 
 :root {
-  --border-radius--menu-wrapper: 100px;
-  --border-radius--menu-link: 92px;
+  --border-radius--menu-wrapper: 16px;
+  --border-radius--menu-link: 12px;
 }
 
 .menuLink {
-  @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer  flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex lg:py-3 py-2 lg:px-4 max-sm:py-2  max-sm:px-3 rounded-[10px] border-solid border-[#999999] hover:border-[#] ;
+  @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer  flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex lg:py-3 py-2 lg:px-4 max-sm:py-2  max-sm:px-3 rounded-[4px] border-solid border-[#999999] hover:border-[#] ;
 }
 
 .menuLinkm {
-  @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex py-4 max-sm:py-2 px-6 max-sm:px-3 rounded-[80px] border-solid border-[#999999] hover:border-[#] hover:bg-[#36353a];
+  @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex py-4 max-sm:py-2 px-6 max-sm:px-3 rounded-[8px] border-solid border-[#999999] hover:border-[#] hover:bg-[#36353a];
 }
 .menuLink.active {
   /* background-color: #414141;  */
-  color: #34a134ee;
+  color: #a855f7;
 }
 
 .transition-custom {
