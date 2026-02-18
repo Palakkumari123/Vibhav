@@ -487,6 +487,14 @@
       "LinkedIn": "https://www.linkedin.com/in/Aadish0011",
       "Position": "Volunteer"
     },
+     {
+      "Name": "Aarushi",
+      "Profile": "/Assets/TeamPhotos/First/aarushi.webp",
+      "Github": "https://github.com/chauhanakshra50-collab",
+      "LinkedIn": "https://www.linkedin.com/in/aarushi-chauhan-885141374",
+      "Position": "Volunteer"
+    },
+
     {
       "Name": "Abhinesh",
       "Profile": "/Assets/TeamPhotos/First/Abhinesh.webp",
@@ -494,15 +502,9 @@
       "LinkedIn": "https://www.linkedin.com/in/akshit-chaudhary-944174344/",
       "Position": "Volunteer"
     },
-    {
-      "Name": "Abhishek Yadav ",
-      "Profile": "/Assets/TeamPhotos/First/Abhishek.webp",
-      "Github": "https://github.com/Abhishek.webp",
-      "LinkedIn": "https://www.linkedin.com/in/abhishek-yadav-8b36703a2/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bxnpg23ukTIS20XMZnF0uTA%3D%3D",
-      "Position": "Volunteer"
-    },
+   
    {
-      "Name": "Adarsh",
+      "Name": "Adarsh Raj",
       "Profile": "/Assets/TeamPhotos/First/ADARSH.webp",
       "Github": "https://github.com/radarsh93311",
       "LinkedIn": "https://www.linkedin.com/in/adarsh-raj-73225b390?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -530,6 +532,21 @@
       "LinkedIn": "https://www.linkedin.com/in/gaurav-pratap-singh-863889313/",
       "Position":"Volunteer"
     },
+     {
+      "Name": "Anshul kumar Jangir",
+      "Profile": "/Assets/TeamPhotos/First/anshul.webp",
+      "Github": "https://github.com/anshuljangir12-eng",
+      "LinkedIn": "https://www.linkedin.com/in/anshul-kumar-jangir-51535a372/",
+      "Position":"Volunteer"
+    },
+    {
+      "Name": "Bhavishay",
+      "Profile": "/Assets/TeamPhotos/First/bhavishay.webp",
+      "Github": "https://github.com/bhavishaybajoliya1109-sys",
+      "LinkedIn": "https://www.linkedin.com/in/bhavishay-bajoliya-05aa343a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "Position":"Volunteer"
+    },
+   
     {
       "Name": "Devansh Doda",
       "Profile": "/Assets/TeamPhotos/First/Devansh.webp",
@@ -616,13 +633,7 @@
       "LinkedIn": "https://www.linkedin.com/in/tanishka-aggarwal-621a96382?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       "Position": "Volunteer"
     },
-    {
-      "Name": "vansh koundal",
-      "Profile": "/Assets/TeamPhotos/First/vanshk.webp",
-      "Github": "https://github.com/Vansh-Choudhary-10",
-      "LinkedIn": "https://www.linkedin.com/in/vansh-choudhary-b135b4396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "Position": "Volunteer"
-    },
+  
     {
       "Name": "vansh saini",
       "Profile": "/Assets/TeamPhotos/First/VANSH_SAINI.webp",
