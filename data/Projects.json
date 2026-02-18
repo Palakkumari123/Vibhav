@@ -4,7 +4,7 @@
       "name": "CIVICLEDGER",
       "content": " Civic Ledger is a Blockchain and Fintech project designed to ensure transparency and accountability in government tendering and public works management. By establishing a tamper-proof decentralized platform on the Polygon network, the system tracks fund utilization in real-time and uses smart contracts to automate payments only upon the verified completion of project milestones. A key innovation of the project is its citizen-centric approach, which empowers the public to validate the quality of construction and services through a secure, weighted voting and feedback mechanism. This integrated framework aims to reduce corruption, minimize administrative delays, and foster trust between contractors, government agencies, and the general public.",
       "github": "https://github.com/Paritrajput/civicledger",
-      "images": ""
+      "images": "/Assets/Projects/blockchain/civicledger.webp"
     }
   ],
 
