@@ -15,6 +15,13 @@ export default function Contact({}) {
 
   const [secondFormState, handleSubmitSecondForm] = useForm("xzbqvrrv");
 
+  const scrollToTop = () => {
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
   const handleSecondFormSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -29,7 +36,7 @@ export default function Contact({}) {
   };
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center py-20 sm:py-28 px-4  overflow-hidden">
+    <div className="relative min-h-screen flex flex-col  items-center py-20 sm:py-28 px-4  overflow-hidden">
 
      
       <img
@@ -66,9 +73,12 @@ export default function Contact({}) {
            
             <div className="bg-black/40 backdrop-blur-xl border border-white/10 rounded-[30px] p-5 sm:p-8 md:p-12 shadow-[0_20px_40px_rgba(0,0,0,0.6)] w-full relative z-10 overflow-hidden">
 
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-white/10 border border-white/20 p-1 rounded-full">
-                <FaChevronUp className="text-white/50 text-xs" />
-              </div>
+            <div
+  onClick={scrollToTop}
+  className="absolute top-4 left-1/2 -translate-x-1/2 bg-white/10 border border-white/20 p-1 rounded-full cursor-pointer hover:bg-white/20 transition"
+>
+  <FaChevronUp className="text-white/50 text-xs" />
+</div>
 
               <div className="z-10 w-full">
                 <h2 className="mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-5xl tracking-[0.18em] sm:tracking-[0.25em] font-batman font-extrabold text-center uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 drop-shadow-[0_0_15px_rgba(168,85,247,0.4)]">

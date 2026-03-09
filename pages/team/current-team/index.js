@@ -30,8 +30,6 @@ const CurrentTeam = () => {
       setShowProfiles(true);
     }, 800);
   };
-  
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);

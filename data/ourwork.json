@@ -18,6 +18,24 @@
         "round4": "Apart from the intense coding and debugging, Rekkathon fostered meaningful conversations and connections between the student community and industry experts. The positive response from the participants reinforced our belief that high-intensity, offline environments lead to significant technical growth. Many individuals expressed their willingness to explore new domains like Web3 and embedded systems, and we provided the necessary guidance on how to refine their projects and access further learning resources even after the event concluded.",
         "round5":"This engagement was a testament to the importance of on-ground, collaborative programs in making technical education truly effective. By creating a space where burning the board was celebrated, we have laid the groundwork for a recurring legacy of innovation at NIT Hamirpur. We look forward to seeing how the projects born during these three days evolve into startups and solutions that solve real-world problems, continuing our mission to empower the next generation of builders."
 
+      },
+      {
+         "id":2,
+        "name": "Vanpravartak",
+        "content":  "Vanpravartak is an awareness-driven initiative focused on promoting forest conservation, environmental responsibility, and sustainable practices among local communities.",
+      
+        "images": [
+          "/Assets/Events/Vanpravartakk.webp",
+          "/Assets/Events/Vanpravartakk3.webp"
+          
+          
+        ],
+         "round1": "Team Vibhav successfully organized VANPRAVARTAK, an impactful environmental awareness campaign, aimed at educating local communities about the importance of forest conservation and sustainable living. The initiative was conducted with the objective of fostering a sense of responsibility towards nature and encouraging people to actively participate in protecting forest resources that are vital for ecological balance and rural livelihoods.",
+      
+      "round2": "As part of this campaign, we focused on spreading awareness about government-led afforestation programs, forest protection schemes, and sustainable resource management practices. The initiative highlighted how responsible use of forest resources, plantation drives, and conservation efforts can help combat climate change, prevent soil erosion, and ensure long-term environmental sustainability. Through VANPRAVARTAK, we aimed to bridge the gap between environmental policies and public participation.",
+      "round3": "The campaign also emphasized the role of technology, awareness, and government initiatives in promoting sustainable forestry and environmental conservation. We demonstrated how simple practices such as plantation, waste reduction, and mindful consumption can significantly contribute to protecting ecosystems. The information was delivered in a simple and relatable manner, ensuring that people could easily understand the importance of conservation and their role in it.",
+      "round4": "Overall, VANPRAVARTAK stood as a significant step toward environmental consciousness and sustainable development. The campaign reinforced the idea that protecting forests is not just a responsibility but a necessity for future generations. Team Vibhav remains committed to organizing such initiatives, striving to promote harmony between development and nature, and ensuring a greener and more sustainable future for all."
+
       }
     
     ],
