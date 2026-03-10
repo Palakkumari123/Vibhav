@@ -25,7 +25,7 @@ export default function Home() {
         <div className="relative min-h-screen text-white pt-32 md:pt-36 lg:pt-40 p-4 font-batman text-center">
           <div className="fixed inset-0 bg-black/30 pointer-events-none z-[-1]"></div>
           <img
-            src="/Assets/projectbackground.jpg"
+            src="/Assets/ProjectssBackg.jpeg"
             alt="Background"
             className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
           />

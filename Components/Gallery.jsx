@@ -1,8 +1,8 @@
 "use client";
+
 import { Fade } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 import React from "react";
-// import Image from "next/image";
 import CircularGallery from "./CircularGallery";
 
 export default function Gallery() {
@@ -20,8 +20,16 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="relative bg-black py-4 bg-opacity-25 overflow-hidden">
-      <div className="flex flex-col gap-1 text-gray-200">
+    // <div className="relative bg-black py-4 bg-opacity-25 overflow-hidden">
+      <div className="relative bg-black bg-opacity-25 overflow-hidden">
+      {/* Background Image */}
+      <img
+      src="/Assets/Gallery.png"
+      alt="background"
+      className="absolute inset-0 w-full h-full object-cover opacity-90 -z-20"
+    />
+
+      <div className="flex flex-col gap-1 text-gray-200 relative z-10">
 
         <div className="mx-auto">
           <Fade>
@@ -42,16 +50,6 @@ export default function Gallery() {
             </motion.div>
           </Fade>
         </div>
-        {/* <img
-        src="/Assets/Gallery.png"
-        alt="background"
-        className="absolute inset-0 w-full h-full object-cover -z-10"
-      /> */}
-      <img
-        src="/Assets/Gallery.png"
-        alt="background"
-        className="absolute inset-0 w-full h-full object-cover md:object-cover object-contain opacity-25 -z-20"
-      />
 
         {/* Circular Gallery */}
         <div className="relative h-[450px] sm:h-[500px] md:h-[600px] lg:h-[650px] w-full">
@@ -66,6 +64,7 @@ export default function Gallery() {
         </div>
 
       </div>
+
     </div>
   );
 }

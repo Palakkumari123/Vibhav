@@ -23,7 +23,7 @@ const Page = () => {
 
        
         <img
-          src="/Assets/projectbackground.jpg"
+          src="/Assets/ProjectssBackg.jpeg"
           alt="Background"
           className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
         />
