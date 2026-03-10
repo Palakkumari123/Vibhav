@@ -2,14 +2,28 @@
 import { useParams, useRouter } from "next/navigation";
 import Layout from "@/Components/UI/Layout";
 import { motion } from "framer-motion";
-import workData from "../../../../data/ourwork.json"; // Import work data
+import workData from "../../../../data/ourwork.json"; 
 import { useEffect, useState } from "react";
 
 export default function WorkDetails() {
   const router = useRouter();
   const { eventId } = useParams();
 
-  // Find project by ID
+  const findEvent = () => {
+    let found = workData.Current.Events.find((item) => item.id.toString() === eventId);
+    if (!found) {
+      found = workData.Previous.Events.find(
+        (item) => item.id.toString() === eventId
+      );
+    }
+    return found;
+  };
+  const event = findEvent();
+  if (!event) {
+    return <div className="text-center pt-20">Project not found</div>;
+  }
+
+ 
   const Event = workData.Previous.Events.find(
     (item) => item.id === parseInt(eventId)
   );
@@ -20,7 +34,7 @@ console.log(Event)
 
   const [isLaptop, setIsLaptop] = useState(false);
   useEffect(() => {
-    // Check screen width once on component mount
+   
     setIsLaptop(window.innerWidth >= 768);
   }, []);
 
@@ -66,7 +80,7 @@ console.log(Event)
               />
             </motion.div>
 
-            {/* Text Section */}
+        
             <motion.div
               className="lg:w-[65%] w-full flex md:p-10 flex-col justify-center space-y-4 font-sans"
               {...(isLaptop && {

@@ -1,6 +1,9 @@
-import Image from "next/image";
+
+
+"use client";
 
 import { useState, useEffect } from "react";
+
 export default function Loading() {
   const fonts = [
     "Arial, sans-serif",
@@ -12,6 +15,7 @@ export default function Loading() {
     "Comic Sans MS, cursive",
     "Impact, sans-serif",
   ];
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -52,8 +56,21 @@ export default function Loading() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      {loading && <AnimatedText text="Team Vibhav" />}
+    <div className="relative h-screen w-full overflow-hidden flex justify-center items-center">
+       <img
+        src="/Assets/loading.png"
+        alt="background"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+      />
+     
+      <div className="absolute inset-0 bg-black/75 -z-0" />
+
+    
+      {loading && (
+        <div className="relative z-10">
+          <AnimatedText text="Team Vibhav" />
+        </div>
+      )}
     </div>
   );
 }

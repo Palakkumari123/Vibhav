@@ -12,6 +12,9 @@ module.exports = {
         grace: ["grace", "sans-serif"],
         chakra: ["Chakra Petch", "sans-serif"],
         chakraBold: ["Chakra Petch Bold", "sans-serif"],
+        arvo: ["Arvo", "serif"],
+        michroma: ["Michroma", "sans-serif"],
+
       },
       keyframes: {
         glitter: {
@@ -59,7 +62,7 @@ module.exports = {
         gradient: "gradient 8s linear infinite",
         scrollX: "scrollX 15s linear infinite",
         scrollY: "scrollY 15s linear infinite",
-        brightnessPulse: "brightnessPulse 4s infinite linear",
+        brightnessPulse: "brightnessPulse 2s infinite linear",
       },
       backgroundImage: (theme) => ({
         "al-pacino":

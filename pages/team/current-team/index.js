@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import Team from "../../../data/team.json";
 import ProfileCard, { SkeletonProfileCard } from "../../../Components/UI/cards/ProfileCard";
@@ -7,8 +8,8 @@ import Layout from "../../../Components/UI/Layout";
 const CurrentTeam = () => {
   const [selectedYear, setSelectedYear] = useState("SuperFinal Year");
   const [loading, setLoading] = useState(true);
-  const [showProfiles, setShowProfiles] = useState(false); // New state to delay profile rendering
-  const [isOpen, setIsOpen] = useState(false);
+  const [showProfiles, setShowProfiles] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const yearLabels = {
     "SuperFinal Year": "Super Final Year Members",
@@ -19,24 +20,16 @@ const CurrentTeam = () => {
   };
 
   const handleYearChange = (year) => {
+    if (year === selectedYear) return;
     setSelectedYear(year);
     setLoading(true);
-    setShowProfiles(false); // Hide profiles immediately
+    setShowProfiles(false);
 
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
-
-    setTimeout(() => {
-      setShowProfiles(true); // Show profiles with delay
-    }, 1000);
+      setShowProfiles(true);
+    }, 800);
   };
-
-  const handleOptionClick = (option) => {
-    setSelectedYear(option);
-    setIsOpen(false);
-  };
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -46,29 +39,67 @@ const CurrentTeam = () => {
 
   return (
     <Layout>
-      <div className="p-4 mx-0 pt-20 sm:pt-32 relative text-white">
-        <div className="fixed bottom-0 top-0 left-0 w-full bg-black/75 pointer-events-none z-[-1]"></div>
-        <video
-          src="/Assets/backvd.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
-        />
-        <h1 className="sm:text-5xl text-2xl font-extrabold text-center mb-7 font-batman">
+      <div className="relative text-white min-h-screen p-4 pt-24 sm:pt-24 overflow-hidden">
+        <div
+          className="fixed top-0 left-0 w-full h-full bg-cover bg-center z-[-2] brightness-75"
+          style={{ backgroundImage: "url('/Assets/projectbackground.jpg')" }}
+        ></div>
+        <div className="fixed inset-0 bg-black/5 z-[-1]"></div>
+
+        <h1 className="text-2xl xs:text-3xl sm:text-6xl font-extrabold text-center mb-12 sm:mb-20 font-batman tracking-tight sm:tracking-widest uppercase text-[#5b8ef3] drop-shadow-[0_0_15px_rgba(91,142,243,0.9)] whitespace-nowrap px-2">
           Current Team
         </h1>
 
-        <div className="flex flex-col items-center">
-          <div className="w-[95vw] flex items-center justify-center mb-12 absolute">
-            <div className="flex justify-evenly backdrop-blur max-md:hidden rounded-[90px] px-7 py-6 gap-12 items-center backdrop-brightness-75 opacity-90 bg-zinc-900/50 border-1 border-gray-200 relative">
+        <div className="flex flex-col items-center w-full">
+          <div className="w-full flex items-center justify-center mb-12 sm:mb-20 px-2">
+            
+            <div className="sm:hidden w-full max-w-[340px] relative">
+              <button
+                type="button"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="w-full flex items-center justify-center bg-zinc-900/90 text-white border border-white/20 rounded-lg px-4 py-3 font-chakraBold font-extrabold shadow-lg relative"
+              >
+                <span className="text-[#5b8ef3] whitespace-nowrap">
+                  {selectedYear} Members
+                </span>
+                <span className={`absolute right-4 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}>
+                  ▼
+                </span>
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute top-full left-0 w-full mt-1 bg-black/95 border border-white/10 rounded-xl overflow-hidden z-50 shadow-2xl">
+                  <div className="flex flex-col p-2 space-y-1">
+                    {Object.keys(Team).map((year) => (
+                      <button
+                        key={year}
+                        onClick={() => {
+                          handleYearChange(year);
+                          setIsDropdownOpen(false);
+                        }}
+                        className={`w-full py-3 px-4 rounded-full text-sm font-chakra font-bold transition-all text-center whitespace-nowrap ${
+                          selectedYear === year
+                            ? "bg-[#1e293b] text-[#5b8ef3]"
+                            : "text-gray-400 hover:text-white"
+                        }`}
+                      >
+                        {year} Members
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="hidden sm:flex items-center bg-zinc-900/40 backdrop-blur-md rounded-full border border-white/10 px-8 py-3 gap-6 shadow-[0_0_30px_rgba(91,142,243,0.5)]">
               {Object.keys(Team).map((year) => (
                 <button
                   key={year}
-                  className={`px-4 py-2 rounded-3xl text-white ${
-                    selectedYear === year ? "bg-black" : "bg-gray-800"
-                  } transition-all duration-500 ease-in-out hover:bg-black hover:scale-110 z-10 font-chakraBold`}
+                  className={`px-6 py-2 rounded-full text-base font-chakraBold font-bold transition-all duration-300 ${
+                    selectedYear === year
+                      ? "bg-[#5b8ef3] text-black shadow-[0_0_20px_#5b8ef3]"
+                      : "bg-transparent text-gray-400 hover:text-white"
+                  }`}
                   onClick={() => handleYearChange(year)}
                 >
                   {year}
@@ -77,16 +108,16 @@ const CurrentTeam = () => {
             </div>
           </div>
 
-          <div className="mt-20 sm:mt-28">
-            <div className="sm:text-3xl text-2xl text-white font-chakraBold flex justify-center mb-4 text-center p-1">
-              <h1>{yearLabels[selectedYear]}</h1>
-            </div>
+          <div className="flex justify-center mb-12 w-full px-4 overflow-hidden">
+            <h2 className=" xs:text-2xl sm:text-3xl text-2xl text-[#5b8ef3] font-chakraBold font-black text-center  tracking-tighter whitespace-nowrap ">
+              {yearLabels[selectedYear]}
+            </h2>
+          </div>
 
-            <div className="p-4 flex justify-center flex-wrap gap-12">
+          <div className="w-full max-w-[1500px] px-6 pb-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12 sm:gap-y-24 justify-items-center">
               {loading
-                ? Array.from({ length: 6 }).map((_, index) => (
-                    <SkeletonProfileCard key={index} />
-                  ))
+                ? Array.from({ length: 4 }).map((_, index) => <SkeletonProfileCard key={index} />)
                 : showProfiles &&
                   Team[selectedYear].map((member, index) => (
                     <ProfileCard
@@ -94,7 +125,6 @@ const CurrentTeam = () => {
                       name={member.Name}
                       position={member.Position}
                       profileImg={member.Profile}
-                      backgroundImg={member.Profile}
                       githubLink={member.Github}
                       linkdinLink={member.LinkedIn}
                     />

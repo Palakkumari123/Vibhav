@@ -1,193 +1,211 @@
-import { useState } from "react";
+"use client";
 
-function LogoWall({
-  items = [],
-  direction = "horizontal",
-  pauseOnHover = false,
-  size = "9rem",
-  duration = "15s",
-  textColor = "#ffffff",
-  bgColor = "#060606",
-  bgAccentColor = "#111111"
-}) {
-  const [isPaused, setIsPaused] = useState(false);
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
-  const wrapperClass = [
-    "flex",
-    "flex-col",
-    "gap-[calc(var(--size)/14)]",
-    "mx-auto",
-    "max-w-full",
-    // "p-[20px_10px]",
-    // Apply text and bg from CSS variables if desired
-    // (We do that inline style below)
-    direction === "vertical" && "flex-row justify-center h-full"
-  ]
-    .filter(Boolean)
-    .join(" ");
+const images = [
+  "/assets/Homepage/t1.webp",
+  "/assets/Homepage/t2.webp",
+  "/assets/Homepage/t3.webp",
+  "/assets/Homepage/t4.webp",
+  "/assets/Homepage/t5.webp",
+  "/assets/Homepage/t6.webp",
+  "/assets/Homepage/t7.webp",
+  "/assets/Homepage/t8.webp",
+  "/assets/Homepage/t9.webp",
+  "/assets/Homepage/t10.webp",
+];
 
-  const marqueeClass = [
-    "relative",
-    "flex",
-    "overflow-hidden",
-    "select-none",
-    "gap-[calc(var(--size)/14)]",
-    "justify-start",
-    "w-full",
-    "mask-horizontal",
-    direction === "vertical" && "flex-col h-full mask-vertical",
-    isPaused && "paused"
-  ]
-    .filter(Boolean)
-    .join(" ");
+const SPRING = {
+  type: "spring",
+  stiffness: 170,
+  damping: 28,
+};
+
+export default function True3DPhotoFrameCarousel() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(
+      () => setIndex((i) => (i + 1) % images.length),
+      2800
+    );
+    return () => clearInterval(id);
+  }, []);
+
+  const getCircularIndex = (i) => (i + images.length) % images.length;
 
   return (
-    <article
-      className={wrapperClass}
-      style={{
-        ["--size"]: size,
-        ["--duration"]: duration,
-        ["--color-text"]: textColor,
-        ["--color-bg"]: bgColor,
-        ["--color-bg-accent"]: bgAccentColor,
-        color: "var(--color-text)",
-        backgroundColor: "var(--color-bg)"
-      }}
-    >
-      <div
-        className={marqueeClass}
-        onMouseEnter={() => pauseOnHover && setIsPaused(true)}
-        onMouseLeave={() => pauseOnHover && setIsPaused(false)}
-      >
-        <div
-          className={[
-            "flex-shrink-0",
-            "flex",
-            "items-center",
-            "justify-around",
-            "gap-[calc(var(--size)/14)]",
-            "min-w-full",
-            "animate-scrollX",
-            direction === "vertical" && "flex-col min-h-full animate-scrollY"
-          ]
-            .filter(Boolean)
-            .join(" ")}
-        >
-          {items.map((item, idx) => (
-            <img
-              key={idx}
-              src={item.imgUrl}
-              alt={item.altText}
-              className={[
-                "bg-[var(--color-bg-accent)]",
-                "rounded-md",
-                "object-cover",
-                "aspect-video",
-                `sm:w-[450px]`,
-                `w-[300px]`,
-                direction === "vertical" &&
-                // "aspect-square w-[calc(var(--size)/1.2)]",
-                "m-6"
-              ]
-                .filter(Boolean)
-                .join(" ")}
-            />
-          ))}
-        </div>
-        <div
-          aria-hidden="true"
-          className={[
-            "flex-shrink-0",
-            "flex",
-            "items-center",
-            "justify-around",
-            "gap-[calc(var(--size)/14)]",
-            "min-w-full",
-            "animate-scrollX",
-            direction === "vertical" && "flex-col min-h-full animate-scrollY"
-          ]
-            .filter(Boolean)
-            .join(" ")}
-        >
-          {items.map((item, idx) => (
-            <img
-              key={`dup1-${idx}`}
-              src={item.imgUrl}
-              alt={item.altText}
-              className={[
-                "bg-[var(--color-bg-accent)]",
-                "rounded-md",
-                "object-cover",
-                "aspect-video",
-                "w-[300px]",
-                `sm:w-[450px]`,
-                direction === "vertical"
-                // "aspect-square w-[calc(var(--size)/1.2)] "
-              ]
-                .filter(Boolean)
-                .join(" ")}
-            />
-          ))}
-        </div>
+    <div className="relative w-full h-[380px] sm:h-[520px] md:h-[650px] overflow-hidden bg-transparent">
+
+      <div className="relative z-10 w-full h-full flex items-center justify-center [perspective:2000px]">
+        <AnimatePresence initial={false}>
+          {[...Array(5)].map((_, i) => {
+            const offset = i - 2;
+            const imgIndex = getCircularIndex(index + offset);
+            const isCenter = offset === 0;
+
+            return (
+              <motion.div
+                key={imgIndex}
+                className="absolute"
+                transition={SPRING}
+                style={{
+                  transformStyle: "preserve-3d",
+                  zIndex: 100 - Math.abs(offset),
+                }}
+                animate={{
+                  x: offset * 260,   // reduced spacing
+                  rotateY: offset * -30,
+                  z: isCenter ? 420 : -260,
+                  scale: isCenter ? 1 : 0.85,
+                  opacity: Math.abs(offset) > 2 ? 0 : 1,
+                }}
+              >
+                <div className="relative w-[240px] h-[320px] sm:w-[280px] sm:h-[380px] md:w-[300px] md:h-[420px] [transform-style:preserve-3d]">
+
+                  <div
+                    className="absolute -inset-[4px] bg-[#111111] rounded-md border border-white"
+                    style={{
+                      transform: "translateZ(-18px)",
+                      boxShadow: `
+                      0 0 10px rgba(168,85,247,0.2),
+                      0 0 20px rgba(168,85,247,0.15),
+                      0 0 30px rgba(168,85,247,0.1)
+                      `,
+                    }}
+                  />
+
+                  <img
+                    src={images[imgIndex]}
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover rounded-md border border-white"
+                    style={{
+                      transform: "translateZ(18px)",
+                      boxShadow: `
+                      0 0 8px rgba(168,85,247,0.2),
+                      0 0 16px rgba(168,85,247,0.15)
+                      `,
+                    }}
+                  />
+                </div>
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
       </div>
-    </article>
+    </div>
   );
 }
+// "use client";
 
-export default LogoWall;
+// import { motion, AnimatePresence } from "framer-motion";
+// import { useEffect, useState } from "react";
 
-// ALSO NEEDED:
-//
-// KEYFRAME ANIMATION:
-//
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: [
-//     "./src/**/*.{js,jsx,ts,tsx}"
-//   ],
-//   theme: {
-//     extend: {
-//       keyframes: {
-//         scrollX: {
-//           "0%": { transform: "translateX(0)" },
-//           "100%": { transform: "translateX(-100%)" }
-//         },
-//         scrollY: {
-//           "0%": { transform: "translateY(0)" },
-//           "100%": { transform: "translateY(-100%)" }
-//         }
-//       },
-//       animation: {
-//         scrollX: "scrollX var(--duration) linear infinite",
-//         scrollY: "scrollY var(--duration) linear infinite"
-//       }
-//     }
-//   },
-//   plugins: []
+// const images = [
+//   "/assets/Homepage/t1.webp",
+//   "/assets/Homepage/t2.webp",
+//   "/assets/Homepage/t3.webp",
+//   "/assets/Homepage/t4.webp",
+//   "/assets/Homepage/t5.webp",
+//   "/assets/Homepage/t6.webp",
+//   "/assets/Homepage/t7.webp",
+//   "/assets/Homepage/t8.webp",
+//   "/assets/Homepage/t9.webp",
+//   "/assets/Homepage/t10.webp",
+// ];
+
+// const SPRING = {
+//   type: "spring",
+//   stiffness: 170,
+//   damping: 28,
 // };
-//
-// LAYER UTILITY SNIPPET:
-//
-// @layer utilities {
-//   .mask-horizontal {
-//     @apply [mask-image:linear-gradient(to_right,rgba(0,0,0,0)_0%,rgba(0,0,0,1)_20%,rgba(0,0,0,1)_80%,rgba(0,0,0,0)_100%)]
-//            [mask-size:cover]
-//            [mask-repeat:no-repeat];
-//   }
 
-//   .mask-vertical {
-//     @apply [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(0,0,0,1)_20%,rgba(0,0,0,1)_80%,rgba(0,0,0,0)_100%)]
-//            [mask-size:cover]
-//            [mask-repeat:no-repeat];
-//   }
+// export default function True3DPhotoFrameCarousel() {
+//   const [index, setIndex] = useState(0);
 
-//   .paused .animate-scrollX,
-//   .paused .animate-scrollY {
-//     animation-play-state: paused !important;
-//   }
+//   useEffect(() => {
+//     const id = setInterval(
+//       () => setIndex((i) => (i + 1) % images.length),
+//       2800
+//     );
+//     return () => clearInterval(id);
+//   }, []);
 
-//   .reverse-x {
-//     animation-direction: reverse;
-//     animation-delay: -3s;
-//   }
+//   const getCircularIndex = (i) => (i + images.length) % images.length;
+
+//   return (
+//     <div className="relative w-full h-[450px] sm:h-[550px] md:h-[650px] lg:h-[700px] overflow-hidden bg-transparent">
+      
+
+//       <div className="relative z-10 w-full h-full flex items-center justify-center [perspective:2000px]">
+//         <AnimatePresence initial={false}>
+//           {[...Array(5)].map((_, i) => {
+//             const offset = i - 2;
+//             const imgIndex = getCircularIndex(index + offset);
+//             const isCenter = offset === 0;
+
+//             const xOffset = offset * 320;
+
+//             return (
+//               <motion.div
+//                 key={imgIndex}
+//                 className="absolute"
+//                 transition={SPRING}
+//                 style={{
+//                   transformStyle: "preserve-3d",
+//                   zIndex: 100 - Math.abs(offset),
+//                 }}
+//                 animate={{
+//                   x: xOffset,
+//                   rotateY: offset * -30,
+//                   z: isCenter ? 420 : -260,
+//                   scale: isCenter ? 1 : 0.85,
+//                   opacity: Math.abs(offset) > 2 ? 0 : 1,
+//                 }}
+//               >
+//                 <div className="relative w-[300px] h-[400px] [transform-style:preserve-3d]">
+                 
+//                   <div
+//                     className="absolute -inset-[4px] bg-[#111111] rounded-md border border-white"
+//                     style={{
+//                       transform: "translateZ(-18px)",
+//                       // boxShadow: `
+//                       //   0 0 30px rgba(168,85,247,0.5),
+//                       //   0 0 60px rgba(168,85,247,0.35),
+//                       //   0 0 90px rgba(168,85,247,0.25)
+//                       // `,
+//                       boxShadow: `
+//                       0 0 10px rgba(168,85,247,0.2),
+//                       0 0 20px rgba(168,85,247,0.15),
+//                       0 0 30px rgba(168,85,247,0.1)
+//                 `,
+//                     }}
+//                   />
+
+                 
+//                   <img
+//                     src={images[imgIndex]}
+//                     alt=""
+//                     className="absolute inset-0 w-full h-full object-cover rounded-md border border-white"
+//                     style={{
+//                       transform: "translateZ(18px)",
+//                       // boxShadow: `
+//                       //   0 0 20px rgba(168,85,247,0.5),
+//                       //   0 0 40px rgba(168,85,247,0.35)
+//                       // `,
+//                       boxShadow: `
+//                       0 0 8px rgba(168,85,247,0.2),
+//                       0 0 16px rgba(168,85,247,0.15)
+//                     `,
+//                     }}
+//                   />
+//                 </div>
+//               </motion.div>
+//             );
+//           })}
+//         </AnimatePresence>
+//       </div>
+//     </div>
+//   );
 // }

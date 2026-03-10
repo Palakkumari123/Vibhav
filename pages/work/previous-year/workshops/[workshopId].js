@@ -9,9 +9,16 @@ export default function WorkDetails() {
   const router = useRouter();
   const { workshopId } = useParams();
 
-  const workshop = workData.Previous.Workshops.find(
-    (item) => item.id === parseInt(workshopId)
+const workshop = workData.Current.Workshops.find(
+    (item) => item.id.toString() === workshopId
+  ) || workData.Previous.Workshops.find(
+    (item) => item.id.toString() === workshopId
   );
+
+  if (!workshop) {
+    return <div className="text-center mt-20">Workshop not found</div>;
+  }
+ 
 
   if (!workshop) {
     return <div className="text-center mt-20">Workshop not found</div>;
@@ -62,7 +69,7 @@ export default function WorkDetails() {
               />
             </motion.div>
 
-            {/* Text Section */}
+          
             <motion.div
               className="lg:w-[65%] w-full flex md:p-10 flex-col justify-center space-y-4 font-sans"
               {...(isLaptop && {
