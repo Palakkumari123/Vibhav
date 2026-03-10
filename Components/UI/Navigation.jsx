@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useState } from "react";
 import Link from "next/link";
@@ -293,34 +294,7 @@ const goToSection = (section) => {
     setTeamVisible(false);
   };
 
-  // const handleScroll = () => {
-  //   if (typeof window !== "undefined") {
-  //     const currentScrollY = window.scrollY;
-      
-  //     // Show navbar when near top
-  //     if (currentScrollY < 100) {
-  //       setIsVisible(true);
-  //     } else if (currentScrollY > lastScrollYRef.current) {
-  //       // Scrolling down - hide navbar
-  //       setIsVisible(false);
-  //     } else if (currentScrollY < lastScrollYRef.current) {
-  //       // Scrolling up - show navbar
-  //       setIsVisible(true);
-  //     }
-      
-  //     lastScrollYRef.current = currentScrollY;
-
-  //     // Clear existing timeout
-  //     if (scrollTimeoutRef.current) {
-  //       clearTimeout(scrollTimeoutRef.current);
-  //     }
-
-  //     // Show navbar after user stops scrolling for 800ms
-  //     scrollTimeoutRef.current = setTimeout(() => {
-  //       setIsVisible(true);
-  //     }, 800);
-  //   }
-  // };
+  
   
   const handleScroll = () => {
   const currentScrollY = window.scrollY;
@@ -662,21 +636,7 @@ useEffect(() => {
                 </details>
               </li>
 
-{/* <li
-  onClick={() => {
-  document.body.classList.remove("overflow-hidden");
-  setShowNavbar(false);
 
-  router.push("/?scroll=contactUS");
-  }}
->
-  <div
-    // href="/#contact"
-    className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-100 hover:bg-gray-800/30 hover:text-cyan-400"
-  >
-    Contact
-  </div>
-</li> */}
     <li className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-100 hover:bg-gray-800/30 hover:text-cyan-400" onClick={() => goToSection("contactUS")}>
       Contact
     </li>
