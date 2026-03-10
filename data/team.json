@@ -39,7 +39,7 @@
     },
     {
       "Name": "Vishesh Chadha",
-      "Profile": "/Assets/TeamPhotos/Final/VISHESH Chaddha.jpg",
+      "Profile": "/Assets/TeamPhotos/Final/Vishesh.webp",
       "Github": "https://github.com/Vishesh0718",
       "LinkedIn": "https://www.linkedin.com/in/vishesh-chadha-a9172525a",
       "Position": "MEMBER"
@@ -53,7 +53,7 @@
     },
     {
       "Name": "Aditya Verma",
-      "Profile": "/Assets/TeamPhotos/Final/Aditya Verma.webp",
+      "Profile": "/Assets/TeamPhotos/Final/adityaverma.webp",
       "Github": "https://github.com/Vibrantrescue",
       "LinkedIn": "https://www.linkedin.com/in/aditya-verma-259762250",
       "Position": "MEMBER"
@@ -79,9 +79,17 @@
       "LinkedIn": "https://www.linkedin.com/in/anshuman-kandpal-753523257",
       "Position": "MEMBER"
     },
+     {
+      "Name": "Arun",
+      "Profile": "/Assets/TeamPhotos/Final/arun.webp",
+      "Github": "",
+      "LinkedIn": "",
+      "Position": "MEMBER"
+    },
+
     {
       "Name": "Ashish Sadyal",
-      "Profile": "/Assets/TeamPhotos/Final/Ashish Sadyal.webp",
+      "Profile": "/Assets/TeamPhotos/Final/ashishsadyal.webp",
       "Github": "https://github.com/Ashish122121",
       "LinkedIn": "https://www.linkedin.com/in/ashish-sadyal-81084a265",
       "Position": "MEMBER"
@@ -204,7 +212,7 @@
     },
     {
       "Name": "Madhaw Kumar Bagadia",
-      "Profile": "/Assets/TeamPhotos/Third/Madhaw Kumar Bagadia.webp",
+      "Profile": "/Assets/TeamPhotos/Third/madhaw.webp",
       "Github": "https://github.com/madhawbagadia",
       "LinkedIn": "https://www.linkedin.com/in/madhaw-kumar-bagadia-79038a28a/",
       "Position":"COORDINATOR"
