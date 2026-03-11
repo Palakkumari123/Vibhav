@@ -42,9 +42,9 @@ const CurrentTeam = () => {
       <div className="relative text-white min-h-screen p-4 pt-24 sm:pt-24 overflow-hidden">
         <div
           className="fixed top-0 left-0 w-full h-full bg-cover bg-center z-[-2] brightness-75"
-          style={{ backgroundImage: "url('/Assets/ProjectssBackg.jpeg')" }}
+          style={{ backgroundImage: "url('/Assets/teamBackg.png')" }}
         ></div>
-        <div className="fixed inset-0 bg-black/5 z-[-1]"></div>
+        <div className="fixed inset-0 bg-black/2 z-[-1]"></div>
 
         <h1 className="text-2xl xs:text-3xl sm:text-6xl font-extrabold text-center mb-12 sm:mb-20 font-batman tracking-tight sm:tracking-widest uppercase text-[#5b8ef3] drop-shadow-[0_0_15px_rgba(91,142,243,0.9)] whitespace-nowrap px-2">
           Current Team

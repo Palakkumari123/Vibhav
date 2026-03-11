@@ -24,14 +24,15 @@ const Page = () => {
     <Layout>
       <div className="relative min-h-screen text-white">
         
-        <div className="fixed inset-0 bg-black/50 pointer-events-none z-[-1]"></div>
+        {/* <div className="fixed inset-0 bg-black/20 pointer-events-none z-[-1]"></div> */}
 
         
         <img
-          src="/Assets/ProjectssBackg.jpeg"
+          src="/Assets/teamBackg.png"
           alt="Background"
           className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
         />
+        {/* <div className="fixed inset-0 bg-black/20 pointer-events-none z-[-1]"></div> */}
 
        
         <div className="pt-32 text-center z-50 relative font-batman">

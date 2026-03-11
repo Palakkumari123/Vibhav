@@ -26,10 +26,10 @@ export default function PreviousYearWork() {
       <div className="relative min-h-screen text-white pt-32  md:pt-36 lg:pt-40 p-4">
         
         
-        <div className="fixed inset-0 bg-black/30 pointer-events-none z-[-1]"></div>
+        <div className="fixed inset-0  pointer-events-none z-[-1]"></div>
 
         <img
-          src="/Assets/ProjectssBackg.jpeg"
+          src="/Assets/workBackg.jpg"
           alt="Background"
           className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
         />

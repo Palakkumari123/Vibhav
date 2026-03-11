@@ -1,22 +1,49 @@
 import React from "react";
 import Link from "next/link";
+import VisitorCounter from "./VisitorCounter";
+
 export default function Footer() {
   return (
     <div className="h-40 flex items-end justify-center bg-none">
-      <footer className="p-4  z-10  pb-4 mx-auto text-white  footer footer-center text-base-content">
+      <footer className="p-4 z-10 pb-4 mx-auto text-white footer footer-center text-base-content">
+
         <div>
           <p className="flex items-center justify-center text-md sm:text-2xl font-chakra">
             Made with <span className="text-cyan-400">💚</span> by
             <Link
               href="https://www.linkedin.com/company/team-vibhav/"
-              className="sm:text-3xl text-xl text-[#78B159] cursor-pointer "
+              className="sm:text-3xl text-xl text-[#78B159] cursor-pointer"
             >
-              {" "}
-              Team Vibhav{" "}
+              {" "}Team Vibhav{" "}
             </Link>
           </p>
         </div>
+
+        <VisitorCounter />
+
       </footer>
     </div>
   );
 }
+// import React from "react";
+// import Link from "next/link";
+// export default function Footer() {
+//   return (
+//     <div className="h-40 flex items-end justify-center bg-none">
+//       <footer className="p-4  z-10  pb-4 mx-auto text-white  footer footer-center text-base-content">
+//         <div>
+//           <p className="flex items-center justify-center text-md sm:text-2xl font-chakra">
+//             Made with <span className="text-cyan-400">💚</span> by
+//             <Link
+//               href="https://www.linkedin.com/company/team-vibhav/"
+//               className="sm:text-3xl text-xl text-[#78B159] cursor-pointer "
+//             >
+//               {" "}
+//               Team Vibhav{" "}
+//             </Link>
+//           </p>
+//         </div>
+//       </footer>
+//     </div>
+//   );
+// }

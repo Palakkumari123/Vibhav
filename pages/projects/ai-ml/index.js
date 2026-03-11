@@ -28,7 +28,7 @@ const Page = () => {
 
       
         <img
-          src="/Assets/ProjectssBackg.jpeg"
+          src="/Assets/teamBackg.png"
           alt="Background"
           className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
         />

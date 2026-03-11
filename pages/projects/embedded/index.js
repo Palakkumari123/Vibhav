@@ -23,12 +23,12 @@ const Page = () => {
 
        
         <img
-          src="/Assets/ProjectssBackg.jpeg"
+          src="/Assets/teamBackg.png"
           alt="Background"
           className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
         />
 
-        <div className="pt-32 bg-black/50 text-center z-50 font-batman">
+        <div className="pt-32  text-center z-50 font-batman">
          
           <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-10 font-batman tracking-widest uppercase 
               text-[#3f7aff] drop-shadow-[0_0_15px_rgba(63,122,255,0.9)]">

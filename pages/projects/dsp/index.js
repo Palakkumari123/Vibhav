@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import ProjectCard, { SkeletonProjectCard } from "../../../Components/UI/cards/ProjectCard/ProjectCard";
 import projects from "../../../data/Projects.json";
@@ -8,37 +10,43 @@ const Page = () => {
   const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
-    setProjectList(projects["DSP"]);
+    setProjectList(projects["DSP"] || []);
+
     const timer = setTimeout(() => {
       setLoading(false);
     }, 500);
+
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <Layout>
-      <div className="">
-        
-        <div className="fixed bottom-0 top-0 left-0 w-full bg-black/2 pointer-events-none z-[-1]"></div>
+      <div className="relative min-h-screen text-white">
 
-        
+        {/* Dark overlay */}
+        {/* <div className="fixed inset-0 bg-black/20 pointer-events-none z-[-1]" /> */}
+
+        {/* Background Image */}
         <img
-          src="/Assets/ProjectssBackg.jpeg"
+          src="/Assets/teamBackg.png"
           alt="Background"
           className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
         />
 
-        <div className="pt-32 bg-black/50 text-center z-50 font-batman">
-          
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-10 font-batman tracking-widest uppercase 
-              text-[#3f7aff] drop-shadow-[0_0_15px_rgba(63,122,255,0.9)]">
+        {/* Content */}
+        <div className="pt-32 text-center relative z-10 font-batman">
+
+          {/* Page Title */}
+          <h1 className="text-3xl sm:text-5xl font-extrabold mb-10 tracking-widest uppercase text-[#3f7aff] drop-shadow-[0_0_15px_rgba(63,122,255,0.9)]">
             Projects
           </h1>
-          <span className="sm:text-3xl text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-300 to-purple-400 text-center font-chakraBold z-50">
+
+          {/* Category */}
+          <span className="sm:text-3xl text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-300 to-purple-400 font-chakraBold mb-10 inline-block">
             DSP
           </span>
 
-          
+          {/* Projects Grid */}
           <div className="container mx-auto p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-5 justify-items-center">
             {loading
               ? Array.from({ length: projectList.length || 6 }).map((_, index) => (
@@ -48,6 +56,7 @@ const Page = () => {
                   <ProjectCard key={index} project={project} />
                 ))}
           </div>
+
         </div>
       </div>
     </Layout>
@@ -55,3 +64,61 @@ const Page = () => {
 };
 
 export default Page;
+
+// import { useEffect, useState } from "react";
+// import ProjectCard, { SkeletonProjectCard } from "../../../Components/UI/cards/ProjectCard/ProjectCard";
+// import projects from "../../../data/Projects.json";
+// import Layout from "../../../Components/UI/Layout";
+
+// const Page = () => {
+//   const [loading, setLoading] = useState(true);
+//   const [projectList, setProjectList] = useState([]);
+
+//   useEffect(() => {
+//     setProjectList(projects["DSP"]);
+//     const timer = setTimeout(() => {
+//       setLoading(false);
+//     }, 500);
+//     return () => clearTimeout(timer);
+//   }, []);
+
+//   return (
+//     <Layout>
+//       <div className="">
+        
+//         <div className="fixed bottom-0 top-0 left-0 w-full bg-black/2 pointer-events-none z-[-1]"></div>
+//  {/* <div className="pt-32 bg-black/20 text-center z-50 font-batman"> */}
+        
+//         <img
+//           src="/Assets/teamBackg.png"
+//           alt="Background"
+//           className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
+//         />
+
+//         {/* <div className="pt-32 bg-black/20 text-center z-50 font-batman"> */}
+          
+//           <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-10 font-batman tracking-widest uppercase 
+//               text-[#3f7aff] drop-shadow-[0_0_15px_rgba(63,122,255,0.9)]">
+//             Projects
+//           </h1>
+//           <span className="sm:text-3xl text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-300 to-purple-400 text-center font-chakraBold z-50">
+//             DSP
+//           </span>
+
+          
+//           <div className="container mx-auto p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-5 justify-items-center">
+//             {loading
+//               ? Array.from({ length: projectList.length || 6 }).map((_, index) => (
+//                   <SkeletonProjectCard key={index} />
+//                 ))
+//               : projectList.map((project, index) => (
+//                   <ProjectCard key={index} project={project} />
+//                 ))}
+//           </div>
+//         </div>
+//       </div>
+//     </Layout>
+//   );
+// };
+
+// export default Page;
