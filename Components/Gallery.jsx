@@ -21,7 +21,7 @@ export default function Gallery() {
 
   return (
     // <div className="relative bg-black py-4 bg-opacity-25 overflow-hidden">
-      <div className="relative bg-black bg-opacity-25 overflow-hidden">
+      <div className="relative  bg-opacity-25 overflow-hidden">
       {/* Background Image */}
       <img
       src="/Assets/Gallery.png"
