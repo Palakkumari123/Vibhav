@@ -275,11 +275,19 @@
     },
     {
       "Name": "Shivi Singh",
-      "Profile": "/Assets/TeamPhotos/Third/Shivi.webp",
+      "Profile": "/Assets/TeamPhotos/Third/shivi.webp",
       "Github": "https://github.com/Shivi002",
       "LinkedIn": "https://www.linkedin.com/in/shivi-singh-9b1b6226a/",
       "Position": "COORDINATOR"
     },
+    {
+      "Name": "Shivam khanna",
+      "Profile": "/Assets/TeamPhotos/Third/shivamkhanna.webp",
+      "Github": "",
+      "LinkedIn": "https://www.linkedin.com/in/shivam-khanna-a11279290?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "Position": "COORDINATOR"
+    },
+
     
     {
       "Name": "Shresth Sharma",
