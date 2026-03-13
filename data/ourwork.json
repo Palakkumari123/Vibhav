@@ -64,7 +64,7 @@
         "content": "This workshop offers practical training and you will learn VLSI design.",
         "images": [
           "/Assets/Workshop/Tannereda.webp",
-          "/Assets/Workshop/cloudcomputing2.webp"
+          "/Assets/Workshop/Tannereda2.webp"
         ],
         "round1": "Participants stepped beyond textbooks and got a glimpse of how real chip design begins. From understanding the basics of digital logic to exploring the working of PMOS and NMOS, students learned how an XOR gate is designed using CMOS technology.",
         "round2": "The workshop also introduced participants to Tanner EDA tools, where they experienced how circuits are actually designed and simulated in the semiconductor industry.",
