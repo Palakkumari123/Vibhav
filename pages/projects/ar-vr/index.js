@@ -24,7 +24,7 @@ const Page = () => {
     <Layout>
       <div className="relative min-h-screen text-white">
       
-        {/* <div className="fixed inset-0 bg-black/20 pointer-events-none z-[-1]"></div> */}
+        
 
        
         <img

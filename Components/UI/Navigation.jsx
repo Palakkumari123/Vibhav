@@ -299,21 +299,21 @@ const goToSection = (section) => {
   const handleScroll = () => {
   const currentScrollY = window.scrollY;
 
-  // Always show navbar at top
+ 
   if (currentScrollY < 80) {
     setIsVisible(true);
     return;
   }
 
-  // Hide navbar while scrolling
+  
   setIsVisible(false);
 
-  // Clear previous timer
+ 
   if (scrollTimeoutRef.current) {
     clearTimeout(scrollTimeoutRef.current);
   }
 
-  // Show navbar when scrolling stops
+  
   scrollTimeoutRef.current = setTimeout(() => {
     setIsVisible(true);
   }, 800);

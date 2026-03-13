@@ -478,12 +478,7 @@ export default function CircularGallery({
   scrollEase = 0.05
 }) {
   const containerRef = useRef(null);
-//   useEffect(() => {
-//     const app = new App(containerRef.current, { items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase });
-//     return () => {
-//       app.destroy();
-//     };
-//   }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
+
 useEffect(() => {
   if (!containerRef.current) return;
 
@@ -501,6 +496,6 @@ useEffect(() => {
     app.destroy();
   };
 }, []);
-//   return <div className="circular-gallery" ref={containerRef} />;
+
 return <div ref={containerRef} className={styles["circular-gallery"]} />;
 }

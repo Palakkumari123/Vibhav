@@ -37,14 +37,7 @@ const Aluminus = () => {
     <Layout>
       <div className="p-4 mx-0 pt-28 sm:pt-48 relative text-white min-h-screen">
         <div className="fixed inset-0 bg-black/10 pointer-events-none z-[-1]"></div>
-        {/* <video
-          src="/Assets/backvd.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
-        /> */}
+        
         <img
           src="/Assets/teamBackg.png"
           alt="Background"

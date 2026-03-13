@@ -39,7 +39,7 @@ export default function VisitorCounter() {
         shadow-[0_0_20px_rgba(59,130,246,0.6)]"
       >
 
-        {/* glowing animated border */}
+        
         <div className="absolute inset-0 rounded-2xl 
         // border border-blue-400/40
         border border-indigo-900/40
@@ -70,39 +70,3 @@ export default function VisitorCounter() {
     </motion.div>
   );
 }
-
-// "use client";
-
-// import { useEffect, useState } from "react";
-
-// export default function VisitorCounter() {
-//   const [count, setCount] = useState(null);
-
-//   useEffect(() => {
-//     async function getVisitors() {
-//       try {
-//         const res = await fetch(
-//           "https://api.countapi.xyz/hit/vibhav-nitham/visits"
-//         );
-
-//         const data = await res.json();
-//         setCount(data.value);
-//       } catch (error) {
-//         console.log("Visitor counter error:", error);
-//         setCount("—");
-//       }
-//     }
-
-//     getVisitors();
-//   }, []);
-
-//   return (
-//     <div className="mt-2 text-center">
-//       <p className="text-xs text-gray-400">VISITORS</p>
-
-//       <p className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
-//         {count ?? "..."}
-//       </p>
-//     </div>
-//   );
-// }
