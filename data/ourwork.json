@@ -61,16 +61,16 @@
        {
         "id": 1,
         "name": "Tanner EDA",
-        "content": "This workshop offers practical training and you will learn how the tiny chips inside your phone are designed",
+        "content": "This workshop offers practical training and you will learn VLSI design.",
         "images": [
           "/Assets/Workshop/Tannereda.webp",
           "/Assets/Workshop/cloudcomputing2.webp"
         ],
-       "round1": "This workshop provides a hands-on deep dive into the Tanner EDA tool suite, bridging the gap between theoretical CMOS logic and industry-standard physical design , This workshop provided an immersive deep dive into the core principles of VLSI and CMOS technology, offering participants a high-level perspective on how millions of microscopic components are integrated to power the modern digital landscape.",
-       "round2":"We moved from the theoretical physics of PMOS and NMOS operations to the practical assembly of a CMOS NAND gate, demonstrating exactly how these switches pull signals to ground or supply to execute fundamental digital logic.",
-       "round3":"Participants gained technical proficiency in Tanner S-Edit, navigating the professional EDA environment to meticulously place components, wire terminals, and manage the hierarchical data required for a functional NAND circuit design.",
-       "round4":"By translating raw circuit concepts into simulation-ready designs, this session equipped aspiring engineers with the practical workflow and data-processing skills required to excel in the competitive field of integrated circuit engineering."
-      }
+        "round1": "Participants stepped beyond textbooks and got a glimpse of how real chip design begins. From understanding the basics of digital logic to exploring the working of PMOS and NMOS, students learned how an XOR gate is designed using CMOS technology.",
+        "round2": "The workshop also introduced participants to Tanner EDA tools, where they experienced how circuits are actually designed and simulated in the semiconductor industry.",
+        "round3": "It wasn’t just a workshop — it was a hands-on journey into the world of semiconductors and VLSI design.",
+        "round4":"Every expert once started with a single circuit… and for many of our participants, this was their first step into the world of chip design."
+       }
 
     ]
   },
