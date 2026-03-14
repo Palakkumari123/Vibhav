@@ -20,24 +20,7 @@ export default function FAQs() {
   };
 
   return (
-    // <div className="p-4 sm:p-12 relative z-10 bg-transparent">
-    //   {/* Background Video */}
-    //   {/* <video
-    //     autoPlay
-    //     loop
-    //     muted
-    //     playsInline
-    //     className="absolute inset-0 w-full h-full object-cover -z-10"
-    //   >
-    //     <source src="/Assets/FAQs.mp4" type="video/mp4" />
-    //   </video> */}
-    //   <img
-    //     src="/Assets/Faqss.png"
-    //     alt="background"
-    //     className="absolute inset-0 w-full h-full object-cover -z-10"
-    //   />
-
-    //   <div className="absolute inset-0 bg-black/60 -z-10"></div>
+    
 
     <div className="p-4 sm:p-12 relative z-10 bg-transparent min-h-screen flex items-center justify-center w-full">
 
@@ -50,16 +33,14 @@ export default function FAQs() {
   <div className="absolute inset-0 bg-black/60 -z-10"></div>
 
       <motion.div 
-        /* Reduced size from max-w-screen-lg to max-w-2xl */
+        
         className="max-w-4xl mx-auto my-10 w-full" 
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
         <div className="relative">
-          {/* Blue and Purple SVG lines removed from here */}
 
-          {/* Increased transparency (bg-black/20) and refined border */}
           <div className="bg-black/20 backdrop-blur-md border border-white/10 rounded-[30px] p-6 md:p-10 shadow-2xl relative z-10">
             
             <h2 className="text-2xl sm:text-4xl text-center font-batman uppercase tracking-[0.2em] mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">
@@ -70,7 +51,7 @@ export default function FAQs() {
               {faqs.map((faq, index) => (
                 <div key={index} className="flex flex-col">
                   <button
-                    /* Adjusted button colors for more transparency */
+                    
                     className={`w-full py-4 px-6 flex justify-between items-center transition-all duration-300 
                       bg-white/5 hover:bg-white/10 
                       border border-white/5 hover:border-cyan-400/30

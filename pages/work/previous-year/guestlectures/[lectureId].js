@@ -36,6 +36,11 @@ export default function GuestLectureDetails() {
   return (
     <Layout>
       <div className="container mx-auto pt-24 md:pt-32 p-6 text-white relative">
+        <img
+          src="/Assets/workBackg.jpg"
+          alt="Background"
+          className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
+        />
 
         <motion.h1
           className="text-4xl text-center font-batman font-extrabold mb-4"

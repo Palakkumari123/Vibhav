@@ -1,12 +1,12 @@
 {
     "faqs":[
         {
-            "question":"Can teams from other colleges compete in Vibhav Day events?",
+            "question":"Are teams from other institutions eligible to compete in Vibhav Day events?",
             "answer":"Yes, all college students are welcome to join in our Vibhav Day offline fun events  and earn great prizes."
         },
         {
-            "question":"Does only ECE branch can participate in Vibhav day? ",
-            "answer":"No, any branch students can participate and win prizes "
+            "question":"Can students from branches other than ECE participate in Vibhav Day? ",
+            "answer":"Yes, any branch students can participate and win prizes "
         },
         {
             "question":"What different events does Team Vibhav organize?",
@@ -17,7 +17,7 @@
             "answer":"Team Vibhav stands out for its unique blend of technical learning, innovation, and social outreach, fostering both creativity and practical problem-solving skills."
         },
         {
-            "question":"What does Vibhav contributes in nimbus? ",
+            "question":"How does Vibhav contribute to Nimbus? ",
             "answer":" A variety of activities and technical workshops are organized by Team Vibhav.There are several interesting activities and fun games held on Vibhav Day, and participants can win great prizes."
         },
         {

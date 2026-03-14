@@ -233,7 +233,7 @@
     },
     {
       "Name": "Navreet Kaur",
-      "Profile": "/Assets/TeamPhotos/Third/navreet.webp",
+      "Profile": "/Assets/TeamPhotos/Third/Navreeet.webp",
       "Github": "https://github.com/NVK5089/CLOUD",
       "LinkedIn": "https://www.linkedin.com/in/navreet-kaur-2295322b4/",
       "Position": "COORDINATOR"
@@ -275,11 +275,19 @@
     },
     {
       "Name": "Shivi Singh",
-      "Profile": "/Assets/TeamPhotos/Third/Shivi.webp",
+      "Profile": "/Assets/TeamPhotos/Third/shivi.webp",
       "Github": "https://github.com/Shivi002",
       "LinkedIn": "https://www.linkedin.com/in/shivi-singh-9b1b6226a/",
       "Position": "COORDINATOR"
     },
+    {
+      "Name": "Shivam khanna",
+      "Profile": "/Assets/TeamPhotos/Third/shivamkhanna.webp",
+      "Github": "",
+      "LinkedIn": "https://www.linkedin.com/in/shivam-khanna-a11279290?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "Position": "COORDINATOR"
+    },
+
     
     {
       "Name": "Shresth Sharma",
@@ -454,7 +462,7 @@
     },
     {
       "Name": "Sonia Saini",
-      "Profile": "/Assets/TeamPhotos/Second/Sonia Saini.webp",
+      "Profile": "/Assets/TeamPhotos/Second/SoniaSaini.webp",
       "Github": "https://github.com/SoniHubb-b",
       "LinkedIn": "https://www.linkedin.com/in/sonia-saini-5a1570332/",
       "Position": "EXECUTIVE MEMBER"
@@ -529,7 +537,7 @@
     },
     {
       "Name": "Atharav Nagpal",
-      "Profile": "/Assets/TeamPhotos/First/Atharav_Nagpal.webp",
+      "Profile": "/Assets/TeamPhotos/First/atharav_Nagpal.webp",
       "Github": "https://github.com/radarsh93311",
       "LinkedIn": "https://www.linkedin.com/in/gaurav-pratap-singh-863889313/",
       "Position":"Volunteer"
@@ -638,7 +646,7 @@
   
     {
       "Name": "vansh saini",
-      "Profile": "/Assets/TeamPhotos/First/VANSH_SAINII.webp",
+      "Profile": "/Assets/TeamPhotos/First/Vansh_Sainii.webp",
       "Github": "https://github.com/VanshSAINI06",
       "LinkedIn": "https://www.linkedin.com/in/vansh-saini-36142b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "Position": "Volunteer"

@@ -36,10 +36,41 @@
       "round3": "The campaign also emphasized the role of technology, awareness, and government initiatives in promoting sustainable forestry and environmental conservation. We demonstrated how simple practices such as plantation, waste reduction, and mindful consumption can significantly contribute to protecting ecosystems. The information was delivered in a simple and relatable manner, ensuring that people could easily understand the importance of conservation and their role in it.",
       "round4": "Overall, VANPRAVARTAK stood as a significant step toward environmental consciousness and sustainable development. The campaign reinforced the idea that protecting forests is not just a responsibility but a necessity for future generations. Team Vibhav remains committed to organizing such initiatives, striving to promote harmony between development and nature, and ensuring a greener and more sustainable future for all."
 
+      },
+        {
+        "id": 3,
+        "name": "Pahal",
+        "content": "This is a Event in which the locals are given information about meritious goverment schemes for their upliftment.",
+        "images": [
+          "/Assets/Events/pahall.webp",
+          "/Assets/Events/pahall2.webp",
+          "/Assets/Events/pahall3.webp"
+        ],
+        "round1": "Team Vibhav successfully organized PAHAL, an impactful awareness campaign, nationwide. Our mission was not just to inform people about government schemes but to inspire and empower them by highlighting opportunities that could enhance their livelihoods. By reaching out directly to the community, we aimed to educate skilled and unskilled workers about the initiatives designed for their upliftment and growth.",
+        "round2": "This time, our focus is on the PM Surya Ghar: Muft Bijli Yojana, a scheme that encourages households to install rooftop solar panels and generate their own electricity. Through this initiative, families can get up to 300 units of free electricity every month, helping reduce electricity bills while promoting clean energy..",
+
+        "round3": " Another major benefit of this scheme is that if a household produces more electricity than it uses, the extra power can be sold back to the grid, allowing people to earn while contributing to sustainable energy..",
+        "round4": "     Through Pahal, Team Vibhav is taking a step toward spreading awareness about renewable energy and empowering people to make the most of this initiative.",
+        "round5": "     Apart from spreading awareness, PAHAL also fostered meaningful conversations and connections between the people and our team. The positive response from the community reinforced our belief that small initiatives can lead to significant changes. Many individuals expressed their willingness to explore the benefits of the scheme, and we provided guidance on how to apply for assistance and access resources. This engagement was a testament to the importance of on-ground awareness programs in making government initiatives truly effective. ",
+        "round6": "Overall, PAHAL was a remarkable step towards community development, reinforcing the idea that awareness is the first step toward empowerment. The enthusiasm and participation of the villagers reflected their eagerness to embrace new opportunities. Team Vibhav remains committed to organizing such initiatives in the future, striving to bridge the gap between policy implementation and public awareness, ensuring that every individual can benefit from government efforts aimed at progress and prosperity."
       }
+
     
     ],
     "Workshops": [
+       {
+        "id": 1,
+        "name": "Tanner EDA",
+        "content": "This workshop offers practical training and you will learn VLSI design.",
+        "images": [
+          "/Assets/Workshop/Tannereda.webp",
+          "/Assets/Workshop/Tannereda2.webp"
+        ],
+        "round1": "Participants stepped beyond textbooks and got a glimpse of how real chip design begins. From understanding the basics of digital logic to exploring the working of PMOS and NMOS, students learned how an XOR gate is designed using CMOS technology.",
+        "round2": "The workshop also introduced participants to Tanner EDA tools, where they experienced how circuits are actually designed and simulated in the semiconductor industry.",
+        "round3": "It wasn’t just a workshop — it was a hands-on journey into the world of semiconductors and VLSI design.",
+        "round4":"Every expert once started with a single circuit… and for many of our participants, this was their first step into the world of chip design."
+       }
 
     ]
   },
@@ -48,7 +79,7 @@
       {
         "id": 1,
         "name": "Pahal",
-        "content": "This is a Event in ehich the locals are given information about meritious goverment schemes for their upliftment.",
+        "content": "This is a Event in which the locals are given information about meritious goverment schemes for their upliftment.",
         "images": [
           "/Assets/Events/pahal.webp",
           "/Assets/Events/pahal2.webp",
