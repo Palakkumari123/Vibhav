@@ -781,17 +781,16 @@ useEffect(() => {
             </div>
           </p>
 
-          <Link href="/" className={`menuLink ${location.pathname === "/" ? "active" : ""}`}>
+          <Link href="/" className={`menuLink ${activeRoute === "/" ? "active" : ""}`}>
             <div className="group flex items-center gap-2">
               <span
-                className={`text-xl sm:text-2xl md:text-3xl transition-opacity pb-[1px] ${location.pathname === "/" ? "opacity-100" : "opacity-0 group-hover:opacity-80 "
-                  }`}
+                className={`text-xl sm:text-2xl md:text-3xl transition-opacity pb-[1px] ${activeRoute === "/" ? "opacity-100" : "opacity-0 group-hover:opacity-80"} }`}
               >
                 {"["}
               </span>
               <span className="flex items-center h-full leading-none pt-[1px] text-[0.875rem] sm:text-[0.9375rem] md:text-[1rem] transition-colors group-hover:text-purple-500">Home</span>
               <span
-                className={`text-xl sm:text-2xl md:text-3xl transition-opacity pb-[1px] ${location.pathname === "/" ? "opacity-100" : "opacity-0 group-hover:opacity-80"
+                className={`text-xl sm:text-2xl md:text-3xl transition-opacity pb-[1px] ${activeRoute === "/" ? "opacity-100" : "opacity-0 group-hover:opacity-80"
                   }`}
               >
                 {"]"}
