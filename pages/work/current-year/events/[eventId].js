@@ -1,21 +1,26 @@
-"use client";
-import { useParams } from "next/navigation";
+import { useRouter } from "next/router";
 import Layout from "@/Components/UI/Layout";
 import { motion } from "framer-motion";
-import workData from "../../../../data/ourwork.json"; 
+import workData from "../../../../data/ourwork.json";
 import { useEffect, useState } from "react";
 
 export default function WorkDetails() {
-  const { eventId } = useParams();
+  const router = useRouter();
+  const { eventId } = router.query;
 
- 
-  const Event = workData.Current.Events.find(
-    (item) => item.id.toString() === eventId?.toString()
-  ) || workData.Previous.Events.find(
-    (item) => item.id.toString() === eventId?.toString()
-  );
+  const [isLaptop, setIsLaptop] = useState(false);
+  useEffect(() => {
+    setIsLaptop(window.innerWidth >= 768);
+  }, []);
 
-  
+  const Event =
+    workData.Current.Events.find(
+      (item) => item.id.toString() === eventId?.toString()
+    ) ||
+    workData.Previous.Events.find(
+      (item) => item.id.toString() === eventId?.toString()
+    );
+
   if (!Event) {
     return (
       <Layout>
@@ -25,11 +30,6 @@ export default function WorkDetails() {
       </Layout>
     );
   }
-
-  const [isLaptop, setIsLaptop] = useState(false);
-  useEffect(() => {
-    setIsLaptop(window.innerWidth >= 768);
-  }, []);
 
   return (
     <Layout>
@@ -52,9 +52,8 @@ export default function WorkDetails() {
           {Event.images.map((image, index) => (
             <motion.div
               key={index}
-              className={`flex flex-col justify-center lg:flex-row ${
-                index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-              } gap-10 md:gap-2`}
+              className={`flex flex-col justify-center lg:flex-row ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""
+                } gap-10 md:gap-2`}
             >
               <motion.div
                 className="flex-shrink-0 max-lg:w-full mx-auto flex items-center md:max-lg:justify-center"
@@ -81,10 +80,8 @@ export default function WorkDetails() {
                   transition: { duration: 1, delay: index * 0.3 },
                 })}
               >
-            
                 {index === 0 && <p className="text-lg">{Event.content}</p>}
-                
-                
+
                 {Event[`round${2 * index + 1}`] && (
                   <p className="text-lg">{Event[`round${2 * index + 1}`]}</p>
                 )}
