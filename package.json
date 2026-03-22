@@ -39,6 +39,7 @@
     "react-scroll": "^1.9.0",
     "react-scroll-parallax": "^3.4.5",
     "react-three-fiber": "^6.0.13",
+    "redis": "^5.11.0",
     "tailwind-merge": "^2.2.1",
     "three": "^0.162.0",
     "typewriter-effect": "^2.21.0"
