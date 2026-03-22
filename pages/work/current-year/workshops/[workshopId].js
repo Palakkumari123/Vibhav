@@ -1,6 +1,4 @@
-"use client";
-
-import { useParams } from "next/navigation";
+import { useRouter } from "next/router";
 import workData from "../../../../data/ourwork.json";
 import Layout from "@/Components/UI/Layout";
 import { motion } from "framer-motion";
@@ -8,28 +6,29 @@ import { useEffect, useState } from "react";
 
 export default function WorkDetails() {
 
-const { workshopId } = useParams();
+  const router = useRouter();
+  const { workshopId } = router.query;
 
-// Only search in CURRENT workshops
-const workshop = workData.Current.Workshops.find(
-(item) => item.id.toString() === workshopId?.toString()
-);
+  // Only search in CURRENT workshops
+  const workshop = workData.Current.Workshops.find(
+    (item) => item.id.toString() === workshopId?.toString()
+  );
 
-if (!workshop) {
-return ( <Layout> <div className="text-center mt-20 text-white">
-Workshop not found </div> </Layout>
-);
-}
+  if (!workshop) {
+    return (<Layout> <div className="text-center mt-20 text-white">
+      Workshop not found </div> </Layout>
+    );
+  }
 
-const [isLaptop, setIsLaptop] = useState(false);
+  const [isLaptop, setIsLaptop] = useState(false);
 
-useEffect(() => {
-setIsLaptop(window.innerWidth >= 768);
-}, []);
+  useEffect(() => {
+    setIsLaptop(window.innerWidth >= 768);
+  }, []);
 
-return ( <Layout> <div className="container max-w-100% text-center mx-auto pt-24 md:pt-32 p-6 text-white relative">
+  return (<Layout> <div className="container max-w-100% text-center mx-auto pt-24 md:pt-32 p-6 text-white relative">
 
-```
+
     <img
       src="/Assets/workBackg.jpg"
       alt="Background"
@@ -49,9 +48,8 @@ return ( <Layout> <div className="container max-w-100% text-center mx-auto pt-24
       {workshop.images.map((image, index) => (
         <motion.div
           key={index}
-          className={`flex flex-col justify-center lg:flex-row ${
-            index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-          } gap-10 md:gap-2`}
+          className={`flex flex-col justify-center lg:flex-row ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""
+            } gap-10 md:gap-2`}
         >
           <motion.div
             className="flex-shrink-0 max-lg:w-full mx-auto flex items-center md:max-lg:justify-center"
@@ -104,8 +102,8 @@ return ( <Layout> <div className="container max-w-100% text-center mx-auto pt-24
     </div>
 
   </div>
-</Layout>
+  </Layout>
 
 
-);
+  );
 }
